@@ -1,0 +1,32 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdftex 2015.2.11)  20 MAR 2015 10:53
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/Users/madsjorgensen/Documents/ST/2. semester/Semesterprojekt/Semesterprojekt2 - github/Projekt/Dfiler/Daccepttest.tex"
+(/Users/madsjorgensen/Documents/ST/2. semester/Semesterprojekt/Semesterprojekt2 - github/Projekt/Dfiler/Daccepttest.tex
+/Users/madsjorgensen/Documents/ST/2. semester/Semesterprojekt/Semesterprojekt2 - github/Projekt/Dfiler/Daccepttest.tex:1: Undefined control sequence.
+l.1 \chapter
+            {Acceptest}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/madsjorgensen/Documents/ST/2. semester/Semesterprojekt/Semesterprojekt2 - github/Projekt/Dfiler/Daccepttest.tex:3: Undefined control sequence.
+l.3 \section
+            {Acceptest af ikke-funktionelle krav}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+! Emergency stop.
+<*> ...t2 - github/Projekt/Dfiler/Daccepttest.tex"
+                                                  
+*** (job aborted, no legal \end found)
+
+!  ==> Fatal error occurred, no output PDF file produced!
