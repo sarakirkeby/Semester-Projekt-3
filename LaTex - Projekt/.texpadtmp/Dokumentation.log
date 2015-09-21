@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.11)  21 SEP 2015 10:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.11)  21 SEP 2015 11:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**Logbog.tex
-(./Logbog.tex
+**Dokumentation.tex
+(./Dokumentation.tex
 LaTeX2e <2014/05/01>
 Babel <3.9k> and hyphenation patterns for 78 languages loaded.
 (./Dokumentklassen.tex (/usr/local/texlive/2014/texmf-dist/tex/latex/memoir/memoir.cls
@@ -1583,8 +1583,22 @@ File: upzd.fd 2001/06/04 font definitions for U/pzd.
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
-)) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Logbog.aux (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Lfiler/2015-09-08.aux) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Lfiler/2015-09-21.aux))
-\openout1 = `Logbog.aux'.
+)) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dokumentation.aux (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Dforside.aux) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Dunderskrifter.aux) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Dordliste.aux) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Dindledning.aux) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Dkravspecifikation.aux) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Ddesign.aux
+
+LaTeX Warning: Label `version_Systemark' multiply defined.
+
+
+LaTeX Warning: Label `version_Systemark@cref' multiply defined.
+
+) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Daccepttest.aux
+
+LaTeX Warning: Label `version_Systemark' multiply defined.
+
+
+LaTeX Warning: Label `version_Systemark@cref' multiply defined.
+
+) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Dbilag.aux))
+\openout1 = `Dokumentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
@@ -1667,9 +1681,9 @@ LaTeX Info: Redefining \nameref on input line 6.
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
 LaTeX Info: Redefining \nameref on input line 6.
-(/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Logbog.out) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Logbog.out)
+(/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dokumentation.out) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dokumentation.out)
 \@outlinefile=\write4
-\openout4 = `Logbog.out'.
+\openout4 = `Dokumentation.out'.
 
 LaTeX Info: Redefining \Ref on input line 6.
 \c__siunitx_mathsf_int=\count341
@@ -1684,31 +1698,180 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Try loading font information for U+stmry on input line 6.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 \c__siunitx_mathtt_int=\count342
-\openout2 = `Lfiler/2015-09-08.aux'.
+\openout2 = `Dfiler/Dforside.aux'.
 
- (./Lfiler/2015-09-08.tex (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1pbk.fd)
+ (./Dfiler/Dforside.tex <figurer/ASE.png, id=148, 439.6425pt x 136.25906pt>
+File: figurer/ASE.png Graphic file (type png)
+ <use figurer/ASE.png>
+Package pdftex.def Info: figurer/ASE.png used on input line 6.
+(pdftex.def)             Requested size: 255.6026pt x 79.21742pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--26
+
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 42.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 42.
+[1
+
+
+
+{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figurer/ASE.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 42.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 42.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 42.
+ [2
+
+])
+\openout2 = `Dfiler/Dunderskrifter.aux'.
+
+ (./Dfiler/Dunderskrifter.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--31
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--31
+
+ []
+
+)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 9.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 9.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 9.
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.9 \include{Dfiler/Dunderskrifter}
+                                    [1
+
+
+]
+\openout2 = `Dfiler/Dordliste.aux'.
+
+ (./Dfiler/Dordliste.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1 \chapter
+            {Ordliste} [2
+
+
+
+] (/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1pbk.fd)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 )
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 10.
+ [3]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 13.
+ [4
+
+
+] (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dokumentation.toc)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 17.
+ [5]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 17.
+ [6
+
+]
+\openout2 = `Dfiler/Dindledning.aux'.
+
+ (./Dfiler/Dindledning.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+
+ []
+
+)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 17.
  [1
 
 
+]
+\openout2 = `Dfiler/Dkravspecifikation.aux'.
 
-
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-\openout2 = `Lfiler/2015-09-21.aux'.
-
- (./Lfiler/2015-09-21.tex
+ (./Dfiler/Dkravspecifikation.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -1726,57 +1889,886 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 10.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 10.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 11.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 11.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 13.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 14.
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--12
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 32--36
-
- []
-
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 16.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 16.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 37--9
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 18.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 18.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 18.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 18.
+ [3]
+\openout2 = `Dfiler/Ddesign.aux'.
 
+ (./Dfiler/Ddesign.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+ [4
+
+
+
+]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+
+Underfull \hbox (badness 1603) in paragraph at lines 14--14
+[]\T1/cmr/m/n/10.95 Tilrettet domæne-, sekvens- og klas-se-di-a-
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 16.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 9.
+(babel)             in language  on input line 16.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 22.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 24.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 29.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 31.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 31.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 34.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 34.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 43.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 43.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 45.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 45.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 47.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 47.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 49.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 49.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 51.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 51.
+)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 19.
+ [5]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 19.
+ [6]
+\openout2 = `Dfiler/Daccepttest.aux'.
+
+ (./Dfiler/Daccepttest.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 14.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 14.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 18.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 18.
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]\T1/cmr/m/n/10.95 Indtast user-na-me
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+\T1/cmr/m/n/10.95 "moh04"samt pas-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]\T1/cmr/m/n/10.95 Username- og pas-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+\T1/cmr/m/n/10.95 sword-boks bli-ver
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]\T1/cmr/m/n/10.95 Tryk på "Login"--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]\T1/cmr/m/n/10.95 Login bli-ver god-
+ []
+
+
+Underfull \hbox (badness 3646) in paragraph at lines 37--37
+\T1/cmr/m/n/10.95 kendt. Login-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+\T1/cmr/m/n/10.95 luk-kes ned mens
+ []
+
+
+Underfull \hbox (badness 3735) in paragraph at lines 37--37
+[]\T1/cmr/m/n/10.95 Username el-ler pas-
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 37.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 37.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 37.
+[7
+
+
+
+]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 40.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 40.
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]\T1/cmr/m/n/10.95 Indtast vir-tu-el pa-
+ []
+
+
+Underfull \hbox (badness 5161) in paragraph at lines 61--61
+\T1/cmr/m/n/10.95 tients CPR-nummer;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]\T1/cmr/m/n/10.95 CPR-nummerboks
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]\T1/cmr/m/n/10.95 Tryk på "Ok"--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+\T1/cmr/m/n/10.95 vinduet luk-kes ned
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+\T1/cmr/m/n/10.95 mens EKG-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]\T1/cmr/m/n/10.95 Målingen star-tes i
+ []
+
+
+Underfull \hbox (badness 5908) in paragraph at lines 61--61
+[]\T1/cmr/m/n/10.95 EKG-data il-lu-stre-res
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+\T1/cmr/m/n/10.95 frem-vi-ses i EKG-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]\T1/cmr/m/n/10.95 CPR-nummeret fin-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+\T1/cmr/m/n/10.95 des ik-ke. Be-sked
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+\T1/cmr/m/n/10.95 in-for-me-rer om, at
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+\T1/cmr/m/n/10.95 CPR-nummeret ik-ke
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]\T1/cmr/m/n/10.95 Nyt CPR-nummer
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 65.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 65.
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+[]\T1/cmr/m/n/10.95 Validere pro-gram-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+\T1/cmr/m/n/10.95 mets ana-ly-se af
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+\T1/cmr/m/n/10.95 små fluk-tu-a-tio-ner,
+ []
+
+
+Underfull \hbox (badness 2134) in paragraph at lines 84--84
+\T1/cmr/m/n/10.95 som kan af-læ-ses på
+ []
+
+
+Underfull \hbox (badness 2134) in paragraph at lines 84--84
+[]\T1/cmr/m/n/10.95 Stil di-ag-no-sen atri-e-
+ []
+
+
+Underfull \hbox (badness 4084) in paragraph at lines 84--84
+[]\T1/cmr/m/n/10.95 Det er ik-ke mu-ligt
+ []
+
+
+Underfull \hbox (badness 6526) in paragraph at lines 84--84
+[]\T1/cmr/m/n/10.95 Hvis ik-ke atri-e-flim-
+ []
+
+
+Underfull \hbox (badness 7722) in paragraph at lines 84--84
+\T1/cmr/m/n/10.95 mer er di-ag-no-sti-se-
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 84.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 84.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 84.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 84.
+[8]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 88.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 88.
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+[]\T1/cmr/m/n/10.95 Tryk på "Gem-ny-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+[]\T1/cmr/m/n/10.95 Messagebox kom-mer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--107
+[]\T1/cmr/m/n/10.95 Tryk på "Ok"--
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 107.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 107.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 107.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 107.
+[9]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 111.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 111.
+
+Underfull \hbox (badness 6542) in paragraph at lines 127--127
+[]\T1/cmr/m/n/10.95 Tryk på "log ud"--
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+[]\T1/cmr/m/n/10.95 EKG-vinduet luk-kes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 127--127
+\T1/cmr/m/n/10.95 ned, mens login-
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 129.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 129.
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Ikke-funktionelt
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Forventet re-sul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Faktiske ob-ser-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Brugeren skal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 default-måling
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 mak-si-malt 20
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 se-kun-der ef-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 ter op-start af
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Start pro-gram-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 met, hvor-ef-ter
+ []
+
+
+Underfull \hbox (badness 3568) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 At pro-gram-met
+ []
+
+
+Underfull \hbox (badness 7451) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Programmet er
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 star-tet op ef-ter
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Login-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 skal ind-hol-de
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 en "login"--knap
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 til at log-ge
+ []
+
+
+Underfull \hbox (badness 5274) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 på og få vist
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 "login"--knappen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 knap-pen vi-ses
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 EKG-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 skal in-de-hol-de
+ []
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 en "start"--knap
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 "Start"--knappen
+ []
+
+
+Underfull \hbox (badness 6825) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 knap igang-sæt-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 At må-lin-gen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 EKG-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 skal in-de-hol-de
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 en "gem"--knap
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 til at gem-me
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 "Gem"--knappen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 knap-pen gem-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 mes må-ling i
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 med tek-sten
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 "Må-ling er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 EKG-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 "log ud"--knap
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 "log ud"-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 -knappen er
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 syn-lig i GUI,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 knap luk-kes
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 EKG-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Login-vinduet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Systemet skal
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 MTBF på 20
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 mi-nut-ter og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 MT-TR på 1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Køre pro-gram-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 ter. Gen-start
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 der-ef-ter pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 gram-met, hvor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 der ta-ges tid
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Der skal vi-ses
+ []
+
+
+Underfull \hbox (badness 3989) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 en EKG-graf i
+ []
+
+
+Underfull \hbox (badness 6961) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 in-ter-facet, hvor
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 spæn-ding vi-ses
+ []
+
+
+Underfull \hbox (badness 5460) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 op ad y-aksen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Gennemfør en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 At spæn-din-gen
+ []
+
+
+Underfull \hbox (badness 1342) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 samt ti-den hen
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Spændingen er
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 op ad y ak-sen
+ []
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 og ti-den i se-
+ []
+
+
+Underfull \hbox (badness 2865) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 kun-der hen ad
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 x-aksen. Dog
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 er in-ter-val-let
+ []
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 se fejl-rap-port i
+ []
+
+
+Underfull \hbox (badness 7238) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Det skal væ-re
+ []
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 mu-ligt at kun-
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 ne scrol-le igen-
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 nem må-lin-ger-ne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 At der ved
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 for-skel-li-ge de-le
+ []
+
+
+Underfull \hbox (badness 7540) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 byg-get af tre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 Kig i ko-den
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 ef-ter data-lag,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 logik-lag og
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 148--148
+[]\T1/cmr/m/n/10.95 At ko-den in-de-
+ []
+
+
+Underfull \hbox (badness 1515) in paragraph at lines 148--148
+\T1/cmr/m/n/10.95 hol-der et data-
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 148.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 148.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 148.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 148.
+[10]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 148.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 148.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 148.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 148.
+ [11])
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 21.
+ [12]
+\openout2 = `Dfiler/Dbilag.aux'.
+
+ (./Dfiler/Dbilag.tex
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 1.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 2.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 2.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 6.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 6.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 9.
-[3] 
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 12.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 12.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 15.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 15.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 18.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 18.
+)
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 24.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 24.
+ [13
+
+
+
+
+] 
 AED: lastpage setting LastPage
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 11.
+(babel)             in language  on input line 26.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 11.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 11.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 11.
-(/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Logbog.aux (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Lfiler/2015-09-08.aux) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Lfiler/2015-09-21.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 11.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 11.
-Package rerunfilecheck Info: File `Logbog.out' has not changed.
+(babel)             in language  on input line 26.
+\tf@toc=\write5
+\openout5 = `Dokumentation.toc'.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 26.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 26.
+(/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dokumentation.aux (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Dforside.aux) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Dunderskrifter.aux) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Dordliste.aux) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Dindledning.aux) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Dkravspecifikation.aux) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Ddesign.aux) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Daccepttest.aux) (/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dfiler/Dbilag.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 26.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 26.
+Package rerunfilecheck Info: File `Dokumentation.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 11.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
  ) 
 Here is how much of TeX's memory you used:
- 26812 strings out of 493117
- 478518 string characters out of 6135433
- 796921 words of memory out of 5000000
- 29899 multiletter control sequences out of 15000+600000
- 15458 words of font info for 50 fonts, out of 8000000 for 9000
+ 27131 strings out of 493117
+ 485884 string characters out of 6135433
+ 822935 words of memory out of 5000000
+ 30087 multiletter control sequences out of 15000+600000
+ 31568 words of font info for 90 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 40i,11n,40p,10459b,746s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb>
-Output written on "/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Logbog.pdf" (3 pages, 58979 bytes).
+ 53i,12n,90p,10466b,1033s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on "/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dokumentation.pdf" (21 pages, 276375 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 381 PDF objects out of 1000 (max. 8388607)
+ 336 compressed objects within 4 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 294 words of extra memory for PDF output out of 10000 (max. 10000000)
 
