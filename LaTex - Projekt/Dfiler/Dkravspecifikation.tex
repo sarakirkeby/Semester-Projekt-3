@@ -8,12 +8,75 @@
 
 
 \section{Indledning}
-\section{Funktionelle krav}
+
 Kort intro
 \section{Ikke-funktionelle krav}
 \subsection{(F)URPS+}
 MoSCow er angivet i parentes ved hhv. M, S, C og/eller W, for Must, Should, Could og Won't\\
+\section{Funktionelle krav}
 \subsection{Aktørbeskrivelse}
+
+\section{Use cases}
+
+\begin{longtabu} to \linewidth{@{}l r X[j]@{}} %UC1%
+    {\large \textbf{Use Case 1}} && \\
+    \toprule
+    Navn &&    Kalibrer system\\
+    Use case ID &&    1\\
+    Samtidige forløb &&    1\\
+    Primær aktør &&    Brugeren\\
+    Initialisere &&    Brugeren ønsker at kalibrere systemet\\
+    Forudsætninger &&  Patienten er koblet korrekt til systemet jf. afledning I\\
+    Resultat &&    Systemet er kalibreret og klar til at foretage en måling\\
+    \midrule
+    Hovedforløb &    1. &    Brugeren trykker på "nulstil" knappen. Systemet kalibrerer besked om at systemet er kalibreret forekommer \newline [1.a \textit{Systemet er ikke kalibreret korrekt} (\textbf{henvisning til kalibrering)}]\\ \midrule
+    Undtagelser &    1a. & Bruger informeres om at systemet ikke er kalibreret korrekt ved "rød text". Use casen fortsættes fra punkt 1     \\ \bottomrule    
+\caption{Fully dressed Use Case 1.}
+\label{UC1}
+\end{longtabu}
+
+\begin{longtabu} to \linewidth{@{}l r X[j]@{}} %UC2%
+    {\large \textbf{Use Case 2}} && \\
+    \toprule
+    Navn &&    Mål blodtryk\\
+    Use case ID &&    2\\
+    Samtidige forløb &&    1\\
+    Primær aktør &&    Brugeren\\
+    Initialisere &&    Brugeren ønsker at foretage en blodtryksmåling\\
+    Forudsætninger && UC1 er gennemført\\
+    Resultat &&    At blodtrykket vises i kontinuerlig graf, systolisk og diastoliske blodtryk vises grafisk, samt puls vises grafisk                     \\ \midrule
+    Hovedforløb &    1. &    Brugeren trykker på start måling\--kanppen \newline [1.a \textit{Blodtryk er under "..."}] \newline [1.b \textit{Blodtryk er over "..."}]\\ \midrule
+                
+    Undtagelser &    1a. & "Alarm" om at blodtryk er kritisk lavt. Bruger stopper alarm. UC2 fortsætter. \\  & 2.a & "Alarm" om at blodtryk er kritisk højt. Bruger stopper alarm. UC2 fortsætter. \\ \bottomrule
+\caption{Fully dressed Use Case 2.}
+\label{UC2}
+\end{longtabu}
+
+\begin{longtabu} to \linewidth{@{}l r X[j]@{}} %UC2%
+    {\large \textbf{Use Case 3}} && \\
+    \toprule
+    Navn &&    Gem blodtryksmåling\\
+    Use case ID &&    3\\
+    Samtidige forløb &&    1\\
+    Primær aktør &&    Brugeren\\
+    Initialisere &&    Brugeren ønsker at gemme den foretagede blodtryksmåling\\
+    Forudsætninger && UC1 og UC2 er gennemført\\
+    Resultat &&    Blodtryksmålingens data er gemt i database                     \\ \midrule
+    Hovedforløb &    1. &    Brugeren trykker på gem\--kanppen\\[-1ex]   						 	
+                &    2. &    Brugeren indtaster patient oplysninger\newline
+                	[2.a \textit{...}]\\[-1ex]
+                &    \\ \midrule
+                
+    Undtagelser &    2a. & ...    \\ \bottomrule
+\caption{Fully dressed Use Case 3.}
+\label{UC3}
+\end{longtabu}
+
+
+
+
+
+
 
 
 

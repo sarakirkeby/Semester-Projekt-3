@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdftex 2015.2.11)  21 SEP 2015 11:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdftex 2015.2.11)  23 SEP 2015 10:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -82,15 +82,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:11: Undefined control sequence.
-l.11 \section
-             {Funktionelle krav}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
 /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:13: Undefined control sequence.
 l.13 \section
              {Ikke-funktionelle krav}
@@ -102,24 +93,135 @@ and I'll forget about whatever was undefined.
 
 /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:14: Undefined control sequence.
 l.14 \subsection
-                {(F)URPS\+}
+                {(F)URPS+}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:16: Undefined control sequence.
-l.16 \subsection
-                {Akt√∏rbeskrivelse}
+Runaway argument?
+ \section {Funktionelle krav} \subsection {Akt√∏rbeskrivelse} 
+/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:18: Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.18 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:19: Undefined control sequence.
+l.19 \section
+             {Use cases}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
+
+/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:21: Undefined control sequence.
+l.21 \begin
+           {longtabu} to \linewidth{@{}l r X[j]@{}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:21: Undefined control sequence.
+l.21 \begin{longtabu} to \linewidth
+                                   {@{}l r X[j]@{}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:22: Undefined control sequence.
+l.22     {\large
+                 \textbf{Use Case 1}} && \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:22: Undefined control sequence.
+l.22     {\large \textbf
+                        {Use Case 1}} && \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:22: Misplaced alignment tab character &.
+l.22     {\large \textbf{Use Case 1}} &
+                                       & \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:22: Misplaced alignment tab character &.
+l.22     {\large \textbf{Use Case 1}} &&
+                                         \\
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+Runaway argument?
+ \toprule Navn && Kalibrer system\\ Use case ID && 1\\ Samtidige forl\ETC.
+/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:34: Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.34 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:35: Misplaced alignment tab character &.
+l.35     Undtagelser &
+                          1a. & Bruger informeres om at systemet ikke er kal...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:35: Misplaced alignment tab character &.
+l.35     Undtagelser &    1a. &
+                                Bruger informeres om at systemet ikke er kal...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
 
 Missing character: There is no √ in font cmr10!
 Missing character: There is no ∏ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no ¶ in font cmr10!
+Runaway argument?
+ \bottomrule \caption {Fully dressed Use Case 1.} \label {UC1} \end {\ETC.
+/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/Dfiler/Dkravspecifikation.tex:39: Paragraph ended before \\ was complete.
+<to be read again> 
+                   \par 
+l.39 
+     
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
 )
 ! Emergency stop.
 <*> ...ex - Projekt/Dfiler/Dkravspecifikation.tex"
