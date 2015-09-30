@@ -16,20 +16,20 @@
 
 %Use case 1 acceptest
 \subsection{Use Case 1}
-\textbf{Log ind}
+\textbf{Kalibrer System}
 
 \begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
     ~ &	Test &    Forventet resultat &		Faktiske observationer &    Godkendt\\[-1ex]
     \midrule
     ~ &\textit{Hovedscenarie} & ~ & ~ &
     \\ \midrule
-    1. &Indtast username "moh04" samt password; 1234 &   Username- og passwordboks bliver udfyldt  &   Som forventet  &		{\Huge \checkmark}
+    1. & ... &   Kalibreringen  &    &		%{\Huge \checkmark}
     \\
-    2. &Tryk på "Login"\--knappen  &    Login bliver godkendt. Login-vinduet lukkes ned mens CPR-vinduet åbnes  &    Som forventet &		{\Huge \checkmark}
+    2. & ... &      &   &		%{\Huge \checkmark}
 	\\ \midrule
 	~ &\textit{Exentions} & ~ & ~ & 
 	\\ \midrule	
-    2a. &	Username eller password er forkert &    Besked vises på skærmen med tekst, der informerer om, at brugernavn eller password er forkert  &   Som forventet  &		{\Huge \checkmark}
+    2a. &	  &		%{\Huge \checkmark}
  \\ \bottomrule
  
 \caption{Accepttest af Use Case 1.}\\
@@ -38,22 +38,22 @@
 
 %Use case 2 acceptest 
 \subsection{Use Case 2}
-\textbf{Vis EKG}
+\textbf{Opstart system}
 
 \begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
 	& Test	& Forventet resultat		& Faktiske observationer		& Godkendt\\[-1ex] 
 	\midrule
 	&\textit{Hovedscenarie} & & & 
 	\\ \midrule
-	1. &Indtast virtuel patients CPR-nummer; 123456-7890 & CPR-nummerboks bliver udfyldt & Som forventet& {\Huge \checkmark}
+	1. & Indtast personale-ID i brugenavnsfeltet; "1234" og indtast personlig kode i kodeordsfeltet; "fido" & Loginoplysninger bliver udfyldt & & %{\Huge \checkmark}
 	\\
-	2. & Tryk på "Ok"\--knappen & CPR er gyldig. CPR-vinduet lukkes ned mens EKG-vinduet åbnes & Som forventet& {\Huge \checkmark}
+	2. & Tryk på "Log ind"\--knappen & Log ind oplysninger er gyldige og stemmer overens med hinanden. Teksfelter til log ind skjules og "Nulstil"\--knappen vises & & %{\Huge \checkmark}
 	\\
-	3. & Tryk på "Start ny måling" & Målingen startes i EKG-vinduet & Som forventet & {\Huge \checkmark}
+	3. & Tryk på "Nulstil"\--knap & Besked om at systemet er nulpunktsjusteret vises i "Ok"\--vinduet som åbnes & & %{\Huge \checkmark}
 	\\
-	4. & EKG-data illustreres på en graf & En analyserebar graf fremvises i EKG-vinduet & Graf vises efter ca. 20 sekunder & {\Huge \checkmark}
+	4. & Tryk på "Ok"\--knappen & "Log ind"\--vinduet og "Ok"\-- vinduet lukkes og "Blodtryk"\--vinduet åbnes &  & %{\Huge \checkmark}
 	\\ \midrule
-	2.a & CPR-nummeret findes ikke. Besked vises med tekst, der informerer om, at CPR-nummeret ikke er gyldigt & Nyt CPR-nummer indtastes & Som forventet & {\Huge \checkmark}
+	2.a & Log ind oplysninger findes ikke i databasen. Besked vises med tekst, der informerer herom & Nye log ind oplysninger indtastes &  & %{\Huge \checkmark}
 	\\ \bottomrule
 
 \caption{Accepttest af Use Case 2.}\\
@@ -63,14 +63,14 @@
 %Use Case 3 acceptest
 
 \subsection{Use Case 3}
-\textbf{Evaluer EKG}
+\textbf{Mål blodtryk}
 
 \begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
     ~ &	Test &    Forventet resultat &		Faktiske observationer &    Godkendt\\[-1ex]
     \midrule
     ~ &\textit{Hovedscenarie} & ~ & ~ &
     \\ \midrule
-    1. & Validere programmets analyse af EKG-signalet &    Det er muligt at se små fluktuationer, som kan aflæses på EKG-grafen  &    Grafen er analyserbar, dog er det ikke de små fluktuationer som analyseres, se fejlrapport i bilag&		{\Huge (\checkmark)}
+    1. & Tryk på "Start/stop &    Det er muligt at se små fluktuationer, som kan aflæses på EKG-grafen  &    Grafen er analyserbar, dog er det ikke de små fluktuationer som analyseres, se fejlrapport i bilag&		{\Huge (\checkmark)}
     \\
     2. &Stil diagnosen atrieflimmer	 &    Atrieflimmer kan aflæses ud fra EKG-grafen  &     Som forventet &		{\Huge \checkmark}
 	\\ \midrule

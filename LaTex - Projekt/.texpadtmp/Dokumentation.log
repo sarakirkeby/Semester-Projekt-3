@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.11)  29 SEP 2015 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.11)  30 SEP 2015 14:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1940,23 +1940,32 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 82.
  [4]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 101.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 101.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 101.
+(babel)             in language  on input line 100.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 101.
+(babel)             in language  on input line 100.
  [5]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 137.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 137.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 137.
+(babel)             in language  on input line 149.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 137.
- [6])
+(babel)             in language  on input line 149.
+ [6]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 170.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 170.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 170.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 170.
+ [7])
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining danish shorthand "~
@@ -1965,23 +1974,10 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 18.
- [7]
+ [8]
 \openout2 = `Dfiler/Ddesign.aux'.
 
  (./Dfiler/Ddesign.tex
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
- [8
-
-
-
-]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -2048,7 +2044,11 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 19.
- [9]
+ [9
+
+
+
+]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining danish shorthand "~
@@ -2073,81 +2073,73 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 18.
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]\T1/cmr/m/n/10.95 Indtast user-na-me
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/cmr/m/n/10.95 "moh04"samt pas-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]\T1/cmr/m/n/10.95 Username- og pas-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/cmr/m/n/10.95 sword-boks bli-ver
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]\T1/cmr/m/n/10.95 Tryk på "Login"--
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-[]\T1/cmr/m/n/10.95 Login bli-ver god-
- []
-
-
-Underfull \hbox (badness 3646) in paragraph at lines 37--37
-\T1/cmr/m/n/10.95 kendt. Login-vinduet
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 37--37
-\T1/cmr/m/n/10.95 luk-kes ned mens
- []
-
-
-Underfull \hbox (badness 3735) in paragraph at lines 37--37
-[]\T1/cmr/m/n/10.95 Username el-ler pas-
- []
-
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 37.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 37.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 37.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 37.
-[11
-
-
-
-]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 40.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 40.
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-[]\T1/cmr/m/n/10.95 Indtast vir-tu-el pa-
- []
-
-
-Underfull \hbox (badness 5161) in paragraph at lines 61--61
-\T1/cmr/m/n/10.95 tients CPR-nummer;
+Underfull \hbox (badness 6910) in paragraph at lines 61--61
+[]\T1/cmr/m/n/10.95 Indtast personale-ID
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 61--61
-[]\T1/cmr/m/n/10.95 CPR-nummerboks
+\T1/cmr/m/n/10.95 i bru-ge-navns-fel-tet;
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+\T1/cmr/m/n/10.95 "1234"og ind-tast
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+\T1/cmr/m/n/10.95 per-son-lig ko-de i
+ []
+
+
+Underfull \hbox (badness 2608) in paragraph at lines 61--61
+[]\T1/cmr/m/n/10.95 Loginoplysninger bli-
+ []
+
+
+Underfull \hbox (badness 1460) in paragraph at lines 61--61
+[]\T1/cmr/m/n/10.95 Tryk på "Log ind"--
+ []
+
+
+Underfull \hbox (badness 3128) in paragraph at lines 61--61
+[]\T1/cmr/m/n/10.95 Log ind op-lys-nin-ger
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 61--61
+\T1/cmr/m/n/10.95 er gyl-di-ge og stem-
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 61--61
+\T1/cmr/m/n/10.95 an-den. Teks-fel-ter til
+ []
+
+
+Underfull \hbox (badness 7851) in paragraph at lines 61--61
+\T1/cmr/m/n/10.95 log ind skju-les og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]\T1/cmr/m/n/10.95 Tryk på "Nulstil"--
+ []
+
+
+Underfull \hbox (badness 2772) in paragraph at lines 61--61
+\T1/cmr/m/n/10.95 met er nul-punkt-s-ju-
+ []
+
+
+Underfull \hbox (badness 1769) in paragraph at lines 61--61
+\T1/cmr/m/n/10.95 ste-ret vi-ses i "Ok"--
  []
 
 
@@ -2157,68 +2149,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 61--61
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 61--61
-\T1/cmr/m/n/10.95 vinduet luk-kes ned
+[]\T1/cmr/m/n/10.95 "Log ind"--vinduet
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 61--61
-\T1/cmr/m/n/10.95 mens EKG-vinduet
+\T1/cmr/m/n/10.95 og "Ok"-- vin-du-et
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-[]\T1/cmr/m/n/10.95 Målingen star-tes i
+Underfull \hbox (badness 3128) in paragraph at lines 61--61
+[]\T1/cmr/m/n/10.95 Log ind op-lys-nin-ger
  []
 
-
-Underfull \hbox (badness 5908) in paragraph at lines 61--61
-[]\T1/cmr/m/n/10.95 EKG-data il-lu-stre-res
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-\T1/cmr/m/n/10.95 frem-vi-ses i EKG-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-[]\T1/cmr/m/n/10.95 CPR-nummeret fin-
- []
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 61.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 61.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 61.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 61.
+[11
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-\T1/cmr/m/n/10.95 des ik-ke. Be-sked
- []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-\T1/cmr/m/n/10.95 in-for-me-rer om, at
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-\T1/cmr/m/n/10.95 CPR-nummeret ik-ke
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
-[]\T1/cmr/m/n/10.95 Nyt CPR-nummer
- []
-
+]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 65.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 65.
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
-[]\T1/cmr/m/n/10.95 Validere pro-gram-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 84--84
-\T1/cmr/m/n/10.95 mets ana-ly-se af
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 84--84
 \T1/cmr/m/n/10.95 små fluk-tu-a-tio-ner,
@@ -2799,18 +2759,18 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
  ) 
 Here is how much of TeX's memory you used:
- 27167 strings out of 493117
- 486230 string characters out of 6135433
- 822935 words of memory out of 5000000
- 30111 multiletter control sequences out of 15000+600000
+ 27177 strings out of 493117
+ 486311 string characters out of 6135433
+ 821935 words of memory out of 5000000
+ 30119 multiletter control sequences out of 15000+600000
  31568 words of font info for 90 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  53i,12n,90p,10466b,1033s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on "/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dokumentation.pdf" (25 pages, 289301 bytes).
+Output written on "/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dokumentation.pdf" (25 pages, 294418 bytes).
 PDF statistics:
- 416 PDF objects out of 1000 (max. 8388607)
- 367 compressed objects within 4 object streams
- 85 named destinations out of 1000 (max. 500000)
+ 418 PDF objects out of 1000 (max. 8388607)
+ 369 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 500000)
  310 words of extra memory for PDF output out of 10000 (max. 10000000)
 
