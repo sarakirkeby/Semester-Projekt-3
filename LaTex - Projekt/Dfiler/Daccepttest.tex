@@ -3,12 +3,7 @@
 \begin{longtabu} to \linewidth{@{}l l l X[j]@{}}
     Version &    Dato &    Ansvarlig &    Beskrivelse\\[-1ex]
     \midrule
-    1.0 &    18-03-2015 &    LSB, AJF og MFJ &    Påbegyndt tilrettelse i forhold til den valgte sygdom, Atrieflimren.\\
-    1.1 &    26-03-2015 &    LSB, AJF, MFJ og CAA &    AT færdigskrevet og klar til review\\
-    2.0 &    09-04-2015 &    LSB, AJF, MFJ og CAA &    Rettet i forhold til review-kommentarer\\
-    3.0 &    19-05-2015 &    LSB og MFJ &    Rettet til, så accepttest udførelse kan foretages\\
-    3.1	&	20-05-2015	&	ALLE			&	Resultat af udførelse af accepttest indskrevet. Dertil også skrevet fejlrapport\\
-\label{version_Systemark}
+  
 \end{longtabu}
 
 \section{Accepttest af Use Cases}
@@ -23,15 +18,9 @@
     \midrule
     ~ &\textit{Hovedscenarie} & ~ & ~ &
     \\ \midrule
-    1. & ... &   Kalibreringen  &    &		%{\Huge \checkmark}
-    \\
-    2. & ... &      &   &		%{\Huge \checkmark}
-	\\ \midrule
-	~ &\textit{Exentions} & ~ & ~ & 
-	\\ \midrule	
-    2a. &	  &		%{\Huge \checkmark}
+    1. & Systemet kalibreres &   At systemet er kalibreret  &    &		%{\Huge \checkmark}
+    
  \\ \bottomrule
- 
 \caption{Accepttest af Use Case 1.}\\
 \label{AT_UC1}
 \end{longtabu}
@@ -70,13 +59,11 @@
     \midrule
     ~ &\textit{Hovedscenarie} & ~ & ~ &
     \\ \midrule
-    1. & Tryk på "Start/stop &    Det er muligt at se små fluktuationer, som kan aflæses på EKG-grafen  &    Grafen er analyserbar, dog er det ikke de små fluktuationer som analyseres, se fejlrapport i bilag&		{\Huge (\checkmark)}
-    \\
-    2. &Stil diagnosen atrieflimmer	 &    Atrieflimmer kan aflæses ud fra EKG-grafen  &     Som forventet &		{\Huge \checkmark}
+    1. & Tryk på "start-måling"\--knappen &    Graf og blodtryks værdier vises på brugergrænsefladen  &    &		%{\Huge (\checkmark)}
 	\\ \midrule
 	~ &\textit{Exentions} & ~ & ~ & 
 	\\ \midrule	
-    2a. &	Atriefrekvensen er ikke i intervallet 220-300 pr. minut &    Det er ikke muligt at diagnosticere atrieflimmer ud fra EKG-grafen   &   Hvis ikke atrieflimmer er diagnostiseret, vises besked om sundt EKG. Dog skyldes det ikke atriefrekvensen, se fejlrapport i bilag &		{\Huge (\checkmark)}
+    1.a. &	Indtast tallet 0 som ned grænse for både systolisk og diastolisk blodtryk og 400 som øvregrænse for systolisk og diastolisk blodtryk  &    Alarm i form af lyd går i gang og og der indikeres med pil (op/ned) ud fra systolisk og/eller diastolisk blodtryk  &    &		%{\Huge (\checkmark)}
  \\ \bottomrule
  
 \caption{Accepttest af Use Case 3.}\\
@@ -86,20 +73,21 @@
 %Use Case 4 acceptest
 
 \subsection{Use Case 4}
-\textbf{Gem EKG}
+\textbf{Filtrer signal}
 
 \begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
     ~ &	Test &    Forventet resultat &		Faktiske observationer &    Godkendt\\[-1ex]
     \midrule
     ~ &\textit{Hovedscenarie} & ~ & ~ &
     \\ \midrule
-    1. &Tryk på "Gem-ny-måling"\--knappen. &    Messagebox kommer frem med besked om at målingen er gemt  &    Som forventet &		{\Huge \checkmark}
+    1. & Påsæt sinus signal med frekvens XXHz(højfrekvent) &    Sinus signal vises på grafen  &    &		%{\Huge \checkmark}
     \\
-    2. & Tryk på "Ok"\--knappen	 &   Målingen er gemt, vinduet lukkes og EKG-vinduet vises igen &     Som forventet &		{\Huge \checkmark}
+    2. & Tryk på ”filtrer signal”\--knappen &   Signalet udglattes &      &		%{\Huge \checkmark}
     \\
-	\\ \midrule
-	~ &\textit{Exentions} & ~ & ~ & 
-	\\ \midrule	
+    3. & Påsæt sinus signal med frekvens XXHz(lavfrekvent) &Sinus signal vises på grafen & 	& %{\Huge \checkmark} 
+    \\
+    4. & Tryk på ”filtrer signal”-knap & Sinus-signal udglattes ikke &	& %{\Huge \checkmark}
+	
  \\ \bottomrule
  
 \caption{Accepttest af Use Case 4.}\\
@@ -109,22 +97,70 @@
 %Use Case 5 acceptest
 
 \subsection{Use Case 5}
-\textbf{Log ud}
+\textbf{Juster grænseværdier}
 
 \begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
     ~ &	Test &    Forventet resultat &		Faktiske observationer &    Godkendt\\[-1ex]
     \midrule
     ~ &\textit{Hovedscenarie} & ~ & ~ &
     \\ \midrule
-    1. & Tryk på "log ud"\--knappen &    EKG-vinduet lukkes ned, mens login-vinduet fremkommer &    Som forventet &		{\Huge \checkmark}
-   	\\ \midrule
-	~ &\textit{Exentions} & ~ & ~ & 
-	\\ \midrule	
+    1. & Indtast 140 for diastolisk øvre grænse &    Der står 140 i pågældende tekst felt &     &		%{\Huge \checkmark}
+   	\\
+   	2. & Indtast 100 for diastolisk nedre grænse &    Der står 100 i pågældende tekst felt &     &		%{\Huge \checkmark}
+   	\\ 
+   	3. & Indtast 120 for systolisk øvre grænse &    Der står 120 i pågældende tekst felt &     &		%{\Huge \checkmark}
+   	\\
+   	4. & Indtast 80 for systolisk øvre grænse &    Der står 80 i pågældende tekst felt &     &		%{\Huge \checkmark}
  \\ \bottomrule
  
 \caption{Accepttest af Use Case 5.}\\
 \label{AT_UC5}
 \end{longtabu}
+
+%Use Case 6 acceptest
+
+\subsection{Use Case 6}
+\textbf{Udskyd alarm}
+
+\begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
+    ~ &	Test &    Forventet resultat &		Faktiske observationer &    Godkendt\\[-1ex]
+    \midrule
+    ~ &\textit{Hovedscenarie} & ~ & ~ &
+    \\ \midrule
+    1. & Tryk på "Udskyd alarm"\--knappen &    Alarmen stopper og starter igen 60 sekunder senere &     &		%{\Huge \checkmark}
+ \\ \bottomrule
+ 
+\caption{Accepttest af Use Case 6.}\\
+\label{AT_UC6}
+\end{longtabu}
+
+%Use Case 7 acceptest
+
+\subsection{Use Case 7}
+\textbf{Afslut system}
+
+\begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] l@{}}
+    ~ &	Test &    Forventet resultat &		Faktiske observationer &    Godkendt\\[-1ex]
+    \midrule
+    ~ &\textit{Hovedscenarie} & ~ & ~ &
+    \\ \midrule
+    1. & Tryk på "Afslut måling"\--knappen &   "Gemme"\--vinduet vises &     &		%{\Huge \checkmark}
+   	\\
+   	2. & Indtast CPR-nr "1111111111" &   CPR-nummeret synligt i pågældende tekst felt &     &		%{\Huge \checkmark}
+   	\\
+   	3. & Tryk på "Gem og afslut"\--knappen &   "Gemme"\--vindue og "Blodtryks"--vinduet lukkes. "Login"\--vinduet vises?\ &     &		%{\Huge \checkmark}
+   	\\ \midrule
+	~ &\textit{Exentions} & ~ & ~ & 
+	\\ \midrule
+	1.a. & Tryk på "anuller"\--knap & "Gemme"\--vinduet lukkes og "Blodtryk"\-- vinduet vises &		&%{\Huge \checkmark}
+	\\
+	2.a. & Indtast CPR-nummeret "1234567890" & Besked om at CPR-nummer ikke er gyldigt vises & 		& %{\Huge \checkmark}	
+ \\ \bottomrule
+ 
+\caption{Accepttest af Use Case 7.}\\
+\label{AT_UC7}
+\end{longtabu}
+
 
 \section{Accepttest af ikke-funktionelle krav}
 
