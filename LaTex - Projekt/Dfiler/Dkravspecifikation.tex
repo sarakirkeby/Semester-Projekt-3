@@ -13,9 +13,44 @@ Kravspecifikationen vil beskrive, ud fra en række modeller, hvordan blodtryksm�
 \section{Ikke-funktionelle krav}
 \subsection{(F)URPS+}
 MoSCow er angivet i parentes ved hhv. M, S, C og/eller W, for Must, Should, Could og Won't\\
+
+\textbf{Functionality}\\
 (M) Brugeren skal kunne starte en ny måling indenfor XX sekunder efter opstart af programmet \\
-(M) Systemet skal kunne kalibrere blodtrykssignalet\\(M) Systemet skal kunne foretage en nulpunktsjustering\\(M) Systemet skal kunne forstærke signalet fra transduceren (INDSÆT VÆRDI)\\(M) Systemet skal kunne filtrere signalet med det indbyggede analoge filter (INDSÆT VÆRDI)\\(M) Programmet skal kunne vise blodtrykket som funktion af tiden\\(M) Programmet skal kunne vise blodtrykssignalet kontinuert\\(M) Programmet skal programmeres i C\#\\(M) Programmet skal kunne lagre de målte data i en database\\(M) Programmet skal kunne filtrere blodtrykket via et digitalt filter (INDSÆT VÆRDI)\\(M) I programmet skal det digitale filter kunne slås til og fra (På en knap?)\\(S) Programmet bør kunne afbildede både systolisk og diastolisk blodtryk med tal (farve, størrelse)\\(S) Programmet bør kunne måle puls\\(S) Programmet bør kunne give alarm, hvis blodtrykket overstiger XX grænseværdier\\
-(C) Programmet kan angive pulsslag med bip-lyde (som har en frekvens på… og x antal ms)\\
+(M) Systemet skal kunne kalibrere blodtrykssignalet\\
+(M) Systemet skal kunne foretage en nulpunktsjustering\\
+(M) Systemet skal kunne forstærke signalet fra transduceren (INDSÆT VÆRDI)\\
+(M) Systemet skal kunne filtrere signalet med det indbyggede analoge antialiaserings filter med en båndbredde på 50 Hz \\
+(M) Programmet skal kunne vise blodtrykket som funktion af tiden\\
+(M) Programmet skal kunne vise blodtrykssignalet kontinuert\\
+(M) Programmet skal programmeres i C\#\\
+(M) Programmet skal kunne lagre de målte data i en database\\
+(M) Programmet skal kunne filtrere blodtrykket via et digitalt filter\\
+(M) I programmet skal det digitale filter kunne slås til og fra på en radiobutton\\
+(S) Programmet bør kunne afbildede både systolisk og diastolisk blodtryk med tal\\
+(S) Programmet bør kunne måle puls\\
+(S) Programmet bør kunne give alarm, hvis det systoliske blodtryk overstiger 140 mmHg eller falder under 100 mmHg. \\
+(S) Programmet bør kunne give alarm, hvis det diastoliske blodtryk overstiger 90 mmHg eller falder under X\\
+(C) Programmet kan angive pulsslag med bip-lyde med varighed af 100ms og en frekvens på 850 Hz\\
+
+\textbf{Usability}\\
+(M) Blodtrykstallene der udskrives på brugergrænsefladen er røde\\
+(S) Pulsmålingen skal udskrives på brugergrænsefladen med grønne tal\\
+(M) Brugeren skal kunne starte en måling maksimalt 20 sekunder\\
+Knapper??\\
+Billede af brugergrænsefladen indsættes\\
+
+\textbf{Reliability}\\
+(M) Systemet skal kunne kører uden fejl i et år\\
+(M) Systemet skal have en ”mean time to restore” på højest 24 timer\\
+Systemet får herved en tilgænglighed beregnet ved \begin{align}
+Availability = \frac{MTBF}{MTBF+MTTR} = \frac{365}{365+1} = 0,997 = 99,7 \%
+\end{align}\\
+
+\textbf{Performance}\\
+(S) Systemet bør kunne gemme data på 5 sekunder +/-10%\\
+
+\textbf{Supportability}\\
+(M) Softwaren er opbygget af trelagsmodellen\\
 
 
 \section{Funktionelle krav}
