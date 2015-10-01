@@ -167,19 +167,35 @@
 \begin{longtabu} to \linewidth{@{} c X[j] X[j] X[j] X[j] l@{}}
 	& Ikke-funktionelt krav & Test/handling & Forventet resultat & Faktiske observationer & Godkendt
 	\\[-1ex] \midrule
-	&  \textit{Usability} &  &  & & \\ \midrule
-	& Brugeren skal kunne starte en default-måling maksimalt 20 sekunder efter opstart af program & Start programmet, hvorefter der vha. stopur måles opstartstiden & At programmet er startet op indenfor 20 sekunder & Programmet er startet op efter 14 sekunder & {\Huge \checkmark}\\ \midrule
-	& Login-vinduet skal indholde en "login"\--knap til at logge på og få vist EKG-vinduet & "login"\--knappen er synlig i GUI, og ved tryk på knappen vises EKG-vinduet & At EKG-vinduet vises & Som forventet & {\Huge \checkmark}\\ \midrule 
-	& EKG-vinduet skal indeholde en "start"\--knap til at igangsætte målingen & "Start"\--knappen er synlig i GUI, og ved tryk på knap igangsættes målingen & At målingen igangsættes & Som forventet& {\Huge \checkmark}\\ \midrule
-	& EKG-vinduet skal indeholde en "gem"\--knap til at gemme målingerne & "Gem"\--knappen er synlig i GUI, og ved tryk på knappen gemmes måling i database & Messageboks vises på skærmen med teksten "Måling er gemt" og kan findes i databasen & Som forventet & {\Huge \checkmark}\\ \midrule
-	& EKG-vinduet skal indeholde en "log ud"\--knap til at logge ud & "log ud"\--knappen er synlig i GUI, og ved tryk på knap lukkes EKG-vinduet og login-vinduet vises & Login-vinduet vises & Som forventet & {\Huge \checkmark}\\ \midrule
+	&  \textit{Functionality} &  &  & & \\ \midrule
+	& Brugeren skal kunne starte en ny måling indenfor XX sekunder efter opstart & Start programmet, hvorefter der vha. stopur måles opstartstiden & At programmet er opstartet og ny måling er igang efter XX sekunder &  & %{\Huge \checkmark}
+	\\ \midrule
+	&  Systemet skal kunne kalibrere blodtrykssignalet & Opstart programmet, til den automatiske kalibrering er fuldført & At systemet har kaliberet signalet & & \\ \midrule
+	& Systemet skal kunne foretage en nulpunktsjustering & Tryk på "nulstil"\--knap & At blodtryksgrafen bliver nulpunktsjusteret & & \\ \midrule
+	& Systemet skal kunne forstærke signalet med det indbyggede analoge antialiaserings filter med en båndbredde på 50 Hz & Start systemet & At signalet er forstærket & & \\ \midrule
+	& Programmet skal kunne vise blodtrykket som funktion af tiden & Tryk på "Start måling"\--knap & At blodtrykket er vist som funktion af tiden på brugergrænsefladen & & \\ \midrule
+	& Programmet skal kunne vise blodtrykssignalet kontiunert & Tryk på "Start måling"\--knap & At blodtrykssignalet er vist kontinuert på brugergrænsefladen & & \\ \midrule
+	& Programmet skal programmeres i C\# & Start programmet & At koden er i C\# & & \\ \midrule
+	& Programmet skal kunne lagre de målte data i en database & Tryk på "Gem"\--knap & At målingen er gemt i database & & \\ \midrule
+	& Programmet skal kunne filtrere blodtrykket via et digitalt filter & Tryk på "Filtrer signal" til på radiobutton & At det viste blodtrykssignal er filtreret & & \\ \midrule
+	& I programmet skal det digitale filter kunne slås til og fra på en radiobutton & Tryk "Filtrer signal" til og fra på radiobutton & & \\ \midrule
+	& Programmet bør kunne afbilde både systolisk og diastolisk blodtryk med tal & Tryk "Start måling" & At systolisk og diastolisk blodtryk er afbilledet med tal på brugergrænseflade & & \\ \midrule
+	& Programmet bør kunne måle og afbillede puls & Tryk på "Start måling" & At pulsen er afbilledet på brugergrænseflade & & \\ \midrule
+	& Programmet bør kunne give alarm, hvis det systoliske blodtryk overstiger 140 mmHg eller falder under 100 mmHg & Påsæt blodtryksignal fra Physionet der overskrider valgte grænser & At en alarm med frekvens på XX begynder & & \\ \midrule
+	& Programmet bør kunne give alarm, hvis det diastoliske blodtryk overstiger 90 mmHg eller falder under XX mmHg & Påsæt blodtryksignal fra Physionet der overskrider valgte grænser & At en alarm med frekvens på XX begynder & & \\ \midrule
+	& Programmet kan angive pulsslag med bib-lyde med varighed af 100 ms og en frekvens på 850 Hz & Tryk på "Start måling" & At pulsen høres som bib-lyde af 100 ms varighed og med en frekvens på 850 Hz & & \\ \midrule
+	& \textit{Usability} &  &  & & \\ \midrule
+	& Blodtrykstallene der udskrives på brugergrænseflade er røde & Tryk "Start måling"\--knap & At Blodtrykstallene er røde & &  \\ \midrule
+	& Pulsmålingen skal udskrives på brugergrænsefladen med grønne tal & Tryk "Start måling"\--knap & At pulsen vises med grønne tal & &  \\ \midrule
+	& Brugeren skal kunne starte en måling på maksimalt 20 sekunder & Start systemet op, log ind og tryk "Start måling" & At programmet er opstartet og ny måling er startet på under 20 sekunder & &  \\ \midrule
+	& Brugergrænseflade lever op til nedensående figur & Opstart program og log ind & At brugergrænseflade indeholder samtlige funktioner som på figuren & &  \\ \midrule
 	& \textit{Reliability} & & & & \\ \midrule
-	& Systemet skal have en effektiv MTBF på 20 minutter og MTTR på 1 minut & Køre programmet i 20 minutter. Genstart derefter programmet, hvor der tages tid med et stopur & Programmet har kørt i 20 minutter og genstartes indenfor 1 minut  & Som forventet & {\Huge \checkmark}\\ \midrule
+	& Systemet skal kunne køre uden fejl i et år & Start system op og vent et år & At programmet efter et år kører fejlfrit & & \\ \midrule
+	& Systemet skal have en "mean time to restore" på højest 24 timer & Start systemet og herefter genstart, hvor der tages tid med et stopur & At programmet er klar igen inden for 24 timer & & \\ \midrule
 	& \textit{Performance} & & & & \\ \midrule
-	& Der skal vises en EKG-graf i interfacet, hvor spænding vises op ad y-aksen (-1V til 1V) og tiden på x-aksen & Gennemfør en måling & At spændingen for EKG-signalet er op ad y-aksen, samt tiden hen ad x-aksen & Spændingen er op ad y aksen og tiden i sekunder hen ad x-aksen. Dog er intervallet ikke -1V til 1V, se fejlrapport i bilag & {\Huge \ding{55}}\\ \midrule
-	& Det skal være muligt at kunne scrolle igennem målingerne hen ad x-aksen & Der gennemføres en måling hvorefter der scrolles hen ad x-aksen & At der ved scrolling kan ses forskellige dele af EKG-signalet hen ad x-aksen & & {\Huge \checkmark}\\ \midrule
+	& Systemet bør kunne gemme data på 5 sekunder +/- 10 sekunder & Tryk på "Gem og afslut"\--knap og tag tid med stopur & At data er inden for 5 sekunder & & \\ \midrule
 	& \textit{Supportability} & & & & \\ \midrule
-	& Softwaren er opbygget af trelagsmodellen & Kig i koden efter data-lag, logik-lag og GUI-lag & At koden indeholder et data-lag, et logik-lag og et GUI-lag & Som forventet & {\Huge \checkmark}\\ \bottomrule
+	& Softwaren er opbygget af trelagsmodellen & Kig i koden efter data-lag, logik-lag og GUI-lag & At koden indeholder et data-lag, et logik-lag og et GUI-lag & & \\ \bottomrule
 \caption{Accepttest af Ikke-funktionelle krav}
 \end{longtabu}
 

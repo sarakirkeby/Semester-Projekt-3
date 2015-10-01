@@ -11,24 +11,24 @@
 \contentsline {subsection}{\numberline {2.3.2}Akt\IeC {\o }rbeskrivelse}{4}{subsection.2.3.2}
 \contentsline {section}{\numberline {2.4}Use cases}{5}{section.2.4}
 \contentsline {chapter}{\chapternumberline {3}Design}{9}{chapter.3}
-\contentsline {section}{\numberline {3.1}Indledning}{10}{section.3.1}
-\contentsline {section}{\numberline {3.2}Hardware arkitektur}{10}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Gr\IeC {\ae }nseflader}{10}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Software arkitektur}{10}{section.3.3}
-\contentsline {subsubsection}{Trelagsmodellen}{10}{section*.2}
-\contentsline {subsection}{\numberline {3.3.1}GUI}{10}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}UML klassediagram}{10}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Appliktationsmodel}{10}{subsection.3.3.3}
-\contentsline {subsubsection}{Dom\IeC {\ae }nemodel}{10}{section*.3}
-\contentsline {subsubsection}{Sekvensdiagram}{10}{section*.4}
-\contentsline {subsubsection}{Opdateret Klassediagram}{10}{section*.5}
-\contentsline {section}{\numberline {3.4}Software implementering}{10}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Visning af EKG-signal}{10}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Analyse}{10}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Testprogram}{10}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Lagring i database}{10}{subsection.3.4.4}
-\contentsline {subsubsection}{Offentlig database}{10}{section*.6}
-\contentsline {subsubsection}{Privat database}{10}{section*.7}
+\contentsline {section}{\numberline {3.1}Indledning}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Hardware arkitektur}{9}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Gr\IeC {\ae }nseflader}{9}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Software arkitektur}{9}{section.3.3}
+\contentsline {subsubsection}{Trelagsmodellen}{9}{section*.2}
+\contentsline {subsection}{\numberline {3.3.1}GUI}{9}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}UML klassediagram}{9}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Appliktationsmodel}{9}{subsection.3.3.3}
+\contentsline {subsubsection}{Dom\IeC {\ae }nemodel}{9}{section*.3}
+\contentsline {subsubsection}{Sekvensdiagram}{9}{section*.4}
+\contentsline {subsubsection}{Opdateret Klassediagram}{9}{section*.5}
+\contentsline {section}{\numberline {3.4}Software implementering}{9}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Visning af EKG-signal}{9}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Analyse}{9}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Testprogram}{9}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Lagring i database}{9}{subsection.3.4.4}
+\contentsline {subsubsection}{Offentlig database}{9}{section*.6}
+\contentsline {subsubsection}{Privat database}{9}{section*.7}
 \contentsline {chapter}{\chapternumberline {4}Acceptest}{11}{chapter.4}
 \contentsline {section}{\numberline {4.1}Accepttest af Use Cases}{11}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Use Case 1}{11}{subsection.4.1.1}
