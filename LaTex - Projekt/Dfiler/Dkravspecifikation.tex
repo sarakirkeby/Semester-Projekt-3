@@ -81,7 +81,7 @@ Availability = \frac{MTBF}{MTBF+MTTR} = \frac{365}{365+1} = 0,997 = 99,7 \%
     Resultat &&    Systemet er kalibreret                     \\ \midrule
     Hovedforløb &    1. &      \\ \midrule
                 
-    Undtagelser &    2a. &    \\ \bottomrule
+    Undtagelser &    &    \\ \bottomrule
 \caption{Fully dressed Use Case 1}
 \label{UC1}
 \end{longtabu}
@@ -117,7 +117,7 @@ Availability = \frac{MTBF}{MTBF+MTTR} = \frac{365}{365+1} = 0,997 = 99,7 \%
     Forudsætninger && UC2 er gennemført\\
     Resultat &&    At blodtrykket vises i kontinuerlig graf, systolisk og diastoliske blodtryk vises grafisk, samt puls vises grafisk                     \\ \midrule
     Hovedforløb &    1. &    Brugeren trykker på start måling\--kanppen\\
-    			& 	 2. & Blodtrykgraf, systolisk, diastolisk og puls vises grafisk uden alarm\newline [1.a \textit{Blodtryk overholder ikke grænseværdier}] \\ \midrule               
+    			& 	 2. & Blodtrykgraf, systolisk, diastolisk og puls vises grafisk uden alarm\newline [2.a \textit{Blodtryk overholder ikke grænseværdier}] \\ \midrule               
     Undtagelser &    2.a & "Alarm" om at blodtryk er kritisk ift. de grænseværdier \\ \bottomrule
 \caption{Fully dressed Use Case 3}
 \label{UC3}
@@ -162,11 +162,11 @@ Availability = \frac{MTBF}{MTBF+MTTR} = \frac{365}{365+1} = 0,997 = 99,7 \%
     Navn &&    Udskyd alarm\\
     Use case ID &&    6\\
     Samtidige forløb &&    2\\
-    Sekundær aktør &&   Brugeren \\
+    Primær aktør &&   Brugeren \\
     Initialisere &&    Brugeren ønsker at udskyde alarmen med ca. 60 sekunder \\
-    Forudsætninger && UC3 er gennemført og extension 1.a\\
+    Forudsætninger && UC3 er gennemført og undtagelse 2.a er igangsat\\
     Resultat &&    Alarmen er udskudt                  \\ \midrule
-    Hovedforløb &    1. &    Brugeren trykker på "udskyd alarm"\--knap  \\  		
+    Hovedforløb &    1. &    Brugeren trykker på "udskyd alarm"\--knap  \\ \midrule 		
     Undtagelser &     \\ \bottomrule
 \caption{Fully dressed Use Case 6}
 \label{UC6}
