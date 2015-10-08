@@ -8,7 +8,7 @@
 
 
 \section{Indledning}
-Kravspecifikationen vil beskrive, ud fra en række modeller, hvordan blodtryksmåleren fungerer. Helt generelt er en invasiv blodtryksmåler et system, der vha. nål og tranducer kan måle.
+Kravspecifikationen vil beskrive, ud fra en række modeller, hvordan blodtryksmåleren fungerer. Helt generelt er en invasiv blodtryksmåler et system, der vha. nål og tranducer kan måle
 
 
 \section{Funktionelle krav}
@@ -68,8 +68,8 @@ Kravspecifikationen vil beskrive, ud fra en række modeller, hvordan blodtryksm�
     Sekundær aktør && Database\\
     Initialisere &&    Brugeren\\
     Mål && Systemet er opstartet\\
-    Forudsætninger &&  Patienten er koblet korrekt til systemet jf. afledning I, samt use case 1 er gennemført.\\
-    Resultat &&    Systemet er nulpunktsjusteret og brugeren er klar til at foretage en måling\\
+    Forudsætninger &&  Use case 1 er gennemført.\\
+    Resultat &&    Systemet er nulpunktsjusteret og brugeren er klar til at blive forbundet til systemet\\
     \midrule
     Hovedforløb &    1. &    Brugeren indtaster login-oplysninger og trykker på "Log ind"\--knappen. Systemet tjekker i databasen om oplysninger er gyldige \newline [1.a \textit{Forkert login}]\\
     	&			2. & Brugeren trykker på "nulstil"\--knappen. Systemet laver nulpunkts justering \newline [\textit{2.a Systemets nulpunktjustering er ikke korrekt}] \\ \midrule
@@ -89,7 +89,7 @@ Kravspecifikationen vil beskrive, ud fra en række modeller, hvordan blodtryksm�
     Primær aktør &&    Brugeren\\
     Initialisere &&    Brugeren\\
     Mål && Blodtryksmåling kører\\
-    Forudsætninger && UC2 er gennemført\\
+    Forudsætninger && Patienten er koblet korrekt til systemet jf. afledning I, og UC2 er gennemført\\
     Resultat &&    Blodtrykket vises i kontinuerlig graf, systolisk og diastoliske blodtryk vises grafisk, samt puls vises grafisk                     \\ \midrule
     Hovedforløb &    1. &    Brugeren trykker på start "måling"\--knappen\\
     			& 	 2. & Blodtrykgraf, systolisk, diastolisk og puls vises grafisk uden alarm\newline [2.a \textit{Blodtryk overholder ikke grænseværdier}] \\ \midrule               
@@ -159,14 +159,15 @@ Kravspecifikationen vil beskrive, ud fra en række modeller, hvordan blodtryksm�
     Use case ID &&    7\\
     Samtidige forløb &&    1\\
     Primær aktør &&    Brugeren\\
-    Initialisere &&    Brugeren ønsker at afslutte systemet og gemme måling\\
+    Mål &&    Brugeren ønsker at afslutte systemet og gemme måling\\
     Forudsætninger && UC3 er gennemført\\
     Resultat &&    Blodtryksmålingens data er gemt i database og bruger er logget ud af systemet                    \\ \midrule
-    Hovedforløb &    1. &    Brugeren trykker på "afslut måling"\--knappen. "Gemme"\--vindue åbnes. \newline [1.a \textit{Bruger ønsker ikke atafslutte}]\\  						 	
-                &    2. & Brugeren indtaster CPR-nr. \newline [2.a \textit{CPR-nr er ikke gyldigt}]	\\
-                &    3. & Brugeren trykker på "gem og afslut"\--knappen. Systemet logger ud og afsluttes\\ \midrule                
+    Hovedforløb &    1. &    Brugeren trykker på "afslut måling"\--knappen. "Gemme"\--vindue åbnes. \newline [1.a \textit{Bruger ønsker ikke at afslutte}]\\  						 	
+                &    2. & Brugeren indtaster CPR-nr og trykker på "\\
+                &    3. & Brugeren trykker på "gem og afslut"\--knappen. Systemet logger ud og afsluttes\\
+                \newline [3.a \textit{CPR-nr er ikke gyldigt}]	\\ \midrule                
     Undtagelser &    1.a. & Bruger trykker på "Annuller"\--knappen. Use Case 3 \\ 
-    			&	2.a. &  Nyt CPR-nummer indtastet. Use Case fortsættes for punkt 2\\ \bottomrule
+    			&	3.a. &  Besked om at CPR-nummer ikker gyldigt, vises. Nyt CPR-nummer indtastet. Use Case fortsættes for punkt 2\\ \bottomrule
     		
 \caption{Fully dressed Use Case 7}
 \label{UC7}
@@ -178,39 +179,49 @@ MoSCow er angivet i parentes ved hhv. M, S, C og/eller W, for Must, Should, Coul
 
 
 \textbf{Functionality}\\
-(M) Brugeren skal kunne starte en ny måling indenfor XX sekunder efter opstart af programmet \\
-(M) Systemet skal kunne kalibrere blodtrykssignalet\\
-(M) Systemet skal kunne foretage en nulpunktsjustering\\
-(M) Systemet skal kunne forstærke signalet fra transduceren (INDSÆT VÆRDI)\\
-(M) Systemet skal kunne filtrere signalet med det indbyggede analoge antialiaserings filter med en båndbredde på 50 Hz \\
-(M) Programmet skal kunne vise blodtrykket som funktion af tiden\\
-(M) Programmet skal kunne vise blodtrykssignalet kontinuert\\
-(M) Programmet skal programmeres i C\#\\
-(M) Programmet skal kunne lagre de målte data i en database\\
-(M) Programmet skal kunne filtrere blodtrykket via et digitalt filter\\
-(S) Programmet bør kunne afbildede både systolisk og diastolisk blodtryk med tal\\
-(S) Programmet bør kunne måle puls\\
-(C) Programmet kan angive pulsslag med bip-lyde med varighed af 100ms og en frekvens på 850 Hz\\
+\begin{enumerate}
+	\item (M) Brugeren skal kunne starte en ny måling indenfor XX sekunder efter opstart af programmet \\
+	\item (M) Systemet skal kunne kalibrere blodtrykssignalet\\
+	\item (M) Systemet skal kunne foretage en nulpunktsjustering\\
+	\item (M) Systemet skal kunne forstærke signalet fra transduceren (INDSÆT VÆRDI)\\
+	\item (M) Systemet skal kunne filtrere signalet med det indbyggede analoge antialiaserings filter med en båndbredde på 50 Hz \\
+	\item (M) Programmet skal kunne vise blodtrykket som funktion af tiden\\
+	\item (M) Programmet skal kunne vise blodtrykssignalet kontinuert\\
+	\item (M) Programmet skal programmeres i C\#\\
+	\item (M) Programmet skal kunne lagre de målte data i en database\\
+	\item (M) Programmet skal kunne filtrere blodtrykket via et digitalt filter\\
+	\item (S) Programmet bør kunne afbildede både systolisk og diastolisk blodtryk med tal\\
+	\item (S) Programmet bør kunne måle puls\\
+	\item (C) Programmet kan angive pulsslag med bip-lyde med varighed af 100ms og en frekvens på 850 Hz\\
+\end{enumerate}
 
 \textbf{Usability}\\
-(M) Blodtrykstallene der udskrives på brugergrænsefladen er røde\\
-(S) Pulsmålingen skal udskrives på brugergrænsefladen med grønne tal\\
-(M) Brugeren skal kunne starte en måling maksimalt 20 sekunder\\
+\begin{enumerate}
+	\item (M) Blodtrykstallene der udskrives på brugergrænsefladen er røde\\
+	\item (S) Pulsmålingen burde kunne udskrives på brugergrænsefladen med grønne tal\\
+	\item (M) Brugeren skal kunne starte en måling maksimalt 20 sekunder efter opstart\\
 Knapper??\\
-Billede af brugergrænsefladen indsættes\\
+Billede af brugergrænsefladen indsættes\\	
+\end{enumerate}
 
 \textbf{Reliability}\\
-(M) Systemet skal kunne kører uden fejl i et år\\
-(M) Systemet skal have en ”mean time to restore” på højest 24 timer\\
-Systemet får herved en tilgænglighed beregnet ved \begin{align}
+\begin{enumerate}
+	\item (M) Systemet skal kunne køre uden fejl i et år\\
+	\item (M) Systemet skal have en ”mean time to restore” på højest 24 timer\\
+	\item Systemet får herved en tilgænglighed beregnet ved \begin{align}
 Availability = \frac{MTBF}{MTBF+MTTR} = \frac{365}{365+1} = 0,997 = 99,7 \%
 \end{align}\\
+\end{enumerate}
 
 \textbf{Performance}\\
-(S) Systemet bør kunne gemme data på 5 sekunder +/-10%\\
+\begin{enumerate}
+	\item (S) Systemet bør kunne gemme data på 5 sekunder +/-10\%\\
+\end{enumerate}
 
 \textbf{Supportability}\\
-(M) Softwaren er opbygget af trelagsmodellen\\
+\begin{enumerate}
+	\item (M) Softwaren er opbygget af trelagsmodellen\\
+\end{enumerate}
 
 
 
