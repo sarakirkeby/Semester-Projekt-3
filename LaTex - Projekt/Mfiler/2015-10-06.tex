@@ -1,0 +1,25 @@
+\chapter{Mødereferat}
+
+\textbf{Dato:} 06-10-2015
+
+\textbf{Fremmødte:} Jeppe, Freja, Mads, Tine, Sara og Nicoline
+
+\textbf{Fraværende:} Ingen
+
+\textbf{Dagens dagsorden:}
+\begin{itemize}
+	\item Dine kommentarer omkring vores kravsspecifikiation og accepttest som du sendte retur til os i tirsdags
+	\item Kalibrering af systemet
+    \item Intro til hardwaren i projektet\\
+\end{itemize}
+
+\textbf{Referat:}
+\\Der skal slettes krav hvor de ligger dobbelt. Vi har en del krav som ligger som UC's også, de skal genovervejes, slettes eller måske helt fjernes. 
+\\Der må gerne komme flere detaljer på vores UC. Send et støjfyldt signal ind for at tjekke at AA-filter virker. 
+\\Skal der være nogen tal på hvor præcist vores tal skal være? JA! Her kan man altså holde testen oppe ved det normale, i forhold til vores grænseværdi. 
+\\Der er en guide til at tjekke om det antialiaseringsfilter vi laver, opfører sig normalt. 
+\\Nogen af tingene er så detaljerede at de ikke skal med i accepttesten, men de skal så testes i forhold til modultest istedet. 
+\\Test alarmen om den virker, hvis også man ændrer grænsen. 
+\\Dokumenter alle test i f.eks. billeder. 
+\\Kallibreres ved hjælp af tre kendte tryk. Man skal tage tre punkter, for atsinke sig at kallibreringen ligger på en ret linje. Test med små intervaller, så man kan være sikker på at den viser det den skal, uanser hvornår den bliver kallibreret. Kallibrering er at bestemme måleusikkerheden. Dette skal med i Accepttesten, så vi viser, hvordan vi har valgt at kallibrere. Vi skal designe hvor stort et trykområde vi vælger at vurdere. Kig i dokumentation for hvordan AD converteren håndterer for høje værdier. 
+\\Vi har en transducer, som giver et signal. Der står hvor mange millivolt vi skal ligge inden for. 5 micovolt per milimeter Hg. Vi skal lave et kresløb, som forstæker hele dynamikområdet op, så det passer med DAQ'ens dynamikområde. Det skulle gerne passe sammen. Udover forstærningen så skal vi også have lavet antialiaseringsloddet.
