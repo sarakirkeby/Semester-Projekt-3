@@ -7,3 +7,6 @@ C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssys
 C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\obj\Debug\Blodtrykssystem.csproj.GenerateResource.Cache
 C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\obj\Debug\Blodtrykssystem.exe
 C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\obj\Debug\Blodtrykssystem.pdb
+C:\Users\madsjorgensen\Source\Repos\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\bin\Debug\Blodtrykssystem.exe.config
+C:\Users\madsjorgensen\Source\Repos\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\obj\Debug\Blodtrykssystem.exe
+C:\Users\madsjorgensen\Source\Repos\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\obj\Debug\Blodtrykssystem.pdb
