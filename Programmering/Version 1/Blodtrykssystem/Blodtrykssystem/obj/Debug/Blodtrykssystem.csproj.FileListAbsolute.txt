@@ -1,0 +1,9 @@
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\bin\Debug\Blodtrykssystem.exe.config
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\bin\Debug\Blodtrykssystem.exe
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\bin\Debug\Blodtrykssystem.pdb
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\obj\Debug\Blodtrykssystem.csprojResolveAssemblyReference.cache
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\obj\Debug\Blodtrykssystem.Form1.resources
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\obj\Debug\Blodtrykssystem.Properties.Resources.resources
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\obj\Debug\Blodtrykssystem.csproj.GenerateResource.Cache
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\obj\Debug\Blodtrykssystem.exe
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\obj\Debug\Blodtrykssystem.pdb
