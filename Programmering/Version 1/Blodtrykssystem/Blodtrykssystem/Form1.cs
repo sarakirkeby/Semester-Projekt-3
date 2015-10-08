@@ -29,7 +29,7 @@ namespace Blodtrykssystem
             List<double> indkommendeSignal;
             int xværdi;
             int grafcount;
-        int graf2;
+        int graf1;
 
         public Form1()
         {
