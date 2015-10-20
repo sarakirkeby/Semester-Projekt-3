@@ -20,7 +20,7 @@ namespace NS_Logik
         }
         public int checkBlodtryk(double minSystole, double maxSystole, double minDiastole, double maxDiastole, List<double> målinger)
         {
-
+            return 0;
         }
     }
 
