@@ -18,6 +18,10 @@ namespace NS_Logik
         {
             return datalag.getTal(værdi);
         }
+        public int checkBlodtryk(double minSystole, double maxSystole, double minDiastole, double maxDiastole, List<double> målinger)
+        {
+
+        }
     }
 
 
