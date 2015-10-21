@@ -30,6 +30,7 @@ namespace Blodtrykssystem
             int xværdi;
             int grafcount;
         int graf1;
+        List<double> målinger;
 
         public Form1()
         {
@@ -48,6 +49,7 @@ namespace Blodtrykssystem
             status = 1;
 
             grafcount = 0;
+            målinger = logiklag.målinger;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -61,7 +63,8 @@ namespace Blodtrykssystem
 
             blodtryksværdier.Add(nuværendeVærdi);
 
-
+            listBox1.DataSource = null;
+            listBox1.DataSource = målinger;
 
             //chart1.ChartAreas[0].AxisX.Minimum = counter - 60;
             //chart1.ChartAreas[0].AxisX.Maximum = counter + 20;

@@ -13,3 +13,12 @@ C:\Users\madsjorgensen\Source\Repos\Semester-Projekt-3\Programmering\Version 1\B
 C:\Users\Tine Skov\Documents\GitHubVisualStudio\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\bin\Debug\Blodtrykssystem.exe.config
 C:\Users\Tine Skov\Documents\GitHubVisualStudio\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\obj\Debug\Blodtrykssystem.exe
 C:\Users\Tine Skov\Documents\GitHubVisualStudio\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\obj\Debug\Blodtrykssystem.pdb
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\bin\Debug\AsynchDAQ.dll
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\bin\Debug\NationalInstruments.DAQmx.dll
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\bin\Debug\NationalInstruments.Common.dll
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\bin\Debug\NationalInstruments.NiLmClientDLL.dll
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\bin\Debug\NationalInstruments.Common.Native.dll
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\bin\Debug\NationalInstruments.MStudioCLM.dll
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\bin\Debug\AsynchDAQ.pdb
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\bin\Debug\NationalInstruments.DAQmx.xml
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\Blodtrykssystem\bin\Debug\NationalInstruments.Common.xml

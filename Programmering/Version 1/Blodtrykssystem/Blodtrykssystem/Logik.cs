@@ -10,9 +10,11 @@ namespace NS_Logik
     class Logik
     {
         Data datalag;
+        public  List<double> målinger;
         public Logik()
         {
             datalag = new Data();
+            målinger = datalag.målinger;
         }
         public double getTal(int værdi)
         {
