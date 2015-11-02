@@ -42,6 +42,90 @@ Vejleder rådede herefter til at projektgruppen brugte instrumentationsforstærk
 	\includegraphics[width=1\textwidth]{Figurer/LigningSara}
 \end{figure}
 
+\subsection{Design af analogfilter}
+Filteret skulle realiseres som et aktivt 2. ordens lavpasfilter med båndbredde på 50 Hz af typen Sallen-Key med unity gain (se \ref{fig:Filter}). Filteret skulle designes som et Butterworth filter med cut off frekvens på 50 Hz. C2 skulle vælges til 680 nF og R1 = R2. Operationsforstærkeren skal være af typen OP27.  
+
+\begin{figure}[h]
+	\centering
+	\includegraphics{Figur/Filter-design}
+	\caption{Unity gain 2. ordens Sallen-Key lavpas konfiguration}
+	\label{fig:Filter}
+\end{figure}
+
+Der blev valgt en dæmpningsfaktor på 1, da det ville være mest optimalt med et kritisk dæmpet signal. Ud fra hjemmesiden\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm} fandt vi overføringsfunktionen for Sallen-Kay lavpasfiltret:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics{Figur/ligning1}
+	\label{fig:lign1}
+\end{figure}
+
+Da det er blevet opgivet at $R1=R2$, kan overføringsfunktionen forkortes: 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics{Figur/ligning2}
+	\label{fig:lign2}
+\end{figure}
+
+Dernæst sammenlignes med standardformlen for overføringsfunktionen for et andet ordens filter.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics{Figur/ligning3}
+	\label{fig:lign3}
+\end{figure}
+
+Ud fra dette kan regnes komponentværdierne for R, idet
+
+\begin{figure}[h]
+	\centering
+	\includegraphics{Figur/ligning4}
+	\label{fig:lign4}
+\end{figure}
+
+Ved hjælp af mathcad isoleres R.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics{Figur/ligning5}
+	\label{fig:lign5}
+\end{figure}
+
+Dernæst kan komponentværdien for C1 udregnes, idet:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics{Figur/ligning6}
+	\label{fig:lign6}
+\end{figure}
+
+Ved hjælp af mathcad isoleres C1. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics{Figur/ligning7}
+	\label{fig:lign7}
+\end{figure}
+
+Derved er komponentværdierne for kredsløbet fundet og de ses indskrevet på \ref{fig:Filter}. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics{Figur/Filter-design-komponent}
+	\caption{Unity gain 2. ordens Sallen-Key lavpas konfiguration med indsatte komponentværdier.}
+	\label{fig:Filter_K}
+\end{figure}
+
+Generelt er et unity gain Sallen-Key filter med equivalente capacitorer og equivalente resistore kritisk dæmpet dvs. en kvalitets faktor på 1/2. Dette kan også ses når komponentværdierne indsættes i ”Sallen-Key Low-pass Filter Design Tool”\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm}. Desuden ses bodeplottet nedenfor:
+
+\begin{figure}[h]
+	\centering
+	\includegraphics{Figur/Bodeplot}
+	\caption[]{Bodeplot af overføringsfunktionen\footnotemark}
+	\label{fig:Bodeplot}
+\end{figure}
+\footnotetext{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm}
 
 
 \subsection{Grænseflader}
