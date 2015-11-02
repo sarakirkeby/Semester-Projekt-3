@@ -42,6 +42,27 @@ Vejleder rådede herefter til at projektgruppen brugte instrumentationsforstærk
 	\includegraphics[width=1\textwidth]{Figurer/LigningSara}
 \end{figure}
 
+Spændingen ønskes at skaleres op til DAQ’ens dynamikområde, som ligger omkring de 5V. Forstærkningsfaktoren udregnes ved simpel brøkregning. \\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/ligningtilgain}
+\end{figure}
+
+INA114’s datasheet giver en ligning for udregning af forstærkning. Da forstærkningen er kendt, omskrives denne ligning, så modstanden *Rgain’s* værdi i stedet bestemmes.\\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/omskrivningtilgain}
+\end{figure}
+
+Herefter kan den ohmske værdi af *Rgain* bestemmes.\\
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/udregningafgain}
+\end{figure}
+
 \subsection{Design af analogfilter}
 Filteret skulle realiseres som et aktivt 2. ordens lavpasfilter med båndbredde på 50 Hz af typen Sallen-Key med unity gain (se \ref{fig:Filter}). Filteret skulle designes som et Butterworth filter med cut off frekvens på 50 Hz. C2 skulle vælges til 680 nF og R1 = R2. Operationsforstærkeren skal være af typen OP27.  
 
