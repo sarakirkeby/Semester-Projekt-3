@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Data.cs" />
+    <Compile Include="DTO_Blodtryksmåling.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,6 +56,8 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Generator.cs" />
+    <Compile Include="IObserver.cs" />
+    <Compile Include="ISubject.cs" />
     <Compile Include="Logik.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

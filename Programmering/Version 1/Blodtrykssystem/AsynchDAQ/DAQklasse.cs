@@ -27,6 +27,7 @@ namespace AsynchDAQ
         public double SampleRate {  get; set; }
         public double MinimumVolt { get; set; } 
         public double MaximumVolt { get; set; }
+        private int antalmålinger;
 
         public int SamplesPerChannel { get; set; }
         public string DeviceName { get; set; }
@@ -36,9 +37,11 @@ namespace AsynchDAQ
             SampleRate = 1000;
             MinimumVolt = -1;
             MaximumVolt = 1;
-            SamplesPerChannel = 250;
+            SamplesPerChannel = 200;
             DeviceName = "Dev1/ai0";
+            antalmålinger = 0;
             målinger = new List<double>();
+           
         }
         public DAQklasse(double samplerate, double minvolt, double maxvolt, int samplesperchannel, string devicename)
         {
@@ -47,6 +50,7 @@ namespace AsynchDAQ
             MaximumVolt = maxvolt;
             SamplesPerChannel = samplesperchannel;
             DeviceName = devicename;
+            
         }
 
         public bool IsRunning()
@@ -60,6 +64,7 @@ namespace AsynchDAQ
 
         private void AnalogInCallback(IAsyncResult ar)
         {
+        
             try
             {
                 if (runningTask != null && runningTask == ar.AsyncState)
@@ -85,6 +90,7 @@ namespace AsynchDAQ
 
         public void startMåling()
         {
+            
             if (runningTask == null)
             {
                 try
@@ -129,11 +135,9 @@ namespace AsynchDAQ
         }
         private void dataToDataTable(AnalogWaveform<double>[] sourceArray, ref DataTable dataTable)
         {
-
-            
             // Iterate over channels
             int currentLineIndex = 0;
-            //målingerPrivate.Add(3);
+        
             foreach (AnalogWaveform<double> waveform in sourceArray)
             {
 
@@ -142,26 +146,17 @@ namespace AsynchDAQ
                     if (sample == 10)
                         break;
 
-                    //dataTable.Rows[sample][currentLineIndex] = waveform.Samples[sample].Value;
                     målinger.Add(waveform.Samples[sample].Value);
+                    antalmålinger++;
                 }
                 currentLineIndex++;
+                
             }
-
-            //målingerPrivate = new List<double>(); //Previous version is deleted
-            //foreach (AnalogWaveform<double> waveform in sourceArray)
-            //{
-            //    for (int sample = 0; sample < waveform.Samples.Count; ++sample)
-            //    {
-            //        if (sample == 10)
-            //            break;
-
-            //            målingerPrivate.Add(waveform.Samples[sample].Value);
-            //    }
-            //    currentLineIndex++;
-            //}
-
-
+            
+        }
+        public int getAntalMålinger()
+        {
+               return målinger.Count;
         }
 
     }

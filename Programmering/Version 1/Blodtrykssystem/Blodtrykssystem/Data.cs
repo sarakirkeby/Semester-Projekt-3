@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Blodtrykssystem;
 using AsynchDAQ;
+using DTO;
+using System.Threading;
 
 namespace NS_Data
 {
@@ -12,18 +14,53 @@ namespace NS_Data
     {
         DAQklasse daq;
         Generator signal;
-        public List<double> målinger;
+        private List<double> målinger;
+        Thread t1;
+        DTO_Blodtryksmåling dto;
         public Data()
         {
             signal = new Generator();
             daq = new DAQklasse();
-            målinger = daq.målinger;
-            daq.startMåling();
+            målingStart();
         }
+        private void sætIgang()
+        {
+            målingStart();
+        }
+        public DTO_Blodtryksmåling getMålinger()
+        {
+            return dto;
+        }
+        public int getAntalMålinger()
+        {
+            return daq.getAntalMålinger();
+        }
+        private void målingStart()
+        {
+            //object locker = new object();
+            //lock(locker)
+            //{
+
+            daq.startMåling();
+
+            målinger = daq.målinger;
+                   
+            dto = new DTO_Blodtryksmåling(målinger);
+        }
+      
 
         public double getTal(int værdi)
         {
-            return signal.getTal(værdi);
+                return signal.getTal(værdi);
+        }
+        public bool IsRunning()
+        {
+            return daq.IsRunning();
+        }
+
+        public DTO_Blodtryksmåling HentData()
+        {
+            return new DTO_Blodtryksmåling(daq.målinger);
         }
 
     }

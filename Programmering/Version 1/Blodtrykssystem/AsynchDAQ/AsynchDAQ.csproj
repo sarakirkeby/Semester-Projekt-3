@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAQklasse.cs" />
+    <Compile Include="IObserver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
