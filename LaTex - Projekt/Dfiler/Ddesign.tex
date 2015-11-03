@@ -13,52 +13,52 @@
 \section{Hardware arkitektur}
 I følgende afsnit beskrives hvordan blodtryksmåler systemet og nogle af dets delkomponenter er opbygget.
 \\
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/BDD}
 	\caption{Blokdiagram for blodtryksmåler systemet.}\label{labelpic}
 \end{figure}
-\\Ud af blokdiagrammet kan man se at blodtryksmåler systemet består af en transducer, en forstærker, et analogt filter, en DAQ og en computer.
-\\
-\begin{figure}[h]
+
+Ud af blokdiagrammet kan man se at blodtryksmåler systemet består af en transducer, en forstærker, et analogt filter, en DAQ og en computer.\\
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/IBD}
 	\caption{Internt blok diagram for blodtryksmåler systemet.}\label{labelpic}
 \end{figure}
-\\Ud af det interne blok diagram kan ses det at blodtrykket i form af det målte tryk kommer ind i transduceren. Transduceren som omformer det målte tryk til et spændingssignal, sender signalet vidre til forstærkeren. Fra forstærkeren sendes signalet over i det analoge filter og derfra ind i DAQ'en. Endeligt sendes det digitale signal fra DAQ'en over i en computer, der fortolker signalet som et billede, der vises til omverdenen.
 
+Ud af det interne blok diagram kan ses det at blodtrykket i form af det målte tryk kommer ind i transduceren. Transduceren som omformer det målte tryk til et spændingssignal, sender signalet vidre til forstærkeren. Fra forstærkeren sendes signalet over i det analoge filter og derfra ind i DAQ'en. Endeligt sendes det digitale signal fra DAQ'en over i en computer, der fortolker signalet som et billede, der vises til omverdenen.
 
 \subsection{Design af forstærker}
 Forstærkeren er designet med tanke på, at det er meget små spændinger der arbejdes med. Grundet dette, er en almindelig operationsforstærker fravalgt, da dens reelle indgangsimpedans er for lille. En Instrumentationsforstærkers indgangsimpedans i den virkelige verden, er højere, og den kan dermed opfange meget små signaler så som blodtryk.\\
 Vejleder rådede herefter til at projektgruppen brugte instrumentationsforstærkeren INA114. Forstærkerens design kan ses på figur X.\\ 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Forstaerker}
 	\caption{Der overordnede design af forstærkeren.}\label{labelpic}
 \end{figure}
 *Rgain* er modstanden, som bestemmer, hvor meget forstærkning, instrumentationsforstærkeren skal give og *Rload* er den belastning, der kommer efter kredsløbet. I dette tilfælde, er det, det analoge filter. For at finde *Rgain’s* størrelse, kræver det, at der vides, hvor meget forstærkning der er brug for. Dette findes, ved at bestemme den maksimale spænding, som transduceren kan give, i en blodtrykssituation. Dette regnestykke kan ses realiseret i ligning x.\\
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/LigningSara}
 \end{figure}
 
 Spændingen ønskes at skaleres op til DAQ’ens dynamikområde, som ligger omkring de 5V. Forstærkningsfaktoren udregnes ved simpel brøkregning. \\
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/ligningtilgain}
 \end{figure}
 
 INA114’s datasheet giver en ligning for udregning af forstærkning. Da forstærkningen er kendt, omskrives denne ligning, så modstanden *Rgain’s* værdi i stedet bestemmes.\\
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/omskrivningtilgain}
 \end{figure}
 
 Herefter kan den ohmske værdi af *Rgain* bestemmes.\\
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/udregningafgain}
 \end{figure}
@@ -66,7 +66,7 @@ Herefter kan den ohmske værdi af *Rgain* bestemmes.\\
 \subsection{Design af analogfilter}
 Filteret skulle realiseres som et aktivt 2. ordens lavpasfilter med båndbredde på 50 Hz af typen Sallen-Key med unity gain (se \ref{fig:Filter}). Filteret skulle designes som et Butterworth filter med cut off frekvens på 50 Hz. C2 skulle vælges til 680 nF og R1 = R2. Operationsforstærkeren skal være af typen OP27.  
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/FilterDesign}
 	\caption{Unity gain 2. ordens Sallen-Key lavpas konfiguration}
@@ -75,7 +75,7 @@ Filteret skulle realiseres som et aktivt 2. ordens lavpasfilter med båndbredde 
 
 Der blev valgt en dæmpningsfaktor på 1, da det ville være mest optimalt med et kritisk dæmpet signal. Ud fra hjemmesiden\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm} fandt vi overføringsfunktionen for Sallen-Kay lavpasfiltret:
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics{Figurer/ligning1}
 	\label{fig:lign1}
@@ -83,15 +83,14 @@ Der blev valgt en dæmpningsfaktor på 1, da det ville være mest optimalt med e
 
 Da det er blevet opgivet at $R1=R2$, kan overføringsfunktionen forkortes: 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/ligning2}
-	\label{fig:lign2}
 \end{figure}
 
 Dernæst sammenlignes med standardformlen for overføringsfunktionen for et andet ordens filter.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/ligning3}
 	\label{fig:lign3}
@@ -99,7 +98,7 @@ Dernæst sammenlignes med standardformlen for overføringsfunktionen for et ande
 
 Ud fra dette kan regnes komponentværdierne for R, idet
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/ligning4}
 	\label{fig:lign4}
@@ -107,7 +106,7 @@ Ud fra dette kan regnes komponentværdierne for R, idet
 
 Ved hjælp af mathcad isoleres R.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/ligning5}
 	\label{fig:lign5}
@@ -115,7 +114,7 @@ Ved hjælp af mathcad isoleres R.
 
 Dernæst kan komponentværdien for C1 udregnes, idet:
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/ligning6}
 	\label{fig:lign6}
@@ -123,7 +122,7 @@ Dernæst kan komponentværdien for C1 udregnes, idet:
 
 Ved hjælp af mathcad isoleres C1. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/ligning7}
 	\label{fig:lign7}
@@ -131,7 +130,7 @@ Ved hjælp af mathcad isoleres C1.
 
 Derved er komponentværdierne for kredsløbet fundet og de ses indskrevet på \ref{fig:Filter}. 
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/FilterDesignMedKomponentvaerdier}
 	\caption{Unity gain 2. ordens Sallen-Key lavpas konfiguration med indsatte komponentværdier.}
@@ -140,7 +139,7 @@ Derved er komponentværdierne for kredsløbet fundet og de ses indskrevet på \r
 
 Generelt er et unity gain Sallen-Key filter med equivalente capacitorer og equivalente resistore kritisk dæmpet dvs. en kvalitets faktor på 1/2. Dette kan også ses når komponentværdierne indsættes i ”Sallen-Key Low-pass Filter Design Tool”\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm}. Desuden ses bodeplottet nedenfor:
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Bodeplot}
 	\caption[]{Bodeplot af overføringsfunktionen\footnotemark}
@@ -165,36 +164,37 @@ Generelt er et unity gain Sallen-Key filter med equivalente capacitorer og equiv
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/classAppModelUC2}
 	\caption{Klassediagram UC 2}
+	\label{classApp UC2}
 \end{figure}
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/classAppModelUC3}
 	\caption{Klassediagram UC 3}
-\end{figure}
-
-\begin{figure}[H]
-	\includegraphics[width=1\textwidth]{Figurer/classAppModelUC3}
-	\caption{Klassediagram UC 3}
+	\label{classApp UC3}
 \end{figure}
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/classAppModelUC4}
 	\caption{Klassediagram UC 4}
+	\label{classApp UC4}
 \end{figure}
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/classAppModelUC5}
 	\caption{Klassediagram UC 5}
+	\label{classApp UC5}
 \end{figure}
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/classAppModelUC6}
 	\caption{Klassediagram UC 6}
+	\label{classApp UC6}
 \end{figure}
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/classAppModelUC7}
 	\caption{Klassediagram UC 7}
+	\label{classApp UC7}
 \end{figure}
 
 
@@ -202,19 +202,40 @@ Generelt er et unity gain Sallen-Key filter med equivalente capacitorer og equiv
 \subsubsection{Domænemodel}
 
 \subsubsection{Sekvensdiagram}
-\begin{figure}
+\begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/sdAppModelUC2}
 	\caption{Sekvensdiagram UC2}
+	\label{sd UC2}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/sdAppModelUC3}
 	\caption{Sekvensdiagram UC3}
+	\label{sd UC3}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/sdAppModelUC4}
 	\caption{Sekvensdiagram UC4}
+	\label{sd UC4}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{Figurer/sdAppModelUC5}
+	\caption{Sekvensdiagram UC5}
+	\label{sd UC5}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{Figurer/sdAppModelUC6}
+	\caption{Sekvensdiagram UC6}
+	\label{sd UC6}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{Figurer/sdAppModelUC7}
+	\caption{Sekvensdiagram UC7}
+	\label{sd UC7}
 \end{figure}
 
 \subsubsection{Opdateret Klassediagram}
