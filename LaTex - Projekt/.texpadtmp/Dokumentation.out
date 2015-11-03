@@ -12,30 +12,32 @@
 \BOOKMARK [0][-]{chapter.3}{Design}{}% 12
 \BOOKMARK [1][-]{section.3.1}{Indledning}{chapter.3}% 13
 \BOOKMARK [1][-]{section.3.2}{Hardware arkitektur}{chapter.3}% 14
-\BOOKMARK [2][-]{subsection.3.2.1}{Gr\346nseflader}{section.3.2}% 15
-\BOOKMARK [1][-]{section.3.3}{Software arkitektur}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.3.1}{GUI}{section.3.3}% 17
-\BOOKMARK [2][-]{subsection.3.3.2}{UML klassediagram}{section.3.3}% 18
-\BOOKMARK [2][-]{subsection.3.3.3}{Appliktationsmodel}{section.3.3}% 19
-\BOOKMARK [1][-]{section.3.4}{Software implementering}{chapter.3}% 20
-\BOOKMARK [2][-]{subsection.3.4.1}{Visning af EKG-signal}{section.3.4}% 21
-\BOOKMARK [2][-]{subsection.3.4.2}{Analyse}{section.3.4}% 22
-\BOOKMARK [2][-]{subsection.3.4.3}{Testprogram}{section.3.4}% 23
-\BOOKMARK [2][-]{subsection.3.4.4}{Lagring i database}{section.3.4}% 24
-\BOOKMARK [0][-]{chapter.4}{Acceptest}{}% 25
-\BOOKMARK [1][-]{section.4.1}{Accepttest af Use Cases}{chapter.4}% 26
-\BOOKMARK [2][-]{subsection.4.1.1}{Use Case 1}{section.4.1}% 27
-\BOOKMARK [2][-]{subsection.4.1.2}{Use Case 2}{section.4.1}% 28
-\BOOKMARK [2][-]{subsection.4.1.3}{Use Case 3}{section.4.1}% 29
-\BOOKMARK [2][-]{subsection.4.1.4}{Use Case 4}{section.4.1}% 30
-\BOOKMARK [2][-]{subsection.4.1.5}{Use Case 5}{section.4.1}% 31
-\BOOKMARK [2][-]{subsection.4.1.6}{Use Case 6}{section.4.1}% 32
-\BOOKMARK [2][-]{subsection.4.1.7}{Use Case 7}{section.4.1}% 33
-\BOOKMARK [1][-]{section.4.2}{Accepttest af ikke-funktionelle krav}{chapter.4}% 34
-\BOOKMARK [0][-]{chapter*.10}{Bilag}{}% 35
-\BOOKMARK [1][-]{section*.11}{Fejlrapport}{chapter*.10}% 36
-\BOOKMARK [1][-]{section*.12}{Logbog}{chapter*.10}% 37
-\BOOKMARK [1][-]{section*.13}{M\370dereferart}{chapter*.10}% 38
-\BOOKMARK [1][-]{section*.14}{Kode}{chapter*.10}% 39
-\BOOKMARK [1][-]{section*.15}{Tidsplan}{chapter*.10}% 40
-\BOOKMARK [1][-]{section*.16}{Samarbejdsaftale}{chapter*.10}% 41
+\BOOKMARK [2][-]{subsection.3.2.1}{Design af forst\346rker}{section.3.2}% 15
+\BOOKMARK [2][-]{subsection.3.2.2}{Design af analogfilter}{section.3.2}% 16
+\BOOKMARK [2][-]{subsection.3.2.3}{Gr\346nseflader}{section.3.2}% 17
+\BOOKMARK [1][-]{section.3.3}{Software arkitektur}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.3.1}{GUI}{section.3.3}% 19
+\BOOKMARK [2][-]{subsection.3.3.2}{UML klassediagram}{section.3.3}% 20
+\BOOKMARK [2][-]{subsection.3.3.3}{Appliktationsmodel}{section.3.3}% 21
+\BOOKMARK [1][-]{section.3.4}{Software implementering}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.4.1}{Visning af EKG-signal}{section.3.4}% 23
+\BOOKMARK [2][-]{subsection.3.4.2}{Analyse}{section.3.4}% 24
+\BOOKMARK [2][-]{subsection.3.4.3}{Testprogram}{section.3.4}% 25
+\BOOKMARK [2][-]{subsection.3.4.4}{Lagring i database}{section.3.4}% 26
+\BOOKMARK [0][-]{chapter.4}{Acceptest}{}% 27
+\BOOKMARK [1][-]{section.4.1}{Accepttest af Use Cases}{chapter.4}% 28
+\BOOKMARK [2][-]{subsection.4.1.1}{Use Case 1}{section.4.1}% 29
+\BOOKMARK [2][-]{subsection.4.1.2}{Use Case 2}{section.4.1}% 30
+\BOOKMARK [2][-]{subsection.4.1.3}{Use Case 3}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.4}{Use Case 4}{section.4.1}% 32
+\BOOKMARK [2][-]{subsection.4.1.5}{Use Case 5}{section.4.1}% 33
+\BOOKMARK [2][-]{subsection.4.1.6}{Use Case 6}{section.4.1}% 34
+\BOOKMARK [2][-]{subsection.4.1.7}{Use Case 7}{section.4.1}% 35
+\BOOKMARK [1][-]{section.4.2}{Accepttest af ikke-funktionelle krav}{chapter.4}% 36
+\BOOKMARK [0][-]{chapter*.27}{Bilag}{}% 37
+\BOOKMARK [1][-]{section*.28}{Fejlrapport}{chapter*.27}% 38
+\BOOKMARK [1][-]{section*.29}{Logbog}{chapter*.27}% 39
+\BOOKMARK [1][-]{section*.30}{M\370dereferart}{chapter*.27}% 40
+\BOOKMARK [1][-]{section*.31}{Kode}{chapter*.27}% 41
+\BOOKMARK [1][-]{section*.32}{Tidsplan}{chapter*.27}% 42
+\BOOKMARK [1][-]{section*.33}{Samarbejdsaftale}{chapter*.27}% 43
