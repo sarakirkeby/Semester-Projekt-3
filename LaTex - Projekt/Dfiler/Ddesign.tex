@@ -153,9 +153,35 @@ Generelt er et unity gain Sallen-Key filter med equivalente capacitorer og equiv
 \section{Software arkitektur}
 
 \subsection{GUI}
+Til designet af brugergrænsefladen er blevet udført ud fra de 16 principper for gode brugergrænseflader. Der er ligeledes i form1 hentet inspiration fra allerede eksisterende blodtryk moniter. I designet af brugergrænsefladen bestræbes, der efter at gøre det så virkelighedsnært som muligt ud fra de redskaber og oplysninger der er til rådighed.\\ \\Brugergrænsefladen er inddelt i 3 forskellige interfaces. De 3 interfaces er henholdvis Log ind, Form1 og Gem. De personer, der interagerer med brugergrænsefladen er sundhedsfagligt personale som typisk vil være en læge eller sygeplejerske. Dette er der også taget højde for i designet da, der aldrig vil være andre end det sundhedsfaglige personale der interagerer med brugergrænsefladen og derfor er den en skærpet målgruppe.\\Nedenfor kommer der en uddybende beskrivelse af brugergrænsefladen. 
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Figurer/Logind_GUI}
+	\caption{Login vindue}
+	\label{Login vindue}
+\end{figure}
+
+Her er der tage udgangspunkt i, at brugergrænsefalden skal være enkel og overskuelig opbygget. Der skal ikke være nogle overflødige ting og de knapper der er vigtige som bruger skal benytte skal stå tydeligt frem. Opbygningen skal afspejle brugerens logik.\\ \\ Tankerne omkring den enkle opbygning er, at hvis der opstår en akut situation hvor systemet skal i gang hurtigt skal det være nemt og hurtigt at logge ind i systemet. Det er vigtigt at knapperne er selvforklarende og giver brugeren det der forventes af knappen når den benyttes. \\ \\Der er taget højde for feedback til bruger ved forkert log ind får brugeren en besked om at log ind er indtastet forkert og der skal prøves forfra. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/GUI_form1}
+	\caption{Blodtryk vindue}
+	\label{Blodtryk vindue}
+\end{figure}
+
+Her er opbygningen mere kompliceret og med flere knapper end ved Log ind og Gem. Der er taget højde for at knapperne er selvforklarende og deres navne afspejler de bagvedliggende handlinger. Dette medfører at brugeren stadig har et overblik over brugergrænsefalden og stadig selv kan kontrollerer hvad der skal ske. Denne brugergrænseflade er ikke tiltænkt nye brugere, men derimod brugere der har et kendskab til den og til hvilke sundhedfaglige værdier og udtryk, der vises på den.  Derfor benyttes brugerens sprog på brugergrænsefalden og ikke et sprog med termer, der er forståelig for alle. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Figurer/Gem_GUI}
+	\caption{Gem vindue}
+	\label{Gem vindue}
+\end{figure}
 \subsection{UML klassediagram}
 
+Her er der igen taget udgangspunkt i en enkel opbygning og at knapperne, der skal bruges er tydelige og selvforklarende. Det er her også brugerens logik, der afspejles og ingen unødvendige ting er inddraget i brugergrænsefalden. Det er her muligt at afbryde situationen ved at der er en alternativ udvej, som kan bruges hvis den op startet handling fortrydes. Der er taget højde for feedback til brugeren hvis der indtastes forkert CPR nummer får brugeren det af vide i et pop-up vindue. 
 
 \subsection{Appliktationsmodel}
 
@@ -177,7 +203,7 @@ Der er blevet lavet et sekvensdiagram for hver use case for at give det bedste o
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.2\textwidth]{Figurer/ISE/sdAppModelUC2}
+	\includegraphics[width=0.2\textwidth]{Figurer/ISE/sdAppModelUC2part2}
 	\caption{Sekvensdiagram UC2}
 	\label{sd UC2}
 \end{figure}
@@ -225,7 +251,7 @@ Her ønsker brugeren at udskyde den alarm, der er opstået i systemet pga. for h
 Brugeren ønsker her at gemme og afslutte målingen. 
 
 \subsubsection{Opdateret Klassediagram}
-Klasse pplikationsmodellerne er udarbejdet ud fra use casene, sekvensdiagrammer og domænemodellen. Der er ligesom ved sekvensdiagrammerne lavet et klassediagram for hver use case. Der er her også brugt virtuelle metoder. 
+Klasse applikationsmodellerne er udarbejdet ud fra use casene, sekvensdiagrammer og domænemodellen. Der er ligesom ved sekvensdiagrammerne lavet et klassediagram for hver use case. Der er her også brugt virtuelle metoder. 
 
 \begin{figure}[H]
 	\centering
