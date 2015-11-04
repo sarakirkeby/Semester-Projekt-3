@@ -15,14 +15,14 @@ I følgende afsnit beskrives hvordan blodtryksmåler systemet og nogle af dets d
 \\
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/BDD}
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/BDD}
 	\caption{Blokdiagram for blodtryksmåler systemet.}\label{labelpic}
 \end{figure}
 
 Ud af blokdiagrammet kan man se at blodtryksmåler systemet består af en transducer, en forstærker, et analogt filter, en DAQ og en computer.\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/IBD}
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/IBD}
 	\caption{Internt blok diagram for blodtryksmåler systemet.}\label{labelpic}
 \end{figure}
 
@@ -33,34 +33,34 @@ Forstærkeren er designet med tanke på, at det er meget små spændinger der ar
 Vejleder rådede herefter til at projektgruppen brugte instrumentationsforstærkeren INA114. Forstærkerens design kan ses på figur X.\\ 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Forstaerker}
+	\includegraphics[width=0.6\textwidth]{Figurer/Hardware/Forstaerker}
 	\caption{Der overordnede design af forstærkeren.}\label{labelpic}
 \end{figure}
-*Rgain* er modstanden, som bestemmer, hvor meget forstærkning, instrumentationsforstærkeren skal give og *Rload* er den belastning, der kommer efter kredsløbet. I dette tilfælde, er det, det analoge filter. For at finde *Rgain’s* størrelse, kræver det, at der vides, hvor meget forstærkning der er brug for. Dette findes, ved at bestemme den maksimale spænding, som transduceren kan give, i en blodtrykssituation. Dette regnestykke kan ses realiseret i ligning x.\\
+$R_{gain}$ er modstanden, som bestemmer, hvor meget forstærkning, instrumentationsforstærkeren skal give og $R_{load}$ er den belastning, der kommer efter kredsløbet. I dette tilfælde, er det, det analoge filter. For at finde $R_{gain}$’s størrelse, kræver det, at der vides, hvor meget forstærkning der er brug for. Dette findes, ved at bestemme den maksimale spænding, som transduceren kan give, i en blodtrykssituation. Dette regnestykke kan ses realiseret i ligning x.\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/LigningSara}
+	\includegraphics[width=0.8\textwidth]{Figurer/Hardware/LigningSara}
 \end{figure}
 
 Spændingen ønskes at skaleres op til DAQ’ens dynamikområde, som ligger omkring de 5V. Forstærkningsfaktoren udregnes ved simpel brøkregning. \\
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/ligningtilgain}
+	\includegraphics[width=0.3\textwidth]{Figurer/Hardware/ligningtilgain}
 \end{figure}
 
-INA114’s datasheet giver en ligning for udregning af forstærkning. Da forstærkningen er kendt, omskrives denne ligning, så modstanden *Rgain’s* værdi i stedet bestemmes.\\
+INA114’s datasheet giver en ligning for udregning af forstærkning. Da forstærkningen er kendt, omskrives denne ligning, så modstanden $R_{gain}$’s værdi i stedet bestemmes.\\
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/omskrivningtilgain}
+	\includegraphics[width=0.7\textwidth]{Figurer/Hardware/omskrivningtilgain}
 \end{figure}
 
-Herefter kan den ohmske værdi af *Rgain* bestemmes.\\
+Herefter kan den ohmske værdi af $R_{gain}$ bestemmes.\\
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/udregningafgain}
+	\includegraphics[width=0.3\textwidth]{Figurer/Hardware/udregningafgain}
 \end{figure}
 
 \subsection{Design af analogfilter}
@@ -68,7 +68,7 @@ Filteret skulle realiseres som et aktivt 2. ordens lavpasfilter med båndbredde 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/FilterDesign}
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/FilterDesign}
 	\caption{Unity gain 2. ordens Sallen-Key lavpas konfiguration}
 	\label{fig:Filter}
 \end{figure}
@@ -77,7 +77,7 @@ Der blev valgt en dæmpningsfaktor på 1, da det ville være mest optimalt med e
 
 \begin{figure}[H]
 	\centering
-	\includegraphics{Figurer/ligning1}
+	\includegraphics{Figurer/Hardware/ligning1}
 	\label{fig:lign1}
 \end{figure}
 
@@ -85,14 +85,14 @@ Da det er blevet opgivet at $R1=R2$, kan overføringsfunktionen forkortes:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/ligning2}
+	\includegraphics[width=0.35\textwidth]{Figurer/Hardware/ligning2}
 \end{figure}
 
 Dernæst sammenlignes med standardformlen for overføringsfunktionen for et andet ordens filter.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/ligning3}
+	\includegraphics[width=0.6\textwidth]{Figurer/Hardware/ligning3}
 	\label{fig:lign3}
 \end{figure}
 
@@ -100,7 +100,7 @@ Ud fra dette kan regnes komponentværdierne for R, idet
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/ligning4}
+	\includegraphics[width=0.2\textwidth]{Figurer/Hardware/ligning4}
 	\label{fig:lign4}
 \end{figure}
 
@@ -108,7 +108,7 @@ Ved hjælp af mathcad isoleres R.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/ligning5}
+	\includegraphics[width=0.85\textwidth]{Figurer/Hardware/ligning5}
 	\label{fig:lign5}
 \end{figure}
 
@@ -116,7 +116,7 @@ Dernæst kan komponentværdien for C1 udregnes, idet:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/ligning6}
+	\includegraphics[width=0.2\textwidth]{Figurer/Hardware/ligning6}
 	\label{fig:lign6}
 \end{figure}
 
@@ -124,7 +124,7 @@ Ved hjælp af mathcad isoleres C1.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/ligning7}
+	\includegraphics[width=0.9\textwidth]{Figurer/Hardware/ligning7}
 	\label{fig:lign7}
 \end{figure}
 
@@ -132,7 +132,7 @@ Derved er komponentværdierne for kredsløbet fundet og de ses indskrevet på \r
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/FilterDesignMedKomponentvaerdier}
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/FilterDesignMedKomponentvaerdier}
 	\caption{Unity gain 2. ordens Sallen-Key lavpas konfiguration med indsatte komponentværdier.}
 	\label{fig:Filter_K}
 \end{figure}
@@ -141,7 +141,7 @@ Generelt er et unity gain Sallen-Key filter med equivalente capacitorer og equiv
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Bodeplot}
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/Bodeplot}
 	\caption[]{Bodeplot af overføringsfunktionen\footnotemark}
 	\label{fig:Bodeplot}
 \end{figure}
@@ -161,84 +161,113 @@ Generelt er et unity gain Sallen-Key filter med equivalente capacitorer og equiv
 
 \subsubsection{Klassediagram}
 
+\subsubsection{Domænemodel}
+Diagrammet viser en domæne model for blodtryks systemet. Dette diagram giver et godt overblik over systemet som helhed og hvilke elementer, der indgår i systemet. Diagrammet viser hvordan brugeren interagerer med systemet og hvordan systemet forløber efter det igangsættes af bruger. 
+
 \begin{figure}[H]
-	\includegraphics[width=1\textwidth]{Figurer/classAppModelUC2}
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/ISE/Domaenemodel}
+	\caption{Sekvensdiagram UC2}
+	\label{sd UC2}
+\end{figure}
+
+\subsubsection{Sekvensdiagram}
+Sekvensdiagrammet er et interaktions diagram, der viser hvordan processer i systemet forløber. Use casene ligger til baggrund for udarbejdelsen af sekvensdiagrammerne.\\ \\
+Der er blevet lavet et sekvensdiagram for hver use case for at give det bedste overblik over hver handling i forhold til systemet. I sekvensdiagrammet har vi brugt virtuelle metode kald til at beskrive forløbet. I use case 2-7 er det brugeren, der interagerer med systemet og er initiator for a handlingerne bliver udført.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.2\textwidth]{Figurer/ISE/sdAppModelUC2}
+	\caption{Sekvensdiagram UC2}
+	\label{sd UC2}
+\end{figure}
+
+Her ses det hvordan brugeren logger ind i systemet og hvordan brugeren for systemet nulpunktsjusteret. Det er brugeren, der interagerer med systemet og er initiator for at handlingerne bliver udført. 
+
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC3}
+	\caption{Sekvensdiagram UC3}
+	\label{sd UC3}
+\end{figure}
+
+Her ses det hvordan brugeren starter målingen og hvordan graferne vises på brugergrænsefalden.
+
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC4}
+	\caption{Sekvensdiagram UC4}
+	\label{sd UC4}
+\end{figure}
+
+Her til vælger brugeren om blodtryks signalet skal filtreres eller ej.
+
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC5}
+	\caption{Sekvensdiagram UC5}
+	\label{sd UC5}
+\end{figure}
+
+Det ses her hvordan brugeren justerer grænseværdierne for patientens blodtryk. Denne justering sker ud fra patientens målte blodtryk. De justerede grænseværdi ligger til grundlag for alarmen. 
+
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC6}
+	\caption{Sekvensdiagram UC6}
+	\label{sd UC6}
+\end{figure}
+
+Her ønsker brugeren at udskyde den alarm, der er opstået i systemet pga. for højt eller for lavt blodtryk.
+
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC7}
+	\caption{Sekvensdiagram UC7}
+	\label{sd UC7}
+\end{figure}
+
+Brugeren ønsker her at gemme og afslutte målingen. 
+
+\subsubsection{Opdateret Klassediagram}
+Klasse pplikationsmodellerne er udarbejdet ud fra use casene, sekvensdiagrammer og domænemodellen. Der er ligesom ved sekvensdiagrammerne lavet et klassediagram for hver use case. Der er her også brugt virtuelle metoder. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/ISE/classAppModelUC2}
 	\caption{Klassediagram UC 2}
 	\label{classApp UC2}
 \end{figure}
 
 \begin{figure}[H]
-	\includegraphics[width=1\textwidth]{Figurer/classAppModelUC3}
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/ISE/classAppModelUC3}
 	\caption{Klassediagram UC 3}
 	\label{classApp UC3}
 \end{figure}
 
 \begin{figure}[H]
-	\includegraphics[width=1\textwidth]{Figurer/classAppModelUC4}
+	\centering
+	\includegraphics[width=1.4\textwidth]{Figurer/ISE/classAppModelUC4}
 	\caption{Klassediagram UC 4}
 	\label{classApp UC4}
 \end{figure}
 
 \begin{figure}[H]
-	\includegraphics[width=1\textwidth]{Figurer/classAppModelUC5}
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/ISE/classAppModelUC5}
 	\caption{Klassediagram UC 5}
 	\label{classApp UC5}
 \end{figure}
 
 \begin{figure}[H]
-	\includegraphics[width=1\textwidth]{Figurer/classAppModelUC6}
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/ISE/classAppModelUC6}
 	\caption{Klassediagram UC 6}
 	\label{classApp UC6}
 \end{figure}
 
 \begin{figure}[H]
-	\includegraphics[width=1\textwidth]{Figurer/classAppModelUC7}
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/ISE/classAppModelUC7}
 	\caption{Klassediagram UC 7}
 	\label{classApp UC7}
 \end{figure}
-
-
-
-\subsubsection{Domænemodel}
-
-\subsubsection{Sekvensdiagram}
-\begin{figure}[H]
-	\includegraphics[width=1\textwidth]{Figurer/sdAppModelUC2}
-	\caption{Sekvensdiagram UC2}
-	\label{sd UC2}
-\end{figure}
-
-\begin{figure}[H]
-	\includegraphics[width=1\textwidth]{Figurer/sdAppModelUC3}
-	\caption{Sekvensdiagram UC3}
-	\label{sd UC3}
-\end{figure}
-
-\begin{figure}[H]
-	\includegraphics[width=1\textwidth]{Figurer/sdAppModelUC4}
-	\caption{Sekvensdiagram UC4}
-	\label{sd UC4}
-\end{figure}
-
-\begin{figure}[H]
-	\includegraphics[width=1\textwidth]{Figurer/sdAppModelUC5}
-	\caption{Sekvensdiagram UC5}
-	\label{sd UC5}
-\end{figure}
-
-\begin{figure}[H]
-	\includegraphics[width=1\textwidth]{Figurer/sdAppModelUC6}
-	\caption{Sekvensdiagram UC6}
-	\label{sd UC6}
-\end{figure}
-
-\begin{figure}[H]
-	\includegraphics[width=1\textwidth]{Figurer/sdAppModelUC7}
-	\caption{Sekvensdiagram UC7}
-	\label{sd UC7}
-\end{figure}
-
-\subsubsection{Opdateret Klassediagram}
 
 \section{Software implementering}
  

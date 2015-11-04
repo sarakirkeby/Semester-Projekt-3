@@ -16,7 +16,7 @@ Kravspecifikationen vil beskrive, ud fra en række modeller, hvordan blodtryksm�
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.6\textwidth]{Figurer/Aktordiagram}
+	\includegraphics[width=0.6\textwidth]{Figurer/ISE/Aktordiagram}
 	\caption{Aktør-kontekst diagram}
 \end{figure}
 
@@ -37,7 +37,7 @@ Kravspecifikationen vil beskrive, ud fra en række modeller, hvordan blodtryksm�
 \subsection{Use case diagram}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Figurer/UCdiagram}
+	\includegraphics[width=0.7\textwidth]{Figurer/ISE/UCdiagram}
 \end{figure}
 
 \begin{longtabu} to \linewidth{@{}l r X[j]@{}} %UC1%
@@ -51,9 +51,11 @@ Kravspecifikationen vil beskrive, ud fra en række modeller, hvordan blodtryksm�
     Mål && Tekniker ønsker at foretage kalibrering\\
     Forudsætninger &&  \\
     Resultat &&    Systemet er kalibreret                     \\ \midrule
-    Hovedforløb &    1. &      \\ \midrule
-                
-    Undtagelser &    &    \\ \bottomrule
+    Hovedforløb &    1. &    Tekniker påtrykker systemet tre kendte tryk  \\
+    			&    2. &    Tekniker aflæser responserne  \\ 
+    			&    3. &    Tekniker noterer afvigelser fra de kendte tryk \newline [\textit{3.a Der er ingen afvigelser}]  \\
+    			&    4. &    Tekniker kalibrerer afvigelsen  \\ \midrule 		
+    Undtagelser &    3.a & Use case afsluttes \\ \bottomrule
 \caption{Fully dressed Use Case 1}
 \label{UC1}
 \end{longtabu}

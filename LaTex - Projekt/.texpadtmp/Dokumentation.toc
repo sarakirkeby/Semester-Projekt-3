@@ -16,36 +16,36 @@
 \contentsline {section}{\numberline {3.2}Hardware arkitektur}{13}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Design af forst\IeC {\ae }rker}{14}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Design af analogfilter}{15}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Gr\IeC {\ae }nseflader}{20}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Software arkitektur}{20}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}GUI}{20}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}UML klassediagram}{20}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Appliktationsmodel}{20}{subsection.3.3.3}
-\contentsline {subsubsection}{Klassediagram}{20}{section*.21}
-\contentsline {subsubsection}{Dom\IeC {\ae }nemodel}{23}{section*.28}
-\contentsline {subsubsection}{Sekvensdiagram}{23}{section*.29}
-\contentsline {subsubsection}{Opdateret Klassediagram}{27}{section*.36}
-\contentsline {section}{\numberline {3.4}Software implementering}{27}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Visning af EKG-signal}{27}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Analyse}{27}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Testprogram}{27}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Lagring i database}{27}{subsection.3.4.4}
-\contentsline {subsubsection}{Offentlig database}{27}{section*.37}
-\contentsline {subsubsection}{Privat database}{27}{section*.38}
-\contentsline {chapter}{\chapternumberline {4}Acceptest}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Accepttest af Use Cases}{29}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Use Case 1}{29}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Use Case 2}{29}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Use Case 3}{30}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Use Case 4}{31}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Use Case 5}{31}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Use Case 6}{32}{subsection.4.1.6}
-\contentsline {subsection}{\numberline {4.1.7}Use Case 7}{32}{subsection.4.1.7}
-\contentsline {section}{\numberline {4.2}Accepttest af ikke-funktionelle krav}{33}{section.4.2}
-\contentsline {chapter}{Bilag}{37}{chapter*.39}
-\contentsline {section}{Fejlrapport}{37}{section*.40}
-\contentsline {section}{Logbog}{37}{section*.41}
-\contentsline {section}{M\IeC {\o }dereferart}{37}{section*.42}
-\contentsline {section}{Kode}{37}{section*.43}
-\contentsline {section}{Tidsplan}{37}{section*.44}
-\contentsline {section}{Samarbejdsaftale}{37}{section*.45}
+\contentsline {subsection}{\numberline {3.2.3}Gr\IeC {\ae }nseflader}{18}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Software arkitektur}{18}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}GUI}{18}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}UML klassediagram}{18}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Appliktationsmodel}{18}{subsection.3.3.3}
+\contentsline {subsubsection}{Klassediagram}{18}{section*.21}
+\contentsline {subsubsection}{Dom\IeC {\ae }nemodel}{18}{section*.22}
+\contentsline {subsubsection}{Sekvensdiagram}{18}{section*.24}
+\contentsline {subsubsection}{Opdateret Klassediagram}{22}{section*.31}
+\contentsline {section}{\numberline {3.4}Software implementering}{26}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Visning af EKG-signal}{26}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Analyse}{26}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Testprogram}{26}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Lagring i database}{26}{subsection.3.4.4}
+\contentsline {subsubsection}{Offentlig database}{26}{section*.38}
+\contentsline {subsubsection}{Privat database}{26}{section*.39}
+\contentsline {chapter}{\chapternumberline {4}Acceptest}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}Accepttest af Use Cases}{27}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Use Case 1}{27}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Use Case 2}{27}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Use Case 3}{28}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Use Case 4}{29}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}Use Case 5}{29}{subsection.4.1.5}
+\contentsline {subsection}{\numberline {4.1.6}Use Case 6}{30}{subsection.4.1.6}
+\contentsline {subsection}{\numberline {4.1.7}Use Case 7}{30}{subsection.4.1.7}
+\contentsline {section}{\numberline {4.2}Accepttest af ikke-funktionelle krav}{31}{section.4.2}
+\contentsline {chapter}{Bilag}{35}{chapter*.40}
+\contentsline {section}{Fejlrapport}{35}{section*.41}
+\contentsline {section}{Logbog}{35}{section*.42}
+\contentsline {section}{M\IeC {\o }dereferart}{35}{section*.43}
+\contentsline {section}{Kode}{35}{section*.44}
+\contentsline {section}{Tidsplan}{35}{section*.45}
+\contentsline {section}{Samarbejdsaftale}{35}{section*.46}
