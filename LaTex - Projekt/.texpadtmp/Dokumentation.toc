@@ -21,10 +21,10 @@
 \contentsline {subsection}{\numberline {3.3.1}GUI}{16}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}UML klassediagram}{18}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Appliktationsmodel}{18}{subsection.3.3.3}
-\contentsline {subsubsection}{Klassediagram}{18}{section*.24}
-\contentsline {subsubsection}{Dom\IeC {\ae }nemodel}{18}{section*.25}
-\contentsline {subsubsection}{Sekvensdiagram}{19}{section*.27}
-\contentsline {subsubsection}{Opdateret Klassediagram}{23}{section*.33}
+\contentsline {subsubsection}{Klassediagram}{18}{section*.19}
+\contentsline {subsubsection}{Dom\IeC {\ae }nemodel}{18}{section*.20}
+\contentsline {subsubsection}{Sekvensdiagram}{19}{section*.22}
+\contentsline {subsubsection}{Opdateret Klassediagram}{23}{section*.28}
 \contentsline {section}{\numberline {3.4}Software implementering}{25}{section.3.4}
 \contentsline {chapter}{\chapternumberline {4}Acceptest}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Accepttest af Use Cases}{27}{section.4.1}
@@ -35,10 +35,10 @@
 \contentsline {subsection}{\numberline {4.1.5}Use Case 5}{29}{subsection.4.1.5}
 \contentsline {subsection}{\numberline {4.1.6}Use Case 6}{29}{subsection.4.1.6}
 \contentsline {section}{\numberline {4.2}Accepttest af ikke-funktionelle krav}{30}{section.4.2}
-\contentsline {chapter}{Bilag}{35}{chapter*.39}
-\contentsline {section}{Fejlrapport}{35}{section*.40}
-\contentsline {section}{Logbog}{35}{section*.41}
-\contentsline {section}{M\IeC {\o }dereferart}{35}{section*.42}
-\contentsline {section}{Kode}{35}{section*.43}
-\contentsline {section}{Tidsplan}{35}{section*.44}
-\contentsline {section}{Samarbejdsaftale}{35}{section*.45}
+\contentsline {chapter}{Bilag}{35}{chapter*.34}
+\contentsline {section}{Fejlrapport}{35}{section*.35}
+\contentsline {section}{Logbog}{35}{section*.36}
+\contentsline {section}{M\IeC {\o }dereferart}{35}{section*.37}
+\contentsline {section}{Kode}{35}{section*.38}
+\contentsline {section}{Tidsplan}{35}{section*.39}
+\contentsline {section}{Samarbejdsaftale}{35}{section*.40}

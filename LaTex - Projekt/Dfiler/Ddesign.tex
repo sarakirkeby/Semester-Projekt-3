@@ -16,17 +16,19 @@ I følgende afsnit beskrives hvordan blodtryksmåler systemet og nogle af dets d
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Hardware/BDD}
-	\caption{Blokdiagram for blodtryksmåler systemet.}\label{labelpic}
+	\caption{Blokdiagram for blodtryksmåler systemet.}
+	\label{BDD blodtryksmaaler}
 \end{figure}
 
-Ud af blokdiagrammet kan man se at blodtryksmåler systemet består af en transducer, en forstærker, et analogt filter, en DAQ og en computer.\\
+Ud af blokdiagrammet, figur \ref{BDD blodtryksmaaler}, kan man se at blodtryksmåler systemet består af en transducer, en forstærker, et analogt filter, en DAQ og en computer.\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Hardware/IBD}
-	\caption{Internt blok diagram for blodtryksmåler systemet.}\label{labelpic}
+	\caption{Internt blok diagram for blodtryksmåler systemet.}
+	\label{IBD blodtryksmaaler}
 \end{figure}
 
-Ud af det interne blok diagram kan ses det at blodtrykket i form af det målte tryk kommer ind i transduceren. Transduceren som omformer det målte tryk til et spændingssignal, sender signalet vidre til forstærkeren. Fra forstærkeren sendes signalet over i det analoge filter og derfra ind i DAQ'en. Endeligt sendes det digitale signal fra DAQ'en over i en computer, der fortolker signalet som et billede, der vises til omverdenen.
+Ud af det interne blok diagram, figur \ref{IBD blodtryksmaaler}, kan ses det at blodtrykket i form af det målte tryk kommer ind i transduceren. Transduceren som omformer det målte tryk til et spændingssignal, sender signalet vidre til forstærkeren. Fra forstærkeren sendes signalet over i det analoge filter og derfra ind i DAQ'en. Endeligt sendes det digitale signal fra DAQ'en over i en computer, der fortolker signalet som et billede, der vises til omverdenen.
 
 \subsection{Design af forstærker}
 Forstærkeren er designet med tanke på, at det er meget små spændinger der arbejdes med. Grundet dette, er en almindelig operationsforstærker fravalgt, da dens reelle indgangsimpedans er for lille. En Instrumentationsforstærkers indgangsimpedans i den virkelige verden, er højere, og den kan dermed opfange meget små signaler så som blodtryk.\\
@@ -36,35 +38,42 @@ Vejleder rådede herefter til at projektgruppen brugte instrumentationsforstærk
 	\includegraphics[width=0.6\textwidth]{Figurer/Hardware/Forstaerker}
 	\caption{Der overordnede design af forstærkeren.}\label{labelpic}
 \end{figure}
-$R_{gain}$ er modstanden, som bestemmer, hvor meget forstærkning, instrumentationsforstærkeren skal give og $R_{load}$ er den belastning, der kommer efter kredsløbet. I dette tilfælde, er det, det analoge filter. For at finde $R_{gain}$’s størrelse, kræver det, at der vides, hvor meget forstærkning der er brug for. Dette findes, ved at bestemme den maksimale spænding, som transduceren kan give, i en blodtrykssituation. Dette regnestykke kan ses realiseret i ligning x.\\
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.8\textwidth]{Figurer/Hardware/LigningSara}
-\end{figure}
 
-Spændingen ønskes at skaleres op til DAQ’ens dynamikområde, som ligger omkring de 5V. Forstærkningsfaktoren udregnes ved simpel brøkregning. \\
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.3\textwidth]{Figurer/Hardware/ligningtilgain}
-\end{figure}
 
-INA114’s datasheet giver en ligning for udregning af forstærkning. Da forstærkningen er kendt, omskrives denne ligning, så modstanden $R_{gain}$’s værdi i stedet bestemmes.\\
+$R_{gain}$ er modstanden, som bestemmer, hvor meget forstærkning, instrumentationsforstærkeren skal give og $R_{load}$ er den belastning, der kommer efter kredsløbet. I dette tilfælde, er det, det analoge filter. For at finde $R_{gain}$’s størrelse, kræver det, at der vides, hvor meget forstærkning der er brug for. Dette findes, ved at bestemme den maksimale spænding, som transduceren kan give, i en blodtrykssituation. Dette regnestykke kan ses realiseret i ligning \ref{ligning1}:
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{Figurer/Hardware/omskrivningtilgain}
-\end{figure}
+\begin{align}
+	VT_{max}=T_{max}\cdot V_{max}\cdot HG_{max}=\frac{\mu V}{V/mmHG}\cdot 5V\cdot 250mmHg=6,25mV
+	\label{ligning1}
+\end{align}
 
-Herefter kan den ohmske værdi af $R_{gain}$ bestemmes.\\
+Spændingen ønskes at skaleres op til DAQ’ens dynamikområde, som ligger omkring de 5V. Forstærkningsfaktoren udregnes ved simpel brøkregning, som ses på ligning \ref{ligning2}:
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.3\textwidth]{Figurer/Hardware/udregningafgain}
-\end{figure}
+\begin{center}
+	\begin{align}
+		G=\frac{5}{6,25 \cdot 10^{-3}}=800
+		\label{ligning2}
+	\end{align}
+\end{center}
+
+INA114’s datasheet giver en ligning for udregning af forstærkning. Da forstærkningen er kendt, omskrives ligning \ref{ligning3} , så modstanden $R_{gain}$’s værdi i stedet bestemmes:\\
+
+
+\begin{align}
+	Gain=1+\frac{50k\Omega}{R_{gain}}\to G-1=\frac{50k\Omega}{R_{gain}}\to \frac{50kOhm}{G-1}=R_{gain}
+	\label{ligning3}
+\end{align}
+
+Herefter kan den ohmske værdi af $R_{gain}$ bestemmes, hvilket sker i linging \ref{ligning4}:
+
+\begin{align}
+	R_{gain}=\frac{50k\Omega}{800-1}=62,578 \Omega
+	\label{ligning4}
+\end{align}
 
 \subsection{Design af analogfilter}
-Filteret skulle realiseres som et aktivt 2. ordens lavpasfilter med båndbredde på 50 Hz af typen Sallen-Key med unity gain (se \ref{fig:Filter}). Filteret skulle designes som et Butterworth filter med cut off frekvens på 50 Hz. C2 skulle vælges til 680 nF og R1 = R2. Operationsforstærkeren skal være af typen OP27.  
+Filteret, som ses på figur \ref{fig:Filter}, skulle realiseres som et aktivt 2. ordens lavpasfilter med båndbredde på 50 Hz af typen Sallen-Key med unity gain (se \ref{fig:Filter}). Filteret skulle designes som et Butterworth filter med cut off frekvens på 50 Hz. C2 skulle vælges til 680 nF og R1 = R2. Operationsforstærkeren skal være af typen OP27.  
 
 \begin{figure}[H]
 	\centering
@@ -73,13 +82,13 @@ Filteret skulle realiseres som et aktivt 2. ordens lavpasfilter med båndbredde 
 	\label{fig:Filter}
 \end{figure}
 
-Der blev valgt en dæmpningsfaktor på 1, da det ville være mest optimalt med et kritisk dæmpet signal. Ud fra hjemmesiden\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm} fandt vi overføringsfunktionen for Sallen-Kay lavpasfiltret:
+Der blev valgt en dæmpningsfaktor på 1, da det ville være mest optimalt med et kritisk dæmpet signal. Ud fra hjemmesiden\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm} fandt vi overføringsfunktionen for Sallen-Kay lavpasfiltret, udtrykt i ligning \ref{ligning5}:
 
-\begin{figure}[H]
-	\centering
-	\includegraphics{Figurer/Hardware/ligning1}
-	\label{fig:lign1}
-\end{figure}
+
+\begin{align}
+	\frac{V_{out}(S)}{V_{in}(S)}=\frac{\frac{1}{R_1C_1R_2C_2}}{s^2+s(\frac{1}{R_2C_2}+\frac{1}{R_1C_2})}+\frac{1}{R_1C_1R_2C_2}
+	\label{ligning5}
+\end{align}
 
 Da det er blevet opgivet at $R1=R2$, kan overføringsfunktionen forkortes: 
 
@@ -151,9 +160,9 @@ Generelt er et unity gain Sallen-Key filter med equivalente capacitorer og equiv
 \subsection{Grænseflader}
 
 \section{Software arkitektur}
-
 \subsection{GUI}
-Til designet af brugergrænsefladen er blevet udført ud fra de 16 principper for gode brugergrænseflader. Der er ligeledes i form1 hentet inspiration fra allerede eksisterende blodtryk moniter. I designet af brugergrænsefladen bestræbes, der efter at gøre det så virkelighedsnært som muligt ud fra de redskaber og oplysninger der er til rådighed.\\ \\Brugergrænsefladen er inddelt i 3 forskellige interfaces. De 3 interfaces er henholdvis Log ind, Form1 og Gem. De personer, der interagerer med brugergrænsefladen er sundhedsfagligt personale som typisk vil være en læge eller sygeplejerske. Dette er der også taget højde for i designet da, der aldrig vil være andre end det sundhedsfaglige personale der interagerer med brugergrænsefladen og derfor er den en skærpet målgruppe.\\Nedenfor kommer der en uddybende beskrivelse af brugergrænsefladen. 
+Dette afsnit beskriver hvilke tanker og overvejelser der er gjort i forbindelse med designet af diverse brugergrænseflader. Nedenfor ses udkast til disse brugergrænseflader.\\
+Til designet af brugergrænsefladen er blevet udført ud fra de 16 principper for gode brugergrænseflader. Der er ligeledes i form1 hentet inspiration fra allerede eksisterende blodtryk monitor. I designet af brugergrænsefladen bestræbes, der efter at gøre det så virkelighedsnært som muligt ud fra de redskaber og oplysninger der er til rådighed.\\ \\Brugergrænsefladen er inddelt i 3 forskellige interfaces. De 3 interfaces er henholdvis Log ind, Form1 og Gem. De personer, der interagerer med brugergrænsefladen er sundhedsfagligt personale som typisk vil være en læge eller sygeplejerske. Dette er der også taget højde for i designet da, der aldrig vil være andre end det sundhedsfaglige personale der interagerer med brugergrænsefladen og derfor er den en skærpet målgruppe.\\Nedenfor kommer der en uddybende beskrivelse af brugergrænsefladen. 
 
 \begin{figure}[H]
 	\centering
@@ -162,7 +171,7 @@ Til designet af brugergrænsefladen er blevet udført ud fra de 16 principper fo
 	\label{Login vindue}
 \end{figure}
 
-Her er der tage udgangspunkt i, at brugergrænsefalden skal være enkel og overskuelig opbygget. Der skal ikke være nogle overflødige ting og de knapper der er vigtige som bruger skal benytte skal stå tydeligt frem. Opbygningen skal afspejle brugerens logik.\\ \\ Tankerne omkring den enkle opbygning er, at hvis der opstår en akut situation hvor systemet skal i gang hurtigt skal det være nemt og hurtigt at logge ind i systemet. Det er vigtigt at knapperne er selvforklarende og giver brugeren det der forventes af knappen når den benyttes. \\ \\Der er taget højde for feedback til bruger ved forkert log ind får brugeren en besked om at log ind er indtastet forkert og der skal prøves forfra. 
+I figur \ref{Login vindue} er der tage udgangspunkt i, at brugergrænsefalden skal være enkel og overskuelig opbygget. Der skal ikke være nogle overflødige ting og de knapper der er vigtige som bruger skal benytte skal stå tydeligt frem. Opbygningen skal afspejle brugerens logik.\\ \\ Tankerne omkring den enkle opbygning er, at hvis der opstår en akut situation hvor systemet skal i gang hurtigt skal det være nemt og hurtigt at logge ind i systemet. Det er vigtigt at knapperne er selvforklarende og giver brugeren det der forventes af knappen når den benyttes. \\ \\Der er taget højde for feedback til bruger ved forkert log ind får brugeren en besked om at log ind er indtastet forkert og der skal prøves forfra. 
 
 \begin{figure}[H]
 	\centering
@@ -171,7 +180,7 @@ Her er der tage udgangspunkt i, at brugergrænsefalden skal være enkel og overs
 	\label{Blodtryk vindue}
 \end{figure}
 
-Her er opbygningen mere kompliceret og med flere knapper end ved Log ind og Gem. Der er taget højde for at knapperne er selvforklarende og deres navne afspejler de bagvedliggende handlinger. Dette medfører at brugeren stadig har et overblik over brugergrænsefalden og stadig selv kan kontrollerer hvad der skal ske. Denne brugergrænseflade er ikke tiltænkt nye brugere, men derimod brugere der har et kendskab til den og til hvilke sundhedfaglige værdier og udtryk, der vises på den.  Derfor benyttes brugerens sprog på brugergrænsefalden og ikke et sprog med termer, der er forståelig for alle. 
+I blodtryksvinduet, vist på figur \ref{Blodtryk vindue}, er opbygningen mere kompliceret og med flere knapper end ved Log ind og Gem. Der er taget højde for at knapperne er selvforklarende og deres navne afspejler de bagvedliggende handlinger. Dette medfører at brugeren stadig har et overblik over brugergrænsefalden og stadig selv kan kontrollerer hvad der skal ske. Denne brugergrænseflade er ikke tiltænkt nye brugere, men derimod brugere der har et kendskab til den og til hvilke sundhedfaglige værdier og udtryk, der vises på den.  Derfor benyttes brugerens sprog på brugergrænsefalden og ikke et sprog med termer, der er forståelig for alle. 
 
 \begin{figure}[H]
 	\centering
@@ -181,7 +190,7 @@ Her er opbygningen mere kompliceret og med flere knapper end ved Log ind og Gem.
 \end{figure}
 \subsection{UML klassediagram}
 
-Her er der igen taget udgangspunkt i en enkel opbygning og at knapperne, der skal bruges er tydelige og selvforklarende. Det er her også brugerens logik, der afspejles og ingen unødvendige ting er inddraget i brugergrænsefalden. Det er her muligt at afbryde situationen ved at der er en alternativ udvej, som kan bruges hvis den op startet handling fortrydes. Der er taget højde for feedback til brugeren hvis der indtastes forkert CPR nummer får brugeren det af vide i et pop-up vindue. 
+På figur \ref{Gem vindue}, gemme-vinduet, er der igen taget udgangspunkt i en enkel opbygning og at knapperne, der skal bruges er tydelige og selvforklarende. Det er her også brugerens logik, der afspejles og ingen unødvendige ting er inddraget i brugergrænsefalden. Det er her muligt at afbryde situationen ved at der er en alternativ udvej, som kan bruges hvis den op startet handling fortrydes. Der er taget højde for feedback til brugeren hvis der indtastes forkert CPR nummer får brugeren det af vide i et pop-up vindue. 
 
 \subsection{Appliktationsmodel}
 
@@ -193,8 +202,8 @@ Diagrammet viser en domæne model for blodtryks systemet. Dette diagram giver et
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/ISE/Domaenemodel}
-	\caption{Sekvensdiagram UC2}
-	\label{sd UC2}
+	\caption{Domænemodel}
+	\label{domaenemodel}
 \end{figure}
 
 \subsubsection{Sekvensdiagram}
@@ -203,12 +212,12 @@ Der er blevet lavet et sekvensdiagram for hver use case for at give det bedste o
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC2part2}
+	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC2}
 	\caption{Sekvensdiagram UC2}
 	\label{sd UC2}
 \end{figure}
 
-Her ses det hvordan brugeren logger ind i systemet og hvordan brugeren for systemet nulpunktsjusteret. Det er brugeren, der interagerer med systemet og er initiator for at handlingerne bliver udført. 
+På figur \ref{sd UC2} ses det hvordan brugeren logger ind i systemet og hvordan brugeren for systemet nulpunktsjusteret. Det er brugeren, der interagerer med systemet og er initiator for at handlingerne bliver udført. 
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC3}
@@ -216,7 +225,7 @@ Her ses det hvordan brugeren logger ind i systemet og hvordan brugeren for syste
 	\label{sd UC3}
 \end{figure}
 
-Her ses det hvordan brugeren starter målingen og hvordan graferne vises på brugergrænsefalden.
+Figur \ref{sd UC3} viser hvordan brugeren starter målingen og hvordan graferne vises på brugergrænsefalden.
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC4}
@@ -224,7 +233,7 @@ Her ses det hvordan brugeren starter målingen og hvordan graferne vises på bru
 	\label{sd UC4}
 \end{figure}
 
-Her til vælger brugeren om blodtryks signalet skal filtreres eller ej.
+I sekvensdiagrammet figur \ref{sd UC4} ses hvordan brugeren kan vælge om blodtrykssignalet skal filtreres eller ej.
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC5}
@@ -232,7 +241,7 @@ Her til vælger brugeren om blodtryks signalet skal filtreres eller ej.
 	\label{sd UC5}
 \end{figure}
 
-Det ses her hvordan brugeren justerer grænseværdierne for patientens blodtryk. Denne justering sker ud fra patientens målte blodtryk. De justerede grænseværdi ligger til grundlag for alarmen. 
+Det ses på figur \ref{sd UC5} hvordan brugeren justerer grænseværdierne for patientens blodtryk. Denne justering sker ud fra patientens målte blodtryk. De justerede grænseværdi ligger til grundlag for alarmen. Desuden viser figuren, at brugeren har mulighed for at udskyde alarmen.
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC6}
@@ -240,8 +249,7 @@ Det ses her hvordan brugeren justerer grænseværdierne for patientens blodtryk.
 	\label{sd UC6}
 \end{figure}
 
-
-Brugeren ønsker her at gemme og afslutte målingen. 
+Figur \ref{sd UC6} viser hvordan systemet gemmer og afslutter en måling. 
 
 \subsubsection{Opdateret Klassediagram}
 Klasse applikationsmodellerne er udarbejdet ud fra use casene, sekvensdiagrammer og domænemodellen. Der er ligesom ved sekvensdiagrammerne lavet et klassediagram for hver use case. Der er her også brugt virtuelle metoder. 
@@ -284,6 +292,9 @@ Klasse applikationsmodellerne er udarbejdet ud fra use casene, sekvensdiagrammer
 \end{figure}
 
 \section{Software implementering}
+
+
+
  
 
 
