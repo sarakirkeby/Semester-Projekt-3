@@ -15,7 +15,7 @@ I følgende afsnit beskrives hvordan blodtryksmåler systemet og nogle af dets d
 \\
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Hardware/BDD}
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/BDD1}
 	\caption{Blokdiagram for blodtryksmåler systemet.}
 	\label{BDD blodtryksmaaler}
 \end{figure}
@@ -162,7 +162,9 @@ Generelt er et unity gain Sallen-Key filter med equivalente capacitorer og equiv
 \section{Software arkitektur}
 \subsection{GUI}
 Dette afsnit beskriver hvilke tanker og overvejelser der er gjort i forbindelse med designet af diverse brugergrænseflader. Nedenfor ses udkast til disse brugergrænseflader.\\
-Til designet af brugergrænsefladen er blevet udført ud fra de 16 principper for gode brugergrænseflader. Der er ligeledes i form1 hentet inspiration fra allerede eksisterende blodtryk monitor. I designet af brugergrænsefladen bestræbes, der efter at gøre det så virkelighedsnært som muligt ud fra de redskaber og oplysninger der er til rådighed.\\ \\Brugergrænsefladen er inddelt i 3 forskellige interfaces. De 3 interfaces er henholdvis Log ind, Form1 og Gem. De personer, der interagerer med brugergrænsefladen er sundhedsfagligt personale som typisk vil være en læge eller sygeplejerske. Dette er der også taget højde for i designet da, der aldrig vil være andre end det sundhedsfaglige personale der interagerer med brugergrænsefladen og derfor er den en skærpet målgruppe.\\Nedenfor kommer der en uddybende beskrivelse af brugergrænsefladen. 
+Til designet af brugergrænsefladen er blevet udført ud fra de 16 principper for gode brugergrænseflader. Der er ligeledes i form1 hentet inspiration fra allerede eksisterende blodtryk monitor. I designet af brugergrænsefladen bestræbes, der efter at gøre det så virkelighedsnært som muligt ud fra de redskaber og oplysninger der er til rådighed.\\ \\
+Brugergrænsefladen er inddelt i 3 forskellige interfaces. De 3 interfaces er henholdvis Log ind, Form1 og Gem. De personer, der interagerer med brugergrænsefladen er sundhedsfagligt personale som typisk vil være en læge eller sygeplejerske. Dette er der også taget højde for i designet da, der aldrig vil være andre end det sundhedsfaglige personale der interagerer med brugergrænsefladen og derfor er den en skærpet målgruppe.\\
+Nedenfor kommer der en uddybende beskrivelse af brugergrænsefladen. 
 
 \begin{figure}[H]
 	\centering
@@ -171,7 +173,9 @@ Til designet af brugergrænsefladen er blevet udført ud fra de 16 principper fo
 	\label{Login vindue}
 \end{figure}
 
-I figur \ref{Login vindue} er der tage udgangspunkt i, at brugergrænsefalden skal være enkel og overskuelig opbygget. Der skal ikke være nogle overflødige ting og de knapper der er vigtige som bruger skal benytte skal stå tydeligt frem. Opbygningen skal afspejle brugerens logik.\\ \\ Tankerne omkring den enkle opbygning er, at hvis der opstår en akut situation hvor systemet skal i gang hurtigt skal det være nemt og hurtigt at logge ind i systemet. Det er vigtigt at knapperne er selvforklarende og giver brugeren det der forventes af knappen når den benyttes. \\ \\Der er taget højde for feedback til bruger ved forkert log ind får brugeren en besked om at log ind er indtastet forkert og der skal prøves forfra. \\
+I figur \ref{Login vindue} er der tage udgangspunkt i, at brugergrænsefalden skal være enkel og overskuelig opbygget. Der skal ikke være nogle overflødige ting og de knapper der er vigtige som bruger skal benytte skal stå tydeligt frem. Opbygningen skal afspejle brugerens logik.\\ \\ 
+Tankerne omkring den enkle opbygning er, at hvis der opstår en akut situation hvor systemet skal i gang hurtigt skal det være nemt og hurtigt at logge ind i systemet. Det er vigtigt at knapperne er selvforklarende og giver brugeren det der forventes af knappen når den benyttes. \\ \\
+Der er taget højde for feedback til bruger ved forkert log ind får brugeren en besked om at log ind er indtastet forkert og der skal prøves forfra. \\
 
 
 \begin{figure}[H]

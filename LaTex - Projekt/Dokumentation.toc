@@ -19,13 +19,13 @@
 \contentsline {subsection}{\numberline {3.2.3}Gr\IeC {\ae }nseflader}{16}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Software arkitektur}{16}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}GUI}{16}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}UML klassediagram}{18}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Appliktationsmodel}{18}{subsection.3.3.3}
-\contentsline {subsubsection}{Klassediagram}{18}{section*.20}
-\contentsline {subsubsection}{Dom\IeC {\ae }nemodel}{18}{section*.21}
-\contentsline {subsubsection}{Sekvensdiagram}{19}{section*.23}
-\contentsline {subsubsection}{Opdateret Klassediagram}{23}{section*.29}
-\contentsline {section}{\numberline {3.4}Software implementering}{25}{section.3.4}
+\contentsline {subsection}{\numberline {3.3.2}UML klassediagram}{19}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Appliktationsmodel}{19}{subsection.3.3.3}
+\contentsline {subsubsection}{Klassediagram}{19}{section*.20}
+\contentsline {subsubsection}{Dom\IeC {\ae }nemodel}{19}{section*.21}
+\contentsline {subsubsection}{Sekvensdiagram}{20}{section*.23}
+\contentsline {subsubsection}{Opdateret Klassediagram}{24}{section*.29}
+\contentsline {section}{\numberline {3.4}Software implementering}{26}{section.3.4}
 \contentsline {chapter}{\chapternumberline {4}Acceptest}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Accepttest af Use Cases}{27}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Use Case 1}{27}{subsection.4.1.1}
