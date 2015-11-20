@@ -92,50 +92,40 @@ Der blev valgt en dæmpningsfaktor på 1, da det ville være mest optimalt med e
 
 Da det er blevet opgivet at $R1=R2$, kan overføringsfunktionen forkortes: 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.35\textwidth]{Figurer/Hardware/ligning2}
-\end{figure}
+\begin{align}
+\frac{V_{out}(s)}{V_{in}(s)}=\frac{\frac{1}{R^2C_{1}C_{2}}}{s^2+s(\frac{2}{RC_{2}})+\frac{1}{R^2C_{1}C_{2}}}
+\label{ligning6}
+\end{align}
 
 Dernæst sammenlignes med standardformlen for overføringsfunktionen for et andet ordens filter.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.6\textwidth]{Figurer/Hardware/ligning3}
-	\label{fig:lign3}
-\end{figure}
+\begin{align}
+\frac{V_{out}(s)}{V_{in}(s)} = \frac{\frac{1}{R^{2}C_{1} C_{2}}}{s^2+s(\frac{2}{RC_{2}})+\frac{1}{R^{2}C_{1}C_{2}}} = \frac{\omega_{0}^{2}}{s{2}+s(2\zeta\omega_{0})+\omega_{0}^{2}}
+\end{align}
 
 Ud fra dette kan regnes komponentværdierne for R, idet
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.2\textwidth]{Figurer/Hardware/ligning4}
-	\label{fig:lign4}
-\end{figure}
+\begin{align}
+\frac{2}{RC_{2}}=2\zeta\omega_{0}
+\end{align}
 
 Ved hjælp af mathcad isoleres R.
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.85\textwidth]{Figurer/Hardware/ligning5}
-	\label{fig:lign5}
-\end{figure}
+\begin{align}
+\frac{2}{R\cdot680\cdot10^{-9}}=2\cdot1\cdot(50\cdot2\cdot\pi) solve, R \to \frac{250000}{17\cdot\pi}=4.681\times 10^3
+\end{align}
 
 Dernæst kan komponentværdien for C1 udregnes, idet:
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.2\textwidth]{Figurer/Hardware/ligning6}
-	\label{fig:lign6}
-\end{figure}
+\begin{align}
+\frac{1}{R^2C_{1}C_{2}}=\omega_{0}^2
+\end{align}
 
 Ved hjælp af mathcad isoleres C1. 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\textwidth]{Figurer/Hardware/ligning7}
-	\label{fig:lign7}
-\end{figure}
+\begin{align}
+\frac{1}{(4.681\times 10^{3})^{2}\cdot(680\cdot10^{-9})\cdotC_1}=(50\cdot 2\pi) solve, R \to \frac{250000}{17\pi}=4.681\times 10^{3}
+\end{align}
 
 Derved er komponentværdierne for kredsløbet fundet og de ses indskrevet på \ref{fig:Filter}. 
 
