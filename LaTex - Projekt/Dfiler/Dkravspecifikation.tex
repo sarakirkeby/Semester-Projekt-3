@@ -8,7 +8,8 @@
 
 
 \section{Indledning}
-Kravspecifikationen vil beskrive, ud fra en række modeller, hvordan blodtryksmåleren fungerer. Helt generelt er en invasiv blodtryksmåler et system, der vha. nål og tranducer kan måle.
+ Et blodtryksmålingssytem er blevet udarbejdet, der helt generelt er opbygget af en hardware del og en software del. Hardware delen er opbygget af en forstærker, transducer og analogt filter hvis formål er at kunne forstærke og filtrerer blodtrykssignalet og software delen kalibrerer, nulpunktsjusterer og analysere signalet samt viser signalet grafisk på en brugergrænsefalde. \\
+ Kravspecifikationen vil beskrive, produktets kunnen ud fra nogle opstillede funktionelle og ikke funktionelle krav til systemet. De ikke funktionelle krav er krav, der er opstillet til selve systemet og de funktionelle krav er beskrevet i use cases, som omhandler systemts aktiviteter i forhold til aktører og mål. 
 
 
 \section{Funktionelle krav}
@@ -27,8 +28,9 @@ Kravspecifikationen vil beskrive, ud fra en række modeller, hvordan blodtryksm�
 	{\large \textbf{Aktørnavn}} & {\large \textbf{Type}} & {\large \textbf{Beskrivelse}}\\ \toprule
 	Bruger & Primær & Brugeren er den aktør der foretager blodtryksmålingerne. Brugeren er en person der har kendskab til systemet, samt tilladelse til at benytte systemet. Fx en læge, anestesi sygeplejerske \\
 	Tekniker & Primær & Tekniker er den aktør der foretager den årlige kalibrering af systemet. Teknikeren er en person der har kendskab til den tekniske del af systemet. Fx. medicotekniker på et sygehus\\
-	Patient & Sekundær & Patienten stiller sin krop til rådighed for udførelse af en blodtryksmåling\\
-	Database & Sekundær & Databasen er det sted, hvor blodtryksmålingens data gemmes \\ \bottomrule
+	Transducer & Sekundær & Det er tranduceren, der leverer blodtryksmålingen til systemet\\
+	Medarbejder database & Sekundær & Medarbejder databasen er det sted, hvor medarbejderens log ind valideres \\
+	Pateint database & Sekundær & Patient databasen er det sted, hvor blodtryksmålingens data gemmes og patientens CPR nummer valideres \\ \bottomrule
 \caption{Aktørbeskrivelse}
 \label{Aktoerbeskrivelse}
 \end{longtabu}
