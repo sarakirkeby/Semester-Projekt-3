@@ -7,38 +7,39 @@
 \contentsline {section}{\numberline {2.2}Funktionelle krav}{3}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Akt\IeC {\o }r-kontekst diagram}{3}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Akt\IeC {\o }rbeskrivelse}{3}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Use cases}{4}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Use case diagram}{4}{subsection.2.3.1}
-\contentsline {section}{\numberline {2.4}Ikke-funktionelle krav}{8}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}(F)URPS+}{8}{subsection.2.4.1}
-\contentsline {chapter}{\chapternumberline {3}Design}{11}{chapter.3}
-\contentsline {section}{\numberline {3.1}Indledning}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Hardware arkitektur}{11}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Design af forst\IeC {\ae }rker}{12}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Design af analogfilter}{13}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Gr\IeC {\ae }nseflader}{16}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Software arkitektur}{16}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}GUI}{16}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}UML klassediagram}{19}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Appliktationsmodel}{19}{subsection.3.3.3}
-\contentsline {subsubsection}{Klassediagram}{19}{section*.20}
-\contentsline {subsubsection}{Dom\IeC {\ae }nemodel}{19}{section*.21}
-\contentsline {subsubsection}{Sekvensdiagram}{20}{section*.23}
-\contentsline {subsubsection}{Opdateret Klassediagram}{24}{section*.29}
-\contentsline {section}{\numberline {3.4}Software implementering}{26}{section.3.4}
-\contentsline {chapter}{\chapternumberline {4}Acceptest}{27}{chapter.4}
-\contentsline {section}{\numberline {4.1}Accepttest af Use Cases}{27}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Use Case 1}{27}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Use Case 2}{27}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Use Case 3}{28}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Use Case 4}{28}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}Use Case 5}{29}{subsection.4.1.5}
-\contentsline {subsection}{\numberline {4.1.6}Use Case 6}{29}{subsection.4.1.6}
-\contentsline {section}{\numberline {4.2}Accepttest af ikke-funktionelle krav}{30}{section.4.2}
-\contentsline {chapter}{Bilag}{35}{chapter*.35}
-\contentsline {section}{Fejlrapport}{35}{section*.36}
-\contentsline {section}{Logbog}{35}{section*.37}
-\contentsline {section}{M\IeC {\o }dereferart}{35}{section*.38}
-\contentsline {section}{Kode}{35}{section*.39}
-\contentsline {section}{Tidsplan}{35}{section*.40}
-\contentsline {section}{Samarbejdsaftale}{35}{section*.41}
+\contentsline {section}{\numberline {2.3}Use cases}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Use case diagram}{5}{subsection.2.3.1}
+\contentsline {section}{\numberline {2.4}Ikke-funktionelle krav}{9}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}(F)URPS+}{9}{subsection.2.4.1}
+\contentsline {chapter}{\chapternumberline {3}Design}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Indledning}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Hardware arkitektur}{13}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Design af forst\IeC {\ae }rker}{14}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Design af analogfilter}{15}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Gr\IeC {\ae }nseflader}{18}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Software arkitektur}{18}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}GUI}{18}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}UML klassediagram}{21}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Appliktationsmodel}{21}{subsection.3.3.3}
+\contentsline {subsubsection}{Klassediagram}{21}{section*.14}
+\contentsline {subsubsection}{Dom\IeC {\ae }nemodel}{21}{section*.15}
+\contentsline {subsubsection}{Sekvensdiagram}{22}{section*.17}
+\contentsline {subsubsection}{Opdateret Klassediagram}{26}{section*.23}
+\contentsline {section}{\numberline {3.4}Software implementering}{28}{section.3.4}
+\contentsline {chapter}{\chapternumberline {4}Acceptest}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Indledning}{29}{section.4.1}
+\contentsline {section}{\numberline {4.2}Accepttest af Use Cases}{29}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Use Case 1}{29}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Use Case 2}{30}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Use Case 3}{31}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Use Case 4}{31}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Use Case 5}{31}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Use Case 6}{32}{subsection.4.2.6}
+\contentsline {section}{\numberline {4.3}Accepttest af ikke-funktionelle krav}{33}{section.4.3}
+\contentsline {chapter}{Bilag}{37}{chapter*.29}
+\contentsline {section}{Fejlrapport}{37}{section*.30}
+\contentsline {section}{Logbog}{37}{section*.31}
+\contentsline {section}{M\IeC {\o }dereferart}{37}{section*.32}
+\contentsline {section}{Kode}{37}{section*.33}
+\contentsline {section}{Tidsplan}{37}{section*.34}
+\contentsline {section}{Samarbejdsaftale}{37}{section*.35}
