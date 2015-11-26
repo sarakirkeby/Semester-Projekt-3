@@ -60,15 +60,8 @@ namespace NS_Logik
         public List<double> grafdata {
             get
             {
-                if (filterOn)
-                {
-                    return grafdata_;
-                }
-                else
-                {
 
                     return filter.filtrerSignal(grafdata_);
-                }
             }
             set
             {
