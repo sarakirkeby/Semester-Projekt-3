@@ -35,9 +35,9 @@ namespace AsynchDAQ
         public DAQklasse()
         {
             SampleRate = 1000;
-            MinimumVolt = -1;
-            MaximumVolt = 1;
-            SamplesPerChannel = 200;
+            MinimumVolt = -10;
+            MaximumVolt = 10;
+            SamplesPerChannel = 10;
             DeviceName = "Dev1/ai0";
             antalmålinger = 0;
             målinger = new List<double>();
@@ -50,7 +50,6 @@ namespace AsynchDAQ
             MaximumVolt = maxvolt;
             SamplesPerChannel = samplesperchannel;
             DeviceName = devicename;
-            
         }
 
         public bool IsRunning()
@@ -95,7 +94,6 @@ namespace AsynchDAQ
             {
                 try
                 {
-
                     // Create a new task
                     myTask = new Task();
 
@@ -117,7 +115,7 @@ namespace AsynchDAQ
 
                     runningTask = myTask;
                     analogInReader = new AnalogMultiChannelReader(myTask.Stream);
-                    analogCallback = new AsyncCallback(AnalogInCallback);
+                    analogCallback = new AsyncCallback(AnalogInCallback); 
 
                     // Use SynchronizeCallbacks to specify that the object 
                     // marshals callbacks across threads appropriately.
@@ -140,17 +138,17 @@ namespace AsynchDAQ
         
             foreach (AnalogWaveform<double> waveform in sourceArray)
             {
-
+               
                 for (int sample = 0; sample < waveform.Samples.Count; ++sample)
                 {
-                    if (sample == 10)
+                    if (sample == 1)
                         break;
 
                     målinger.Add(waveform.Samples[sample].Value);
-                    antalmålinger++;
+                    
                 }
                 currentLineIndex++;
-                
+                antalmålinger++;
             }
             
         }

@@ -29,14 +29,12 @@ namespace Blodtrykssystem
         List<double> blodtryksværdier;
         int status;
         List<double> indkommendeSignal;
-        int xværdi;
-        int grafcount;
-        int antalIgraf;
 
         Thread t1;
 
         int graf1;
         DTO_Blodtryksmåling målinger;
+        Blodtryksberegning beregner;
 
         public Form1()
         {
@@ -51,15 +49,13 @@ namespace Blodtrykssystem
             antaldia = 0;
             baseline = 100;
             ubaseline = 100;
-            xværdi = 100;
-
-            antalIgraf = 0;
             maxTrykOverBaseline = baseline;
             umaxTrykOverBaseline = ubaseline;
             status = 1;
             //initGraf();
-
-            grafcount = 0;
+            chart1.ChartAreas[0].AxisX.Minimum = 0;
+            chart1.ChartAreas[0].AxisX.Maximum = 500;
+            chart1.ChartAreas[0].AxisY.Minimum = 100;
             //Thread t1 = new Thread(opdaterGraf);
             logiklag.startMåling();
             //t1.Start();
@@ -77,15 +73,16 @@ namespace Blodtrykssystem
         }
         private void initGraf()
         {
-            chart1.ChartAreas[0].AxisX.Minimum = counter - 60;
-            chart1.ChartAreas[0].AxisX.Maximum = counter + 20;
+            chart1.ChartAreas[0].AxisX.Minimum = 0;
+            chart1.ChartAreas[0].AxisX.Maximum = 100;
             chart1.ChartAreas[0].AxisY.Minimum = -10;
             chart1.ChartAreas[0].AxisY.Maximum = 10;
             //chart1.ChartAreas[0].AxisY.Interval = 20;
             chart1.ChartAreas[0].AxisX.LabelStyle.Format = "{#,##}";
-            chart1.ChartAreas[0].AxisX.Interval = 5;
+            chart1.ChartAreas[0].AxisX.Interval = 50;
             chart1.Series["Series1"].Color = Color.Blue;
-            chart1.Series["Series2"].Color = Color.Red;
+            
+            
         }
 
         private delegate void UpdateUICallback();
@@ -97,6 +94,7 @@ namespace Blodtrykssystem
             List<double> liste;
             liste = logiklag.grafdata;
 
+
             if (liste.Count > 0)
             {
                 if (label1.InvokeRequired)
@@ -106,12 +104,39 @@ namespace Blodtrykssystem
                 }
                 else
                 {
-                    chart1.Series[0].Points.Clear();
+                    
                     label14.Text = logiklag.getAntalMålinger().ToString();
+                    //chart1.Series[0].Points.AddXY(counter, liste[counter]);
                     chart1.Series[0].Points.DataBindY(liste);
-                    counter++;
+                    chart1.Series[1].Points.DataBindY(liste);
+                    chart1.Series[1].Color = Color.Transparent;
+                    chart1.Series[0].Color = Color.Blue;
 
+
+                    if (counter > 0)
+                    {
+                        chart1.Series[1].Points[counter-1].Color = Color.Red;
+                        chart1.Series[0].Points[counter].Color = Color.Transparent;
+
+                    }
+                    if (counter < logiklag.getAntalPåXAkse()-1)
+                    {
+                        chart1.Series[0].Points[counter + 1].Color = Color.Transparent;
+
+                    }
+
+                    counter++;
+                    if (counter == logiklag.getAntalPåXAkse())
+                    {
+                        counter = 0;
+                        beregner = new Blodtryksberegning();
+                        label2.Text = "HR: " + beregner.calcPuls(liste, 0.01).ToString();
+                        double systole = beregner.calsSystole(liste);
+                        double diastole = beregner.calsDiastole(liste);
+                        label1.Text = Convert.ToString(Math.Round(systole,0) + "/" + Convert.ToString(Math.Round(diastole)));
+                    }
                 }
+                
             }
 
 
@@ -131,7 +156,7 @@ namespace Blodtrykssystem
             //    chart1.Series[0].Points.AddXY(counter, nuværendeVærdi);
             //    counter++;
         }
-   
+
             
   //  }
 

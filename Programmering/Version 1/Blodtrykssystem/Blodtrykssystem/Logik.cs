@@ -14,20 +14,34 @@ namespace NS_Logik
     {
         Data datalag;
         Thread t2;
+        private bool filterOn;
+        double nuværende;
+        Filter filter;
         public Logik()
         {
             datalag = new Data();
+            filter = new Filter();
             grafcount = 0;
-            antalpåxakse = 400;
+            antalpåxakse = 500;
             optæller = 0;
             initListe();
             grafdata = new List<double>();
+            nuværende = 0;
+            filterOn = false;
 
+        }
+        public int getAntalPåXAkse()
+        {
+            return antalpåxakse;
         }
         public void startMåling()
         {
             t2 = new Thread(getGrafData);
             t2.Start();
+        }
+        public double getNuværende()
+        {
+            return nuværende;
         }
         private int antalpåxakse;
         public int getAntalMålinger()
@@ -42,7 +56,27 @@ namespace NS_Logik
             
         //}
         private int grafcount;
-        public List<double> grafdata;
+        private List<double> grafdata_;
+        public List<double> grafdata {
+            get
+            {
+                if (filterOn)
+                {
+                    return grafdata_;
+                }
+                else
+                {
+                    if (filter.filtrerSignal(grafdata_).Count > 1)
+                    {
+                        return filter.filtrerSignal(grafdata_);
+                    }
+                }
+            }
+            set
+            {
+                grafdata_ = value;
+            }
+         }
 
         private void initListe()
         {
@@ -50,7 +84,6 @@ namespace NS_Logik
             for(int i = 0; i < antalpåxakse; i++)
             {
                 xværdier.Add(0);
-               
             }
             
             
@@ -74,7 +107,8 @@ namespace NS_Logik
 
 
                 {
-                    xværdier[grafcount] = liste[optæller];
+                    xværdier[grafcount] = liste[liste.Count-1]* 19.045+168.3;
+                    nuværende = liste[liste.Count - 1];
                     grafcount++;
                     optæller++;
                     grafdata = xværdier;
