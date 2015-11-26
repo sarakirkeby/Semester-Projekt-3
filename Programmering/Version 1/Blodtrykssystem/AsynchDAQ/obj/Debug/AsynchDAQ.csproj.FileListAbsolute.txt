@@ -1,0 +1,12 @@
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\AsynchDAQ\obj\Debug\AsynchDAQ.csprojResolveAssemblyReference.cache
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\AsynchDAQ\bin\Debug\AsynchDAQ.dll
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\AsynchDAQ\bin\Debug\AsynchDAQ.pdb
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\AsynchDAQ\bin\Debug\NationalInstruments.Common.dll
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\AsynchDAQ\bin\Debug\NationalInstruments.Common.Native.dll
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\AsynchDAQ\bin\Debug\NationalInstruments.DAQmx.dll
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\AsynchDAQ\bin\Debug\NationalInstruments.NiLmClientDLL.dll
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\AsynchDAQ\bin\Debug\NationalInstruments.MStudioCLM.dll
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\AsynchDAQ\bin\Debug\NationalInstruments.Common.xml
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\AsynchDAQ\bin\Debug\NationalInstruments.DAQmx.xml
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\AsynchDAQ\obj\Debug\AsynchDAQ.dll
+C:\Users\Jeppe\Documents\Semester-Projekt-3\Programmering\Version 1\Blodtrykssystem\AsynchDAQ\obj\Debug\AsynchDAQ.pdb
