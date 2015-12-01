@@ -21,3 +21,31 @@ Sara-Sofie Staub Kirkeby - SSK \\[2ex]
     
 
 \end{longtabu}
+
+I dette projekt var problemstilling at lave en invasiv blodtrykmåler til en valgfri institution. Der er i den forbindelse blevet arbejdet med blodtryks-måling, udvikling af hardware til blodtryksmåleren samt udarbejdelse af et program til analyse af blodtryks-målingen.\\ 
+\\Motivationen for projektet bygger på, at der i klinisk praksis ofte er behov for kontinuert at kunne monitorerer en patients blodtryk. Dette er især vigtigt på en operationsstue, hvor blodtrykket er en vigtig parameter til monitorering af deres helbredstilstand, hvilket derfor ligger til grund for udarbejdelsen af dette projekt.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figurer/Indledning/Opstilling}
+	\label{Opstilling}
+	\caption{Tilslutningen af væskefyldt kateter}
+\end{figure}
+Da det er vigtigt med kontinuerte målinger af blodtrykket bliver målingen foretaget invasivt. På billedet ses det hvordan blodtryksmålesystemet er tilsluttet patientens arterier via et væskefyldt kateter.\\Projektets resultat vil kunne hjælpe sundhedsfaglig personale med at bevarer overblikket over deres patients fysiske tilstand under en operation. Da det både kan være en planlagt eller akut situation på operationsstuen er det vigtigt, at systemet virker optimalt og udøver den bedste hjælp til personalet.\\
+\\  I dette projekt der skal arbejdes på at udarbejdet et system, der kan tilsluttes det væskefyldte kateter og som kan vise en blodtryks kurve, samt blodtryks værdier på en computerskærm. \\Systemet skal bestå af to elementer:
+\begin{enumerate}
+	\item Det ene element består af et elektronisk kredsløb, der forstærker signalet fra transduceren og filtrerer signalet med et indbygget analogt filter.
+	\item Det andet element er et program, der afbilder blodtrykket grafisk som funktion af tiden. Programmet skal lige ledes vise blodtryksværdier, samt puls og kunne udløse en alarm hvis grænseværdier for blodtrykket overskrides. 
+\end{enumerate}
+\textbf{Afgrænsning}\\ \\
+Fra IHA’s side er der på forhånd defineret nogle krav til projektets indhold, hvilket indebærer:\\ \\Software 
+\begin{itemize}
+	\item Programmet skal programmeres i C\#
+	\item Programmet skal kunne kalibrerer blodtrykssignalet og foretage en nulpunktsjustering
+	\item Programmet skal kunne vise blodtrykssignalet kontinuert
+	\item Programmet skal kunne lagre de måte data i enten en tekstfil eller en database
+	\item Programmet skal kunne filtrerer blodtrykket i selve programmet via et digitalt filter, dette skal kunne slås til og fra
+\end{itemize}Hardware
+\begin{itemize}
+	\item Der skal designes et aktivt 2. ordens lavpasfilter af typen Sallen-Key med unity gain
+	\item Filteret skal designes som et Butterworth filter med cut off frekvens på 50 Hz. C2 skal vælges til 680 nF og R1 = R2. Operationsforstærkeren skal være af typen OP27
+\end{itemize}
