@@ -1,12 +1,47 @@
 \chapter{Projektbeskrivelse}
 
-\section{Projektgennemførelse}
+\section{Projektgennemførelse}\label{Projektgennemfoerlse}
+Projektet startede med, at der blev lavet en tidsplan, som var mulig at ændre undervejs, dog med faste deadlines, som skulle overholdes. De forskellige deadlines lagde op til, at der kunne arbejdes efter udviklingsmodeller, som er beskrevet nærmere i metodeafsnittet \ref{Metode}.\\ \\
+Tidsplanen blev sidenhen ført mere detaljeret ind i projektstryringsværktøjet Scrum. Scrum blev benyttet til at holde overblikket over manglende opgaver, igangværende opgaver og afsluttede opgaver. \\
+Gruppens seks medlemmer blev fra start delt op i to undergrupper, én med hovedfokus på hardware udvikling, og én med hovedfokus på software udvikling. Dog blev de basic delene til projektet, som kravspecifikation og case udvalgt samlet. Scrum er her også et godt værktøj til at bevare overblikket over de to gruppers individuelle opgaver.\\ \\
+Fra start blev der aftalt et ugentlig møde, med vejleder og de to grupper som medvirkende parter. På denne måde blev alle parter holdt opdateres på udviklingsprocessen, især grupperne imellem, men også vejleder. Sidst i forløbet, under test af diverse dele af systemet, blev grupperne samlet og testene blev udarbejdet i fællesskab.\\ \\
+Projektet er gennemført ved udarbejdelse af en samarbejdsaftale, herunder udvælgelse af en projektleder, som i tilfælde af uoverensstemmelse havde den afgørende stemme. 
+
+\section{Metode} \label{Metode}
+\subsection{Ase-modellen}
+Den primære udviklingsmodel, der er benyttet i dette projekt, er ASE modellen. ASE modellen er en udviklingsmodel, der tager udgangspunkt i use cases. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Metode/ASEmodellen}
+	\caption{Projektmodel illustreret med de faser som projektet gennemløber\protect\footnotemark}
+	\label{ASEmodel}
+\end{figure}
+\footnotetext{Fra \textit{"Vejledning til udviklingsprocessen for projekt 2"}}
 
 
-\section{Metode} 
+Modellen er opbygget sådan, at udviklerne benytter vandfaldsmodellen (se afsnit \ref{Vandfald}) til at fastlægge en opgaveformulering, kravspecifikation og systemarkitektur, for derefter at designe og implementere de enkelte moduler i iterationer. \\ Ud fra projektformuleringen specificeres kravspecifikationen som en række use cases. Use cases er et værktøj, der beskriver diverse aktørers interaktion med systemet. Ved at definere kravspecifikationen ud fra use cases, opnås et overblik over hvilke krav, der stilles til systemets endelige funktionalitet.\\ \\ Ud fra kravspecifikationen kan systemets accepttest udarbejdes. Efter kravspecifikationen er fastlagt, udarbejdes systemarkitekturen.\\ I systemarkitekturen uddeles systemets funktionalitet i moduler og deres grænseflader til resten af systemet bestemmes. Ud fra systemarkitekturen designes systemet ved at nedbryde det efter funktionalitet, som kan bindes til både hardware og software.
+\subsection{Vandfald}\label{Vandfald}
+Denne metode bygger pa at gøre en hel fase af arbejdet færdigt før den næste startes. Grafisk ser det ud som på figur \ref{Vandfaldsmodel}: \\
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figurer/Metode/Vandfald}
+	\caption{Vandfaldsmodel}
+	\label{Vandfaldsmodel}
+\end{figure}
+Projektet starter med en analyse, og så videre med de andre faser - design, implementering og test. Det er altså hele systemet, der arbejdes igennem i hver fase, og vandfaldet symboliserer, at der kun arbejdes i en retning, altså man kan ikke gå imod strømmen. Metoden benyttes, når opgaven er veldefineret og velkendt. \\
+Projekt forløbet skal have en kort varighed, dvs. mindre end ca. 4 måneder, under velkendte forhold med hensyn til udviklings- og testmiljø, udviklingsmetodik, platforme etc. \cite{Projektledelse}
 
-
+\subsection{V-model}
+V-modellen er en model, hvor testen planlægges parallelt med udviklingen. Accepttesten planlægges detaljeret efter kravnalysen, altså kravspecifikationen, systemtest planlægges detaljeret efter system design, og integrationstesten planlægges detaljeret efter arkitektur design fasen. Unit/modul testen ligger dog uændret i forhold til den traditionelle strategi.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Metode/Vmodel}
+	\caption{V-model}
+	\label{Vmodel}
+\end{figure}
+Testens praktiske udførelse er altså uændret i forhold til Ase-modellen og Vandfaldsmodellen, dvs. den ligger sidst i forløbet. Det betyder at testfaserne planlægges modsat den rækkefølge, de udføres i. Den største forskel for testerne er, at planlægningen baseres på de tidlige modeller af systemet, ikke på det færdige system. \\
+ V-modellen udvides desuden med reviews og deadlines (se afsnit \ref{Projektgennemfoerlse}).
 
 \section{Specifikation og analyse}
 

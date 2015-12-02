@@ -15,11 +15,11 @@ A level-1 auxiliary file: Rfiler/Rkrav.aux
 A level-1 auxiliary file: Rfiler/Rprojektbeskrivelse.aux
 A level-1 auxiliary file: Rfiler/Rkonklusion.aux
 A level-1 auxiliary file: Rfiler/Rreferencer.aux
-I found no \citation commands---while reading file /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Rapport.aux
 I found no \bibdata command---while reading file /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Rapport.aux
+Warning--I didn't find a database entry for "Projektledelse"
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            509 strings with 4507 characters,
+            511 strings with 4535 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
@@ -58,4 +58,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There were 2 error messages)
+(There was 1 error message)

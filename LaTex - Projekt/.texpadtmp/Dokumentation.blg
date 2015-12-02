@@ -8,13 +8,14 @@ A level-1 auxiliary file: Dfiler/Dordliste.aux
 A level-1 auxiliary file: Dfiler/Dindledning.aux
 A level-1 auxiliary file: Dfiler/Dkravspecifikation.aux
 A level-1 auxiliary file: Dfiler/Ddesign.aux
+A level-1 auxiliary file: Dfiler/Dtest.aux
 A level-1 auxiliary file: Dfiler/Daccepttest.aux
 A level-1 auxiliary file: Dfiler/Dbilag.aux
 I found no \citation commands---while reading file /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dokumentation.aux
 I found no \bibdata command---while reading file /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dokumentation.aux
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            504 strings with 4387 characters,
+            505 strings with 4403 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
