@@ -48,11 +48,11 @@ $R_{gain}$ er modstanden, som bestemmer, hvor meget forstærkning, instrumentati
 	\label{ligning1}
 \end{align}
 
-Spændingen ønskes at skaleres op til DAQ’ens dynamikområde, som ligger omkring de 5V. Forstærkningsfaktoren udregnes ved simpel brøkregning, som ses på ligning \ref{ligning2}:
+Spændingen ønskes at skaleres op til DAQ’ens dynamikområde, som ligger omkring 2,5V. Forstærkningsfaktoren udregnes ved simpel brøkregning, som ses på ligning \ref{ligning2}:
 
 \begin{center}
 	\begin{align}
-		G=\frac{5}{6,25 \cdot 10^{-3}}=800
+		G=\frac{2,5}{6,25 \cdot 10^{-3}}=400
 		\label{ligning2}
 	\end{align}
 \end{center}
@@ -68,7 +68,7 @@ INA114’s datasheet giver en ligning for udregning af forstærkning. Da forstæ
 Herefter kan den ohmske værdi af $R_{gain}$ bestemmes, hvilket sker i linging \ref{ligning4}:
 
 \begin{align}
-	R_{gain}=\frac{50k\Omega}{800-1}=62,578 \Omega
+	R_{gain}=\frac{50k\Omega}{400-1}=125,31 \Omega
 	\label{ligning4}
 \end{align}
 
