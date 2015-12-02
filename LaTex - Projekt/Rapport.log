@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.12)  2 DEC 2015 10:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.12)  2 DEC 2015 10:41
 entering extended mode
 **Rapport.tex
 (Rapport.tex
@@ -1683,8 +1683,19 @@ LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
 File: upsy.fd 2001/06/04 font definitions for U/psy.
-))
-No file Rapport.aux.
+)) (Rapport.aux
+(Rfiler/Rforside.aux) (Rfiler/Resume.aux) (Rfiler/Runderskrifter.aux)
+(Rfiler/Rgodkendelsesformular.aux) (Rfiler/Rordliste.aux)
+(Rfiler/Rindledning.aux) (Rfiler/Rproblemformulering.aux
+
+LaTeX Warning: Label `Opstilling' multiply defined.
+
+
+LaTeX Warning: Label `Opstilling@cref' multiply defined.
+
+) (Rfiler/Rbaggrund.aux) (Rfiler/Rsystembeskrivelse.aux) (Rfiler/Rkrav.aux)
+(Rfiler/Rprojektbeskrivelse.aux) (Rfiler/Rkonklusion.aux)
+(Rfiler/Rreferencer.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
@@ -1699,6 +1710,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 6.
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -1764,10 +1776,12 @@ LaTeX Info: Redefining \nameref on input line 6.
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
 LaTeX Info: Redefining \nameref on input line 6.
+(Rapport.out) (Rapport.out)
 \@outlinefile=\write4
 LaTeX Info: Redefining \Ref on input line 6.
 \c__siunitx_mathsf_int=\count340
 LaTeX Font Info:    Try loading font information for U+msa on input line 6.
+
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -1781,7 +1795,7 @@ LaTeX Font Info:    Try loading font information for U+stmry on input line 6.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\stmaryrd\ustmry.fd")
 \c__siunitx_mathtt_int=\count341
 
-(Rfiler/Rforside.tex <figurer/ASE.png, id=3, 439.6425pt x 136.25906pt>
+(Rfiler/Rforside.tex <figurer/ASE.png, id=107, 439.6425pt x 136.25906pt>
 File: figurer/ASE.png Graphic file (type png)
 
 <use figurer/ASE.png>
@@ -1878,9 +1892,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--7
  []
 
 
-LaTeX Warning: Reference `LastPage' on page iii undefined on input line 22.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 20--29
 
  []
@@ -1942,7 +1953,7 @@ Package babel Info: Redefining danish shorthand "~
  [6
 
 
-]
+] (Rapport.toc)
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining danish shorthand "~
@@ -1962,7 +1973,8 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 18.
  [8
 
-] (Rfiler/Rindledning.tex
+]
+(Rfiler/Rindledning.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining danish shorthand "~
@@ -1971,8 +1983,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 11.
-
-[1
+ [1
 
 ]
 Package babel Info: Redefining danish shorthand "|
@@ -1990,7 +2001,8 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 11.
- <Figurer/Indledning/Opstilling.png, id=71, 483.7272pt x 244.2726pt>
+
+<Figurer/Indledning/Opstilling.png, id=200, 483.7272pt x 244.2726pt>
 File: Figurer/Indledning/Opstilling.png Graphic file (type png)
 
 <use Figurer/Indledning/Opstilling.png>
@@ -2104,7 +2116,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<Figurer/Fysio/Hjertet.png, id=102, 487.8225pt x 268.00125pt>
+<Figurer/Fysio/Hjertet.png, id=229, 487.8225pt x 268.00125pt>
 File: Figurer/Fysio/Hjertet.png Graphic file (type png)
 
 <use Figurer/Fysio/Hjertet.png>
@@ -2128,7 +2140,7 @@ Package babel Info: Redefining danish shorthand "~
 
 
  <./Figurer/Fysio/Hjertet.png>]
-<Figurer/Fysio/Cyklus.png, id=118, 636.3775pt x 477.785pt>
+<Figurer/Fysio/Cyklus.png, id=243, 636.3775pt x 477.785pt>
 File: Figurer/Fysio/Cyklus.png Graphic file (type png)
 
 <use Figurer/Fysio/Cyklus.png>
@@ -2147,24 +2159,30 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 24.
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[][] [][][]\T1/cmr/m/n/9 https://www.sundhed.dk/sundhedsfaglig/laegehaandbogen/
+hjerte-kar/tilstande-og-
+ []
+
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 25.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 26.
+(babel)             in language  on input line 28.
+[8 <./Figurer/Fysio/Cyklus.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 29.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 29.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 30.
 )
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 20.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 20.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 20.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 20.
- [8 <./Figurer/Fysio/Cyklus.png>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining danish shorthand "~
@@ -2263,6 +2281,18 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 15.
 Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 19.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 22.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 25.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 25.
+Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 28.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 28.
@@ -2354,11 +2384,7 @@ Package babel Info: Redefining danish shorthand "~
  [20
 
 
-]
-
-Package lastpage Warning: Rerun to get the references right on input line 32.
-
-
+] 
 AED: lastpage setting LastPage
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 32.
@@ -2375,29 +2401,20 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
 (Rfiler/Rreferencer.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
+Package rerunfilecheck Info: File `Rapport.out' has not changed.
+(rerunfilecheck)             Checksum: F30DCF73798CD4781BFF22952F27DF21;1495.
 
 
-Package rerunfilecheck Warning: File `Rapport.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Rapport.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  B8B5DC8274B66A5326FACE05D7FA640C;1306.
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 32.
  ) 
 Here is how much of TeX's memory you used:
- 27289 strings out of 493698
- 484800 string characters out of 3141980
- 810353 words of memory out of 3000000
- 30102 multiletter control sequences out of 15000+200000
- 34271 words of font info for 93 fonts, out of 3000000 for 9000
+ 27368 strings out of 493698
+ 486190 string characters out of 3141980
+ 812281 words of memory out of 3000000
+ 30145 multiletter control sequences out of 15000+200000
+ 35035 words of font info for 94 fonts, out of 3000000 for 9000
  1027 hyphenation exceptions out of 8191
  41i,12n,80p,10460b,880s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}{
@@ -2410,19 +2427,20 @@ MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1440.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/public/cm-super/sfcc1728.pfb><C:/Program Files (x86)/MiKTeX
  2.9/fonts/type1/public/cm-super/sfrm0600.pfb><C:/Program Files (x86)/MiKTeX 2.
 9/fonts/type1/public/cm-super/sfrm0700.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
-onts/type1/public/cm-super/sfrm0900.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/cm-super/sfrm1000.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
-ype1/public/cm-super/sfrm1095.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/public/cm-super/sfrm1200.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
-ublic/cm-super/sfrm2488.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
-ic/cm-super/sfti1000.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
-cm-super/sfti1095.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-
-super/sfti1200.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-sup
-er/sfti1728.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/bookman/ubkd
-8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on Rapport.pdf (30 pages, 567205 bytes).
+onts/type1/public/cm-super/sfrm0800.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/cm-super/sfrm0900.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/cm-super/sfrm1000.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/cm-super/sfrm1095.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/cm-super/sfrm1200.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
+ic/cm-super/sfrm2488.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+cm-super/sfti1000.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-
+super/sfti1095.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-sup
+er/sfti1200.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/
+sfti1728.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/bookman/ubkd8a.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/bookman/ubkl8a.pfb>
+Output written on Rapport.pdf (30 pages, 608307 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 70 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 387 PDF objects out of 1000 (max. 8388607)
+ 71 named destinations out of 1000 (max. 500000)
+ 229 words of extra memory for PDF output out of 10000 (max. 10000000)
 
