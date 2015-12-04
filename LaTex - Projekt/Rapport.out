@@ -11,19 +11,22 @@
 \BOOKMARK [1][-]{section.3.5}{H\346modynamik}{chapter.3}% 11
 \BOOKMARK [0][-]{chapter.4}{Systembeskrivelse}{}% 12
 \BOOKMARK [0][-]{chapter.5}{Krav}{}% 13
-\BOOKMARK [0][-]{chapter.6}{Projektbeskrivelse}{}% 14
-\BOOKMARK [1][-]{section.6.1}{Projektgennemf\370relse}{chapter.6}% 15
-\BOOKMARK [1][-]{section.6.2}{Metode}{chapter.6}% 16
-\BOOKMARK [2][-]{subsection.6.2.1}{Ase-modellen}{section.6.2}% 17
-\BOOKMARK [2][-]{subsection.6.2.2}{Vandfald}{section.6.2}% 18
-\BOOKMARK [2][-]{subsection.6.2.3}{V-model}{section.6.2}% 19
-\BOOKMARK [1][-]{section.6.3}{Specifikation og analyse}{chapter.6}% 20
-\BOOKMARK [1][-]{section.6.4}{Arkitektur}{chapter.6}% 21
-\BOOKMARK [2][-]{subsection.6.4.1}{Design}{section.6.4}% 22
-\BOOKMARK [2][-]{subsection.6.4.2}{Implementering}{section.6.4}% 23
-\BOOKMARK [2][-]{subsection.6.4.3}{Test}{section.6.4}% 24
-\BOOKMARK [1][-]{section.6.5}{Resultater og diskussion}{chapter.6}% 25
-\BOOKMARK [1][-]{section.6.6}{Opn\345ede erfaringer}{chapter.6}% 26
-\BOOKMARK [1][-]{section.6.7}{Fremtidigt arbejde}{chapter.6}% 27
-\BOOKMARK [0][-]{chapter.7}{Konklusion}{}% 28
-\BOOKMARK [0][-]{section*.13}{Litteratur}{}% 29
+\BOOKMARK [1][-]{section.5.1}{IHA krav}{chapter.5}% 14
+\BOOKMARK [1][-]{section.5.2}{Funktionelle krav}{chapter.5}% 15
+\BOOKMARK [1][-]{section.5.3}{Ikke-funktionelle krav}{chapter.5}% 16
+\BOOKMARK [0][-]{chapter.6}{Projektbeskrivelse}{}% 17
+\BOOKMARK [1][-]{section.6.1}{Projektgennemf\370relse}{chapter.6}% 18
+\BOOKMARK [1][-]{section.6.2}{Metode}{chapter.6}% 19
+\BOOKMARK [2][-]{subsection.6.2.1}{Ase-modellen}{section.6.2}% 20
+\BOOKMARK [2][-]{subsection.6.2.2}{Vandfald}{section.6.2}% 21
+\BOOKMARK [2][-]{subsection.6.2.3}{V-model}{section.6.2}% 22
+\BOOKMARK [1][-]{section.6.3}{Specifikation og analyse}{chapter.6}% 23
+\BOOKMARK [1][-]{section.6.4}{Arkitektur}{chapter.6}% 24
+\BOOKMARK [2][-]{subsection.6.4.1}{Design}{section.6.4}% 25
+\BOOKMARK [2][-]{subsection.6.4.2}{Implementering}{section.6.4}% 26
+\BOOKMARK [2][-]{subsection.6.4.3}{Test}{section.6.4}% 27
+\BOOKMARK [1][-]{section.6.5}{Resultater og diskussion}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.6}{Opn\345ede erfaringer}{chapter.6}% 29
+\BOOKMARK [1][-]{section.6.7}{Fremtidigt arbejde}{chapter.6}% 30
+\BOOKMARK [0][-]{chapter.7}{Konklusion}{}% 31
+\BOOKMARK [0][-]{section*.13}{Litteratur}{}% 32
