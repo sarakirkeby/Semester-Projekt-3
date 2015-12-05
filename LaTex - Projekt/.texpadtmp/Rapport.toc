@@ -8,10 +8,9 @@
 \contentsline {chapter}{\chapternumberline {2}Projektformulering}{5}{chapter.2}
 \contentsline {chapter}{\chapternumberline {3}Baggrund}{7}{chapter.3}
 \contentsline {section}{\numberline {3.1}Hjertet \& Kredsl\IeC {\o }b}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Blodtryk}{8}{section.3.2}
-\contentsline {section}{\numberline {3.3}Hypertension}{9}{section.3.3}
-\contentsline {section}{\numberline {3.4}Hypotension}{9}{section.3.4}
-\contentsline {section}{\numberline {3.5}H\IeC {\ae }modynamik}{9}{section.3.5}
+\contentsline {section}{\numberline {3.2}H\IeC {\ae }modynamik}{8}{section.3.2}
+\contentsline {section}{\numberline {3.3}Hypertension}{10}{section.3.3}
+\contentsline {section}{\numberline {3.4}Hypotension}{10}{section.3.4}
 \contentsline {chapter}{\chapternumberline {4}Systembeskrivelse}{11}{chapter.4}
 \contentsline {chapter}{\chapternumberline {5}Krav}{13}{chapter.5}
 \contentsline {section}{\numberline {5.1}IHA krav}{13}{section.5.1}
@@ -32,4 +31,4 @@
 \contentsline {section}{\numberline {6.6}Opn\IeC {\r a}ede erfaringer}{20}{section.6.6}
 \contentsline {section}{\numberline {6.7}Fremtidigt arbejde}{20}{section.6.7}
 \contentsline {chapter}{\chapternumberline {7}Konklusion}{21}{chapter.7}
-\contentsline {chapter}{Litteratur}{23}{section*.13}
+\contentsline {chapter}{Litteratur}{23}{section*.14}
