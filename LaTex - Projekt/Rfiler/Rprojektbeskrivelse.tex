@@ -48,11 +48,35 @@ Testens praktiske udførelse er altså uændret i forhold til Ase-modellen og Va
 
 
 \section{Arkitektur}
+I det følgende afsnit beskrives arkitekturen for systemet. Systemarkitekturen fungerer her som udviklingsramme for videre design og implementering. Her bliver systemets funktionalitet 
+nedbrudt til overordnede moduler. \\
+   Arkitekturen for projektet er foretaget i to dele - en hardware arkitektur og en software arkitektur. Arkitekturen beskriver opbygningen af systemet i form af diagrammer.  
+   \subsection{software arkitektur}
+   I software designet er der udarbejdet en domæne model, der giver et overblik over hele systemet.
+ \begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/ISE/Domaenemodel}
+	\caption{Domænemodel}
+	\label{domaenemodel}
+\end{figure}
+   I domæne-modellen er relationerne mellem aktørerne og systemets dele beskrevet med pile og vejledende tekster - dette skulle gerne give et større overblik over systemets funktionalitet. \\ 
+   En domænemodel beskriver dog ikke, hvilken rækkefølge de forskellige handlinger sker i, og derfor er der udarbejdet sekvensdiagrammet for hver use case for systemet, som skal beskrive dette:
+  
+ \subsection{SysML}
+ I beskrivelsen af systemarkitekturen og det detaljerede design for det færdige produkt, er der 
+anvendt SysML. SysML kommer originalt fra UML, men UML er hovedsagligt centreret omkring udvikling af software systemer. Da det udviklede system både består af hardware og software, er der valgt SysML til arkitekturen.\\
+Valget af SysML grunder også i, at det giver en god formidling af systemet - dette giver udviklerne et større overblik. Samtidig er det også let for en udenforstående at sætte sig ind i systemets kunnen.\\
+
+I dette projekt er der benyttet struktur- og adfærdsdiagrammer til at specificere og 
+dokumentere systemet. Som strukturdiagram er der anvendt et blok definitions diagram (bdd) samt interne blok definitions diagramm (ibd).\\
+Der er anvendt adfærdsdiagrammer i form af sekvensdiagrammer i dette projekt. Disse 
+diagrammer er velegnet til sekventielt at beskrive den logiske funktionalitet i systemet.
+Softwaren er opbygget ud fra sekvensdiagrammer beskrevet i arkitektur afsnittet. 
 
 
 
 \subsection{Design}
-   
+
 
 \subsection{Implementering}
 
