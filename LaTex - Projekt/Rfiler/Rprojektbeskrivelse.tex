@@ -60,7 +60,17 @@ nedbrudt til overordnede moduler. \\
 	\label{domaenemodel}
 \end{figure}
    I domæne-modellen er relationerne mellem aktørerne og systemets dele beskrevet med pile og vejledende tekster - dette skulle gerne give et større overblik over systemets funktionalitet. \\ 
-   En domænemodel beskriver dog ikke, hvilken rækkefølge de forskellige handlinger sker i, og derfor er der udarbejdet sekvensdiagrammet for hver use case for systemet, som skal beskrive dette:
+   En domænemodel beskriver dog ikke, hvilken rækkefølge de forskellige handlinger sker i, og derfor er der udarbejdet sekvensdiagrammer for hver use case for systemet, som skal beskrive dette.\\
+   Her ses sekvensdiaframmet for use casen "Mål blodtryk"
+    \begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC3}
+	\caption{Sekvensdiagram UC3}
+	\label{sekvensdiagram}
+\end{figure}
+Her ses det hvordan brugeren interagerer med brugergrænsefladen ved at starte blodtryksmålingen. Herefter bliver metoden til at starte blodtryksmålingen kaldt ned gennem logik- og datalag hvor efter målingen vises i en graf på brugergrænsefladen. Grafen bliver hele tiden opdateret med nye målinger.\\
+Ud fra dette kan det ses hvordan brugerens interaktion med brugergrænsefladen sætter gang i metoder i software programmet. Skevensdiagrammet giver altså et overblik over hvordan softwaren er bygget op.\\
+Sekvensdiagrammerne for de øvrige use cases kan ses i dokumentationen afsnit ....
   
  \subsection{SysML}
  I beskrivelsen af systemarkitekturen og det detaljerede design for det færdige produkt, er der 

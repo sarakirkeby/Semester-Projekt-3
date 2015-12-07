@@ -25,12 +25,12 @@
 \contentsline {section}{\numberline {6.3}Specifikation og analyse}{20}{section.6.3}
 \contentsline {section}{\numberline {6.4}Arkitektur}{20}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}software arkitektur}{20}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}SysML}{21}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Design}{22}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Implementering}{22}{subsection.6.4.4}
-\contentsline {subsection}{\numberline {6.4.5}Test}{22}{subsection.6.4.5}
-\contentsline {section}{\numberline {6.5}Resultater og diskussion}{22}{section.6.5}
-\contentsline {section}{\numberline {6.6}Opn\IeC {\r a}ede erfaringer}{22}{section.6.6}
-\contentsline {section}{\numberline {6.7}Fremtidigt arbejde}{22}{section.6.7}
-\contentsline {chapter}{\chapternumberline {7}Konklusion}{23}{chapter.7}
-\contentsline {chapter}{Litteratur}{25}{section*.15}
+\contentsline {subsection}{\numberline {6.4.2}SysML}{22}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Design}{23}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Implementering}{23}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}Test}{23}{subsection.6.4.5}
+\contentsline {section}{\numberline {6.5}Resultater og diskussion}{23}{section.6.5}
+\contentsline {section}{\numberline {6.6}Opn\IeC {\r a}ede erfaringer}{23}{section.6.6}
+\contentsline {section}{\numberline {6.7}Fremtidigt arbejde}{23}{section.6.7}
+\contentsline {chapter}{\chapternumberline {7}Konklusion}{25}{chapter.7}
+\contentsline {chapter}{Litteratur}{27}{section*.16}
