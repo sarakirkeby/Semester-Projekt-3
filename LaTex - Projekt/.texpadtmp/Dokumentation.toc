@@ -44,5 +44,4 @@
 \contentsline {section}{Logbog}{39}{section*.31}
 \contentsline {section}{M\IeC {\o }dereferart}{39}{section*.32}
 \contentsline {section}{Kode}{39}{section*.33}
-\contentsline {section}{Tidsplan}{39}{section*.34}
-\contentsline {section}{Samarbejdsaftale}{39}{section*.35}
+\contentsline {section}{Samarbejdsaftale}{39}{section*.34}
