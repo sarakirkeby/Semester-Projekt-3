@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.button1 = new System.Windows.Forms.Button();
@@ -54,6 +54,7 @@
             this.trackBar3 = new System.Windows.Forms.TrackBar();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
@@ -70,25 +71,25 @@
             this.chart1.BorderSkin.BackColor = System.Drawing.Color.Black;
             this.chart1.BorderSkin.BackSecondaryColor = System.Drawing.Color.Black;
             this.chart1.BorderSkin.PageColor = System.Drawing.Color.Black;
-            chartArea6.AxisX.MajorGrid.Enabled = false;
-            chartArea6.AxisX.MajorGrid.LineColor = System.Drawing.Color.DarkRed;
-            chartArea6.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
-            chartArea6.AxisY.MajorGrid.Enabled = false;
-            chartArea6.AxisY.MajorGrid.Interval = 50D;
-            chartArea6.AxisY.MajorGrid.LineColor = System.Drawing.Color.DarkRed;
-            chartArea6.BackColor = System.Drawing.Color.Black;
-            chartArea6.BackSecondaryColor = System.Drawing.Color.Black;
-            chartArea6.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea6);
+            chartArea8.AxisX.MajorGrid.Enabled = false;
+            chartArea8.AxisX.MajorGrid.LineColor = System.Drawing.Color.DarkRed;
+            chartArea8.AxisX.MajorGrid.LineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea8.AxisY.MajorGrid.Enabled = false;
+            chartArea8.AxisY.MajorGrid.Interval = 50D;
+            chartArea8.AxisY.MajorGrid.LineColor = System.Drawing.Color.DarkRed;
+            chartArea8.BackColor = System.Drawing.Color.Black;
+            chartArea8.BackSecondaryColor = System.Drawing.Color.Black;
+            chartArea8.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea8);
             this.chart1.Location = new System.Drawing.Point(2, 112);
             this.chart1.Name = "chart1";
-            series6.BorderWidth = 5;
-            series6.ChartArea = "ChartArea1";
-            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series6.Color = System.Drawing.Color.Red;
-            series6.LabelForeColor = System.Drawing.Color.Transparent;
-            series6.Name = "Series1";
-            this.chart1.Series.Add(series6);
+            series8.BorderWidth = 5;
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.Color = System.Drawing.Color.Red;
+            series8.LabelForeColor = System.Drawing.Color.Transparent;
+            series8.Name = "Series1";
+            this.chart1.Series.Add(series8);
             this.chart1.Size = new System.Drawing.Size(575, 220);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -104,7 +105,7 @@
             this.button1.Size = new System.Drawing.Size(146, 88);
             this.button1.TabIndex = 1;
             this.button1.Text = "Start";
-            this.button1.UseVisualStyleBackColor = false;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -177,7 +178,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.LawnGreen;
-            this.label3.Location = new System.Drawing.Point(624, 242);
+            this.label3.Location = new System.Drawing.Point(625, 242);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 55);
             this.label3.TabIndex = 7;
@@ -343,12 +344,23 @@
             this.label8.Text = "12/3/2015 4:43 PM";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
+            // button9
+            // 
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button9.Location = new System.Drawing.Point(27, 472);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 24;
+            this.button9.Text = "button9";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(884, 612);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button8);
@@ -411,6 +423,7 @@
         private System.Windows.Forms.TrackBar trackBar3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button button9;
     }
 }
 
