@@ -79,9 +79,8 @@
     Resultat &&    Systemet er nulpunktsjusteret og brugeren er klar til at blive forbundet til systemet\\
     \midrule
     Hovedforløb &    1. &    Brugeren indtaster login-oplysninger og trykker på "Log ind"\--knappen. Systemet tjekker i databasen om oplysninger er gyldige \newline [1.a \textit{Forkert login}]\\
-    	&			2. & Brugeren trykker på "nulstil"\--knappen. Systemet laver nulpunkts justering \newline [\textit{2.a Systemets nulpunktjustering er ikke korrekt}] \\ \midrule
-    Undtagelser &    1a. & Besked om forkert login vises. Use Case fortsættes fra punkt 1     \\ 
-    	&			2.a & Indikation om at systemet ikke er nulpunktjusteret vises. Use Case fortsættes fra punkt 2 \\ \bottomrule    
+    	&			2. & Brugeren trykker på "nulstil"\--knappen. Systemet laver nulpunkts justering \\ \midrule
+    Undtagelser &    1a. & Besked om forkert login vises. Use Case fortsættes fra punkt 1     \\ \bottomrule    
 \caption{Fully dressed Use Case 2}
 \label{UC2}
 \end{longtabu}
@@ -159,11 +158,11 @@
     Forudsætninger && UC3 er gennemført\\
     Resultat &&    Blodtryksmålingens data er gemt i database og bruger er logget ud af systemet                    \\ \midrule
     Hovedforløb &    1. &    Brugeren trykker på "Gem og afslut"\--knappen. "Gemme"\--vindue åbnes. \newline [1.a \textit{Bruger ønsker ikke at afslutte}]\\  						 	
-                &    2. & Brugeren indtaster CPR-nr og trykker på "\\
-                &    3. & Brugeren trykker på "gem og afslut"\--knappen. Systemet logger ud og afsluttes\\
-                \newline [3.a \textit{CPR-nr er ikke gyldigt}]	\\ \midrule                
-    Undtagelser &    1.a. & Bruger trykker på "Annuller"\--knappen. Use Case 3 \\ 
-    			&	3.a. &  Besked om at CPR-nummer ikker gyldigt, vises. Nyt CPR-nummer indtastet. Use Case fortsættes for punkt 2\\ \bottomrule
+                &    2. & Brugeren indtaster CPR-nr og trykker på "Gem"\-knappen \newline [2.a \textit{CPR-nr er ikke gyldigt}]\\
+                &    3. & Besked om at data er gemt vises. Brugeren trykker på "Ok"\--knappen. Systemet logger ud og afsluttes
+                	\\ \midrule                
+    Undtagelser &    1.a. & Bruger trykker på "Annuller"\--knappen. Systemet lukker "Gemme"\-vinduet ned\\ 
+    			&	2.a. &  Besked om at CPR-nummer ikker gyldigt, vises. Nyt CPR-nummer indtastet. Use Case fortsættes med punkt 2\\ \bottomrule
     		
 \caption{Fully dressed Use Case 6}
 \label{UC6}
