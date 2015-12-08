@@ -112,7 +112,7 @@ Ud fra dette kan regnes komponentværdierne for R, idet
 Ved hjælp af mathcad isoleres R.
 
 \begin{align}
-\frac{2}{R\cdot680\cdot10^{-9}}=2\cdot1\cdot(50\cdot2\cdot\pi) solve, R \to \frac{250000}{17\cdot\pi}=4.681\times 10^3
+\frac{2}{R\cdot680\cdot10^{-9}}=2\cdot0.7\cdot(50\cdot2\cdot\pi) solve, R \to \frac{250000}{17\cdot\pi}=6.687\times 10^3
 \end{align}
 
 Dernæst kan komponentværdien for C1 udregnes, idet:
@@ -125,7 +125,7 @@ Dernæst kan komponentværdien for C1 udregnes, idet:
 Ved hjælp af mathcad isoleres C1. 
 
 \begin{align}
-	\frac{1}{(4.681\times 10^{3})^{2}\cdot(680\cdot10^{-9})\cdot C_1}=(50\cdot 2\pi) solve, R \to \frac{250000}{17\pi}=4.681\times 10^3
+	\frac{1}{(6.687\times 10^{3})^{2}\cdot(680\cdot10^{-9})\cdot C_1}=(50\cdot 2\pi)^{2} solve, R \to 333,2\times 10^{-9}
 \end{align}
 
 Derved er komponentværdierne for kredsløbet fundet og de ses indskrevet på \ref{fig:Filter}. 
@@ -136,6 +136,8 @@ Derved er komponentværdierne for kredsløbet fundet og de ses indskrevet på \r
 	\caption{Unity gain 2. ordens Sallen-Key lavpas konfiguration med indsatte komponentværdier.}
 	\label{fig:Filter_K}
 \end{figure}
+
+Genetrelt gælder det for et Butterworth filter at der tilstræbes en dæmpningsfaktor, \zeta, på 0,7 for at filteret !!!!!!!!!!!!!!\
 
 Generelt er et unity gain Sallen-Key filter med equivalente capacitorer og equivalente resistore kritisk dæmpet dvs. en kvalitets faktor på 1/2. Dette kan også ses når komponentværdierne indsættes i ”Sallen-Key Low-pass Filter Design Tool”\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm}. Desuden ses bodeplottet nedenfor:
 
