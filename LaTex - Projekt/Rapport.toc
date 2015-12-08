@@ -11,26 +11,33 @@
 \contentsline {section}{\numberline {3.2}H\IeC {\ae }modynamik}{8}{section.3.2}
 \contentsline {section}{\numberline {3.3}Hypertension}{10}{section.3.3}
 \contentsline {section}{\numberline {3.4}Hypotension}{10}{section.3.4}
-\contentsline {chapter}{\chapternumberline {4}Systembeskrivelse}{11}{chapter.4}
-\contentsline {chapter}{\chapternumberline {5}Krav}{13}{chapter.5}
-\contentsline {section}{\numberline {5.1}IHA krav}{13}{section.5.1}
-\contentsline {section}{\numberline {5.2}Funktionelle krav}{13}{section.5.2}
-\contentsline {section}{\numberline {5.3}Ikke-funktionelle krav}{15}{section.5.3}
-\contentsline {chapter}{\chapternumberline {6}Projektbeskrivelse}{17}{chapter.6}
-\contentsline {section}{\numberline {6.1}Projektgennemf\IeC {\o }relse}{17}{section.6.1}
-\contentsline {section}{\numberline {6.2}Metode}{17}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Ase-modellen}{17}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Vandfald}{18}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}V-model}{19}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Specifikation og analyse}{20}{section.6.3}
-\contentsline {section}{\numberline {6.4}Arkitektur}{20}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}software arkitektur}{20}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}SysML}{22}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Design}{23}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Implementering}{23}{subsection.6.4.4}
-\contentsline {subsection}{\numberline {6.4.5}Test}{23}{subsection.6.4.5}
-\contentsline {section}{\numberline {6.5}Resultater og diskussion}{23}{section.6.5}
-\contentsline {section}{\numberline {6.6}Opn\IeC {\r a}ede erfaringer}{23}{section.6.6}
-\contentsline {section}{\numberline {6.7}Fremtidigt arbejde}{23}{section.6.7}
-\contentsline {chapter}{\chapternumberline {7}Konklusion}{25}{chapter.7}
-\contentsline {chapter}{Litteratur}{27}{section*.16}
+\contentsline {section}{\numberline {3.5}Blodtryksm\IeC {\r a}ling}{10}{section.3.5}
+\contentsline {section}{\numberline {3.6}Programmerings teori}{11}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Tr\IeC {\r a}de}{11}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Observer}{11}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Push pull}{11}{subsection.3.6.3}
+\contentsline {chapter}{\chapternumberline {4}Systembeskrivelse}{13}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}Krav}{15}{chapter.5}
+\contentsline {section}{\numberline {5.1}IHA krav}{15}{section.5.1}
+\contentsline {section}{\numberline {5.2}Funktionelle krav}{15}{section.5.2}
+\contentsline {section}{\numberline {5.3}Ikke-funktionelle krav}{17}{section.5.3}
+\contentsline {chapter}{\chapternumberline {6}Projektbeskrivelse}{19}{chapter.6}
+\contentsline {section}{\numberline {6.1}Projektgennemf\IeC {\o }relse}{19}{section.6.1}
+\contentsline {section}{\numberline {6.2}Metode}{19}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Ase-modellen}{19}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Vandfald}{20}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}V-model}{21}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Specifikation og analyse}{22}{section.6.3}
+\contentsline {section}{\numberline {6.4}Arkitektur}{22}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}software arkitektur}{22}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}SysML}{24}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Design}{25}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Implementering}{25}{subsection.6.4.4}
+\contentsline {subsubsection}{Implementering af forst\IeC {\ae }rkeren}{25}{section*.16}
+\contentsline {subsubsection}{Implementering af filteret}{26}{section*.17}
+\contentsline {subsection}{\numberline {6.4.5}Test}{26}{subsection.6.4.5}
+\contentsline {section}{\numberline {6.5}Resultater og diskussion}{26}{section.6.5}
+\contentsline {section}{\numberline {6.6}Opn\IeC {\r a}ede erfaringer}{26}{section.6.6}
+\contentsline {section}{\numberline {6.7}Fremtidigt arbejde}{26}{section.6.7}
+\contentsline {chapter}{\chapternumberline {7}Konklusion}{27}{chapter.7}
+\contentsline {chapter}{Litteratur}{29}{section*.19}

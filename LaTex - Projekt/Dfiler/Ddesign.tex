@@ -11,7 +11,7 @@
 
   
 \section{Hardware arkitektur}
-I følgende afsnit beskrives hvordan blodtryksmåler systemet og nogle af dets delkomponenter er opbygget.
+I følgende afsnit beskrives hvordan blodtryksmåler systemet og dets delkomponenters opbygning.
 \\
 \begin{figure}[H]
 	\centering
@@ -31,8 +31,8 @@ Ud af blokdiagrammet, figur \ref{BDD blodtryksmaaler}, kan man se at blodtryksm�
 Ud af det interne blok diagram, figur \ref{IBD blodtryksmaaler}, kan ses det at blodtrykket i form af det målte tryk kommer ind i transduceren. Transduceren som omformer det målte tryk til et spændingssignal, sender signalet vidre til forstærkeren. Fra forstærkeren sendes signalet over i det analoge filter og derfra ind i DAQ'en. Endeligt sendes det digitale signal fra DAQ'en over i en computer, der fortolker signalet som et billede, der vises til omverdenen.
 
 \subsection{Design af forstærker}
-Forstærkeren er designet med tanke på, at det er meget små spændinger der arbejdes med. Grundet dette, er en almindelig operationsforstærker fravalgt, da dens reelle indgangsimpedans er for lille. En Instrumentationsforstærkers indgangsimpedans i den virkelige verden, er højere, og den kan dermed opfange meget små signaler så som blodtryk.\\
-Vejleder rådede herefter til at projektgruppen brugte instrumentationsforstærkeren INA114. Forstærkerens design kan ses på figur X.\\ 
+Forstærkeren er designet med tanke på, at det er meget små spændinger der arbejdes med. Grundet dette, er en almindelig operationsforstærker fravalgt, da dens reelle indgangsimpedans ikke er for lav. En Instrumentationsforstærkers indgangsimpedans i den virkelige verden, er højere, og den kan dermed opfange meget små signaler, som f.eks. blodtryk, der opererer i millivolt..\\
+Vejleder rådede herefter til at projektgruppen brugte instrumentationsforstærkeren INA114. Forstærkerens design er valgt ud fra instrumenteringsforstærkerens datasheet’s forslag, og kan ses på figur \ref{labelpic}.\\ 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{Figurer/Hardware/Forstaerker}
@@ -65,7 +65,7 @@ INA114’s datasheet giver en ligning for udregning af forstærkning. Da forstæ
 	\label{ligning3}
 \end{align}
 
-Herefter kan den ohmske værdi af $R_{gain}$ bestemmes, hvilket sker i linging \ref{ligning4}:
+Herefter kan den ohmske værdi af $R_{gain}$ bestemmes, hvilket sker i ligning \ref{ligning4}:
 
 \begin{align}
 	R_{gain}=\frac{50k\Omega}{400-1}=125,31 \Omega
@@ -73,7 +73,7 @@ Herefter kan den ohmske værdi af $R_{gain}$ bestemmes, hvilket sker i linging \
 \end{align}
 
 \subsection{Design af analogfilter}
-Filteret, som ses på figur \ref{fig:Filter}, skulle realiseres som et aktivt 2. ordens lavpasfilter med båndbredde på 50 Hz af typen Sallen-Key med unity gain (se \ref{fig:Filter}). Filteret skulle designes som et Butterworth filter med cut off frekvens på 50 Hz. C2 skulle vælges til 680 nF og R1 = R2. Operationsforstærkeren skal være af typen OP27.  
+Filteret, som ses på figur \ref{fig:Filter}, skulle realiseres som et aktivt 2. ordens lavpasfilter af typen Sallen-Key med unity gain, med båndbredde på 50 Hz (se \ref{fig:Filter}). Desuden skulle filteret yderligere designes som et Butterworth filter med cut off frekvens på 50 Hz. C2 skulle vælges til at være 680 nF og gruppen fik desuden at vide, at R1 skulle være lig med R2. Operationsforstærkeren blev opgivet til at være af typen OP27.  
 
 \begin{figure}[H]
 	\centering
@@ -82,47 +82,50 @@ Filteret, som ses på figur \ref{fig:Filter}, skulle realiseres som et aktivt 2.
 	\label{fig:Filter}
 \end{figure}
 
-Der blev valgt en dæmpningsfaktor på 1, da det ville være mest optimalt med et kritisk dæmpet signal. Ud fra hjemmesiden\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm} fandt vi overføringsfunktionen for Sallen-Kay lavpasfiltret, udtrykt i ligning \ref{ligning5}:
+Et Sallen-Keyfilter har en dæmpningsfaktor på 0,7, fordi at der, i et Sallen-Key filter, er blevet prioriteret et fladt frkvensområde, frem for hurtig dæmpning. Gruppen brugte en hjemmeside\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm} som hjælpemiddel til at finde overføringsfunktionen for Sallen-Key lavpasfilteret. Denne ligning kan ses i ligning \ref{ligning5}:
 
 
 \begin{align}
-	\frac{V_{out}(S)}{V_{in}(S)}=\frac{\frac{1}{R_1C_1R_2C_2}}{s^2+s(\frac{1}{R_2C_2}+\frac{1}{R_1C_2})}+\frac{1}{R_1C_1R_2C_2}
+	\frac{V_{out}(S)}{V_{in}(S)}=\frac{\frac{1}{R_1C_1R_2C_2}}{s^2+s(\frac{1}{R_2C_2}+\frac{1}{R_1C_2})+\frac{1}{R_1C_1R_2C_2}}
 	\label{ligning5}
 \end{align}
 
-Da det er blevet opgivet at $R1=R2$, kan overføringsfunktionen forkortes: 
+Da det er blevet opgivet at $R1=R2$, kan overføringsfunktionen forkortes, som set på ligning \ref{ligning6}.
 
 \begin{align}
 \frac{V_{out}(s)}{V_{in}(s)}=\frac{\frac{1}{R^2C_{1}C_{2}}}{s^2+s(\frac{2}{RC_{2}})+\frac{1}{R^2C_{1}C_{2}}}
 \label{ligning6}
 \end{align}
 
-Dernæst sammenlignes med standardformlen for overføringsfunktionen for et andet ordens filter.
+Dernæst sammenlignes med standardformlen for overføringsfunktionen for et andet ordens filter på figur \ref{ligning7};
 
 \begin{align}
 \frac{V_{out}(s)}{V_{in}(s)} = \frac{\frac{1}{R^{2}C_{1} C_{2}}}{s^2+s(\frac{2}{RC_{2}})+\frac{1}{R^{2}C_{1}C_{2}}} = \frac{\omega_{0}^{2}}{s{2}+s(2\zeta\omega_{0})+\omega_{0}^{2}}
+\label{ligning7}
 \end{align}
 
-Ud fra dette kan regnes komponentværdierne for R, idet
+Ud fra dette kan regnes komponentværdierne for R, idet vi har en opgivet værdi for \frac{2}{RC_{2}}, som vist på figur \ref{ligning8}
 
 \begin{align}
 \frac{2}{RC_{2}}=2\zeta\omega_{0}
+\label{ligning8}
 \end{align}
 
-Ved hjælp af mathcad isoleres R.
-
+Gruppen brugte herefter MathCad til at isolere R, og herefter udregne værdien af denne. Dette kan ses på figur \ref{ligning9}
 \begin{align}
 \frac{2}{R\cdot680\cdot10^{-9}}=2\cdot0.7\cdot(50\cdot2\cdot\pi) solve, R \to \frac{250000}{17\cdot\pi}=6.687\times 10^3
+\label{ligning9}
 \end{align}
 
-Dernæst kan komponentværdien for C1 udregnes, idet:
+Dernæst kan komponentværdien for C1 udregnes, da gruppen nu havde en formel, men en ubekendt.
 
 
 \begin{align*}
 \frac{1}{R^2C_{1}C_{2}}=\omega_{0}^2
+\label{ligning10}
 \end{align*}	
 
-Ved hjælp af mathcad isoleres C1. 
+Ved hjælp af MathCAD isoleres C1. 
 
 \begin{align}
 	\frac{1}{(6.687\times 10^{3})^{2}\cdot(680\cdot10^{-9})\cdot C_1}=(50\cdot 2\pi)^{2} solve, R \to 333,2\times 10^{-9}
@@ -137,9 +140,7 @@ Derved er komponentværdierne for kredsløbet fundet og de ses indskrevet på \r
 	\label{fig:Filter_K}
 \end{figure}
 
-Genetrelt gælder det for et Butterworth filter at der tilstræbes en dæmpningsfaktor, \zeta, på 0,7 for at filteret !!!!!!!!!!!!!!\
-
-Generelt er et unity gain Sallen-Key filter med equivalente capacitorer og equivalente resistore kritisk dæmpet dvs. en kvalitets faktor på 1/2. Dette kan også ses når komponentværdierne indsættes i ”Sallen-Key Low-pass Filter Design Tool”\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm}. Desuden ses bodeplottet nedenfor:
+For at underbygge gruppens teori omkring filteret, blev der ved hjælp af toolet ”Sallen-Key Low-pass Filter Design Tool”\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm} udarbejdet et bodeplot. Dette kan ses nedefor på figur \ref{fig:Bodeplot}. 
 
 \begin{figure}[H]
 	\centering
