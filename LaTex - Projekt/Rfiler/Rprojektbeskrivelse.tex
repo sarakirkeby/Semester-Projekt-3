@@ -91,7 +91,7 @@ Softwaren er opbygget ud fra sekvensdiagrammer beskrevet i arkitektur afsnittet.
 \subsection{Implementering}
 Efter komponentudregningen, byggede gruppen de to hardware blokke op. Gruppen valgte at bygge forstærkeren og filteret seperat, grundet pladsmangel og sammenhæng.\\
 
-    \begin{figure}[H]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Hardware/samletopstilling}
 	\caption{Opstilling af forstærker og filter}
@@ -101,57 +101,50 @@ Efter komponentudregningen, byggede gruppen de to hardware blokke op. Gruppen va
 Grundet mangel på præcise modstande, bedømte gruppen at det var bedst at bygge modstandende i forholdsvist filteret og forstærkeren, op i to, så gruppen kunne komme så tæt på den ønskede modstandsværdi som muligt. \\
 For forstærkeren, blev styklisten som vist på tabel \ref{forsttabel}.
 
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline 
-Komponent & Antal & Type \\ 
-\hline 
-Modstand & 1 & 120$\Omega$ \\
-\hline
-Modstand & 1 & 4,8$\Omega$ \\
-\hline
-Kondensator & 2 & 100 nF \\
-\hline
-Instrumentationsforstærker & 1 & INA114 \\ 
-\hline
-\end{tabular} 
-\label{forsttabel}
-\end{center}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lllll}
+\textbf{Komponent} & \textbf{Antal} & \textbf{Type}  &  &  \\ \cline{1-3}
+Modstand           & 1              & 120 $\Omega$   &  &  \\ \cline{1-3}
+Modstand           & 1              & 4.8 $\Omega$   &  &  \\ \cline{1-3}
+Kondensator        & 2              & 100 nF         &  &  \\ \cline{1-3}
+Instrumentationsforstærker &    1   & INA114		     &  &  \\ \cline{1-3}
+\end{tabular}
+\caption{Forstærkertabel}
+\label{Forsttabel}
+\end{table}
 
 Grundet forskel imellem teoretiske værdier og fysiske, er R$_{gain}$ 0,51$\Omega$ mindre end den skulle have været.\\
 
-Den samlede stykliste for filteret blev som vist på tabel \ref{filtertabel}.
+Den samlede stykliste for filteret blev som vist på tabel \ref{Filtertabel}.
 
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline 
-Komponent & Antal & Type \\ 
-\hline 
-Modstand & 2 & 6.2 k$\Omega$ \\ 
-\hline 
-Modstand & 2 & 470$\Omega$\\
-\hline
-Kondensator & 1 & 680 nF\\
-\hline
-Kondensator & 1 & 330 nF\\
-\hline
-Operationsforstærker & 1 & OP27G \\ 
-\hline
-\end{tabular} 
-\label{filtertabel}
-\end{center}
+\begin{table}[H]
+\centering
+\begin{tabular}{lllll}
+\textbf{Komponent} & \textbf{Antal} & \textbf{Type}  &  &  \\ \cline{1-3}
+Modstand           & 2              & 6.2 k $\Omega$ &  &  \\ \cline{1-3}
+Modstand           & 2              & 470 $\Omega$   &  &  \\ \cline{1-3}
+Kondensator        & 1              & 680 nF         &  &  \\ \cline{1-3}
+Kondensator        & 1              & 330 nF         &  &  \\ \cline{1-3}
+Operationsforstærker &    1         & OP27G          &  &  \\ \cline{1-3}
+\end{tabular}
+\caption{Filtertabel}
+\label{Filtertabel}
+\end{table}
 
 I det analoge filter, er kondensatoren, C$_1$, i praksis 3,2 nF mindre end  beregnet. Desuden er de to identiske modstande, R$_1$ og R$_2$, som i praksis er 17$\Omega$ mindre end teorien foreskriver.\\
 Gruppen vurderede at afvigelserne var forholdsvidst små, og derfor er der valgt at se bort fra dem. For modstandende er der desuden 1 procents usikkerhed, hvilket betyder man alligevel ikke kan være helt sikker på komponentværdien.\\
 En reel cutoff frekvens blev herefter udregnet af gruppen. Denne kan ses udregnet på figur \ref{cutoff}.
 
-\begin{center}
+
 \begin{align}
 f_{c} = \frac{1}{2\pi \sqrt{R_{1}C_{1}R_{2}C_{2}}} = \frac{1}{2\pi \sqrt{6687 \cdot 333,2\times 10^{-9} \cdot 6687 \cdot 680\times 10^{-9}}} = 50,37 Hz
+	\label{cutoff}
 \end{align}
 %\caption{Udregning af den reelle cutoff frekvens}
-\label{cutoff}
-\end{center}
+
+
 
 \subsection{Test}
 
