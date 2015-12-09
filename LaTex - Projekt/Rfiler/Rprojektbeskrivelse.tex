@@ -89,30 +89,28 @@ Softwaren er opbygget ud fra sekvensdiagrammer beskrevet i arkitektur afsnittet.
 
 
 \subsection{Implementering}
-Herefter blev de to blokke bygget op. Gruppen valgte at bygge forstærkeren og filteret på hver sit fumlebræt, dels på grund af pladsmangel og dels på grund af større sammenhæng mellem arkitekturen, og det endelige produkt.\\
+Efter komponentudregningen, byggede gruppen de to hardware blokke op. Gruppen valgte at bygge forstærkeren og filteret seperat, grundet pladsmangel og sammenhæng.\\
 
     \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Hardware/samletopstilling}
-	\caption{Opbygning af forstærker og filter}
+	\caption{Opstilling af forstærker og filter}
 	\label{samletopbygning}
 \end{figure}
 
 Grundet mangel på præcise modstande, bedømte gruppen at det var bedst at bygge modstandende i forholdsvist filteret og forstærkeren, op i to, så gruppen kunne komme så tæt på den ønskede modstandsværdi som muligt. \\
-
-\subsubsection{Implementering af forstærkeren}
-Den samlede stykliste for forstærkeren blev vist som på tabel \ref{forsttabel}.
+For forstærkeren, blev styklisten som vist på tabel \ref{forsttabel}.
 
 \begin{center}
 \begin{tabular}{|c|c|c|}
 \hline 
 Komponent & Antal & Type \\ 
 \hline 
-Modstand & 1 & 120\\
+Modstand & 1 & 120$\Omega$ \\
 \hline
-Modstand & 1 & 4,8\\
+Modstand & 1 & 4,8$\Omega$ \\
 \hline
-Kondensator & 2 & 100 nF\\
+Kondensator & 2 & 100 nF \\
 \hline
 Instrumentationsforstærker & 1 & INA114 \\ 
 \hline
@@ -120,9 +118,8 @@ Instrumentationsforstærker & 1 & INA114 \\
 \label{forsttabel}
 \end{center}
 
-For forstærkeren gælder det at den beregnede $R_{gain}$ er 125,31\Ohm som det kan ses ud af komponentlisten består RGain i praksis af to modstande på henholdsvis 4,8Ω og 120Ω som er sat i serie. $R_{gain}$ modstanden er i praksis 124,8\Ohm. I praksis er $R_{gain}$ 0,51\Ohm mindre end den i teorien skulle have været.
+Grundet forskel imellem teoretiske værdier og fysiske, er R$_{gain}$ 0,51$\Omega$ mindre end den skulle have været.\\
 
-\subsubsection{Implementering af filteret}
 Den samlede stykliste for filteret blev som vist på tabel \ref{filtertabel}.
 
 \begin{center}
@@ -130,9 +127,9 @@ Den samlede stykliste for filteret blev som vist på tabel \ref{filtertabel}.
 \hline 
 Komponent & Antal & Type \\ 
 \hline 
-Modstand & 2 & 6.2 k \\ 
+Modstand & 2 & 6.2 k$\Omega$ \\ 
 \hline 
-Modstand & 2 & 470\\
+Modstand & 2 & 470$\Omega$\\
 \hline
 Kondensator & 1 & 680 nF\\
 \hline
@@ -144,13 +141,17 @@ Operationsforstærker & 1 & OP27G \\
 \label{filtertabel}
 \end{center}
 
-Det analoge filter består blandt andet af en 330 nF kondensator, $C_{1}$, som i teorien er beregnet til at skulle have været 333,2 nF. I praksis er kondensatoren $C_{1}$ 3,2 nF mindre end den i teorien er beregnet til at skulle have været. Filteret består desuden af to modstande $R_{1}$ og $R_{2}$ som er identiske. I det realiserede analoge filter består hver modstand af to modstande på henholdsvis 6200\Ohm og 470\Ohm som er sat i serie. Dermed er både $R_{1}$ og $R_{2}$ 6670\Ohm i praksis. I teorien var $R_{1}$ og $R_{2}$ udregnet til at skulle være 6687\Ohm. I praksis er der derfor 17\Ohm mindre end teorien foreskriver.\
+I det analoge filter, er kondensatoren, C$_1$, i praksis 3,2 nF mindre end  beregnet. Desuden er de to identiske modstande, R$_1$ og R$_2$, som i praksis er 17$\Omega$ mindre end teorien foreskriver.\\
+Gruppen vurderede at afvigelserne var forholdsvidst små, og derfor er der valgt at se bort fra dem. For modstandende er der desuden 1 procents usikkerhed, hvilket betyder man alligevel ikke kan være helt sikker på komponentværdien.\\
+En reel cutoff frekvens blev herefter udregnet af gruppen. Denne kan ses udregnet på figur \ref{cutoff}.
 
-Generelt er der valgt at se bort fra de afvigelser, der er for komponentværdierne i praksis sammenlignet med de i teorien beregnet. Det er valgt da afvigelserne er relativt små i forhold til det pågældende komponent. For modstandende er der desuden 1 procents usikkerhed, hvilket betyder man alligevel ikke kan være helt sikker på komponentværdien.\
-
-På baggrund af de i praksis anvendte komponenter er den reelle knækfrekvens for det analoge filter beregnet. Til det formål er formlen anvendt.\
-
-CUTOFFFREKVENS!?
+\begin{center}
+\begin{align}
+f_{c} = \frac{1}{2\pi \sqrt{R_{1}C_{1}R_{2}C_{2}}} = \frac{1}{2\pi \sqrt{6687 \cdot 333,2\times 10^{-9} \cdot 6687 \cdot 680\times 10^{-9}}} = 50,37 Hz
+\end{align}
+%\caption{Udregning af den reelle cutoff frekvens}
+\label{cutoff}
+\end{center}
 
 \subsection{Test}
 
