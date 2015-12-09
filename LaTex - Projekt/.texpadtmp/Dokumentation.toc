@@ -32,11 +32,13 @@
 \contentsline {subsubsection}{Sekvensdiagram}{22}{section*.17}
 \contentsline {subsubsection}{Opdateret Klassediagram}{26}{section*.23}
 \contentsline {section}{\numberline {3.4}Software implementering}{28}{section.3.4}
-\contentsline {chapter}{\chapternumberline {4}Integrationstest}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Hardware}{29}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Modul test af forst\IeC {\ae }rkeren}{29}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Modul test af det analoge filter}{30}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Software}{32}{section.4.2}
+\contentsline {chapter}{\chapternumberline {4}Test}{29}{chapter.4}
+\contentsline {section}{\numberline {4.1}Modul/unit test}{29}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Hardware}{29}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}Modul test af forst\IeC {\ae }rkeren}{29}{subsubsection.4.1.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.2}Modul test af det analoge filter}{30}{subsubsection.4.1.1.2}
+\contentsline {subsection}{\numberline {4.1.2}Software}{32}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Integrationstest}{32}{section.4.2}
 \contentsline {chapter}{\chapternumberline {5}Acceptest}{33}{chapter.5}
 \contentsline {section}{\numberline {5.1}Indledning}{33}{section.5.1}
 \contentsline {section}{\numberline {5.2}Accepttest af Use Cases}{33}{section.5.2}

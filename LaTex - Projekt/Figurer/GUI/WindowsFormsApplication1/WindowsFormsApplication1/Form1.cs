@@ -12,10 +12,12 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
             label8.Text = DateTime.Now.ToString();
+            
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -62,6 +64,12 @@ namespace WindowsFormsApplication1
         {
             
         }
-        
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+            timer1.Interval = 1000;
+            label8.Text = DateTime.Now.ToString("dd-MMM-yyyy hh:mm:ss tt");
+        }
     }
 }
