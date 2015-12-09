@@ -8,8 +8,8 @@
 \end{longtabu}
 
 \section{Indledning}
+Formålet med design afsnittet er at beskrive hardwaren og softwaren for blodtryksmålersystemet. Systemet beskrives ved hjælp af udregninger, diagrammer, figurer og skitser som tydeligører, hvordan de forskellige delelementers funktionalitet er, samt hvilke tanker der ligger til grund for den endelige implementering (se afsnit \ref{Hardware implementering} for hardware og afsnit \ref{implementering} for software).
 
-  
 \section{Hardware arkitektur}
 I følgende afsnit beskrives hvordan blodtryksmåler systemet og dets delkomponenters opbygning.
 \\
@@ -169,7 +169,7 @@ Computer      & Digitalt Signal & Grafisk Billede &                             
 \label{graenseflader}
 \end{table}
 
-\section{Hardware implementering}
+\section{Hardware implementering}\label{Hardware implementering}
 Efter teorifasen var ovre, blev de to blokke bygget op. Gruppen valgte at bygge forstærkeren og filteret på hver sit fumlebræt, dels på grund af pladsmangel og dels på grund af større sammenhæng mellem arkitekturen, og det endelige produkt.\\
 
 \begin{figure}[H]
@@ -247,7 +247,7 @@ f_{c} = \frac{1}{2\pi \sqrt{R_{1}C_{1}R_{2}C_{2}}} = \frac{1}{2\pi \sqrt{6687 \c
 Desuden er den reelle $\zeta$ for dette filter, ifølge Okawadenshi, 0,697.
 \section{Software arkitektur}
 \subsection{GUI}
-Dette afsnit beskriver hvilke tanker og overvejelser der er gjort i forbindelse med designet af diverse brugergrænseflader. Nedenfor ses udkast til disse brugergrænseflader.\\
+Dette afsnit beskriver hvilke tanker og overvejelser der er gjort i forbindelse med designet af diverse brugergrænseflader. Nedenfor ses udkast til disse brugergrænseflader. Den endelige udgave af brugergrænseflader kan ses i afsnit \ref{implementering}.\\
 Til designet af brugergrænsefladen er blevet udført ud fra de 16 principper \footnote{\url{https://en.wikibooks.org/wiki/Usability_for_Nerds}} for gode brugergrænseflader. Der er ligeledes i form1 hentet inspiration fra allerede eksisterende blodtryk monitor. I designet af brugergrænsefladen bestræbes, der efter at gøre det så virkelighedsnært som muligt ud fra de redskaber og oplysninger der er til rådighed.\\ \\
 Brugergrænsefladen er inddelt i 3 forskellige interfaces. De 3 interfaces er henholdvis Log ind, Form1 og Gem. De personer, der interagerer med brugergrænsefladen er sundhedsfagligt personale som typisk vil være en læge eller sygeplejerske. Dette er der også taget højde for i designet da, der aldrig vil være andre end det sundhedsfaglige personale der interagerer med brugergrænsefladen og derfor er den en skærpet målgruppe.\\
 Nedenfor kommer der en uddybende beskrivelse af brugergrænsefladen. 
@@ -291,13 +291,7 @@ I blodtryksvinduet, vist på figur \ref{Blodtryk vindue}, er opbygningen mere ko
 
 På figur \ref{Gem vindue}, gemme-vinduet, er der igen taget udgangspunkt i en enkel opbygning og at knapperne, der skal bruges er tydelige og selvforklarende. Det er her også brugerens logik, der afspejles og ingen unødvendige ting er inddraget i brugergrænsefalden. Det er her muligt at afbryde situationen ved at der er en alternativ udvej, som kan bruges hvis den op startet handling fortrydes. Der er taget højde for feedback til brugeren hvis der indtastes forkert CPR nummer får brugeren det af vide i et pop-up vindue. 
 
-\subsection{UML klassediagram}
-
-\subsection{Appliktationsmodel}
-
-\subsubsection{Klassediagram}
-
-\subsubsection{Domænemodel}
+\subsection{Domænemodel}
 Diagrammet viser en domæne model for blodtryks systemet. Dette diagram giver et godt overblik over systemet som helhed og hvilke elementer, der indgår i systemet. Diagrammet viser hvordan brugeren interagerer med systemet og hvordan systemet forløber efter det igangsættes af bruger. 
 
 \begin{figure}[H]
@@ -306,6 +300,10 @@ Diagrammet viser en domæne model for blodtryks systemet. Dette diagram giver et
 	\caption{Domænemodel}
 	\label{domaenemodel}
 \end{figure}
+
+\subsection{Appliktationsmodel}
+Applikationsmodellen er en model der på baggrund af domænemodel og Use cases udarbejdes software relaterede klasse applikationsmodeller, sekvensdiagrammer og opdaterede klasse applikationsmodeller.\\
+Her er det ikke-opdateret klassediagram udeladt, hvorfor sekvensdiagram og opdaterede  klasse applikationsmodel er udarbejdet på baggrund af fiktive metoder. De faktiske metoder kan ses i afsnit \ref{UML klassediagram}.
 
 \subsubsection{Sekvensdiagram}
 Sekvensdiagrammet er et interaktions diagram, der viser hvordan processer i systemet forløber. Use casene ligger til baggrund for udarbejdelsen af sekvensdiagrammerne.\\ \\
@@ -352,7 +350,7 @@ Det ses på figur \ref{sd UC5} hvordan brugeren justerer grænseværdierne for p
 
 Figur \ref{sd UC6} viser hvordan systemet gemmer og afslutter en måling. 
 
-\subsubsection{Opdateret Klassediagram}
+\subsubsection{Opdateret applikationsmodel}
 Klasse applikationsmodellerne er udarbejdet ud fra use casene, sekvensdiagrammer og domænemodellen. Der er ligesom ved sekvensdiagrammerne lavet et klassediagram for hver use case. Der er her også brugt virtuelle metoder. 
 
 \begin{figure}[H]
@@ -383,8 +381,6 @@ Klasse applikationsmodellerne er udarbejdet ud fra use casene, sekvensdiagrammer
 	\label{classApp UC5}
 \end{figure}
 
-
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/ISE/classAppModelUC7}
@@ -392,8 +388,9 @@ Klasse applikationsmodellerne er udarbejdet ud fra use casene, sekvensdiagrammer
 	\label{classApp UC7}
 \end{figure}
 
-\section{Software implementering}
+\section{Software implementering}\label{implementering}
 
+\subsection{UML klassediagram}\label{UML klassediagram}
 
 
  

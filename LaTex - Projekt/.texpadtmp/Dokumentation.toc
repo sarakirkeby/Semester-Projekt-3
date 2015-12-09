@@ -29,13 +29,12 @@
 \contentsline {subsubsection}{Implementering af filteret}{21}{section*.15}
 \contentsline {section}{\numberline {3.4}Software arkitektur}{21}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}GUI}{21}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}UML klassediagram}{24}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Appliktationsmodel}{24}{subsection.3.4.3}
-\contentsline {subsubsection}{Klassediagram}{24}{section*.21}
-\contentsline {subsubsection}{Dom\IeC {\ae }nemodel}{24}{section*.22}
-\contentsline {subsubsection}{Sekvensdiagram}{25}{section*.24}
-\contentsline {subsubsection}{Opdateret Klassediagram}{29}{section*.30}
+\contentsline {subsection}{\numberline {3.4.2}Dom\IeC {\ae }nemodel}{24}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Appliktationsmodel}{25}{subsection.3.4.3}
+\contentsline {subsubsection}{Sekvensdiagram}{25}{section*.22}
+\contentsline {subsubsection}{Opdateret applikationsmodel}{29}{section*.28}
 \contentsline {section}{\numberline {3.5}Software implementering}{31}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}UML klassediagram}{31}{subsection.3.5.1}
 \contentsline {chapter}{\chapternumberline {4}Test}{33}{chapter.4}
 \contentsline {section}{\numberline {4.1}Indledning}{33}{section.4.1}
 \contentsline {section}{\numberline {4.2}Modul/unit test}{33}{section.4.2}
@@ -56,9 +55,9 @@
 \contentsline {subsection}{\numberline {5.2.5}Use Case 5}{39}{subsection.5.2.5}
 \contentsline {subsection}{\numberline {5.2.6}Use Case 6}{40}{subsection.5.2.6}
 \contentsline {section}{\numberline {5.3}Accepttest af ikke-funktionelle krav}{41}{section.5.3}
-\contentsline {chapter}{Bilag}{45}{chapter*.40}
-\contentsline {section}{Fejlrapport}{45}{section*.41}
-\contentsline {section}{Logbog}{45}{section*.42}
-\contentsline {section}{M\IeC {\o }dereferart}{45}{section*.43}
-\contentsline {section}{Kode}{45}{section*.44}
-\contentsline {section}{Samarbejdsaftale}{45}{section*.45}
+\contentsline {chapter}{Bilag}{45}{chapter*.38}
+\contentsline {section}{Fejlrapport}{45}{section*.39}
+\contentsline {section}{Logbog}{45}{section*.40}
+\contentsline {section}{M\IeC {\o }dereferart}{45}{section*.41}
+\contentsline {section}{Kode}{45}{section*.42}
+\contentsline {section}{Samarbejdsaftale}{45}{section*.43}
