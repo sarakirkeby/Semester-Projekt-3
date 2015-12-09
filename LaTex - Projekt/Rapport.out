@@ -9,30 +9,31 @@
 \BOOKMARK [1][-]{section.3.3}{Hypertension}{chapter.3}% 9
 \BOOKMARK [1][-]{section.3.4}{Hypotension}{chapter.3}% 10
 \BOOKMARK [1][-]{section.3.5}{Blodtryksm\345ling}{chapter.3}% 11
-\BOOKMARK [1][-]{section.3.6}{Programmerings teori}{chapter.3}% 12
-\BOOKMARK [2][-]{subsection.3.6.1}{Tr\345de}{section.3.6}% 13
-\BOOKMARK [2][-]{subsection.3.6.2}{Observer}{section.3.6}% 14
-\BOOKMARK [2][-]{subsection.3.6.3}{Push pull}{section.3.6}% 15
-\BOOKMARK [0][-]{chapter.4}{Systembeskrivelse}{}% 16
-\BOOKMARK [0][-]{chapter.5}{Krav}{}% 17
-\BOOKMARK [1][-]{section.5.1}{IHA krav}{chapter.5}% 18
-\BOOKMARK [1][-]{section.5.2}{Funktionelle krav}{chapter.5}% 19
-\BOOKMARK [1][-]{section.5.3}{Ikke-funktionelle krav}{chapter.5}% 20
-\BOOKMARK [0][-]{chapter.6}{Projektbeskrivelse}{}% 21
-\BOOKMARK [1][-]{section.6.1}{Projektgennemf\370relse}{chapter.6}% 22
-\BOOKMARK [1][-]{section.6.2}{Metode}{chapter.6}% 23
-\BOOKMARK [2][-]{subsection.6.2.1}{Ase-modellen}{section.6.2}% 24
-\BOOKMARK [2][-]{subsection.6.2.2}{Vandfald}{section.6.2}% 25
-\BOOKMARK [2][-]{subsection.6.2.3}{V-model}{section.6.2}% 26
-\BOOKMARK [1][-]{section.6.3}{Specifikation og analyse}{chapter.6}% 27
-\BOOKMARK [1][-]{section.6.4}{Arkitektur}{chapter.6}% 28
-\BOOKMARK [2][-]{subsection.6.4.1}{software arkitektur}{section.6.4}% 29
-\BOOKMARK [2][-]{subsection.6.4.2}{SysML}{section.6.4}% 30
-\BOOKMARK [2][-]{subsection.6.4.3}{Design}{section.6.4}% 31
-\BOOKMARK [2][-]{subsection.6.4.4}{Implementering}{section.6.4}% 32
-\BOOKMARK [2][-]{subsection.6.4.5}{Test}{section.6.4}% 33
-\BOOKMARK [1][-]{section.6.5}{Resultater og diskussion}{chapter.6}% 34
-\BOOKMARK [1][-]{section.6.6}{Opn\345ede erfaringer}{chapter.6}% 35
-\BOOKMARK [1][-]{section.6.7}{Fremtidigt arbejde}{chapter.6}% 36
-\BOOKMARK [0][-]{chapter.7}{Konklusion}{}% 37
-\BOOKMARK [0][-]{section*.17}{Litteratur}{}% 38
+\BOOKMARK [1][-]{section.3.6}{Sensorer}{chapter.3}% 12
+\BOOKMARK [1][-]{section.3.7}{Programmerings teori}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.7.1}{Tr\345de}{section.3.7}% 14
+\BOOKMARK [2][-]{subsection.3.7.2}{Observer}{section.3.7}% 15
+\BOOKMARK [2][-]{subsection.3.7.3}{Push pull}{section.3.7}% 16
+\BOOKMARK [0][-]{chapter.4}{Systembeskrivelse}{}% 17
+\BOOKMARK [0][-]{chapter.5}{Krav}{}% 18
+\BOOKMARK [1][-]{section.5.1}{IHA krav}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.2}{Funktionelle krav}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.3}{Ikke-funktionelle krav}{chapter.5}% 21
+\BOOKMARK [0][-]{chapter.6}{Projektbeskrivelse}{}% 22
+\BOOKMARK [1][-]{section.6.1}{Projektgennemf\370relse}{chapter.6}% 23
+\BOOKMARK [1][-]{section.6.2}{Metode}{chapter.6}% 24
+\BOOKMARK [2][-]{subsection.6.2.1}{Ase-modellen}{section.6.2}% 25
+\BOOKMARK [2][-]{subsection.6.2.2}{Vandfald}{section.6.2}% 26
+\BOOKMARK [2][-]{subsection.6.2.3}{V-model}{section.6.2}% 27
+\BOOKMARK [1][-]{section.6.3}{Specifikation og analyse}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.4}{Arkitektur}{chapter.6}% 29
+\BOOKMARK [2][-]{subsection.6.4.1}{software arkitektur}{section.6.4}% 30
+\BOOKMARK [2][-]{subsection.6.4.2}{SysML}{section.6.4}% 31
+\BOOKMARK [2][-]{subsection.6.4.3}{Design}{section.6.4}% 32
+\BOOKMARK [2][-]{subsection.6.4.4}{Implementering}{section.6.4}% 33
+\BOOKMARK [2][-]{subsection.6.4.5}{Test}{section.6.4}% 34
+\BOOKMARK [1][-]{section.6.5}{Resultater og diskussion}{chapter.6}% 35
+\BOOKMARK [1][-]{section.6.6}{Opn\345ede erfaringer}{chapter.6}% 36
+\BOOKMARK [1][-]{section.6.7}{Fremtidigt arbejde}{chapter.6}% 37
+\BOOKMARK [0][-]{chapter.7}{Konklusion}{}% 38
+\BOOKMARK [0][-]{section*.20}{Litteratur}{}% 39

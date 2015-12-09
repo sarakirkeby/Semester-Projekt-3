@@ -12,10 +12,11 @@
 \contentsline {section}{\numberline {3.3}Hypertension}{10}{section.3.3}
 \contentsline {section}{\numberline {3.4}Hypotension}{10}{section.3.4}
 \contentsline {section}{\numberline {3.5}Blodtryksm\IeC {\r a}ling}{10}{section.3.5}
-\contentsline {section}{\numberline {3.6}Programmerings teori}{11}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Tr\IeC {\r a}de}{11}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Observer}{11}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Push pull}{11}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.6}Sensorer}{11}{section.3.6}
+\contentsline {section}{\numberline {3.7}Programmerings teori}{11}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Tr\IeC {\r a}de}{12}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Observer}{12}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}Push pull}{12}{subsection.3.7.3}
 \contentsline {chapter}{\chapternumberline {4}Systembeskrivelse}{13}{chapter.4}
 \contentsline {chapter}{\chapternumberline {5}Krav}{15}{chapter.5}
 \contentsline {section}{\numberline {5.1}IHA krav}{15}{section.5.1}
@@ -38,4 +39,4 @@
 \contentsline {section}{\numberline {6.6}Opn\IeC {\r a}ede erfaringer}{26}{section.6.6}
 \contentsline {section}{\numberline {6.7}Fremtidigt arbejde}{26}{section.6.7}
 \contentsline {chapter}{\chapternumberline {7}Konklusion}{27}{chapter.7}
-\contentsline {chapter}{Litteratur}{29}{section*.17}
+\contentsline {chapter}{Litteratur}{29}{section*.20}

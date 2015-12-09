@@ -48,9 +48,25 @@ Shock er defineret ved en patofysiologisk tilstand karakteriseret ved, at blodci
 For at kunne detektere et blodtryk som beskrevet i ovenstående, er det nødvendigt at foretage en eller anden form for blodtryksmåling. \\
 Der findes mange former for blodtryks målinger, de mest hyppigt brugte er dog de non-invasive og invasive målinger. De non-invasive målinger kan være målemetoder som den klassiske blodtryksmåling med manchet, stetoskop og kviksølvsmanometer. Den invasive metode indebærer en indsættelse af instrument i kroppen og benyttes blandt andet på operationsstuer. Et invasiv blodtryksmåling apparat kan deles op i to generelle kategorier. Den meste brugte kliniske metode er metoden er at koble det vaskulære tryk til en ekstern sensor element via et væskefyldt kateter. Den anden metode er en metode, hvor vand koblingen her bliver elimineret ved at inkorporere sensoren i spidsen af kateteret i det vaskulære system.
 
+\section{Sensorer}
+En sensor er en transducer, der transformerer en fysisk målestørrelse til elektrisk energi. Til måling af fysiologiske størrelser som blodtryk bruges sensorer som omformer flow til elektrisk energi. Et eksempel på sådanne sensorer er en strain gauge som er en resistiv transducer. Strain gauges klassificeres enten som bundne eller ubundne, hvor den ubundne giver en temperatur kompensation mens den bundne kan have udsving grundet temperaturen.\\
+Den ubundne strain gauge består af fire set af stræk følsomme ledninger, der er forbundet så de danner en wheatstone bro, se figur \ref{StrainGauge}. Disse ledninger er monteret under tryk mellem rammen og det bevægelige armatur således den maksimal belastning strain gaugen kan holde til, er større end den forventede udefrakommende komprimerende belastning. Dette er nødvendigt for ikke at skade ledningerne. Disse typer af sensorer kan blive brugt til at konvertere blodtryk til membran bevægelse, videre til modstands ændring og til sidst et elektrisk signal. Bro sammenkoblingen giver en temperatur kompensation og den giver fire gange så stort et output fordi alle fire arme indeholder aktive gages.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Figurer/Hardware/straingauge}
+	\caption{(a) Ubundet strain gauge tryk sensor. Membranen er direkte koblet via et armaratur til et ubundet strain gauge system. Med stigende tryk, øges strækket over parret B og C, mens strækket over parret A og D sænkes. (b) Wheatstone bro med fire aktive elementer: $R_{1} = B, R_{2} = A, R_{3} = D og R_{4} = C $ når den ubundne strian gauge er forbundet til translationel bevægelse. Resistoren$ R_{y}$ og potentiometret $R_{x}$ bruges til at balancere broen, $V_{i}$ er den tilførte spænding og $\Delta v_{0}$ er output spænding på et voltmeter eller lignende apparat med en indre modstand på $R_{i}$. Kilde: Webster - Medical instrumentation, application and design 4th Edition}
+	\label{StrainGauge}
+\end{figure}
+
+
+
+
+
+
 \section{Programmerings teori}
 Helt generelt er softwaren i blodtrykssystemet bygget op omkring 3-lagsmodellen. 3-lagsmodellen er bestående af lagene præsentationslag, logiklag og datalag. \textbf{Skriv mere!}
 \subsection{Tråde}
 Tråd programmering benyttes, når man som her ønsker flere opgaver i programmet udført løbende. Dette kan gør sig gældende eksempelvis ved at programmet ønsker at indlæse data og vise det i en graf, samtidig med at brugeren har adgang til alle interfacets funktioner. Det er disse delprocesser, som udgøre trådene. Hvis en enkelt tråd skulle gå i stå, skal de andre tråde stadig køre, således at programmet stadig kører videre. 
 \subsection{Observer}
 \subsection{Push pull}
+
