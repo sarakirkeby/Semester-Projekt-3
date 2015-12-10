@@ -25,14 +25,15 @@
 \contentsline {subsection}{\numberline {6.2.2}Vandfald}{20}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}V-model}{21}{subsection.6.2.3}
 \contentsline {section}{\numberline {6.3}Specifikation og analyse}{22}{section.6.3}
-\contentsline {chapter}{\chapternumberline {7}Arkitektur}{23}{chapter.7}
-\contentsline {section}{\numberline {7.1}Software arkitektur}{23}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}SysML}{24}{subsection.7.1.1}
-\contentsline {chapter}{\chapternumberline {8}Design, implementering og test}{27}{chapter.8}
-\contentsline {subsection}{\numberline {8.0.2}Implementering}{27}{subsection.8.0.2}
-\contentsline {subsection}{\numberline {8.0.3}Test}{28}{subsection.8.0.3}
-\contentsline {section}{\numberline {8.1}Resultater og diskussion}{28}{section.8.1}
-\contentsline {section}{\numberline {8.2}Opn\IeC {\r a}ede erfaringer}{28}{section.8.2}
-\contentsline {section}{\numberline {8.3}Fremtidigt arbejde}{28}{section.8.3}
-\contentsline {chapter}{\chapternumberline {9}Konklusion}{29}{chapter.9}
-\contentsline {chapter}{Litteratur}{31}{section*.20}
+\contentsline {chapter}{\chapternumberline {7}Design, implementering og test}{23}{chapter.7}
+\contentsline {section}{\numberline {7.1}Arkitektur}{23}{section.7.1}
+\contentsline {section}{\numberline {7.2}Software arkitektur}{23}{section.7.2}
+\contentsline {section}{\numberline {7.3}SysML}{24}{section.7.3}
+\contentsline {section}{\numberline {7.4}Design}{25}{section.7.4}
+\contentsline {section}{\numberline {7.5}Implementering}{27}{section.7.5}
+\contentsline {section}{\numberline {7.6}Test}{28}{section.7.6}
+\contentsline {section}{\numberline {7.7}Resultater og diskussion}{28}{section.7.7}
+\contentsline {section}{\numberline {7.8}Opn\IeC {\r a}ede erfaringer}{28}{section.7.8}
+\contentsline {section}{\numberline {7.9}Fremtidigt arbejde}{28}{section.7.9}
+\contentsline {chapter}{\chapternumberline {8}Konklusion}{29}{chapter.8}
+\contentsline {chapter}{Litteratur}{31}{section*.23}

@@ -46,8 +46,9 @@ Testens praktiske udførelse er altså uændret i forhold til Ase-modellen og Va
 \section{Specifikation og analyse}
 
 
+\chapter{Design, implementering og test}
 
-\chapter{Arkitektur}
+\section{Arkitektur}
 I det følgende afsnit beskrives arkitekturen for systemet. Systemarkitekturen fungerer her som udviklingsramme for videre design og implementering. Her bliver systemets funktionalitet 
 nedbrudt til overordnede moduler. \\
    Arkitekturen for projektet er foretaget i to dele - en hardware arkitektur og en software arkitektur. Arkitekturen beskriver opbygningen af systemet i form af diagrammer.  
@@ -77,16 +78,14 @@ Figur \ref{sekvensdiagram} viser hvordan brugeren interagerer med brugergrænsef
 Ud fra dette kan det ses hvordan brugerens interaktion med brugergrænsefladen sætter gang i metoder i software programmet. Skevensdiagrammet giver altså et overblik over hvordan softwaren er bygget op.\\
 Sekvensdiagrammerne for de øvrige use cases kan ses i dokumentationen afsnit \textbf{Afsnit i dokumentation}
   
- \subsection{SysML}
+ \section{SysML}
  I beskrivelsen af systemarkitekturen og det detaljerede design for det færdige produkt, er der anvendt SysML. SysML stammer oprindeligt fra UML, men UML er hovedsagligt centreret omkring udvikling af software systemer. Da det udviklede system både består af hardware og software, er der valgt SysML til beskrivelsen af arkitekturen.\\
 Valget af SysML grunder også i, at det giver en god formidling af systemet - dette giver udviklerne et større overblik. Samtidig er det også let for en udenforstående at sætte sig ind i systemets kunnen.\\
 
 I dette projekt er der benyttet struktur- og adfærdsdiagrammer til at specificere og dokumentere systemet. Som strukturdiagram er der anvendt et blok definitions diagram (bdd) samt interne blok definitions diagramm (ibd).\\
 Der er anvendt adfærdsdiagrammer i form af sekvensdiagrammer i dette projekt. Disse diagrammer er velegnet til sekventielt at beskrive den logiske funktionalitet i systemet. Softwaren er opbygget ud fra sekvensdiagrammer beskrevet i arkitektur afsnittet (afsnit \ref{Software arkitektur}).
 
-\chapter{Design, implementering og test}
-
-\subsection{Design}
+\section{Design}
 I dette afsnit beskrives udarbejdelsen af hardware design, og tilhørende tanker.
 
 Gruppen bestemte tideligt i forløbet at dele hardwaren op i to dele, en forstærker del og en filter del. 
@@ -124,7 +123,7 @@ Det næste der skulle designes, var filteret. Filteret skulle realiseres som et 
 
 Et Sallen-Keyfilter har en anderledes $\zeta$ , grundet anderledes prioriteter, i forhold til frekvensområdet. Gruppen brugte en hjemmeside\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm} til at finde overføringsfunktionen for det givne filter. Herefter blev komponentværdierne teoretisk udregnet. Udregningerne kan ses i dokumentationen, afsnit xx. De endelige værdier for komponenterne, kan ses på komponentlisten for filteret i afsnit \ref{himpl}. 
 
-\subsection{Implementering}
+\section{Implementering}
 \label{himpl}
 Efter komponentudregningen, byggede gruppen de to hardware blokke op. Gruppen valgte at bygge forstærkeren og filteret seperat, grundet pladsmangel og sammenhæng.\\
 
@@ -184,7 +183,7 @@ f_{c} = \frac{1}{2\pi \sqrt{R_{1}C_{1}R_{2}C_{2}}} = \frac{1}{2\pi \sqrt{6687 \c
 
 
 
-\subsection{Test}
+\section{Test}
 
 
 \section{Resultater og diskussion}
