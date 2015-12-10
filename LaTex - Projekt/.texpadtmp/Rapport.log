@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.11)  10 DEC 2015 16:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.11)  10 DEC 2015 21:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2132,12 +2132,22 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--7
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+<Figurer/Systembeskrivelse.png, id=346, 459.96844pt x 73.02281pt>
+File: Figurer/Systembeskrivelse.png Graphic file (type png)
+ <use Figurer/Systembeskrivelse.png>
+Package pdftex.def Info: Figurer/Systembeskrivelse.png used on input line 6.
+(pdftex.def)             Requested size: 426.0pt x 67.63416pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2--7
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
@@ -2150,7 +2160,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 21.
- [13]
+ [13 <./Figurer/Systembeskrivelse.png>]
 \openout2 = `Rfiler/Rkrav.aux'.
 
  (./Rfiler/Rkrav.tex
@@ -2184,7 +2194,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 20.
-<Figurer/ISE/UcDiagram2.png, id=355, 385.44pt x 467.7475pt>
+<Figurer/ISE/UcDiagram2.png, id=358, 385.44pt x 467.7475pt>
 File: Figurer/ISE/UcDiagram2.png Graphic file (type png)
  <use Figurer/ISE/UcDiagram2.png>
 Package pdftex.def Info: Figurer/ISE/UcDiagram2.png used on input line 25.
@@ -2273,7 +2283,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 11.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 11.
-<Figurer/Metode/ASEmodellen.jpg, id=381, 614.295pt x 359.3425pt>
+<Figurer/Metode/ASEmodellen.jpg, id=384, 614.295pt x 359.3425pt>
 File: Figurer/Metode/ASEmodellen.jpg Graphic file (type jpg)
  <use Figurer/Metode/ASEmodellen.jpg>
 Package pdftex.def Info: Figurer/Metode/ASEmodellen.jpg used on input line 15.
@@ -2300,7 +2310,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
 
  []
 
-<Figurer/Metode/Vandfald.png, id=391, 416.30531pt x 364.36125pt>
+<Figurer/Metode/Vandfald.png, id=394, 416.30531pt x 364.36125pt>
 File: Figurer/Metode/Vandfald.png Graphic file (type png)
  <use Figurer/Metode/Vandfald.png>
 Package pdftex.def Info: Figurer/Metode/Vandfald.png used on input line 28.
@@ -2318,7 +2328,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 35.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 35.
- <Figurer/Metode/Vmodel.png, id=401, 689.57625pt x 389.20406pt>
+ <Figurer/Metode/Vmodel.png, id=404, 689.57625pt x 389.20406pt>
 File: Figurer/Metode/Vmodel.png Graphic file (type png)
  <use Figurer/Metode/Vmodel.png>
 Package pdftex.def Info: Figurer/Metode/Vmodel.png used on input line 39.
@@ -2357,7 +2367,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 56.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 56.
- <Figurer/ISE/Domaenemodel.jpg, id=414, 785.18344pt x 542.77782pt>
+ <Figurer/ISE/Domaenemodel.jpg, id=417, 785.18344pt x 542.77782pt>
 File: Figurer/ISE/Domaenemodel.jpg Graphic file (type jpg)
  <use Figurer/ISE/Domaenemodel.jpg>
 Package pdftex.def Info: Figurer/ISE/Domaenemodel.jpg used on input line 61.
@@ -2372,7 +2382,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 69.
  [23
 
- <./Figurer/ISE/Domaenemodel.jpg>] <Figurer/ISE/sdAppModelUC3.jpg, id=421, 443.40656pt x 244.66406pt>
+ <./Figurer/ISE/Domaenemodel.jpg>] <Figurer/ISE/sdAppModelUC3.jpg, id=424, 443.40656pt x 244.66406pt>
 File: Figurer/ISE/sdAppModelUC3.jpg Graphic file (type jpg)
  <use Figurer/ISE/sdAppModelUC3.jpg>
 Package pdftex.def Info: Figurer/ISE/sdAppModelUC3.jpg used on input line 72.
@@ -2399,7 +2409,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 88.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 88.
- <Figurer/Hardware/BDD1.jpg, id=429, 551.1792pt x 131.17004pt>
+ <Figurer/Hardware/BDD1.jpg, id=432, 551.1792pt x 131.17004pt>
 File: Figurer/Hardware/BDD1.jpg Graphic file (type jpg)
  <use Figurer/Hardware/BDD1.jpg>
 Package pdftex.def Info: Figurer/Hardware/BDD1.jpg used on input line 95.
@@ -2422,7 +2432,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--103
 
  []
 
-<Figurer/Hardware/Forstaerker.jpg, id=431, 292.09125pt x 198.7425pt>
+<Figurer/Hardware/Forstaerker.jpg, id=434, 292.09125pt x 198.7425pt>
 File: Figurer/Hardware/Forstaerker.jpg Graphic file (type jpg)
  <use Figurer/Hardware/Forstaerker.jpg>
 Package pdftex.def Info: Figurer/Hardware/Forstaerker.jpg used on input line 106.
@@ -2439,7 +2449,7 @@ Package babel Info: Redefining danish shorthand "~
 
 LaTeX Warning: Reference `fig:Filter' on page 26 undefined on input line 115.
 
-<Figurer/Hardware/FilterDesign.jpg, id=441, 421.575pt x 201.75375pt>
+<Figurer/Hardware/FilterDesign.jpg, id=444, 421.575pt x 201.75375pt>
 File: Figurer/Hardware/FilterDesign.jpg Graphic file (type jpg)
  <use Figurer/Hardware/FilterDesign.jpg>
 Package pdftex.def Info: Figurer/Hardware/FilterDesign.jpg used on input line 119.
@@ -2462,7 +2472,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 128--129
 
  []
 
-<Figurer/Hardware/samletopstilling.png, id=452, 527.72156pt x 369.63094pt>
+<Figurer/Hardware/samletopstilling.png, id=455, 527.72156pt x 369.63094pt>
 File: Figurer/Hardware/samletopstilling.png Graphic file (type png)
  <use Figurer/Hardware/samletopstilling.png>
 Package pdftex.def Info: Figurer/Hardware/samletopstilling.png used on input line 132.
@@ -2596,19 +2606,19 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 32.
  ) 
 Here is how much of TeX's memory you used:
- 27370 strings out of 493117
- 493322 string characters out of 6135433
- 803770 words of memory out of 5000000
- 30210 multiletter control sequences out of 15000+600000
+ 27379 strings out of 493117
+ 493532 string characters out of 6135433
+ 803890 words of memory out of 5000000
+ 30216 multiletter control sequences out of 15000+600000
  36034 words of font info for 96 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  41i,13n,80p,10460b,879s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
 cm-super/sfti1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on "/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Rapport.pdf" (42 pages, 2350519 bytes).
+Output written on "/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Rapport.pdf" (42 pages, 2381961 bytes).
 PDF statistics:
- 616 PDF objects out of 1000 (max. 8388607)
- 511 compressed objects within 6 object streams
- 115 named destinations out of 1000 (max. 500000)
- 369 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 619 PDF objects out of 1000 (max. 8388607)
+ 513 compressed objects within 6 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 374 words of extra memory for PDF output out of 10000 (max. 10000000)
 

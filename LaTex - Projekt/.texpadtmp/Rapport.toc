@@ -36,4 +36,4 @@
 \contentsline {section}{\numberline {7.8}Opn\IeC {\r a}ede erfaringer}{28}{section.7.8}
 \contentsline {section}{\numberline {7.9}Fremtidigt arbejde}{28}{section.7.9}
 \contentsline {chapter}{\chapternumberline {8}Konklusion}{29}{chapter.8}
-\contentsline {chapter}{Litteratur}{31}{section*.23}
+\contentsline {chapter}{Litteratur}{31}{section*.24}
