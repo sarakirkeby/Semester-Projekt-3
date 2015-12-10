@@ -35,13 +35,13 @@
 \BOOKMARK [2][-]{subsection.4.2.5}{UML klassediagram}{section.4.2}% 35
 \BOOKMARK [0][-]{chapter.5}{Test}{}% 36
 \BOOKMARK [1][-]{section.5.1}{Indledning}{chapter.5}% 37
-\BOOKMARK [1][-]{section.5.2}{Modul/unit test}{chapter.5}% 38
-\BOOKMARK [2][-]{subsection.5.2.1}{Hardware}{section.5.2}% 39
-\BOOKMARK [2][-]{subsection.5.2.2}{Software}{section.5.2}% 40
-\BOOKMARK [1][-]{section.5.3}{Integrationstest}{chapter.5}% 41
-\BOOKMARK [2][-]{subsection.5.3.1}{Hardware}{section.5.3}% 42
-\BOOKMARK [2][-]{subsection.5.3.2}{Software}{section.5.3}% 43
-\BOOKMARK [2][-]{subsection.5.3.3}{Samlet}{section.5.3}% 44
+\BOOKMARK [1][-]{section.5.2}{Modul test hardware}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.2.1}{Modul test af forst\346rkeren}{section.5.2}% 39
+\BOOKMARK [2][-]{subsection.5.2.2}{Modul test af det analoge filter}{section.5.2}% 40
+\BOOKMARK [1][-]{section.5.3}{Modul test software}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.4}{Integrationstest hardware}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.5}{Integrationstest software}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.6}{Integrationstest system}{chapter.5}% 44
 \BOOKMARK [0][-]{chapter.6}{Acceptest}{}% 45
 \BOOKMARK [1][-]{section.6.1}{Indledning}{chapter.6}% 46
 \BOOKMARK [1][-]{section.6.2}{Accepttest af Use Cases}{chapter.6}% 47

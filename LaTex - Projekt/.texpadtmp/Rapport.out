@@ -21,16 +21,18 @@
 \BOOKMARK [2][-]{subsection.6.2.1}{Ase-modellen}{section.6.2}% 21
 \BOOKMARK [2][-]{subsection.6.2.2}{Vandfald}{section.6.2}% 22
 \BOOKMARK [2][-]{subsection.6.2.3}{V-model}{section.6.2}% 23
-\BOOKMARK [1][-]{section.6.3}{Specifikation og analyse}{chapter.6}% 24
-\BOOKMARK [0][-]{chapter.7}{Design, implementering og test}{}% 25
-\BOOKMARK [1][-]{section.7.1}{Arkitektur}{chapter.7}% 26
-\BOOKMARK [1][-]{section.7.2}{Software arkitektur}{chapter.7}% 27
-\BOOKMARK [1][-]{section.7.3}{SysML}{chapter.7}% 28
-\BOOKMARK [1][-]{section.7.4}{Design}{chapter.7}% 29
-\BOOKMARK [1][-]{section.7.5}{Implementering}{chapter.7}% 30
-\BOOKMARK [1][-]{section.7.6}{Test}{chapter.7}% 31
-\BOOKMARK [1][-]{section.7.7}{Resultater og diskussion}{chapter.7}% 32
-\BOOKMARK [1][-]{section.7.8}{Opn\345ede erfaringer}{chapter.7}% 33
-\BOOKMARK [1][-]{section.7.9}{Fremtidigt arbejde}{chapter.7}% 34
-\BOOKMARK [0][-]{chapter.8}{Konklusion}{}% 35
-\BOOKMARK [0][-]{section*.24}{Litteratur}{}% 36
+\BOOKMARK [2][-]{subsection.6.2.4}{SysML}{section.6.2}% 24
+\BOOKMARK [1][-]{section.6.3}{Specifikation og analyse}{chapter.6}% 25
+\BOOKMARK [0][-]{chapter.7}{Design, implementering og test}{}% 26
+\BOOKMARK [1][-]{section.7.1}{Hardware design}{chapter.7}% 27
+\BOOKMARK [1][-]{section.7.2}{Software design}{chapter.7}% 28
+\BOOKMARK [1][-]{section.7.3}{Hardware implementering}{chapter.7}% 29
+\BOOKMARK [1][-]{section.7.4}{Software implementering}{chapter.7}% 30
+\BOOKMARK [1][-]{section.7.5}{Hardware test}{chapter.7}% 31
+\BOOKMARK [1][-]{section.7.6}{Software test}{chapter.7}% 32
+\BOOKMARK [1][-]{section.7.7}{System test}{chapter.7}% 33
+\BOOKMARK [1][-]{section.7.8}{Resultater og diskussion}{chapter.7}% 34
+\BOOKMARK [1][-]{section.7.9}{Opn\345ede erfaringer}{chapter.7}% 35
+\BOOKMARK [1][-]{section.7.10}{Fremtidigt arbejde}{chapter.7}% 36
+\BOOKMARK [0][-]{chapter.8}{Konklusion}{}% 37
+\BOOKMARK [0][-]{section*.24}{Litteratur}{}% 38

@@ -24,16 +24,18 @@
 \contentsline {subsection}{\numberline {6.2.1}Ase-modellen}{19}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Vandfald}{20}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}V-model}{21}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}SysML}{22}{subsection.6.2.4}
 \contentsline {section}{\numberline {6.3}Specifikation og analyse}{22}{section.6.3}
 \contentsline {chapter}{\chapternumberline {7}Design, implementering og test}{23}{chapter.7}
-\contentsline {section}{\numberline {7.1}Arkitektur}{23}{section.7.1}
-\contentsline {section}{\numberline {7.2}Software arkitektur}{23}{section.7.2}
-\contentsline {section}{\numberline {7.3}SysML}{24}{section.7.3}
-\contentsline {section}{\numberline {7.4}Design}{25}{section.7.4}
-\contentsline {section}{\numberline {7.5}Implementering}{27}{section.7.5}
-\contentsline {section}{\numberline {7.6}Test}{28}{section.7.6}
-\contentsline {section}{\numberline {7.7}Resultater og diskussion}{28}{section.7.7}
-\contentsline {section}{\numberline {7.8}Opn\IeC {\r a}ede erfaringer}{28}{section.7.8}
-\contentsline {section}{\numberline {7.9}Fremtidigt arbejde}{28}{section.7.9}
+\contentsline {section}{\numberline {7.1}Hardware design}{23}{section.7.1}
+\contentsline {section}{\numberline {7.2}Software design}{25}{section.7.2}
+\contentsline {section}{\numberline {7.3}Hardware implementering}{26}{section.7.3}
+\contentsline {section}{\numberline {7.4}Software implementering}{28}{section.7.4}
+\contentsline {section}{\numberline {7.5}Hardware test}{28}{section.7.5}
+\contentsline {section}{\numberline {7.6}Software test}{28}{section.7.6}
+\contentsline {section}{\numberline {7.7}System test}{28}{section.7.7}
+\contentsline {section}{\numberline {7.8}Resultater og diskussion}{28}{section.7.8}
+\contentsline {section}{\numberline {7.9}Opn\IeC {\r a}ede erfaringer}{28}{section.7.9}
+\contentsline {section}{\numberline {7.10}Fremtidigt arbejde}{28}{section.7.10}
 \contentsline {chapter}{\chapternumberline {8}Konklusion}{29}{chapter.8}
 \contentsline {chapter}{Litteratur}{31}{section*.24}
