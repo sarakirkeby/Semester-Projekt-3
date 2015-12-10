@@ -169,82 +169,6 @@ Computer      & Digitalt Signal & Grafisk Billede &                             
 \label{graenseflader}
 \end{table}
 
-\section{Hardware implementering}\label{Hardware implementering}
-Efter teorifasen var ovre, blev de to blokke bygget op. Gruppen valgte at bygge forstærkeren og filteret på hver sit fumlebræt, dels på grund af pladsmangel og dels på grund af større sammenhæng mellem arkitekturen, og det endelige produkt.\\
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Hardware/samletopstilling}
-	\caption{Opstilling af forstærker og filter}
-	\label{Dsamletopbygning}
-\end{figure}
-
-Grundet mangel på præcise modstande, bedømte gruppen at det var bedst at bygge modstandende i forholdsvist filteret og forstærkeren, op i to, så gruppen kunne komme så tæt på den ønskede modstandsværdi som muligt. \\
-
-\subsubsection{Hardware overvejelser}
-
-I udviklingen af hardwaren, stødte gruppen på problematikker, som blev gjorde, at der var nogen komponenter, der blev nødt til at blive taget op til genovervejelse.\\
-\\
-Et af de største problemer gruppen stødte ind i, i forhold til hardware, var brugen af en operationsforstærker i forstærkerblokken. En reel operationsforstærker har ikke en uendelig indgangs modstand, som i den ideelle verden, og der er derfor en risiko for at den lave spænding fra transduceren simpelthen ikke ville kunne passere forstærkeren. Gruppen valgte derfor at bruge en instrumenteringsforstærker i stedet, da den reelle komponents egenskaber ligger langt tættere på dens ideelle modpart, og derfor var bedre egnet i gruppens kredsløb. En anden fordel ved instrumenteringsforstærkeren er, at den er meget let at justere gain på.\\
-\\
-En anden stor fordel ved instrumenteringsforstærkeren er, at common mode rejection er meget god. Common mode noise er støj, fra det omkringliggende miljø. Da en instrumenteringsforstærkers forstærkning kommer fra forskellen mellem dens to indgange, så kan støj påvirke forstærkningen, især når der arbejdes med så lave forstærkninger, som dem, der kommer fra transduceren. Ofte er der dog støj på begge indgange, og i den ideelle verden ville dette ikke påvirke forstærkningen. I den reelle verden kan støjen dog også ende med at blive forstærket. Common mode rejection beskriver hvor god en komponent er, til at sortere dette støj fra. Den brugte instrumenteringsforstærker har en common mode rejection på 120 dB, hvilket vurderes til en rimelig værdi. \\
-\\
-En anden ting ved forstærkeren, som blev nødt til at blive ændret, var det dynamik område, som skulle udnyttes. Oprindeligt havde gruppen bestemt, at det filtrerede signal skulle ligge imellem -5V til +5V. Grundet en forstærkers manglende evne til at forstærke et signal op til dens forsyningsspænding, så blev gruppen nødt til at nedsætte signalområdet til -2,5V til +2,5V. Det var muligt at forstærke signalet ydereligere, men grænsen blev sat til denne værdi, fordi signalområdet matcher et dynamikområde på AD konverteren.\\ 
-\\
-Designet af filteret, lå fast på forhånd, og der var derfor ikke meget der kunne ændres i dette. Operationsforstærkeren var oplyst til at skulle være af typen OP27G, da denne ligeledes har en god common mode rejection. Grundet mangel på præcise komponenter, har gruppen sat to modstande i serie, for at komme så tæt på den udregnede værdi, som muligt. \\
-\\
-Gruppen valgte desuden at systemet skulle forsynes af Analog Discovery, frem for et batteri. Dette skyldes at Analog Discovery giver en stabil strøm, som ikke har brug for at blive afbalanceret af en spændingsudligner. Gruppen vurderede at usikkerhederne ville udligne hinanden, og så flere fordele ved at bruge Analog Discovery.\\
-
-
-\subsubsection{Implementering af forstærkeren}
-Den samlede stykliste for forstærkeren blev vist som på tabel \ref{DForsttabel}.
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|l|l|l|ll}
-\cline{1-3}
-\textbf{Komponent} & \textbf{Antal} & \textbf{Type}  &  &  \\ \cline{1-3}
-Modstand           & 1              & 120 $\Omega$   &  &  \\ \cline{1-3}
-Modstand           & 1              & 4.8 $\Omega$   &  &  \\ \cline{1-3}
-Kondensator        & 2              & 100 nF         &  &  \\ \cline{1-3}
-Instrumentationsforstærker &    1   & INA114		     &  &  \\ \cline{1-3}
-\end{tabular}
-\caption{Forstærkertabel}
-\label{DForsttabel}
-\end{table}
-
-For forstærkeren gælder det at den beregnede R$_{gain}$ er 125,31$\Omega$ som det kan ses ud af komponentlisten består R$_{gain}$ i praksis af to modstande på henholdsvis 4,8$\Omega$ og 120$\Omega$ som er sat i serie. R$_{gain}$ modstanden er i praksis 124,8$\Omega$. I praksis er R$_{gain}$ 0,51$\Omega$ mindre end den i teorien skulle have været.
-
-\subsubsection{Implementering af filteret}
-Den samlede stykliste for filteret blev som vist på tabel \ref{DFiltertabel}.
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|l|l|l|ll}
-\cline{1-3}
-\textbf{Komponent} & \textbf{Antal} & \textbf{Type}  &  &  \\ \cline{1-3}
-Modstand           & 2              & 6.2 k $\Omega$ &  &  \\ \cline{1-3}
-Modstand           & 2              & 470 $\Omega$   &  &  \\ \cline{1-3}
-Kondensator        & 1              & 680 nF         &  &  \\ \cline{1-3}
-Kondensator        & 1              & 330 nF         &  &  \\ \cline{1-3}
-Operationsforstærker &    1         & OP27G          &  &  \\ \cline{1-3}
-\end{tabular}
-\caption{Filtertabel}
-\label{DFiltertabel}
-\end{table}
-
-Det analoge filter består blandt andet af en 330 nF kondensator, C$_1$, som i teorien er beregnet til at skulle have været 333,2 nF. I praksis er kondensatoren C$_1$ 3,2 nF mindre end den i teorien er beregnet til at skulle have været. Filteret består desuden af to modstande R$_1$ og R$_2$ som er identiske. I det realiserede analoge filter består hver modstand af to modstande på henholdsvis 6200$\Omega$ og 470$\Omega$ som er sat i serie. Dermed er både R$_1$ og R$_2$ 6670$\Omega$ i praksis. I teorien var R$_1$ og R$_2$ udregnet til at skulle være 6687$\Omega$. I praksis er der derfor 17$\Omega$ mindre end teorien foreskriver.\\
-
-Generelt er der valgt at se bort fra de afvigelser, der er for komponentværdierne i praksis sammenlignet med de i teorien beregnet. Det er valgt da afvigelserne er relativt små i forhold til det pågældende komponent. For modstandende er der desuden 1 procents usikkerhed, hvilket betyder man alligevel ikke kan være helt sikker på komponentværdien.\\
-
-På baggrund af de i praksis anvendte komponenter er den reelle knækfrekvens for det analoge filter beregnet. Til det formål er formlen som set på figur \ref{dcutoff]} anvendt.\\
-
-\begin{align}
-f_{c} = \frac{1}{2\pi \sqrt{R_{1}C_{1}R_{2}C_{2}}} = \frac{1}{2\pi \sqrt{6687 \cdot 333,2\times 10^{-9} \cdot 6687 \cdot 680\times 10^{-9}}} = 50,37 Hz
-	\label{dcutoff}
-\end{align}
-
-Desuden er den reelle $\zeta$ for dette filter, ifølge Okawadenshi, 0,697.
 \section{Software arkitektur}
 \subsection{GUI}
 Dette afsnit beskriver hvilke tanker og overvejelser der er gjort i forbindelse med designet af diverse brugergrænseflader. Nedenfor ses udkast til disse brugergrænseflader. Den endelige udgave af brugergrænseflader kan ses i afsnit \ref{implementering}.\\
@@ -388,8 +312,141 @@ Klasse applikationsmodellerne er udarbejdet ud fra use casene, sekvensdiagrammer
 	\label{classApp UC7}
 \end{figure}
 
+\chapter{Implementering}
+
+\section{Hardware implementering}\label{Hardware implementering}
+
+Efter teorifasen var ovre, blev de to blokke bygget op. Gruppen valgte at bygge forstærkeren og filteret på hver sit fumlebræt, dels på grund af pladsmangel og dels på grund af større sammenhæng mellem arkitekturen, og det endelige produkt.\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/samletopstilling}
+	\caption{Opstilling af forstærker og filter}
+	\label{Dsamletopbygning}
+\end{figure}
+
+Grundet mangel på præcise modstande, bedømte gruppen at det var bedst at bygge modstandende i forholdsvist filteret og forstærkeren, op i to, så gruppen kunne komme så tæt på den ønskede modstandsværdi som muligt. \\
+
+\subsubsection{Hardware overvejelser}
+
+I udviklingen af hardwaren, stødte gruppen på problematikker, som blev gjorde, at der var nogen komponenter, der blev nødt til at blive taget op til genovervejelse.\\
+\\
+Et af de største problemer gruppen stødte ind i, i forhold til hardware, var brugen af en operationsforstærker i forstærkerblokken. En reel operationsforstærker har ikke en uendelig indgangs modstand, som i den ideelle verden, og der er derfor en risiko for at den lave spænding fra transduceren simpelthen ikke ville kunne passere forstærkeren. Gruppen valgte derfor at bruge en instrumenteringsforstærker i stedet, da den reelle komponents egenskaber ligger langt tættere på dens ideelle modpart, og derfor var bedre egnet i gruppens kredsløb. En anden fordel ved instrumenteringsforstærkeren er, at den er meget let at justere gain på.\\
+\\
+En anden stor fordel ved instrumenteringsforstærkeren er, at common mode rejection er meget god. Common mode noise er støj, fra det omkringliggende miljø. Da en instrumenteringsforstærkers forstærkning kommer fra forskellen mellem dens to indgange, så kan støj påvirke forstærkningen, især når der arbejdes med så lave forstærkninger, som dem, der kommer fra transduceren. Ofte er der dog støj på begge indgange, og i den ideelle verden ville dette ikke påvirke forstærkningen. I den reelle verden kan støjen dog også ende med at blive forstærket. Common mode rejection beskriver hvor god en komponent er, til at sortere dette støj fra. Den brugte instrumenteringsforstærker har en common mode rejection på 120 dB, hvilket vurderes til en rimelig værdi. \\
+\\
+En anden ting ved forstærkeren, som blev nødt til at blive ændret, var det dynamik område, som skulle udnyttes. Oprindeligt havde gruppen bestemt, at det filtrerede signal skulle ligge imellem -5V til +5V. Grundet en forstærkers manglende evne til at forstærke et signal op til dens forsyningsspænding, så blev gruppen nødt til at nedsætte signalområdet til -2,5V til +2,5V. Det var muligt at forstærke signalet ydereligere, men grænsen blev sat til denne værdi, fordi signalområdet matcher et dynamikområde på AD konverteren.\\ 
+\\
+Designet af filteret, lå fast på forhånd, og der var derfor ikke meget der kunne ændres i dette. Operationsforstærkeren var oplyst til at skulle være af typen OP27G, da denne ligeledes har en god common mode rejection. Grundet mangel på præcise komponenter, har gruppen sat to modstande i serie, for at komme så tæt på den udregnede værdi, som muligt. \\
+\\
+Gruppen valgte desuden at systemet skulle forsynes af Analog Discovery, frem for et batteri. Dette skyldes at Analog Discovery giver en stabil strøm, som ikke har brug for at blive afbalanceret af en spændingsudligner. Gruppen vurderede at usikkerhederne ville udligne hinanden, og så flere fordele ved at bruge Analog Discovery.\\
+
+
+\subsubsection{Implementering af forstærkeren}
+Den samlede stykliste for forstærkeren blev vist som på tabel \ref{DForsttabel}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|ll}
+\cline{1-3}
+\textbf{Komponent} & \textbf{Antal} & \textbf{Type}  &  &  \\ \cline{1-3}
+Modstand           & 1              & 120 $\Omega$   &  &  \\ \cline{1-3}
+Modstand           & 1              & 4.8 $\Omega$   &  &  \\ \cline{1-3}
+Kondensator        & 2              & 100 nF         &  &  \\ \cline{1-3}
+Instrumentationsforstærker &    1   & INA114		     &  &  \\ \cline{1-3}
+\end{tabular}
+\caption{Forstærkertabel}
+\label{DForsttabel}
+\end{table}
+
+For forstærkeren gælder det at den beregnede R$_{gain}$ er 125,31$\Omega$ som det kan ses ud af komponentlisten består R$_{gain}$ i praksis af to modstande på henholdsvis 4,8$\Omega$ og 120$\Omega$ som er sat i serie. R$_{gain}$ modstanden er i praksis 124,8$\Omega$. I praksis er R$_{gain}$ 0,51$\Omega$ mindre end den i teorien skulle have været.
+
+\subsubsection{Implementering af filteret}
+Den samlede stykliste for filteret blev som vist på tabel \ref{DFiltertabel}.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|ll}
+\cline{1-3}
+\textbf{Komponent} & \textbf{Antal} & \textbf{Type}  &  &  \\ \cline{1-3}
+Modstand           & 2              & 6.2 k $\Omega$ &  &  \\ \cline{1-3}
+Modstand           & 2              & 470 $\Omega$   &  &  \\ \cline{1-3}
+Kondensator        & 1              & 680 nF         &  &  \\ \cline{1-3}
+Kondensator        & 1              & 330 nF         &  &  \\ \cline{1-3}
+Operationsforstærker &    1         & OP27G          &  &  \\ \cline{1-3}
+\end{tabular}
+\caption{Filtertabel}
+\label{DFiltertabel}
+\end{table}
+
+Det analoge filter består blandt andet af en 330 nF kondensator, C$_1$, som i teorien er beregnet til at skulle have været 333,2 nF. I praksis er kondensatoren C$_1$ 3,2 nF mindre end den i teorien er beregnet til at skulle have været. Filteret består desuden af to modstande R$_1$ og R$_2$ som er identiske. I det realiserede analoge filter består hver modstand af to modstande på henholdsvis 6200$\Omega$ og 470$\Omega$ som er sat i serie. Dermed er både R$_1$ og R$_2$ 6670$\Omega$ i praksis. I teorien var R$_1$ og R$_2$ udregnet til at skulle være 6687$\Omega$. I praksis er der derfor 17$\Omega$ mindre end teorien foreskriver.\\
+
+Generelt er der valgt at se bort fra de afvigelser, der er for komponentværdierne i praksis sammenlignet med de i teorien beregnet. Det er valgt da afvigelserne er relativt små i forhold til det pågældende komponent. For modstandende er der desuden 1 procents usikkerhed, hvilket betyder man alligevel ikke kan være helt sikker på komponentværdien.\\
+
+På baggrund af de i praksis anvendte komponenter er den reelle knækfrekvens for det analoge filter beregnet. Til det formål er formlen som set på figur \ref{dcutoff]} anvendt.\\
+
+\begin{align}
+f_{c} = \frac{1}{2\pi \sqrt{R_{1}C_{1}R_{2}C_{2}}} = \frac{1}{2\pi \sqrt{6687 \cdot 333,2\times 10^{-9} \cdot 6687 \cdot 680\times 10^{-9}}} = 50,37 Hz
+	\label{dcutoff}
+\end{align}
+
+Desuden er den reelle $\zeta$ for dette filter, ifølge Okawadenshi, 0,697.
+
+
 \section{Software implementering}\label{implementering}
-\subsection{Teori}
+Implementerings afsnittet beskriver hvilke faktiske handlinger der er foretaget ud fra arkitektur og design afsnittet. Yderligere beskriver afsnittet hvilke software orienterede metoder der er benyttet for at løse problemstillingen.
+
+\subsection{3-lagsmodellen}
+Softwaren er implementeret først og fremmest ud fra 3-lagsmodellen
+3-lagsmodellen er bestående af lagene præsentationslag, logiklag og datalag.
+Denne opdeling af lagene gør det langt lettere at vedligeholde systemet fordi der kan ændres i et enkelt lag uden det har indflydelse på resten af programmet. \\
+Det er desuden en god software arkitektur at bruge ved et system udarbejdet af en gruppe, da der kan arbejdes på to forskellige lag af to personer samtidigt, hvis bare grænsefladerne bliver overholdt. 3-lagsmodellen er bygget op som vist på figur \ref{3lag}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figurer/SoftwareImplementering/3lag}
+	\caption{3 lags modellen}
+	\label{3lag}
+\end{figure}
+
+\subsubsection{Præsentationslag}\label{praesentationslag}
+
+Som vist på figur \ref{3lag}, er blodtrykssystemet bygget op med først et præsentationslag bestående af tre brugergrænseflader, som brugeren kan interagere med.\\
+Login brugergrænseflade, bestående af tekstbokse til brugernavn og kodeord, samt paneler til både kalibrering og nulpunktsjusteringen, som vist på figur \ref{LoginGUI}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/SoftwareImplementering/Logind}
+	\caption{Login GUI}
+	\label{LoginGUI}
+\end{figure}
+Dernæst åbnes hoved brugergrænsefladen, hvor blodtrykssignalet vises grafisk, samt brugeren har mulighed for at benytte en række funktioner i form af knapper og trackbars, som set på figur \ref{form1}
+
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[width=1\textwidth]{Figurer/SoftwareImplementering/form1}
+%	\caption{Blodtrykssystem hoved brugergrænseflade}
+%	\label{form1}
+%\end{figure}
+
+Til sidst vises en brugergrænseflade for gemmefunktionen, hvor brugeren skal indtaste et CPR-nummer, samt bekræfte afslutning af målingen, se figur \ref{Gem}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Figurer/SoftwareImplementering/Gem}
+	\caption{Gem GUI}
+	\label{Gem}
+\end{figure}
+
+\subsubsection{Logiklag}\label{Logiklag}
+Logik lagets er det lag der spiller sammen med både data- og præsentationslag. Sammenspillet med præsentationslaget fungerer ved alt brugerens interaktion med systemet bearbejdes i logiklaget. 
+
+\subsection{Tråde}
+Tråd programmering benyttes, når man som her ønsker flere opgaver i programmet udført løbende. Dette kan gør sig gældende eksempelvis ved at programmet ønsker at indlæse data og vise det i en graf, samtidig med at brugeren har adgang til alle interfacets funktioner. Det er disse delprocesser, som udgøre trådene. Hvis en enkelt tråd skulle gå i stå, skal de andre tråde stadig køre, således at programmet stadig kører videre. 
+\subsection{Observer}
+\subsection{Push pull}
+
+
 \subsection{UML klassediagram}\label{UML klassediagram}
 
 

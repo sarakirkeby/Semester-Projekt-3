@@ -79,10 +79,20 @@ Ved knækfrekvensen som er sat til 50 Hz er fasedrejet -86,4$^{\circ}$, hvor fas
 For målingen på 500 Hz er fasedrejet -180$^{\circ}$, hvilket stemmer overens med teorien for 2. ordensfilterets fasekarakteristik.
 
 \subsection{Software}
-Til test af softwaren er der først og fremmest foretaget unit test af enkelte udvalgte kodelementer, for at teste om de fungerer efter hensigten. Dette er gjort ved hjælp af debug funktionen i Visual Studio.
+Til test af softwaren er der først og fremmest foretaget unit test af  kodeelementer, for at teste om de fungerer efter hensigten. Dette er gjort ved hjælp af debug funktionen i Visual Studio. Disse test er foretaget løbende i udviklingsprocessen, hver gang en metode er tilføjet eller ændret. De væsenligste dele er nedenfor beskrevet: \\[1ex]
+Login funktionen er den første funktion, er testet ved sammenligne tilladte brugernavne og kodeord i databasen med indtastede. Dvs. at kun de brugernavne og kodeords par der findes i databasen, som giver adgang til systemet.\\[1ex]
+Nulpunktsjusteringen er testet ved at påsætte systemet en DC spænding på 2 Volt, hvorefter det indlæste tryk aflæses og sammenlignes med de 2 Volt. \\
+I forbindelse med test af nulpunktjusteringen, hvor der påsættes 2 Volts DC spænding, er kalibreringen også testet ved at indtaste kalibreringsfaktoren på 2. Herefter er tjekkes at signalet er forstærket 2 gange.\\[1ex]
+Testene foretaget i forbindelse med indlæsning af blodtrykssignal og detektering af systole, diastole og puls er alle foretaget ved følgende:\\
+Der indsættes et kendt blodtrykssignal, med kendt antal toppe og dermed kendt systole, diastole og puls. De kendte værdier sammenlignes med værdierne der vises grafisk, samt med værdierne der findes ved debugging af systemet.\\[1ex]
+Alarmen er tjekket ved at påsætte et blodtrykssignal med kendte blodtryksværdier: systolisk > 160 eller < 100 og diastolisk > 100 eller under 40), hvorefter det er testet om alarmen lyder ved de fire tilfælde uafhængigt af hinanden.\\ Yderligere for alarmen er der justering af grænseværdierne testet, ved at ændre disse grænseværdier således ovenstående værdier ikke er kritiske, for herefter at tjekke om alarmen lyder.\\ Ved alarm, er det testet at lyden kan udskydes med 3 minutter, som skrevet i koden, ved at lade blodtrykssignalet overskride grænseværdierne i mere end 3 minutter.\\[1ex]
+Gemmefunktionen er testet ved at sende et kendt blodtrykssignal igennem systemet, og tjekke om de data der gemmes i databasen stemmer overen med de kendte data. I samme forbindelse er CPR tjekker testet ved først at indskrive et gyldigt CPR nummer, som først tjekkes i CPR-tjekker metoden og dernæst i databasen. Derefter er samme procedure gentaget med et ikke gyldigt CPR-nummer.
+
 
 \section{Integrationstest}
 
 \subsection{Hardware}
 
 \subsection{Software}
+
+\subsection{Samlet}

@@ -23,42 +23,49 @@
 \contentsline {subsection}{\numberline {3.2.1}Design af forst\IeC {\ae }rker}{14}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Design af analogfilter}{15}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Gr\IeC {\ae }nseflader}{18}{subsection.3.2.3}
-\contentsline {section}{\numberline {3.3}Hardware implementering}{19}{section.3.3}
-\contentsline {subsubsection}{Hardware overvejelser}{19}{section*.12}
-\contentsline {subsubsection}{Implementering af forst\IeC {\ae }rkeren}{20}{section*.13}
-\contentsline {subsubsection}{Implementering af filteret}{21}{section*.15}
-\contentsline {section}{\numberline {3.4}Software arkitektur}{21}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}GUI}{21}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Dom\IeC {\ae }nemodel}{24}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Appliktationsmodel}{25}{subsection.3.4.3}
-\contentsline {subsubsection}{Sekvensdiagram}{25}{section*.22}
-\contentsline {subsubsection}{Opdateret applikationsmodel}{29}{section*.28}
-\contentsline {section}{\numberline {3.5}Software implementering}{31}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Teori}{31}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}UML klassediagram}{31}{subsection.3.5.2}
-\contentsline {chapter}{\chapternumberline {4}Test}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Indledning}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}Modul/unit test}{33}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Hardware}{33}{subsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.1.1}Modul test af forst\IeC {\ae }rkeren}{33}{subsubsection.4.2.1.1}
-\contentsline {subsubsection}{\numberline {4.2.1.2}Modul test af det analoge filter}{34}{subsubsection.4.2.1.2}
-\contentsline {subsection}{\numberline {4.2.2}Software}{36}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}Integrationstest}{36}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Hardware}{36}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Software}{36}{subsection.4.3.2}
-\contentsline {chapter}{\chapternumberline {5}Acceptest}{37}{chapter.5}
+\contentsline {section}{\numberline {3.3}Software arkitektur}{19}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}GUI}{19}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Dom\IeC {\ae }nemodel}{22}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Appliktationsmodel}{23}{subsection.3.3.3}
+\contentsline {subsubsection}{Sekvensdiagram}{23}{section*.16}
+\contentsline {subsubsection}{Opdateret applikationsmodel}{27}{section*.22}
+\contentsline {chapter}{\chapternumberline {4}Implementering}{31}{chapter.4}
+\contentsline {section}{\numberline {4.1}Hardware implementering}{31}{section.4.1}
+\contentsline {subsubsection}{Hardware overvejelser}{32}{section*.29}
+\contentsline {subsubsection}{Implementering af forst\IeC {\ae }rkeren}{32}{section*.30}
+\contentsline {subsubsection}{Implementering af filteret}{33}{section*.32}
+\contentsline {section}{\numberline {4.2}Software implementering}{34}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}3-lagsmodellen}{34}{subsection.4.2.1}
+\contentsline {subsubsection}{Pr\IeC {\ae }sentationslag}{35}{section*.35}
+\contentsline {subsubsection}{Logiklag}{36}{section*.38}
+\contentsline {subsection}{\numberline {4.2.2}Tr\IeC {\r a}de}{36}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Observer}{36}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Push pull}{36}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}UML klassediagram}{36}{subsection.4.2.5}
+\contentsline {chapter}{\chapternumberline {5}Test}{37}{chapter.5}
 \contentsline {section}{\numberline {5.1}Indledning}{37}{section.5.1}
-\contentsline {section}{\numberline {5.2}Accepttest af Use Cases}{37}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Use Case 1}{37}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Use Case 2}{38}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Use Case 3}{39}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Use Case 4}{39}{subsection.5.2.4}
-\contentsline {subsection}{\numberline {5.2.5}Use Case 5}{39}{subsection.5.2.5}
-\contentsline {subsection}{\numberline {5.2.6}Use Case 6}{40}{subsection.5.2.6}
-\contentsline {section}{\numberline {5.3}Accepttest af ikke-funktionelle krav}{41}{section.5.3}
-\contentsline {chapter}{Bilag}{45}{chapter*.38}
-\contentsline {section}{Fejlrapport}{45}{section*.39}
-\contentsline {section}{Logbog}{45}{section*.40}
-\contentsline {section}{M\IeC {\o }dereferart}{45}{section*.41}
-\contentsline {section}{Kode}{45}{section*.42}
-\contentsline {section}{Samarbejdsaftale}{45}{section*.43}
+\contentsline {section}{\numberline {5.2}Modul/unit test}{37}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Hardware}{37}{subsection.5.2.1}
+\contentsline {subsubsection}{\numberline {5.2.1.1}Modul test af forst\IeC {\ae }rkeren}{37}{subsubsection.5.2.1.1}
+\contentsline {subsubsection}{\numberline {5.2.1.2}Modul test af det analoge filter}{38}{subsubsection.5.2.1.2}
+\contentsline {subsection}{\numberline {5.2.2}Software}{40}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Integrationstest}{41}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Hardware}{41}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Software}{41}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Samlet}{41}{subsection.5.3.3}
+\contentsline {chapter}{\chapternumberline {6}Acceptest}{43}{chapter.6}
+\contentsline {section}{\numberline {6.1}Indledning}{43}{section.6.1}
+\contentsline {section}{\numberline {6.2}Accepttest af Use Cases}{43}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Use Case 1}{43}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Use Case 2}{44}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Use Case 3}{45}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Use Case 4}{45}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Use Case 5}{45}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}Use Case 6}{46}{subsection.6.2.6}
+\contentsline {section}{\numberline {6.3}Accepttest af ikke-funktionelle krav}{47}{section.6.3}
+\contentsline {chapter}{Bilag}{51}{chapter*.43}
+\contentsline {section}{Fejlrapport}{51}{section*.44}
+\contentsline {section}{Logbog}{51}{section*.45}
+\contentsline {section}{M\IeC {\o }dereferart}{51}{section*.46}
+\contentsline {section}{Kode}{51}{section*.47}
+\contentsline {section}{Samarbejdsaftale}{51}{section*.48}
