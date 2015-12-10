@@ -86,8 +86,46 @@ Der er anvendt adfærdsdiagrammer i form af sekvensdiagrammer i dette projekt. D
 
 \chapter{Design, implementering og test}
 
+\subsection{Design}
+I dette afsnit beskrives udarbejdelsen af hardware design, og tilhørende tanker.
+
+Gruppen bestemte tideligt i forløbet at dele hardwaren op i to dele, en forstærker del og en filter del. 
+\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/BDD1}
+	\caption{Blokdiagram for blodtryksmåler systemet.}
+	\label{rBDD blodtryksmaaler}
+\end{figure}
+
+Ud af blokdiagrammet, figur \ref{BDD blodtryksmaaler}, kan man se at blodtryksmåler systemet består af fem dele. En transducer, som omformer tryk til spænding, en forstærker, et analogt støjfilter, en DAQ og en computer. \\
+
+Det første gruppen designede til fulde, var forstærkeren. Forstærkeren blev designet, med tanke på, at det er meget små spændinger, som ville blive målt fra transduceren. En almindelig operationsforstærker blev derfor fravalgt, og en instrumenteringsforstærker blev valgt i stedet. Gruppen blev anbefalet typen INA114 af vejleder, grundets denne type's gode common mode rejection faktor, og høje reelle indgangsimpedans. Kredsløbet blev som vist på figur \ref{forstkreds}. \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Figurer/Hardware/Forstaerker}
+	\caption{Der overordnede design af forstærkeren.}
+	\label{forstkreds}
+\end{figure}
+
+Som set på figur \ref{forstkreds}, så er R$_{gain}$ modstanden som bestemmer forstærkningen, og R$_{load}$ repræsentere den belastning der kommer efter forstærkeren. 
+
+Komponentværdier for forstærker er herefter udregnet. Disse udregninger kan ses i dokumentationen, afsnit xx, og komponentlisten for forstærkeren kan ses i afsnit \ref{himpl}, længere nede. 
+
+Det næste der skulle designes, var filteret. Filteret skulle realiseres som et aktivt 2. ordens lavpasfilter af typen Sallen-Key med unity gain, og med en båndbredde på 50 Hz. Kredsløbet kan ses på figur \ref{fig:Filter}. Filteret blev yderligere specificeret til at skulle være et Butterworth filter, med en cutoff frekves på 50 Hz. Yderligere var visse komponentværdier forhåndsbestemt. Designet af filteret kan ses på figur \ref{fig:rFilter}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/FilterDesign}
+	\caption{Unity gain 2. ordens Sallen-Key lavpas konfiguration}
+	\label{fig:rFilter}
+\end{figure}
+
+Et Sallen-Keyfilter har en anderledes $\zeta$ , grundet anderledes prioriteter, i forhold til frekvensområdet. Gruppen brugte en hjemmeside\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm} til at finde overføringsfunktionen for det givne filter. Herefter blev komponentværdierne teoretisk udregnet. Udregningerne kan ses i dokumentationen, afsnit xx. De endelige værdier for komponenterne, kan ses på komponentlisten for filteret i afsnit \ref{himpl}. 
 
 \subsection{Implementering}
+\label{himpl}
 Efter komponentudregningen, byggede gruppen de to hardware blokke op. Gruppen valgte at bygge forstærkeren og filteret seperat, grundet pladsmangel og sammenhæng.\\
 
 \begin{figure}[H]
