@@ -34,7 +34,8 @@
 \contentsline {subsubsection}{Sekvensdiagram}{25}{section*.22}
 \contentsline {subsubsection}{Opdateret applikationsmodel}{29}{section*.28}
 \contentsline {section}{\numberline {3.5}Software implementering}{31}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}UML klassediagram}{31}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.1}Teori}{31}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}UML klassediagram}{31}{subsection.3.5.2}
 \contentsline {chapter}{\chapternumberline {4}Test}{33}{chapter.4}
 \contentsline {section}{\numberline {4.1}Indledning}{33}{section.4.1}
 \contentsline {section}{\numberline {4.2}Modul/unit test}{33}{section.4.2}

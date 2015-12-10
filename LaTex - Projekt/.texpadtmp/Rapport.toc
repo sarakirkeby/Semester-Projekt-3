@@ -12,10 +12,11 @@
 \contentsline {section}{\numberline {3.3}Hypertension}{10}{section.3.3}
 \contentsline {section}{\numberline {3.4}Hypotension}{10}{section.3.4}
 \contentsline {section}{\numberline {3.5}Blodtryksm\IeC {\r a}ling}{10}{section.3.5}
-\contentsline {section}{\numberline {3.6}Programmerings teori}{11}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Tr\IeC {\r a}de}{11}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Observer}{11}{subsection.3.6.2}
-\contentsline {subsection}{\numberline {3.6.3}Push pull}{11}{subsection.3.6.3}
+\contentsline {section}{\numberline {3.6}Sensorer}{11}{section.3.6}
+\contentsline {section}{\numberline {3.7}Programmerings teori}{11}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Tr\IeC {\r a}de}{12}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Observer}{12}{subsection.3.7.2}
+\contentsline {subsection}{\numberline {3.7.3}Push pull}{12}{subsection.3.7.3}
 \contentsline {chapter}{\chapternumberline {4}Systembeskrivelse}{13}{chapter.4}
 \contentsline {chapter}{\chapternumberline {5}Krav}{15}{chapter.5}
 \contentsline {section}{\numberline {5.1}IHA krav}{15}{section.5.1}
@@ -28,14 +29,14 @@
 \contentsline {subsection}{\numberline {6.2.2}Vandfald}{20}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}V-model}{21}{subsection.6.2.3}
 \contentsline {section}{\numberline {6.3}Specifikation og analyse}{22}{section.6.3}
-\contentsline {section}{\numberline {6.4}Arkitektur}{22}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}software arkitektur}{22}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}SysML}{24}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Design}{25}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Implementering}{25}{subsection.6.4.4}
-\contentsline {subsection}{\numberline {6.4.5}Test}{26}{subsection.6.4.5}
-\contentsline {section}{\numberline {6.5}Resultater og diskussion}{26}{section.6.5}
-\contentsline {section}{\numberline {6.6}Opn\IeC {\r a}ede erfaringer}{26}{section.6.6}
-\contentsline {section}{\numberline {6.7}Fremtidigt arbejde}{26}{section.6.7}
-\contentsline {chapter}{\chapternumberline {7}Konklusion}{27}{chapter.7}
-\contentsline {chapter}{Litteratur}{29}{section*.19}
+\contentsline {chapter}{\chapternumberline {7}Arkitektur}{23}{chapter.7}
+\contentsline {section}{\numberline {7.1}Software arkitektur}{23}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}SysML}{24}{subsection.7.1.1}
+\contentsline {chapter}{\chapternumberline {8}Design, implementering og test}{27}{chapter.8}
+\contentsline {subsection}{\numberline {8.0.2}Implementering}{27}{subsection.8.0.2}
+\contentsline {subsection}{\numberline {8.0.3}Test}{28}{subsection.8.0.3}
+\contentsline {section}{\numberline {8.1}Resultater og diskussion}{28}{section.8.1}
+\contentsline {section}{\numberline {8.2}Opn\IeC {\r a}ede erfaringer}{28}{section.8.2}
+\contentsline {section}{\numberline {8.3}Fremtidigt arbejde}{28}{section.8.3}
+\contentsline {chapter}{\chapternumberline {9}Konklusion}{29}{chapter.9}
+\contentsline {chapter}{Litteratur}{31}{section*.20}
