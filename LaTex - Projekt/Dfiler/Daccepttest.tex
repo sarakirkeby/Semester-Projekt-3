@@ -34,9 +34,9 @@ Til test af use case 2-6 er der benyttet et signal fra PhysioNet. Signalet er et
  \\
  	5. & Foretag lineærregression &   Afvigelseskoefficient er fundet &  Afvigelseskoefficient noteres   &		{\Huge \checkmark}
  \\
- 	6. & Indtast afvigelses koefficient i kalibrering panel i "Log ind"\-vinduet &    Værdien er synlig i tekstboksen &  Værdien er synlig i tekstboksen   &		%{\Huge \checkmark}
+ 	6. & Indtast afvigelses koefficient i kalibrering panel i "Log ind"\-vinduet &    Værdien er synlig i tekstboksen &  Værdien er synlig i tekstboksen   &		{\Huge \checkmark}
 \\
- 	7. & Tryk på "Kalibrer"\-knappen &    Systemet er kalibreret &  Systemet viser ikke det faktiske tryk   &		{\Huge (-)}
+ 	7. & Tryk på "Kalibrer"\-knappen &    Systemet er kalibreret &  Systemet kalibrer trykket   &		{\Huge \checkmark}
     
  \\ \bottomrule
 \caption{Accepttest af Use Case 1.}\\
@@ -66,9 +66,9 @@ Til test af use case 2-6 er der benyttet et signal fra PhysioNet. Signalet er et
 	\\
 	\\ \midrule
 	& \textit{Undtagelser} & & &\\ \midrule
-	6.a & Indtast personale-ID i brugenavnsfeltet; "fido" og indtast personlig kode i kodeordsfeltet; "1234" & Nye log ind oplysninger vises & Nye log ind oplysninger vises &{\Huge \checkmark}
+	6.a & 1. Indtast personale-ID i brugenavnsfeltet; "fido" og indtast personlig kode i kodeordsfeltet; "1234" & Nye log ind oplysninger vises & Nye log ind oplysninger vises &{\Huge \checkmark}
 	\\ 
-	6.b & Tryk "Log ind" & Besked om at de ikke findes vises & Besked vises & {\Huge \checkmark}
+	 & 2. Tryk "Log ind" & Besked om at de ikke findes vises & Besked vises & {\Huge \checkmark}
 	\\
 	\bottomrule
 
@@ -134,7 +134,7 @@ Til test af use case 2-6 er der benyttet et signal fra PhysioNet. Signalet er et
    	\\
    	4. & Indstil cursor til 80 for systolisk nedre grænse &    Der står 80 i pågældende tekst felt &   Der står 80 i pågældende tekst felt  &		{\Huge \checkmark}
  	\\ 
-	5. & Tryk på 'Start' knappen i blodtryksvindue &    Blodtryksmåling startes og Alarm går igang &  Blodtryksmåling startes og Alarm går igang   &		{\Huge \checkmark}
+	5. & Tryk på 'Juster' knappen i blodtryksvindue &    Blodtryksmåling startes og Alarm går igang &  Blodtryksmåling startes og Alarm går igang   &		{\Huge \checkmark}
  	\\ 
  	 \midrule
  	& \textit{Undtagelser} & & & \\
@@ -185,6 +185,7 @@ Til test af use case 2-6 er der benyttet et signal fra PhysioNet. Signalet er et
 	&  \textit{Functionality} &  &  & & \\ \midrule
 	1. & Brugeren skal kunne starte en ny måling indenfor 30 sekunder efter opstart & Start programmet, hvorefter der vha. stopur måles opstartstiden & At programmet er opstartet og ny måling er igang efter 30 sekunder & 15 sekunder & {\Huge \checkmark}
 	\\ \midrule
+	2. & Systemet skal kunne forstærke signalet fra transduceren 400 gange & Start systemet & At signalet er forstærket & Egentlige test ligger i integrationstest, se afsnit \ref{ModulHard}  & {\Huge (\checkmark)}\\ \midrule 
 	2. & Systemet skal kunne forstærke signalet med det indbyggede analoge antialiaserings filter med en båndbredde på 50 Hz & Start systemet & At signalet er forstærket & Egentlige test ligger i integrationstest, se afsnit \ref{ModulHard}  & {\Huge (\checkmark)}\\ \midrule
 	3. & Programmet skal kunne vise blodtrykssignalet kontiunert & Tryk på "Start måling"\--knap & At blodtrykssignalet er vist kontinuert på brugergrænsefladen & Blodtrykssignalet er vist kontinuert på brugergrænsefladen & {\Huge \checkmark}\\ \midrule
 	4. & Programmet skal programmeres i C\# & Start programmet & At koden er i C\# & Programmet er i C\# & {\Huge \checkmark} \\ \midrule

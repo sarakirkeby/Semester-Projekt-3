@@ -58,11 +58,12 @@
     Mål && Tekniker ønsker at foretage kalibrering\\
     Forudsætninger &&  \\
     Resultat &&    Systemet er kalibreret                     \\ \midrule
-    Hovedforløb &    1. &    Tekniker påtrykker systemet tre kendte tryk  \\
-    			&    2. &    Tekniker aflæser responserne  \\ 
-    			&    3. &    Tekniker noterer afvigelser fra de kendte tryk \newline [\textit{3.a Der er ingen afvigelser}]  \\
-    			&    4. &    Tekniker kalibrerer afvigelsen  \\ \midrule 		
-    Undtagelser &    3.a & Use case afsluttes \\ \bottomrule
+    Hovedforløb &    1. &    Tekniker måler og noterer atmosfærisk tryk \\
+    			&    2. &    Tekniker påtrykker systemet tre kendte tryk  \\
+    			&    3. &    Tekniker aflæser responserne  \\ 
+    			&    4. &    Tekniker noterer afvigelser fra de kendte tryk \newline [\textit{3.a Der er ingen afvigelser}]  \\
+    			&    5. &    Tekniker kalibrerer afvigelsen  \\ \midrule 		
+    Undtagelser &    4.a & Use case afsluttes \\ \bottomrule
 \caption{Fully dressed Use Case 1}
 \label{UC1}
 \end{longtabu}
@@ -82,9 +83,11 @@
     Forudsætninger &&  Use case 1 er gennemført.\\
     Resultat &&    Systemet er nulpunktsjusteret og brugeren er klar til at blive forbundet til systemet\\
     \midrule
-    Hovedforløb &    1. &    Brugeren indtaster login-oplysninger og trykker på "Log ind"\--knappen. Systemet tjekker i databasen om oplysninger er gyldige \newline [1.a \textit{Forkert login}]\\
-    	&			2. & Brugeren trykker på "nulstil"\--knappen. Systemet laver nulpunkts justering \\ \midrule
-    Undtagelser &    1a. & Besked om forkert login vises. Use Case fortsættes fra punkt 1     \\ \bottomrule    
+    Hovedforløb &   1. & Brugeren indstiller transduceren til at måle det atmosfæriske tryk\\ 
+    	&			2. & Brugeren trykker på "nulstil"\--knappen. Systemet laver nulpunkts justering \\ 
+    	&			3. &    Brugeren indtaster login-oplysninger og trykker på "Log ind"\--knappen. Systemet tjekker i databasen om oplysninger er gyldige \newline [3.a \textit{Forkert login}]\\
+    	\midrule
+    Undtagelser &    3a. & Besked om forkert login vises. Use Case fortsættes fra punkt 3     \\ \bottomrule    
 \caption{Fully dressed Use Case 2}
 \label{UC2}
 \end{longtabu}
@@ -143,7 +146,7 @@
     Primær aktør &&    Brugeren\\
     Initialisere &&   Brugeren\\
     Mål && Systemet kan alarmere bruger ved for højt/lavt blodtryk\\
-    Forudsætninger && UC2 er gennemført\\
+    Forudsætninger && UC3 er gennemført\\
     Resultat &&    Systemet alarmerer bruger                    \\ \midrule
     Hovedforløb &    1. &    Brugeren tilpasser diastoliske og systoliske grænseværdier ud fra patientens blodtryk\\ 
     			& 	 2. & 	Systemet tjekker om grænseværdier er overskredet\\ 
@@ -186,34 +189,26 @@ MoSCow er angivet i parentes ved hhv. M, S, C og/eller W, for Must, Should, Coul
 \textbf{Functionality}\\
 \begin{enumerate}
 	\item (M) Brugeren skal kunne starte en ny måling indenfor XX sekunder efter opstart af programmet \\
-	\item (M) Systemet skal kunne kalibrere blodtrykssignalet\\
-	\item (M) Systemet skal kunne foretage en nulpunktsjustering\\
 	\item (M) Systemet skal kunne forstærke signalet fra transduceren 400 gange\\
 	\item (M) Systemet skal kunne filtrere signalet med det indbyggede analoge antialiaserings filter med en båndbredde på 50 Hz, samt en cut-off frekvens ved 50 Hz \\
-	\item (M) Programmet skal kunne vise blodtrykket som funktion af tiden\\
 	\item (M) Programmet skal kunne vise blodtrykssignalet kontinuert\\
 	\item (M) Programmet skal programmeres i C\#\\
 	\item (M) Programmet skal kunne lagre de målte data i en database\\
-	\item (M) Programmet skal kunne filtrere blodtrykket via et digitalt filter\\
-	\item (S) Programmet bør kunne afbildede både systolisk og diastolisk blodtryk med tal\\
 	\item (S) Programmet bør kunne måle puls\\
-	\item (C) Programmet kan angive pulsslag med bip-lyde med varighed af 100ms og en frekvens på 850 Hz\\
 \end{enumerate}
 
 \textbf{Usability}\\
 \begin{enumerate}
 	\item (M) Blodtrykstallene der udskrives på brugergrænsefladen er røde\\
 	\item (S) Pulsmålingen burde kunne udskrives på brugergrænsefladen med grønne tal\\
-	\item (M) Brugeren skal kunne starte en måling maksimalt 20 sekunder efter opstart\\
-Knapper??\\
-Billede af brugergrænsefladen indsættes\\	
+	\item (M) Brugergrænsefladen skal leve op til figuren udarbejdet i desgin afsnittet, se afsnit \ref{GUI} \\
 \end{enumerate}
 
 \textbf{Reliability}\\
 \begin{enumerate}
 	\item (M) Systemet skal kunne køre uden fejl i et år\\
 	\item (M) Systemet skal have en ”mean time to restore” på højest 24 timer\\
-	\item Systemet får herved en tilgænglighed beregnet ved \begin{align}
+	\subitem Systemet får herved en tilgænglighed beregnet ved \begin{align}
 Availability = \frac{MTBF}{MTBF+MTTR} = \frac{365}{365+1} = 0,997 = 99,7 \%
 \end{align}\\
 \end{enumerate}
