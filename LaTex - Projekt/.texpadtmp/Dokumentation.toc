@@ -58,7 +58,7 @@
 \contentsline {subsection}{\numberline {6.2.2}Use Case 2}{44}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Use Case 3}{45}{subsection.6.2.3}
 \contentsline {subsection}{\numberline {6.2.4}Use Case 4}{45}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Use Case 5}{45}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.5}Use Case 5}{46}{subsection.6.2.5}
 \contentsline {subsection}{\numberline {6.2.6}Use Case 6}{46}{subsection.6.2.6}
 \contentsline {section}{\numberline {6.3}Accepttest af ikke-funktionelle krav}{47}{section.6.3}
 \contentsline {chapter}{Bilag}{51}{chapter*.43}

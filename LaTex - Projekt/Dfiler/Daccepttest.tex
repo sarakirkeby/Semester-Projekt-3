@@ -22,17 +22,19 @@ Først vil der være accepttest af use casene altså de funktionelle krav efterf
     \midrule
     ~ &\textit{Hovedscenarie} & ~ & ~ &
     \\ \midrule
-	1. & Forbind systemet til en kendt trykkilde &    Systemet er forbundet til en kendt kilde &     &		%{\Huge \checkmark}
+	1. & Forbind systemet til en kendt trykkilde &    Systemet er forbundet til en kendt kilde &  Systemet er forbundet til en kendt kilde   &	{\Huge \checkmark}
  \\   
- 	2. & Aflæs spændingen målt på udgangen af det analoge filter &    At der forekommer en værdi, som efterfølgende kan bruges til lineærregression &     &		%{\Huge \checkmark}
+ 	2. & Mål det atmosfæriske tryk &    Det atmosfæriske tryk kan aflæses &  Det atmosfæriske tryk kan aflæses   &		{\Huge \checkmark}
  \\
- 	3. & Skriv resultatet ned og gentag punkt 1 og 2. med to nye tryk &    Der er tre værdier skrevet ned &     &		%{\Huge \checkmark}
+ 	3. & Aflæs spændingen målt på udgangen af det analoge filter &    At der forekommer en værdi, som efterfølgende kan bruges til lineærregression &     &		{\Huge \checkmark}
  \\
- 	4. & Foretag lineærregression &   Afvigelseskoefficient er fundet &     &		%{\Huge \checkmark}
+ 	4. & Skriv resultatet ned og gentag punkt 1 og 2. med to nye tryk &    Der er tre værdier skrevet ned &   Nye værdier kan noteres  &		{\Huge \checkmark}
  \\
- 	5. & Indtast afvigelses koefficient i tekstboks i "Log ind"\-vinduet &    Værdien er synlig i tekstboksen &     &		%{\Huge \checkmark}
+ 	5. & Foretag lineærregression &   Afvigelseskoefficient er fundet &  Afvigelseskoefficient noteres   &		{\Huge \checkmark}
+ \\
+ 	6. & Indtast afvigelses koefficient i kalibrering panel i "Log ind"\-vinduet &    Værdien er synlig i tekstboksen &  Værdien er synlig i tekstboksen   &		%{\Huge \checkmark}
 \\
- 	6. & Tryk på "Kalibrer"\-knappen &    Systemet er kalibreret &     &		%{\Huge \checkmark}
+ 	7. & Tryk på "Kalibrer"\-knappen &    Systemet er kalibreret &  Systemet viser 100 m   &		{\Huge (\checkmark)}
     
  \\ \bottomrule
 \caption{Accepttest af Use Case 1.}\\
@@ -48,19 +50,19 @@ Først vil der være accepttest af use casene altså de funktionelle krav efterf
 	\midrule
 	&\textit{Hovedscenarie} & & & 
 	\\ \midrule
-	1. & Tryk på "Nulpunksjuster"\--knap & Panel vises med intruktioner om nulpunktsjustering & & %{\Huge \checkmark}
+	1. & Tryk på "Nulpunksjuster"\--knap & Panel vises med intruktioner om nulpunktsjustering & Panel vises med instruktioner & {\Huge \checkmark}
 	\\
-	2. & Tryk på "indlæs tryk"\--knap & Et tryk vises tekstboksen & & %{\Huge \checkmark}
+	2. & Tryk på "indlæs tryk"\--knap & Et tryk vises tekstboksen & Tryk vises & {\Huge \checkmark}
 	\\
-	3. & Tryk på "Godkend"\--knap & Panelet lukkes & & %{\Huge \checkmark}
+	3. & Tryk på "Godkend"\--knap & Panelet lukkes & Panelet lukkes & {\Huge \checkmark}
 	\\
-	4. & Indtast personale-ID i brugenavnsfeltet; "1234" og indtast personlig kode i kodeordsfeltet; "fido" & Loginoplysninger bliver udfyldt & & %{\Huge \checkmark}
+	4. & Indtast personale-ID i brugenavnsfeltet; "1234" og indtast personlig kode i kodeordsfeltet; "fido" & Loginoplysninger bliver udfyldt & De rigtige oplysninger vises & {\Huge \checkmark}
 	\\
-	5. & Tryk på "Log ind"\--knappen & Log ind oplysninger er gyldige og stemmer overens med hinanden. "Blodtryks"\-vinduet vises  & & %{\Huge \checkmark}
+	5. & Tryk på "Log ind"\--knappen & Log ind oplysninger er gyldige og stemmer overens med hinanden. "Blodtryks"\-vinduet vises  & Login vinduet lukkes og blodtryk vinduet vises & {\Huge \checkmark}
 	\\
 	\\ \midrule
 	& \textit{Undtagelser} & & &\\ \midrule
-	5.a & Log ind oplysninger findes ikke i databasen. Besked vises med tekst, der informerer herom & Nye log ind oplysninger indtastes &  & %{\Huge \checkmark}
+	5.a & Indtast personale-ID i brugenavnsfeltet; "fido" og indtast personlig kode i kodeordsfeltet; "1234" & Nye log ind oplysninger indtastes og besked om at de ikke findes vises & Besked vises & {\Huge \checkmark}
 	\\ \bottomrule
 
 \caption{Accepttest af Use Case 2.}\\
@@ -77,7 +79,8 @@ Først vil der være accepttest af use casene altså de funktionelle krav efterf
     \midrule
     ~ &\textit{Hovedscenarie} & ~ & ~ &
     \\ \midrule
-    1. & Tryk på "start"\--knappen i i blodtryksvinduet &    Graf og blodtryks værdier vises på brugergrænsefladen  &    &		%{\Huge (\checkmark)} 
+    1. & Påsæt signal fra fysionet &    Signalet fungerer  & signalet fungerer  &		{\Huge \checkmark} \\
+    2. & Tryk på "start"\--knappen i i blodtryksvinduet &    Graf og blodtryks værdier vises på brugergrænsefladen  &  Graf vises og værdierne  &		{\Huge \checkmark} 
  \\ \bottomrule
  
 \caption{Accepttest af Use Case 3.}\\
@@ -94,11 +97,11 @@ Først vil der være accepttest af use casene altså de funktionelle krav efterf
     \midrule
     ~ &\textit{Hovedscenarie} & ~ & ~ &
     \\ \midrule
-    1. & Påsæt støjsignal med 50 mHz &    Signal vises i grafen &    &		%{\Huge \checkmark}
+    1. & Påsæt realistisk signal fra fysionet &    Signal vises i grafen &  Signalet vises med støj  &		{\Huge \checkmark}
     \\
-    2. & Tryk på "Til"\--knappen under filter&   Signalet udglattes &      &		%{\Huge \checkmark}
+    2. & Tryk på "Til"\--knappen under filter&   Signalet udglattes &   Signalet udglattes   &		{\Huge \checkmark}
     \\
-    3. & Tryk på ”Fra”-knappen under filter & Signal udglattes ikke &	& %{\Huge \checkmark}
+    3. & Tryk på ”Fra”-knappen under filter & Signal udglattes ikke & Signalet udglattes ikke	& {\Huge \checkmark}
 	
  \\ \bottomrule
  
@@ -116,20 +119,20 @@ Først vil der være accepttest af use casene altså de funktionelle krav efterf
     \midrule
     ~ &\textit{Hovedscenarie} & ~ & ~ &
     \\ \midrule
-    1. & Indstil cursor til 100 for diastolisk øvre grænse &    Der står 100 i pågældende tekst felt &     &		%{\Huge \checkmark}
+    1. & Indstil cursor til 100 for diastolisk øvre grænse &    Der står 100 i pågældende tekst felt & Der står 100 i pågældende tekst felt    &		{\Huge \checkmark}
    	\\
-   	2. & Indstil cursor til 80 for diastolisk nedre grænse &    Der står 100 i pågældende tekst felt &     &		%{\Huge \checkmark}
+   	2. & Indstil cursor til 80 for diastolisk nedre grænse &    Der står 80 i pågældende tekst felt &   Der står 80 i pågældende tekst felt  &		{\Huge \checkmark}
    	\\ 
-   	3. & Indstil cursor til 100 for systolisk øvre grænse &    Der står 120 i pågældende tekst felt &     &		%{\Huge \checkmark}
+   	3. & Indstil cursor til 100 for systolisk øvre grænse &    Der står 100 i pågældende tekst felt &  Der står 100 i pågældende tekst felt   &		{\Huge \checkmark}
    	\\
-   	4. & Indstil cursor til 80 for systolisk øvre grænse &    Der står 80 i pågældende tekst felt &     &		%{\Huge \checkmark}
+   	4. & Indstil cursor til 80 for systolisk øvre grænse &    Der står 80 i pågældende tekst felt &   Der står 80 i pågældende tekst felt  &		{\Huge \checkmark}
  	\\ 
-	5. & Tryk på 'Start' knappen i blodtryksvindue &    Blodtryksmåling startes og Alarm går igang &     &		%{\Huge \checkmark}
+	5. & Tryk på 'Start' knappen i blodtryksvindue &    Blodtryksmåling startes og Alarm går igang &  Blodtryksmåling startes og Alarm går igang   &		{\Huge \checkmark}
  	\\ 
  	 \midrule
  	& \textit{Undtagelser} & & & \\
  	\midrule
- 	5a & Tryk på "udskyd alarm"\-knappen & Alarmen udskydes med 3 minutter & &%{\Huge \checkmark}
+ 	5a & Tryk på "udskyd alarm"\-knappen & Alarmen udskydes med 3 minutter & Alarmen udskydes med 3 minutter &{\Huge \checkmark}
  	\\
  	\bottomrule
 \caption{Accepttest af Use Case 5.}\\
@@ -146,20 +149,20 @@ Først vil der være accepttest af use casene altså de funktionelle krav efterf
     \midrule
     ~ &\textit{Hovedscenarie} & ~ & ~ &
     \\ \midrule
-    1. & Tryk på "Afslut måling"\--knappen &   "Gemme"\--vinduet vises &     &		%{\Huge \checkmark}
+    1. & Tryk på "Afslut måling"\--knappen &   "Gemme"\--vinduet vises &  "Gemme"\--vinduet vises   &		{\Huge \checkmark}
    	\\
-   	2. & Indtast CPR-nr "1111111118" &   CPR-nummeret synligt i pågældende tekst felt &     &		%{\Huge \checkmark}
+   	2. & Indtast CPR-nr "1111111118" &   CPR-nummeret synligt i pågældende tekst felt &  CPR-nummeret synligt i pågældende tekst felt   &		{\Huge \checkmark}
    	\\
-   	3. & Tryk på "Gem"\--knappen &   Bekræftigelse vises &     &		%{\Huge \checkmark}
+   	3. & Tryk på "Gem"\--knappen &   Bekræftigelse vises &  Bekræftigelse vises    &		{\Huge \checkmark}
    	\\ 
-   	3. & Tryk på "Ok"\-knappen &  "Gemme"\--vindue og "Blodtryks"--vinduet lukkes. "Login"\--vinduet vises  &     &		%{\Huge \checkmark}
+   	3. & Tryk på "Ok"\-knappen &  "Gemme"\--vindue og "Blodtryks"--vinduet lukkes. "Login"\--vinduet vises  &   "Gemme"\--vindue og "Blodtryks"--vinduet lukkes. "Login"\--vinduet vises  &		{\Huge \checkmark}
    	\\ \midrule
    	
 	~ &\textit{Undtagelser} & ~ & ~ & 
 	\\ \midrule
-	1.a. & Tryk på "annuller"\--knap & "Gemme"\--vinduet lukkes og "Blodtryk"\-- vinduet vises &		&%{\Huge \checkmark}
+	1.a. & Tryk på "annuller"\--knap & "Gemme"\--vinduet lukkes og "Blodtryk"\-- vinduet vises &	"Gemme"\--vinduet lukkes og "Blodtryk"\-- vinduet vises	&{\Huge \checkmark}
 	\\
-	2.a. & Indtast CPR-nummeret "1234567890" & Beskeden "CPR ikke gyldigt." vises\ & 		& %{\Huge \checkmark}	
+	2.a. & Indtast CPR-nummeret "1234567890" & Beskeden "CPR ikke gyldigt." vises\ & 	Beskeden "CPR ikke gyldigt." vises	& {\Huge \checkmark}	
  \\ \bottomrule
  
 \caption{Accepttest af Use Case 7.}\\
@@ -173,33 +176,25 @@ Først vil der være accepttest af use casene altså de funktionelle krav efterf
 	& Ikke-funktionelt krav & Test/handling & Forventet resultat & Faktiske observationer & Godkendt
 	\\[-1ex] \midrule
 	&  \textit{Functionality} &  &  & & \\ \midrule
-	1. & Brugeren skal kunne starte en ny måling indenfor 30 sekunder efter opstart & Start programmet, hvorefter der vha. stopur måles opstartstiden & At programmet er opstartet og ny måling er igang efter 30 sekunder &  & %{\Huge \checkmark}
+	1. & Brugeren skal kunne starte en ny måling indenfor 30 sekunder efter opstart & Start programmet, hvorefter der vha. stopur måles opstartstiden & At programmet er opstartet og ny måling er igang efter 30 sekunder & 15 sekunder & {\Huge \checkmark}
 	\\ \midrule
-	2. &  Systemet skal kunne kalibrere blodtrykssignalet & Opstart programmet, til den automatiske kalibrering er fuldført & At systemet har kaliberet signalet & & \\ \midrule
-	3. & Systemet skal kunne foretage en nulpunktsjustering & Tryk på "nulstil"\--knap & At blodtryksgrafen bliver nulpunktsjusteret & & \\ \midrule
-	4. & Systemet skal kunne forstærke signalet med det indbyggede analoge antialiaserings filter med en båndbredde på 50 Hz & Start systemet & At signalet er forstærket & & \\ \midrule
-	5. & Programmet skal kunne vise blodtrykket som funktion af tiden & Tryk på "Start måling"\--knap & At blodtrykket er vist som funktion af tiden på brugergrænsefladen & & \\ \midrule
-	6. & Programmet skal kunne vise blodtrykssignalet kontiunert & Tryk på "Start måling"\--knap & At blodtrykssignalet er vist kontinuert på brugergrænsefladen & & \\ \midrule
-	7. & Programmet skal programmeres i C\# & Start programmet & At koden er i C\# & & \\ \midrule
-	8. & Programmet skal kunne lagre de målte data i en database & Tryk på "Gem"\--knap & At målingen er gemt i database & & \\ \midrule
-	9. & Programmet skal kunne filtrere blodtrykket via et digitalt filter & Tryk på "Filtrer signal" til på radiobutton & At det viste blodtrykssignal er filtreret & & \\ \midrule
-	10. & I programmet skal det digitale filter kunne slås til og fra på en radiobutton & Tryk "Filtrer signal" til og fra på radiobutton & & \\ \midrule
-	11. & Programmet bør kunne afbilde både systolisk og diastolisk blodtryk med tal & Tryk "Start måling" & At systolisk og diastolisk blodtryk er afbilledet med tal på brugergrænseflade & & \\ \midrule
-	12. & Programmet bør kunne måle og afbillede puls & Tryk på "Start måling" & At pulsen er afbilledet på brugergrænseflade & & \\ \midrule
-	13. & Programmet bør kunne give alarm, hvis det systoliske blodtryk overstiger 140 mmHg eller falder under 100 mmHg & Påsæt blodtryksignal fra Physionet der overskrider valgte grænser & At en alarm (windowslyd beeb )begynder & & \\ \midrule
-	14. & Programmet bør kunne give alarm, hvis det diastoliske blodtryk overstiger 90 mmHg eller falder under 40 mmHg & Påsæt blodtryksignal fra Physionet der overskrider valgte grænser & At en alarm (windowslyden beeb begynder & & \\ \midrule
-	15. & Programmet kan angive pulsslag med bib-lyde med varighed af 100 ms og en frekvens på 850 Hz & Tryk på "Start måling" & At pulsen høres som bib-lyde af 100 ms varighed og med en frekvens på 850 Hz & & \\ \midrule
+	3. & Systemet skal kunne forstærke signalet med det indbyggede analoge antialiaserings filter med en båndbredde på 50 Hz & Start systemet & At signalet er forstærket & Egentlige test ligger i integrationstest & {\Huge (\checkmark)}\\ \midrule
+	6. & Programmet skal kunne vise blodtrykssignalet kontiunert & Tryk på "Start måling"\--knap & At blodtrykssignalet er vist kontinuert på brugergrænsefladen &  & {\Huge \checkmark}\\ \midrule
+	7. & Programmet skal programmeres i C\# & Start programmet & At koden er i C\# & & {\Huge \checkmark} \\ \midrule
+
+	12. & Programmet bør kunne måle og afbillede puls & Tryk på "Start måling" & At pulsen er afbilledet på brugergrænseflade & & {\Huge \checkmark} \\ \midrule
+	
 	& \textit{Usability} &  &  & & \\ \midrule
-	1. & Blodtrykstallene der udskrives på brugergrænseflade er røde & Tryk "Start måling"\--knap & At Blodtrykstallene er røde & &  \\ \midrule
-	2. & Pulsmålingen skal udskrives på brugergrænsefladen med grønne tal & Tryk "Start måling"\--knap & At pulsen vises med grønne tal & &  \\ \midrule
-	3. & Brugergrænseflade lever op til nedensående figur & Opstart program og log ind & At brugergrænseflade indeholder samtlige funktioner som på figuren & &  \\ \midrule
+	1. & Blodtrykstallene der udskrives på brugergrænseflade er røde & Tryk "Start måling"\--knap & At Blodtrykstallene er røde & & {\Huge \checkmark} \\ \midrule
+	2. & Pulsmålingen skal udskrives på brugergrænsefladen med grønne tal & Tryk "Start måling"\--knap & At pulsen vises med grønne tal & &  {\Huge \checkmark} \\ \midrule
+	3. & Brugergrænseflade lever op til nedensående figur & Opstart program og log ind & At brugergrænseflade indeholder samtlige funktioner som på figuren & & {\Huge \checkmark} \\ \midrule
 	& \textit{Reliability} & & & & \\ \midrule
-	1. & Systemet skal kunne køre uden fejl i et år & Start system op og vent et år & At programmet efter et år kører fejlfrit & & \\ \midrule
-	2. & Systemet skal have en "mean time to restore" på højest 24 timer & Start systemet og herefter genstart, hvor der tages tid med et stopur & At programmet er klar igen inden for 24 timer & & \\ \midrule
+	1. & Systemet skal kunne køre uden fejl i et år & Start system op og vent et år & At programmet efter et år kører fejlfrit & Kan ikke testes & \\ \midrule
+	2. & Systemet skal have en "mean time to restore" på højest 24 timer & Start systemet og herefter genstart, hvor der tages tid med et stopur & At programmet er klar igen inden for 24 timer & Kan ikke testes & \\ \midrule
 	& \textit{Performance} & & & & \\ \midrule
 	1. & Systemet bør kunne gemme data på 5 sekunder +/- 10\% & Tryk på "Gem og afslut"\--knap og tag tid med stopur & At data er inden for 5 sekunder & & \\ \midrule
 	& \textit{Supportability} & & & & \\ \midrule
-	1. & Softwaren er opbygget af trelagsmodellen & Kig i koden efter data-lag, logik-lag og GUI-lag & At koden indeholder et data-lag, et logik-lag og et GUI-lag & & \\ \bottomrule
+	1. & Softwaren er opbygget af trelagsmodellen & Kig i koden efter data-lag, logik-lag og GUI-lag & At koden indeholder et data-lag, et logik-lag og et GUI-lag &  & {\Huge \checkmark}\\ \bottomrule
 \caption{Accepttest af Ikke-funktionelle krav}
 \end{longtabu}
 
