@@ -8,7 +8,9 @@
 
 \section{Indledning}
 I accepttesten testes de krav, der er opstillet i kravspecifikationen. Det fremgår af accepttesten om hvilke scenarier og krav, der er blevet opfyldt og implementeret i systemet og hvilke, der enten ikke er testbare eller ikke er blevet implementeret. \\
-Først vil der være accepttest af use casene altså de funktionelle krav efterfulgt af accepttest af de ikke funktionelle krav. 
+Først vil der være accepttest af use casene altså de funktionelle krav efterfulgt af accepttest af de ikke funktionelle krav. \\
+\\
+Til test af use case 2-6 er der benyttet et signal fra PhysioNet. Signalet er et blodtrykssignal, som er vedlagt i bilag, se bilag XX.
 
 \section{Accepttest af Use Cases}
 
@@ -34,7 +36,7 @@ Først vil der være accepttest af use casene altså de funktionelle krav efterf
  \\
  	6. & Indtast afvigelses koefficient i kalibrering panel i "Log ind"\-vinduet &    Værdien er synlig i tekstboksen &  Værdien er synlig i tekstboksen   &		%{\Huge \checkmark}
 \\
- 	7. & Tryk på "Kalibrer"\-knappen &    Systemet er kalibreret &  Systemet viser 100 m   &		{\Huge (\checkmark)}
+ 	7. & Tryk på "Kalibrer"\-knappen &    Systemet er kalibreret &  Systemet viser ikke det faktiske tryk   &		{\Huge (-)}
     
  \\ \bottomrule
 \caption{Accepttest af Use Case 1.}\\
@@ -50,20 +52,25 @@ Først vil der være accepttest af use casene altså de funktionelle krav efterf
 	\midrule
 	&\textit{Hovedscenarie} & & & 
 	\\ \midrule
-	1. & Tryk på "Nulpunksjuster"\--knap & Panel vises med intruktioner om nulpunktsjustering & Panel vises med instruktioner & {\Huge \checkmark}
+	1. & Indstil transducer til at måle atmosfærisk tryk & Transduceren er instillet & Atmosfærsik tryk måles & {\Huge \checkmark}
 	\\
-	2. & Tryk på "indlæs tryk"\--knap & Et tryk vises tekstboksen & Tryk vises & {\Huge \checkmark}
+	2. & Tryk på "Nulpunksjuster"\--knap & Panel vises med intruktioner om nulpunktsjustering & Panel vises med instruktioner & {\Huge \checkmark}
 	\\
-	3. & Tryk på "Godkend"\--knap & Panelet lukkes & Panelet lukkes & {\Huge \checkmark}
+	3. & Tryk på "indlæs tryk"\--knap & Et tryk vises tekstboksen & Tryk vises & {\Huge \checkmark}
 	\\
-	4. & Indtast personale-ID i brugenavnsfeltet; "1234" og indtast personlig kode i kodeordsfeltet; "fido" & Loginoplysninger bliver udfyldt & De rigtige oplysninger vises & {\Huge \checkmark}
+	4. & Tryk på "Godkend"\--knap & Panelet lukkes & Panelet lukkes & {\Huge \checkmark}
 	\\
-	5. & Tryk på "Log ind"\--knappen & Log ind oplysninger er gyldige og stemmer overens med hinanden. "Blodtryks"\-vinduet vises  & Login vinduet lukkes og blodtryk vinduet vises & {\Huge \checkmark}
+	5. & Indtast personale-ID i brugenavnsfeltet; "1234" og indtast personlig kode i kodeordsfeltet; "fido" & Loginoplysninger bliver udfyldt & De rigtige oplysninger vises & {\Huge \checkmark}
+	\\
+	6. & Tryk på "Log ind"\--knappen & Log ind oplysninger er gyldige og stemmer overens med hinanden. "Blodtryks"\-vinduet vises  & Login vinduet lukkes og blodtryk vinduet vises & {\Huge \checkmark}
 	\\
 	\\ \midrule
 	& \textit{Undtagelser} & & &\\ \midrule
-	5.a & Indtast personale-ID i brugenavnsfeltet; "fido" og indtast personlig kode i kodeordsfeltet; "1234" & Nye log ind oplysninger indtastes og besked om at de ikke findes vises & Besked vises & {\Huge \checkmark}
-	\\ \bottomrule
+	6.a & Indtast personale-ID i brugenavnsfeltet; "fido" og indtast personlig kode i kodeordsfeltet; "1234" & Nye log ind oplysninger vises & Nye log ind oplysninger vises &{\Huge \checkmark}
+	\\ 
+	6.b & Tryk "Log ind" & Besked om at de ikke findes vises & Besked vises & {\Huge \checkmark}
+	\\
+	\bottomrule
 
 \caption{Accepttest af Use Case 2.}\\
 \label{AT_UC2}	
@@ -79,8 +86,8 @@ Først vil der være accepttest af use casene altså de funktionelle krav efterf
     \midrule
     ~ &\textit{Hovedscenarie} & ~ & ~ &
     \\ \midrule
-    1. & Påsæt signal fra fysionet &    Signalet fungerer  & signalet fungerer  &		{\Huge \checkmark} \\
-    2. & Tryk på "start"\--knappen i i blodtryksvinduet &    Graf og blodtryks værdier vises på brugergrænsefladen  &  Graf vises og værdierne  &		{\Huge \checkmark} 
+    1. & Påsæt signal fra PhysioNet &    Signalet fungerer  & Signalet fungerer  &		{\Huge \checkmark} \\
+    2. & Tryk på "start"\--knappen i i blodtryksvinduet &    Graf og blodtryks værdier vises på brugergrænsefladen  &  Graf og værdier vises  &		{\Huge \checkmark} 
  \\ \bottomrule
  
 \caption{Accepttest af Use Case 3.}\\
@@ -125,7 +132,7 @@ Først vil der være accepttest af use casene altså de funktionelle krav efterf
    	\\ 
    	3. & Indstil cursor til 100 for systolisk øvre grænse &    Der står 100 i pågældende tekst felt &  Der står 100 i pågældende tekst felt   &		{\Huge \checkmark}
    	\\
-   	4. & Indstil cursor til 80 for systolisk øvre grænse &    Der står 80 i pågældende tekst felt &   Der står 80 i pågældende tekst felt  &		{\Huge \checkmark}
+   	4. & Indstil cursor til 80 for systolisk nedre grænse &    Der står 80 i pågældende tekst felt &   Der står 80 i pågældende tekst felt  &		{\Huge \checkmark}
  	\\ 
 	5. & Tryk på 'Start' knappen i blodtryksvindue &    Blodtryksmåling startes og Alarm går igang &  Blodtryksmåling startes og Alarm går igang   &		{\Huge \checkmark}
  	\\ 
@@ -178,23 +185,23 @@ Først vil der være accepttest af use casene altså de funktionelle krav efterf
 	&  \textit{Functionality} &  &  & & \\ \midrule
 	1. & Brugeren skal kunne starte en ny måling indenfor 30 sekunder efter opstart & Start programmet, hvorefter der vha. stopur måles opstartstiden & At programmet er opstartet og ny måling er igang efter 30 sekunder & 15 sekunder & {\Huge \checkmark}
 	\\ \midrule
-	3. & Systemet skal kunne forstærke signalet med det indbyggede analoge antialiaserings filter med en båndbredde på 50 Hz & Start systemet & At signalet er forstærket & Egentlige test ligger i integrationstest & {\Huge (\checkmark)}\\ \midrule
-	6. & Programmet skal kunne vise blodtrykssignalet kontiunert & Tryk på "Start måling"\--knap & At blodtrykssignalet er vist kontinuert på brugergrænsefladen &  & {\Huge \checkmark}\\ \midrule
-	7. & Programmet skal programmeres i C\# & Start programmet & At koden er i C\# & & {\Huge \checkmark} \\ \midrule
+	2. & Systemet skal kunne forstærke signalet med det indbyggede analoge antialiaserings filter med en båndbredde på 50 Hz & Start systemet & At signalet er forstærket & Egentlige test ligger i integrationstest, se afsnit \ref{ModulHard}  & {\Huge (\checkmark)}\\ \midrule
+	3. & Programmet skal kunne vise blodtrykssignalet kontiunert & Tryk på "Start måling"\--knap & At blodtrykssignalet er vist kontinuert på brugergrænsefladen & Blodtrykssignalet er vist kontinuert på brugergrænsefladen & {\Huge \checkmark}\\ \midrule
+	4. & Programmet skal programmeres i C\# & Start programmet & At koden er i C\# & Programmet er i C\# & {\Huge \checkmark} \\ \midrule
 
-	12. & Programmet bør kunne måle og afbillede puls & Tryk på "Start måling" & At pulsen er afbilledet på brugergrænseflade & & {\Huge \checkmark} \\ \midrule
+	5. & Programmet bør kunne måle og afbillede puls & Tryk på "Start måling" & At pulsen er afbilledet på brugergrænseflade & Pulsen af afbilledet & {\Huge \checkmark} \\ \midrule
 	
 	& \textit{Usability} &  &  & & \\ \midrule
-	1. & Blodtrykstallene der udskrives på brugergrænseflade er røde & Tryk "Start måling"\--knap & At Blodtrykstallene er røde & & {\Huge \checkmark} \\ \midrule
-	2. & Pulsmålingen skal udskrives på brugergrænsefladen med grønne tal & Tryk "Start måling"\--knap & At pulsen vises med grønne tal & &  {\Huge \checkmark} \\ \midrule
-	3. & Brugergrænseflade lever op til nedensående figur & Opstart program og log ind & At brugergrænseflade indeholder samtlige funktioner som på figuren & & {\Huge \checkmark} \\ \midrule
+	1. & Blodtrykstallene der udskrives på brugergrænseflade er røde & Tryk "Start måling"\--knap & At blodtrykstallene er røde & Blodtrykstallene er røde & {\Huge \checkmark} \\ \midrule
+	2. & Pulsmålingen skal udskrives på brugergrænsefladen med grønne tal & Tryk "Start måling"\--knap & At pulsen vises med grønne tal & Pulsen vises med grønne tal&  {\Huge \checkmark} \\ \midrule
+	3. & Brugergrænseflade lever op til figuren udarbejdet i design afsnittet, se afsnit \ref{GUI} & Opstart program og log ind & At brugergrænseflade indeholder samtlige funktioner som på figuren & Brugergrænseflade indeholder samtlige funktioner som på figuren & {\Huge \checkmark} \\ \midrule
 	& \textit{Reliability} & & & & \\ \midrule
 	1. & Systemet skal kunne køre uden fejl i et år & Start system op og vent et år & At programmet efter et år kører fejlfrit & Kan ikke testes & \\ \midrule
 	2. & Systemet skal have en "mean time to restore" på højest 24 timer & Start systemet og herefter genstart, hvor der tages tid med et stopur & At programmet er klar igen inden for 24 timer & Kan ikke testes & \\ \midrule
 	& \textit{Performance} & & & & \\ \midrule
-	1. & Systemet bør kunne gemme data på 5 sekunder +/- 10\% & Tryk på "Gem og afslut"\--knap og tag tid med stopur & At data er inden for 5 sekunder & & \\ \midrule
+	1. & Systemet bør kunne gemme data på 5 sekunder +/- 10\% & Tryk på "Gem og afslut"\--knap og tag tid med stopur & At data er inden for 5 sekunder & Afhænger af hvor stor måling er & {\Huge (\checkmark)}\\ \midrule
 	& \textit{Supportability} & & & & \\ \midrule
-	1. & Softwaren er opbygget af trelagsmodellen & Kig i koden efter data-lag, logik-lag og GUI-lag & At koden indeholder et data-lag, et logik-lag og et GUI-lag &  & {\Huge \checkmark}\\ \bottomrule
+	1. & Softwaren er opbygget af trelagsmodellen & Kig i koden efter data-lag, logik-lag og GUI-lag & At koden indeholder et data-lag, et logik-lag og et GUI-lag & Koden indeholder et data-lag, et logik-lag og et GUI-lag & {\Huge \checkmark}\\ \bottomrule
 \caption{Accepttest af Ikke-funktionelle krav}
 \end{longtabu}
 
