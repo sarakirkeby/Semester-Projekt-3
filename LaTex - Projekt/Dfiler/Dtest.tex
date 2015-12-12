@@ -17,7 +17,7 @@ Til test af hardwaredelen blev der først udført modultest på henholdsvis fors
 
 \subsection{Modul test af forstærkeren}
 I modultesten af forstærkeren blev Analog Discovery brugt som spændingsforsyning og oscilloskop på to forskellige målepunkter placeret ved henholdsvis indgangs signalet og udgangssignalet.\\
-Da tryktransduceren forventes at have output spændinger i området 0 til 6,25 mV blev signalet fra transduceren simuleret ved en sinus på 1 Hz med et offset på 0. Den laveste amplitude for indgangs signalet var 1 mV. For hver måling blev amplituden for indgangs signalet sat op med 1 mV indtil den sidste måling hvor amplituden var nået op på 10 mV. Således blev der 10 forskellige målinger. Reelt set var det kun nødvendigt at teste op til 6 mV eller 7 mV, da det er herimellem, at man kan forvente et max tryk fra transduceren at ligge. Da der alligevel er taget målepunkter op til 10 mV skyldes det at der ved flere målinger kan laves en ”pænere” tendenslinje ved lineær regression.
+Da tryktransduceren forventes at have output spændinger i området 0 til 6,25 mV blev signalet fra transduceren simuleret ved en sinus på 1 Hz med et offset på 0. Den laveste amplitude for indgangs signalet var 1 mV. For hver måling blev amplituden for indgangs signalet sat op med 1 mV indtil den sidste måling, hvor amplituden var nået op på 10 mV. Således blev der 10 forskellige målinger. Reelt set var det kun nødvendigt at teste op til 6 mV eller 7 mV, da det er herimellem, at man kan forvente et max tryk fra transduceren at ligge. Da der alligevel er taget målepunkter op til 10 mV skyldes det at der ved flere målinger kan laves en ”pænere” tendenslinje ved lineær regression.
 
 \begin{figure}[H]
 	\centering
@@ -28,23 +28,26 @@ Da tryktransduceren forventes at have output spændinger i området 0 til 6,25 m
 
 Ud af målingerne blev der foretaget lineærregression over de 10 målepunkter. Tendenslinjen der kom ud af den lineæreregression blev som følger:
 
-\begin{center}
-\begin{align}
- Y = 415,8\cdot x-0,09 \text{     hvor }R^{2} = 0,99
-\end{align}
-\end{center}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figurer/Hardware/Sinusforstaerker}
+	\caption{Målpunkter samt tendenslinje for målingerne ved modultest af forstærkeren med 1 Hz sinus-signal.}
+	\label{fig:SinusModul}
+\end{figure}
 
-Her kan Y beskrives som værende forstærkningen ved en given frekvens. Konstanten 415,8 er den reelle forstærkning som er målt for forstærkeren. Skæringen med y-aksen burde være 0, men grundet måleusikkerheder er den blevet -0,09, hvilket også er acceptabelt. Den høje R$^2$ værdi indikerer, at der er en tydelig lineær sammenhænge mellem den påtrykte spænding og spændingen af output, dvs. forstærkningen er lineær.\\
+
+I \ref{fig:SinusModul} kan Y beskrives som værende forstærkningen ved en given frekvens. Konstanten 415,8 er den reelle forstærkning som er målt for forstærkeren. Skæringen med y-aksen burde være 0, men grundet måleusikkerheder er den blevet -0,09, hvilket også er acceptabelt. Den høje R$^2$ værdi indikerer, at der er en tydelig lineær sammenhænge mellem den påtrykte spænding og spændingen af output, dvs. forstærkningen er lineær.\\
 Senere påtryktes samme målopstilling et DC-signal med amplituder startende fra 3mV op til 10 mV. Igen blev amplituden øget med 1 mV for hvert måling således, at der blev 7 målepunkter. Ved målinger foretaget på signaler med både 1 mV og 2 mV er offsettet i Analog Discovery så stort, at målingerne er umulige
 Efter at have foretaget lineærregression på de 7 målepunkter så tendenslinjen ud som følger:
 
-\begin{center}
-\begin{align}
-Y = 386,38\cdot x+0,5547\text{     hvor }R^{2} = 0,998
-\end{align}
-\end{center}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Figurer/Hardware/DCforstaerkning}
+	\caption{Målpunkter samt tendenslinje for målingerne ved modultest af forstærkeren med DC-signal.}
+	\label{fig:DCModul}
+\end{figure}
 
-Forstærkningen givet ud fra de 7 måle punkter er på 386 hvilket er en del under den målte forstærkning når systemet påtrykkes et sinussignal i stedet for et DC-signal. Dette kan skyldes at der i målingen af DC-signalet er færre målepunkter, og at det dermed bliver en mere usikker måling, da selv en mindre måleusikkerhed har en større indflydelse på den målte forstærkning.
+Ud af \ref{fig:DCModul} ses at forstærkningen givet ud fra de 7 måle punkter er på 386 hvilket er en del under den målte forstærkning når systemet påtrykkes et sinussignal i stedet for et DC-signal. Dette kan skyldes at der i målingen af DC-signalet er færre målepunkter, og at det dermed bliver en mere usikker måling, da selv en mindre måleusikkerhed har en større indflydelse på den målte forstærkning.
 
 \subsection{Modul test af det analoge filter}
 I modultesten af det analoge filter blev Analog Discovery brugt som spændingsforsyning, signal generator og som oscilloskop til at måle amplituderne for input signalet og output signalet for filteret.
@@ -133,18 +136,7 @@ Ved det kendte vandsøjletryk i mmHg blev udgangsspændingen for det analoge fil
 	\caption{Sammenhængen mellem væsketryk input på indgangen af forstærkeren og udgangsspændingen på filteret. Angivet ved henholdsvis teoretisk beregenet målpunkter og målte punkter.}
 	\label{fig:Vaesketryk}
 \end{figure}
-Ud af \ref{fig:Vaesketryk} ses det, at de to tendenslinjer ligger næsten parallelt faktisk er hældningskoefficienten som er målt på systemet kun 0,0003 større end det er tilfældet for den teoretisk beregnede linje. Dvs. at de to linjer næsten er parallelle. Hvis de to linjer havde været fuldkommen parallelle ville man med sikkerhed kunne sige, hvor stort væsketryk, der er i søjlen på baggrund af det spændings output der er på udgangen af det analoge filter. I systemets tilfælde afviger hældningskoefficienten med 3\% hvilket må siges at være acceptabelt grundet målusikkerheder. 
-
-\section{Modul test software}
-
-Til test af softwaren er der først og fremmest foretaget modul test af  kodeelementer, for at teste om de fungerer efter hensigten. Dette er gjort ved hjælp af debug funktionen i Visual Studio. Disse test er foretaget løbende i udviklingsprocessen, hver gang en metode er tilføjet eller ændret. De væsenligste dele er nedenfor beskrevet: \\[1ex]
-Login funktionen er den første funktion, er testet ved sammenligne tilladte brugernavne og kodeord i databasen med indtastede. Dvs. at kun de brugernavne og kodeords par der findes i databasen, som giver adgang til systemet.\\[1ex]
-Nulpunktsjusteringen er testet ved at påsætte systemet en DC spænding på 2 Volt, hvorefter det indlæste tryk aflæses og sammenlignes med de 2 Volt. \\
-I forbindelse med test af nulpunktjusteringen, hvor der påsættes 2 Volts DC spænding, er kalibreringen også testet ved at indtaste kalibreringsfaktoren på 2. Herefter er tjekkes at signalet er forstærket 2 gange.\\[1ex]
-Testene foretaget i forbindelse med indlæsning af blodtrykssignal og detektering af systole, diastole og puls er alle foretaget ved følgende:\\
-Der indsættes et kendt blodtrykssignal, med kendt antal toppe og dermed kendt systole, diastole og puls. De kendte værdier sammenlignes med værdierne der vises grafisk, samt med værdierne der findes ved debugging af systemet.\\[1ex]
-Alarmen er tjekket ved at påsætte et blodtrykssignal med kendte blodtryksværdier: systolisk > 160 eller < 100 og diastolisk > 100 eller under 40), hvorefter det er testet om alarmen lyder ved de fire tilfælde uafhængigt af hinanden.\\ Yderligere for alarmen er der justering af grænseværdierne testet, ved at ændre disse grænseværdier således ovenstående værdier ikke er kritiske, for herefter at tjekke om alarmen lyder.\\ Ved alarm, er det testet at lyden kan udskydes med 3 minutter, som skrevet i koden, ved at lade blodtrykssignalet overskride grænseværdierne i mere end 3 minutter.\\[1ex]
-Gemmefunktionen er testet ved at sende et kendt blodtrykssignal igennem systemet, og tjekke om de data der gemmes i databasen stemmer overen med de kendte data. I samme forbindelse er CPR tjekker testet ved først at indskrive et gyldigt CPR nummer, som først tjekkes i CPR-tjekker metoden og dernæst i databasen. Derefter er samme procedure gentaget med et ikke gyldigt CPR-nummer.
+Ud af \ref{fig:Vaesketryk} ses det, at de to tendenslinjer ligger næsten parallelt faktisk er hældningskoefficienten som er målt på systemet kun 0,0003 større end det er tilfældet for den teoretisk beregnede linje. Dvs. at de to linjer næsten er parallelle. Hvis de to linjer havde været fuldkommen parallelle ville man med sikkerhed kunne sige, hvor stort væsketryk, der er i søjlen på baggrund af det spændings output der er på udgangen af det analoge filter. I systemets tilfælde afviger hældningskoefficienten med 3\% hvilket må siges at være acceptabelt grundet målusikkerheder.
 
 
 \section{Integrationstest hardware}
