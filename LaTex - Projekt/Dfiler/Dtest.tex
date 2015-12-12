@@ -78,6 +78,63 @@ Det gælder generelt for et 2. ordensfilter af standarttypen som der er arbejdet
 Ved knækfrekvensen som er sat til 50 Hz er fasedrejet -86,4$^{\circ}$, hvor fasedrejet skulle have været -90$^{\circ}$. Ved målingen for 53 Hz er fasedrejet -95,4$^{\circ}$. Dermed kan der argumenteres for, at filterets reelle knækfrekvens må ligge et sted imellem 50 Hz og 53 Hz. 
 For målingen på 500 Hz er fasedrejet -180$^{\circ}$, hvilket stemmer overens med teorien for 2. ordensfilterets fasekarakteristik.
 
+\subsection{Integrationstest for forstærker og analogt filter}
+Til integrationstesten af forstærkeren og det analoge filter blev Analog Discoverys signalgenerator koblet til indgangen på forstærkeren som blev påtrykt et sinussignal. Filter og forstærker blev koblet sammen således output fra forstærkeren løb over i filterets input. Desuden fungerede Analog Discovery som spændingsforsyning for både forstærkeren og det analoge filter.\\
+Der blev udført to målinger for hver udvalgte målefrekvens, hvor amplituden af sinussignalet var henholdsvis 6mV og 7mV. Der blev dermed foretaget 2 målinger for hver af de 16 frekvenser, der lå i intervallet 1Hz til 1 kHz. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/samletopstilling}
+	\caption{Opstillingen der blev brugt til test af forstærker og analogt filter}
+	\label{fig:ForstaerkerFilterOpstiling}
+\end{figure}
+
+Da projektet tager udgangspunkt i, at et maksimalt blodtryk vil have en amplitude på 6,25 mV er de to måle amplituder 6mV og 7mV blevet udvalgt for på den måde at kunne eftervise, at forstærkeren og filteret sammen får forstærket signalet op som det skal. Samtidig er de forskellige målefrekvenser udvalgt med henblik på at vise, at signalet på trods af forskellige indgangsamplitude har den samme knækfrekvens, hvilket man kan se ud af \ref{fig:ForstaerkerFilterGraf}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/IntegrationstestForstaerkerFilter2}
+	\caption{Opstillingen der blev brugt til test af forstærker og analogt filter}
+	\label{fig:ForstaerkerFilterGraf}
+\end{figure}
+
+Som det kan ses ud af \ref{fig:ForstaerkerFilterGraf} viser amplitude karakteristikken for signaler ved hver af de to forskellige amplituder bliver forstærket relativt lige meget dvs. de to amplitude karakteristikker følges ad.
+Knækfrekvensen som med de pågældende komponentværdier er udregnet til værende 50,37 Hz \ref{Implementering}. Knæk frekvensen kan findes på grafen ved af aflæse 3dB frekvensen. Denne kan udregnes ved følgende ligning:
+\begin{center}
+\begin{align}
+3dB_{frekvens}=\frac{V_{max}}{\sqrt{2}}
+\end{align}
+\end{center}
+For signalet med amplitude karakterisikken for 7mV bliver 3dB frekvensen dermed som følger:\\
+$3dB_{frekvens}=\frac{7mV}{\sqrt{2}}=4,95mV$
+
+Ved aflæsning på grafen kan man ud for ca. 5 mV se, at grafen på x-aksen kan aflæses til at ligge meget tæt på et mål punkt der ligger i data sættet hedder (55 Hz, 5,2 dB), se bilag XX. Ud fra denne oplysning må det antages at den målte knækfrekvens ligger lige en anelse under 55 Hz. Dog er den målte knækfrekvens for systemet højere end 50Hz da forstærkningen ved målingen for 50 Hz er ca. 6 dB.\\
+Ud af grafen og det dertilhørende dataset kan det også læses at forstærkningen falder med næsten 40dB/dekade efter knækfrekvensen, med en afvigelse på 3,4 dB.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/FaseForstaerkerFilter}
+	\caption{Fasedrej for signalet ved integrationstest af forstærker og analogt filter. Fasedrejet af signalet er målt i grader i forhold til frekvens i Hz.}
+	\label{fig:FaseForstaerkerFilter}
+\end{figure}
+Ud af \ref{fig:FaseForstaerkerFilter} ses det, at filteret og forstærkeren sammensat har et fasedrej på -90$^{\circ}$ ved et sted mellem 50 Hz og 55 Hz. Desuden ses det, at faseforskydningen allerede begynder en dekade før knækfrekvensen og er nede i 180$^{\circ}$ ved ca. en dekade over knækfrekvensen.
+
+\subsection{Integrationstest med vandsøjle}
+I integrationstesten med vandsøjlen blev hele hardware delen dvs. transducer, forstærker og analogt filter testet på en vandsøjle, med et bestemt tryk. Transduceren blev koblet til vandsøjlen.\\
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/IntegrationVandsoejle}
+	\caption{Opstillingen som blev brugt til integrationstest af hardwaredelen med vandsøjle}
+	\label{fig:IntegrationVandsoejle}
+\end{figure}
+Ved det kendte vandsøjletryk i mmHg blev udgangsspændingen for det analoge filter noteret. Efter at have lavet lineær regression over de 5 måle punkter blev tendenslinjens ligning sammenlignet med en tendenslinje, der var lavet på baggrund af 5 teoretisk beregnet punkter. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/VaesketrykUdgangsspaending}
+	\caption{Sammenhængen mellem væsketryk input på indgangen af forstærkeren og udgangsspændingen på filteret. Angivet ved henholdsvis teoretisk beregenet målpunkter og målte punkter.}
+	\label{fig:Vaesketryk}
+\end{figure}
+Ud af \ref{fig:Vaesketryk} ses det, at de to tendenslinjer ligger næsten parallelt faktisk er hældningskoefficienten som er målt på systemet kun 0,0003 større end det er tilfældet for den teoretisk beregnede linje. Dvs. at de to linjer næsten er parallelle. Hvis de to linjer havde været fuldkommen parallelle ville man med sikkerhed kunne sige, hvor stort væsketryk, der er i søjlen på baggrund af det spændings output der er på udgangen af det analoge filter. I systemets tilfælde afviger hældningskoefficienten med 3\% hvilket må siges at være acceptabelt grundet målusikkerheder. 
+
 \section{Modul test software}
 
 Til test af softwaren er der først og fremmest foretaget modul test af  kodeelementer, for at teste om de fungerer efter hensigten. Dette er gjort ved hjælp af debug funktionen i Visual Studio. Disse test er foretaget løbende i udviklingsprocessen, hver gang en metode er tilføjet eller ændret. De væsenligste dele er nedenfor beskrevet: \\[1ex]
