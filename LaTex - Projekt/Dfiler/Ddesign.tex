@@ -477,6 +477,8 @@ Figur \ref{Datalogin} viser hvordan login tjekker metoden opretter forbindelse t
 	\label{personaletabel}
 \end{figure}
 
+Herudover er det også i datalaget at data bliver indlæst fra DAQen. Dette gøres ved at udnytte, at DAQen har et asynkront kald i sig. Dette asynkrone kald gør, at der bliver leveret data fra DAQ til datalag løbende istedet for i intervaller, som ville være tilfældet ved synkrone kald. Hvis ikke det asynkrone kald blev benyttet her ville der gå data tabt. 
+
 \subsection{Tråde}
 Tråd programmering benyttes, når man som her ønsker flere opgaver i programmet udført løbende. Dette kan gør sig gældende eksempelvis ved at programmet ønsker at indlæse data og vise det i en graf, samtidig med at brugeren har adgang til alle interfacets funktioner. Det er disse delprocesser, som udgøre trådene. Hvis en enkelt tråd skulle gå i stå, skal de andre tråde stadig køre, således at programmet stadig kører videre. 
 \subsection{Observer}

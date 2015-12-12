@@ -21,30 +21,40 @@
 \BOOKMARK [2][-]{subsection.3.2.1}{Design af forst\346rker}{section.3.2}% 21
 \BOOKMARK [2][-]{subsection.3.2.2}{Design af analogfilter}{section.3.2}% 22
 \BOOKMARK [2][-]{subsection.3.2.3}{Gr\346nseflader}{section.3.2}% 23
-\BOOKMARK [1][-]{section.3.3}{Hardware implementering}{chapter.3}% 24
-\BOOKMARK [1][-]{section.3.4}{Software arkitektur}{chapter.3}% 25
-\BOOKMARK [2][-]{subsection.3.4.1}{GUI}{section.3.4}% 26
-\BOOKMARK [2][-]{subsection.3.4.2}{UML klassediagram}{section.3.4}% 27
-\BOOKMARK [2][-]{subsection.3.4.3}{Appliktationsmodel}{section.3.4}% 28
-\BOOKMARK [1][-]{section.3.5}{Software implementering}{chapter.3}% 29
-\BOOKMARK [0][-]{chapter.4}{Integrationstest}{}% 30
-\BOOKMARK [1][-]{section.4.1}{Hardware}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.1.1}{Modul test af forst\346rkeren}{section.4.1}% 32
-\BOOKMARK [2][-]{subsection.4.1.2}{Modul test af det analoge filter}{section.4.1}% 33
-\BOOKMARK [1][-]{section.4.2}{Software}{chapter.4}% 34
-\BOOKMARK [0][-]{chapter.5}{Acceptest}{}% 35
-\BOOKMARK [1][-]{section.5.1}{Indledning}{chapter.5}% 36
-\BOOKMARK [1][-]{section.5.2}{Accepttest af Use Cases}{chapter.5}% 37
-\BOOKMARK [2][-]{subsection.5.2.1}{Use Case 1}{section.5.2}% 38
-\BOOKMARK [2][-]{subsection.5.2.2}{Use Case 2}{section.5.2}% 39
-\BOOKMARK [2][-]{subsection.5.2.3}{Use Case 3}{section.5.2}% 40
-\BOOKMARK [2][-]{subsection.5.2.4}{Use Case 4}{section.5.2}% 41
-\BOOKMARK [2][-]{subsection.5.2.5}{Use Case 5}{section.5.2}% 42
-\BOOKMARK [2][-]{subsection.5.2.6}{Use Case 6}{section.5.2}% 43
-\BOOKMARK [1][-]{section.5.3}{Accepttest af ikke-funktionelle krav}{chapter.5}% 44
-\BOOKMARK [0][-]{chapter*.40}{Bilag}{}% 45
-\BOOKMARK [1][-]{section*.41}{Fejlrapport}{chapter*.40}% 46
-\BOOKMARK [1][-]{section*.42}{Logbog}{chapter*.40}% 47
-\BOOKMARK [1][-]{section*.43}{M\370dereferart}{chapter*.40}% 48
-\BOOKMARK [1][-]{section*.44}{Kode}{chapter*.40}% 49
-\BOOKMARK [1][-]{section*.45}{Samarbejdsaftale}{chapter*.40}% 50
+\BOOKMARK [1][-]{section.3.3}{Software arkitektur}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.1}{GUI}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.2}{Dom\346nemodel}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.3}{Appliktationsmodel}{section.3.3}% 27
+\BOOKMARK [0][-]{chapter.4}{Implementering}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Hardware implementering}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{Software implementering}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.2.1}{3-lagsmodellen}{section.4.2}% 31
+\BOOKMARK [2][-]{subsection.4.2.2}{Tr\345de}{section.4.2}% 32
+\BOOKMARK [2][-]{subsection.4.2.3}{Observer}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.4}{Push pull}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.5}{UML klassediagram}{section.4.2}% 35
+\BOOKMARK [0][-]{chapter.5}{Test}{}% 36
+\BOOKMARK [1][-]{section.5.1}{Indledning}{chapter.5}% 37
+\BOOKMARK [1][-]{section.5.2}{Modul test hardware}{chapter.5}% 38
+\BOOKMARK [2][-]{subsection.5.2.1}{Modul test af forst\346rkeren}{section.5.2}% 39
+\BOOKMARK [2][-]{subsection.5.2.2}{Modul test af det analoge filter}{section.5.2}% 40
+\BOOKMARK [1][-]{section.5.3}{Modul test software}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.4}{Integrationstest hardware}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.5}{Integrationstest software}{chapter.5}% 43
+\BOOKMARK [1][-]{section.5.6}{Integrationstest system}{chapter.5}% 44
+\BOOKMARK [0][-]{chapter.6}{Acceptest}{}% 45
+\BOOKMARK [1][-]{section.6.1}{Indledning}{chapter.6}% 46
+\BOOKMARK [1][-]{section.6.2}{Accepttest af Use Cases}{chapter.6}% 47
+\BOOKMARK [2][-]{subsection.6.2.1}{Use Case 1}{section.6.2}% 48
+\BOOKMARK [2][-]{subsection.6.2.2}{Use Case 2}{section.6.2}% 49
+\BOOKMARK [2][-]{subsection.6.2.3}{Use Case 3}{section.6.2}% 50
+\BOOKMARK [2][-]{subsection.6.2.4}{Use Case 4}{section.6.2}% 51
+\BOOKMARK [2][-]{subsection.6.2.5}{Use Case 5}{section.6.2}% 52
+\BOOKMARK [2][-]{subsection.6.2.6}{Use Case 6}{section.6.2}% 53
+\BOOKMARK [1][-]{section.6.3}{Accepttest af ikke-funktionelle krav}{chapter.6}% 54
+\BOOKMARK [0][-]{chapter*.48}{Bilag}{}% 55
+\BOOKMARK [1][-]{section*.49}{Fejlrapport}{chapter*.48}% 56
+\BOOKMARK [1][-]{section*.50}{Logbog}{chapter*.48}% 57
+\BOOKMARK [1][-]{section*.51}{M\370dereferart}{chapter*.48}% 58
+\BOOKMARK [1][-]{section*.52}{Kode}{chapter*.48}% 59
+\BOOKMARK [1][-]{section*.53}{Samarbejdsaftale}{chapter*.48}% 60
