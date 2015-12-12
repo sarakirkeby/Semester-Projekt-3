@@ -31,20 +31,20 @@
 \contentsline {subsubsection}{Opdateret applikationsmodel}{27}{section*.22}
 \contentsline {chapter}{\chapternumberline {4}Implementering}{31}{chapter.4}
 \contentsline {section}{\numberline {4.1}Hardware implementering}{31}{section.4.1}
-\contentsline {subsubsection}{Hardware overvejelser}{32}{section*.29}
+\contentsline {subsubsection}{Hardware overvejelser}{31}{section*.29}
 \contentsline {subsubsection}{Implementering af forst\IeC {\ae }rkeren}{32}{section*.30}
-\contentsline {subsubsection}{Implementering af filteret}{33}{section*.32}
-\contentsline {section}{\numberline {4.2}Software implementering}{34}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}3-lagsmodellen}{34}{subsection.4.2.1}
-\contentsline {subsubsection}{Pr\IeC {\ae }sentationslag}{35}{section*.35}
-\contentsline {subsubsection}{Logiklag}{36}{section*.38}
-\contentsline {subsubsection}{Datalag}{37}{section*.41}
-\contentsline {subsection}{\numberline {4.2.2}Tr\IeC {\r a}de}{38}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Observer}{38}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Push pull}{38}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}UML klassediagram}{38}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Kode udsnit}{38}{subsection.4.2.6}
-\contentsline {subsection}{\numberline {4.2.7}Diagrammer}{38}{subsection.4.2.7}
+\contentsline {subsubsection}{Implementering af filteret}{32}{section*.32}
+\contentsline {section}{\numberline {4.2}Software implementering}{33}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}3-lagsmodellen}{33}{subsection.4.2.1}
+\contentsline {subsubsection}{Pr\IeC {\ae }sentationslag}{34}{section*.35}
+\contentsline {subsubsection}{Logiklag}{35}{section*.38}
+\contentsline {subsubsection}{Datalag}{36}{section*.41}
+\contentsline {subsection}{\numberline {4.2.2}Tr\IeC {\r a}de}{37}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Observer}{37}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Push pull}{37}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}UML klassediagram}{37}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Kode udsnit}{37}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Diagrammer}{37}{subsection.4.2.7}
 \contentsline {chapter}{\chapternumberline {5}Test}{39}{chapter.5}
 \contentsline {section}{\numberline {5.1}Indledning}{39}{section.5.1}
 \contentsline {section}{\numberline {5.2}Modul test hardware}{39}{section.5.2}
