@@ -43,6 +43,8 @@
 \contentsline {subsection}{\numberline {4.2.3}Observer}{38}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Push pull}{38}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}UML klassediagram}{38}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Kode udsnit}{38}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Diagrammer}{38}{subsection.4.2.7}
 \contentsline {chapter}{\chapternumberline {5}Test}{39}{chapter.5}
 \contentsline {section}{\numberline {5.1}Indledning}{39}{section.5.1}
 \contentsline {section}{\numberline {5.2}Modul test hardware}{39}{section.5.2}
