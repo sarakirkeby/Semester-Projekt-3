@@ -2,12 +2,13 @@
 
 \section{Projektgennemførelse}\label{Projektgennemfoerlse}
 Projektet startede med, at der blev lavet en tidsplan, som var mulig at ændre undervejs, dog med faste deadlines, som skulle overholdes. De forskellige deadlines lagde op til, at der kunne arbejdes efter udviklingsmodeller, som er beskrevet nærmere i metodeafsnittet \ref{Metode}.\\ \\
-Tidsplanen blev sidenhen ført mere detaljeret ind i projektstryringsværktøjet Scrum. Scrum blev benyttet til at holde overblikket over manglende opgaver, igangværende opgaver og afsluttede opgaver. \\
+Tidsplanen blev sidenhen ført mere detaljeret ind i projektstryringsværktøjet Scrum. Scrum blev benyttet til at holde overblikket over manglende opgaver, igangværende opgaver og afsluttede opgaver. Ligeledes blev værktøjet brugt som en kontakt mellem hardware gruppen og software gruppen så begge grupper kunne holde sig opdateret på hinandens opgaver. For at prioriterer arbejdsopgaverne er der blevet benyttet sprints af en uges variehed. Hver arbejdsopgave er blevet prioriteret med et antal point, alt efter hvor tidskrævende opgaven var, hvilket har været bestemmende for hvor mange opgaver, der var mulighed for at lave i hvert sprint.\\
 Gruppens seks medlemmer blev fra start delt op i to undergrupper, én med hovedfokus på hardware udvikling, og én med hovedfokus på software udvikling. Dog blev de basic delene til projektet, som kravspecifikation og case udvalgt samlet. Scrum er her også et godt værktøj til at bevare overblikket over de to gruppers individuelle opgaver.\\ \\
 Fra start blev der aftalt et ugentlig møde, med vejleder og de to grupper som medvirkende parter. På denne måde blev alle parter holdt opdateres på udviklingsprocessen, især grupperne imellem, men også vejleder. Sidst i forløbet, under test af diverse dele af systemet, blev grupperne samlet og testene blev udarbejdet i fællesskab.\\ \\
 Projektet er gennemført ved udarbejdelse af en samarbejdsaftale, herunder udvælgelse af en projektleder, som i tilfælde af uoverensstemmelse havde den afgørende stemme. 
 
 \section{Metode} \label{Metode}
+I metode afsnittet beskrives hvilke metoder og modeller, der er blevet brugt til gennemførsel og udvikling af projektet.  
 \subsection{Ase-modellen}
 Den primære udviklingsmodel, der er benyttet i dette projekt, er ASE modellen. ASE modellen er en udviklingsmodel, der tager udgangspunkt i use cases. 
 \begin{figure}[H]
@@ -50,7 +51,10 @@ I dette projekt er der benyttet struktur- og adfærdsdiagrammer til at specifice
 Der er anvendt adfærdsdiagrammer i form af sekvensdiagrammer i dette projekt. Disse diagrammer er velegnet til sekventielt at beskrive den logiske funktionalitet i systemet. Softwaren er opbygget ud fra sekvensdiagrammer beskrevet i design afsnittet.
 
 \section{Specifikation og analyse}
-
+Overvejelserne omkring designet af softwaren inden opstart på implementeringen var, at systemet skulle opfylde de opstillede krav i kravspecifikationen samt have en god brugergrænseflade.\\
+Det blev hurtigt klart, at hvis software systemet skulle fungerer som ønsket ville det blive nødvendigt at implementerer systemet vha. tråde. Dette var nødvendigt da der løbende var flere funktioner, der kørte samtidig. På den måde ville det være en god måde at forøge udnyttelsesgraden af systemet.\\
+Tankerne om designet af brugergrænsefalden var at tage udgangspunkt i de 16 principper for gode brugergrænseflader. Ud fra disse principper blev designet af brugergrænsefladen udfærdiget til at være eneklt og brugervenligt for brugeren. Herud over gik designet på at få brugergrænsefladen til at se så virkelighedsnær ud som muligt. Derfor blev der lavet reasearch omkring blodtryks monitorer hvorefter systemets brugergrænseflade er designet ud fra disse oplysninger. 
+ 
 
 \chapter{Design, implementering og test}
    
@@ -178,6 +182,24 @@ f_{c} = \frac{1}{2\pi \sqrt{R_{1}C_{1}R_{2}C_{2}}} = \frac{1}{2\pi \sqrt{6687 \c
 %\caption{Udregning af den reelle cutoff frekvens}
 
 \section{Software implementering}
+I software implementeringen er der blevet beskrevet hvordan systemet er blevet implementeret i form af teoretiske metoder og kode udsnit samt diagrammer over den implementerede kode.
+\subsection{3 lags modellen}
+Softwaren er implementeret først og fremmest ud fra 3-lagsmodellen 3-lagsmodellen er
+bestående af lagene præsentationslag, logiklag og datalag. Denne opdeling af lagene gør
+det langt lettere at vedligeholde systemet fordi der kan ændres i et enkelt lag uden det har
+indflydelse på resten af programmet.
+Det er desuden en god software arkitektur at bruge ved et system udarbejdet af en gruppe,
+da der kan arbejdes på to forskellige lag af to personer samtidigt, hvis bare grænsefladerne
+bliver overholdt.\\
+Herudover har vi implementeret koden så den har lav kobling og høj samhørighed så der har været mulighed for at teste kode elementer undervejs i processen. 
+
+\subsection{Tråde}
+
+\subsection{Observer}
+
+\subsection{Kode elementer}
+
+\subsection{Software diagrammer}
 
 \section{Hardware test}
 

@@ -405,7 +405,7 @@ Det er desuden en god software arkitektur at bruge ved et system udarbejdet af e
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\textwidth]{Figurer/SoftwareImplementering/3lag}
-	\caption{3 lags modellen}
+	\caption{3-lagsmodellen}
 	\label{3lag}
 \end{figure}
 
@@ -433,13 +433,49 @@ Til sidst vises en brugergrænseflade for gemmefunktionen, hvor brugeren skal in
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.7\textwidth]{Figurer/SoftwareImplementering/Gem}
+	\includegraphics[width=0.6\textwidth]{Figurer/SoftwareImplementering/Gem}
 	\caption{Gem GUI}
 	\label{Gem}
 \end{figure}
 
 \subsubsection{Logiklag}\label{Logiklag}
-Logik lagets er det lag der spiller sammen med både data- og præsentationslag. Sammenspillet med præsentationslaget fungerer ved alt brugerens interaktion med systemet bearbejdes i logiklaget. 
+Logik laget er det lag der spiller sammen med både data- og præsentationslag. Sammenspillet med præsentationslaget fungerer ved alt brugerens interaktion med systemet bearbejdes i logiklaget. Et eksempel herpå er det digitale filter, hvor brugeren gennem brugergrænsefladen tilslutter filteret. Dette igangsætter en metode i logik laget, som sørger for at signalet filtreres. Metoden er vist i figur \ref{filtrer} og figur \ref{Filtrer}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.15\textwidth]{Figurer/SoftwareImplementering/Filtrer1}
+	\caption{Filtrer i filter klassen}
+	\label{Filtrer}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.85\textwidth]{Figurer/SoftwareImplementering/filtrer}
+	\caption{Filtrer i filter klassen}
+	\label{filtrer}
+\end{figure}
+
+Figur \ref{Filtrer} viser hvordan der i logikklassen oprettes en liste med .... \textbf{JEPPE!!!!}\\
+Herefter bliver der i figur \ref{filtrer} taget gennemsnit af listen hvorefter den sidste værdi returneres, og derefter udskrives. Filteret er deraf et FIR filter af typen moving average.
+
+\subsubsection{Datalag}\label{Datalag}
+Datalaget er det lag som spiller sammen med databasen og logiklaget. Dvs. at datalaget modtager bruger inputs fra brugergrænsefladen gennem logiklaget. Herefter sender og validerer datalaget informationerne i en database. Eksempelvis er bliver login oplysninger tjekket i databasen via datalaget, dette er vist i figur \ref{Datalogin}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.4\textwidth]{Figurer/SoftwareImplementering/CheckLogind}
+	\caption{Login tjekker metode}
+	\label{Datalogin}
+\end{figure}
+
+Figur \ref{Datalogin} viser hvordan login tjekker metoden opretter forbindelse til en lokal database, hvorefter de indtastede værdier tjekkes i databasen. Til slut lukkes forbindelsen igen. Værdierne der tjekkes efter med kan ses i personale tabellen i databasen, som vist i figur \ref{personaletabel}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Figurer/SoftwareImplementering/database}
+	\caption{Personale tabel}
+	\label{personaletabel}
+\end{figure}
 
 \subsection{Tråde}
 Tråd programmering benyttes, når man som her ønsker flere opgaver i programmet udført løbende. Dette kan gør sig gældende eksempelvis ved at programmet ønsker at indlæse data og vise det i en graf, samtidig med at brugeren har adgang til alle interfacets funktioner. Det er disse delprocesser, som udgøre trådene. Hvis en enkelt tråd skulle gå i stå, skal de andre tråde stadig køre, således at programmet stadig kører videre. 
