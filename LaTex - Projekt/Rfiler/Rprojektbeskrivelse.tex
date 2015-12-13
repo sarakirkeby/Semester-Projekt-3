@@ -55,13 +55,17 @@ Overvejelserne omkring designet af softwaren inden opstart på implementeringen 
 Det blev hurtigt klart, at hvis software systemet skulle fungerer som ønsket ville det blive nødvendigt at implementerer systemet vha. tråde. Dette var nødvendigt da der løbende var flere funktioner, der kørte samtidig. På den måde ville det være en god måde at forøge udnyttelsesgraden af systemet.\\
 Tankerne om designet af brugergrænsefalden var at tage udgangspunkt i de 16 principper for gode brugergrænseflader. Ud fra disse principper blev designet af brugergrænsefladen udfærdiget til at være eneklt og brugervenligt for brugeren. Herud over gik designet på at få brugergrænsefladen til at se så virkelighedsnær ud som muligt. Derfor blev der lavet reasearch omkring blodtryks monitorer hvorefter systemets brugergrænseflade er designet ud fra disse oplysninger. 
  
+I udviklingen af hardwaren, var der behov for, at mange af komponenterne blev nødt til at blive taget op til genovervejelse. \\
+Der blev valgt at bruge en instrumenteringsforstærker til forstærker-blokken, i stedet for en operationsforstærker, grundet instrumenteringsforstærkerens reelle komponents tætte relation, til dens ideelle modpart. Da der blev arbejdet med meget små spændinger, så var det vigtigt med en stor indgangsimpedans, for at kunne forstærke disse små spændinger. Andre fordele ved instrumenteringsforstærkeren indebærer let justerbar gain, samt høj common mode rejection ratio. \\
+Dynamik området ved forstærkeren, blev oprindeligt fastlagt til at være højere, end det endelige fastlagte dynamikområde. Dette blev justeret, fordi strømforsyningen og det oprindelige dynamikområde, lå for tæt på hinanden. Det endelige dynamikområde blev valgt ud fra dynamikområderne til rådighed, i vores DAQ. \\
+Filterets overordnede design og komponenter, var givet fra de krav, der var blevet sat til hardwaren fra starten af, og der var derfor ikke meget plads til ændringer af designet. Som spændingskilde blev Analog Discovery valgt, i stedet for et batteri, da Analog Discovery giver en stabil strøm, som ikke har behov for at blive afbalanceret. \\
 
 \chapter{Design, implementering og test}
    
 \section{Hardware design}
 I dette afsnit beskrives udarbejdelsen af hardware design, og tilhørende tanker.
 
-Gruppen bestemte tideligt i forløbet at dele hardwaren op i to dele, en forstærker del og en filter del. 
+Der blev bestemt tideligt i forløbet at dele hardwaren op i to dele, en forstærker del og en filter del. 
 \\
 \begin{figure}[H]
 	\centering
@@ -72,7 +76,7 @@ Gruppen bestemte tideligt i forløbet at dele hardwaren op i to dele, en forstæ
 
 Ud af blokdiagrammet, figur \ref{BDD blodtryksmaaler}, kan man se at blodtryksmåler systemet består af fem dele. En transducer, som omformer tryk til spænding, en forstærker, et analogt støjfilter, en DAQ og en computer. \\
 
-Det første gruppen designede til fulde, var forstærkeren. Forstærkeren blev designet, med tanke på, at det er meget små spændinger, som ville blive målt fra transduceren. En almindelig operationsforstærker blev derfor fravalgt, og en instrumenteringsforstærker blev valgt i stedet. Gruppen blev anbefalet typen INA114 af vejleder, grundets denne type's gode common mode rejection faktor, og høje reelle indgangsimpedans. Kredsløbet blev som vist på figur \ref{forstkreds}. \\
+Det første der blev designet til fulde, var forstærkeren. Forstærkeren blev designet, med tanke på, at det er meget små spændinger, som ville blive målt fra transduceren. En almindelig operationsforstærker blev derfor fravalgt, og en instrumenteringsforstærker blev valgt i stedet. Vejleder anbefalede at typen INA114 af vejleder, grundets denne type's gode common mode rejection faktor, og høje reelle indgangsimpedans. Kredsløbet blev som vist på figur \ref{forstkreds}. \\
 
 \begin{figure}[H]
 	\centering
@@ -94,7 +98,7 @@ Det næste der skulle designes, var filteret. Filteret skulle realiseres som et 
 	\label{fig:rFilter}
 \end{figure}
 
-Et Sallen-Keyfilter har en anderledes $\zeta$ , grundet anderledes prioriteter, i forhold til frekvensområdet. Gruppen brugte en hjemmeside\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm} til at finde overføringsfunktionen for det givne filter. Herefter blev komponentværdierne teoretisk udregnet. Udregningerne kan ses i dokumentationen, afsnit xx. De endelige værdier for komponenterne, kan ses på komponentlisten for filteret i afsnit \ref{himpl}. 
+Et Sallen-Keyfilter har en anderledes $\zeta$ , grundet anderledes prioriteter, i forhold til frekvensområdet. Der blev brugt en hjemmeside\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm} til at finde overføringsfunktionen for det givne filter. Herefter blev komponentværdierne teoretisk udregnet. Udregningerne kan ses i dokumentationen, afsnit xx. De endelige værdier for komponenterne, kan ses på komponentlisten for filteret i afsnit \ref{himpl}. 
    
    
 \section{Software design}\label{Software arkitektur}
@@ -125,7 +129,7 @@ Sekvensdiagrammerne for de øvrige use cases kan ses i dokumentationen afsnit \t
 
 \section{Hardware implementering}
 \label{himpl}
-Efter komponentudregningen, byggede gruppen de to hardware blokke op. Gruppen valgte at bygge forstærkeren og filteret seperat, grundet pladsmangel og sammenhæng.\\
+Efter komponentudregningen, byggede gruppen de to hardware blokke op. Der blev valgt at bygge forstærkeren og filteret seperat, grundet pladsmangel og sammenhæng.\\
 
 \begin{figure}[H]
 	\centering
@@ -134,7 +138,7 @@ Efter komponentudregningen, byggede gruppen de to hardware blokke op. Gruppen va
 	\label{samletopbygning}
 \end{figure}
 
-Grundet mangel på præcise modstande, bedømte gruppen at det var bedst at bygge modstandende i forholdsvist filteret og forstærkeren, op i to, så gruppen kunne komme så tæt på den ønskede modstandsværdi som muligt. \\
+Grundet mangel på præcise modstande, bedømte gruppen at det var bedst at bygge modstandende i forholdsvist filteret og forstærkeren, op i to, så det var muligt at komme så tæt på den ønskede modstandsværdi som muligt. \\
 For forstærkeren, blev styklisten som vist på tabel \ref{forsttabel}.
 
 
@@ -171,7 +175,7 @@ Operationsforstærker &    1         & OP27G          &  &  \\ \cline{1-3}
 \end{table}
 
 I det analoge filter, er kondensatoren, C$_1$, i praksis 3,2 nF mindre end  beregnet. Desuden er de to identiske modstande, R$_1$ og R$_2$, som i praksis er 17$\Omega$ mindre end teorien foreskriver.\\
-Gruppen vurderede at afvigelserne var forholdsvidst små, og derfor er der valgt at se bort fra dem. For modstandende er der desuden 1 procents usikkerhed, hvilket betyder man alligevel ikke kan være helt sikker på komponentværdien.\\
+Der blev vurderet at afvigelserne var forholdsvidst små, og derfor er der valgt at se bort fra dem. For modstandende er der desuden 1 procents usikkerhed, hvilket betyder man alligevel ikke kan være helt sikker på komponentværdien.\\
 En reel cutoff frekvens blev herefter udregnet af gruppen. Denne kan ses udregnet på figur \ref{cutoff}.
 
 
@@ -210,6 +214,10 @@ Herudover har vi implementeret koden så den har lav kobling og høj samhørighe
 \section{Resultater og diskussion}
 
 \section{Opnåede erfaringer}
+I løbet af projektet, er der generelt opnåede erfaringer omkring, hvordan man indgår i et professionelt projektsamarbejde og projektstyring. Vi har især opnåede værdifulde erfaringer omkring, hvad man gør, når man essentielt har to grupper, som arbejder på forskellige produkter, og som til sidst skal fungere samlet. I projektet blev der arbejdet med en software del og en hardware del.  Vi erfarede, at vi havde forskellige forventninger til, hvad der reelt skulle ske, når et software system, skal arbejde sammen med et hardware system. \\
+Projektet har givet indsigt i arkitektur og udviklingsfasen omkring hardware. Hardware udviklingen har desuden givet forståelse for eventuelle problemer, der kan opstå, når der arbejdes med reelle komponenter. Vi fik mange erfaringer med elektrisk måleudstyr, især når der bliver arbejdet med små spænding. Dette er meget relevant for os, siden vi, som sundhedteknologer, vil komme til at arbejde med tilsvarende spændinger, når vi er færdige med uddannelsen. Vi fik meget hands-on erfaring med kalibrering, hvor vi indtil videre kun har arbejdet med teorien omkring det. \\
+Projektet har desuden givet os yderligere indblik i udvikling af et software system, som skal arbejde sammen med en database. I softwaren er der blevet arbejdet meget med det nye begreb mønstre, specifikt op server mønstret. Vi har desuden fået praktisk erfaring med programmeringsbegrebet tråde og tråd-synkronisering, i det i vores software arbejder med kontinuerlige processer. Vi har desuden arbejdet meget med digital signal analyse, når vi har håndteret blodtrykssignalet, i vores program. \\
+Endeligt har vi udvidet vores fysiologiske viden, da vi i dette projekt har arbejdet med blodtryk. Vi har udforsket teorien bag ved blodtryk, og har i denne sammenhæng arbejdet med hæmodynamik, for at kunne forstå præcise sammenhænge imellem resultater og målinger. \\
 
 \section{Fremtidigt arbejde}
 Gennem projektet er der arbejdet med det analoge filter og forstærkeren på to forskellige fumlebræt, fremadrettet kan man slå filter og forstærker sammen på et print. På den måde kan man undgå løse forbindelser som der let kan opstå i et fumlebræt.\\
