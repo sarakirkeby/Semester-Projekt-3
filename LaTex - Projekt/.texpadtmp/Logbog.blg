@@ -9,6 +9,7 @@ A level-1 auxiliary file: Lfiler/2015-09-24.aux
 A level-1 auxiliary file: Lfiler/2015-09-30.aux
 A level-1 auxiliary file: Lfiler/2015-10-05.aux
 A level-1 auxiliary file: Lfiler/2015-10-06.aux
+A level-1 auxiliary file: Lfiler/2015-10-07.aux
 A level-1 auxiliary file: Lfiler/2015-10-20.aux
 A level-1 auxiliary file: Lfiler/2015-10-20prog.aux
 A level-1 auxiliary file: Lfiler/2015-10-27hard.aux
@@ -26,11 +27,18 @@ A level-1 auxiliary file: Lfiler/2015-12-01prog.aux
 A level-1 auxiliary file: Lfiler/2015-12-02prog.aux
 A level-1 auxiliary file: Lfiler/2015-12-02hard.aux
 A level-1 auxiliary file: Lfiler/2015-12-03prog.aux
+A level-1 auxiliary file: Lfiler/2015-12-04.aux
+A level-1 auxiliary file: Lfiler/2015-12-07hard.aux
+A level-1 auxiliary file: Lfiler/2015-12-08prog.aux
+A level-1 auxiliary file: Lfiler/2015-12-09hard.aux
+A level-1 auxiliary file: Lfiler/2015-12-09prog.aux
+A level-1 auxiliary file: Lfiler/2015-12-10prog.aux
+A level-1 auxiliary file: Lfiler/2015-12-11.aux
 I found no \citation commands---while reading file /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Logbog.aux
 I found no \bibdata command---while reading file /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Logbog.aux
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            520 strings with 4765 characters,
+            528 strings with 4953 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
