@@ -211,7 +211,7 @@ Herudover har vi implementeret koden så den har lav kobling og høj samhørighe
 \section{Resultater og diskussion}
 Hovedkravene til dette projekt var at udarbejde et elektronisk kredsløb med indbygget analogfilter og en forstærker, der forstærker signalet fra en transducer. Yderligere var der krav om at udforme en software, som kunne afbillede signalet fra hardwaren grafisk og som funktion af tiden. Desuden var der yderligere en række krav til softwaren, specificeret i afsnit \ref{Krav}. Det lykkedes at udarbejde et produkt, som opfylder alle disse krav. \\[1ex]
 
-For at sikre systemet mod "ulovlig" indtrængning skal man igennem et login system, hvorefter det er muligt at starte en blodtryksmåling. Der kunne til fordel være implementeret en funktion, som gav mulighed for at igangsætte en blodtryksmåling uden om login i tilfælde af en akut sag.\\ 
+For at sikre systemet mod "ulovlig"\ indtrængning skal man igennem et login system, hvorefter det er muligt at starte en blodtryksmåling. Der kunne til fordel være implementeret en funktion, som gav mulighed for at igangsætte en blodtryksmåling uden om login i tilfælde af en akut sag.\\ 
 Selve blodtrykssignalet vises i blodtryksvinduet som funktion af tiden, dog uden akse benævnelser på grafen, som vist på figur \ref{blodtryk}:
 
 \begin{figure}[H]
@@ -222,10 +222,18 @@ Selve blodtrykssignalet vises i blodtryksvinduet som funktion af tiden, dog uden
 \end{figure}
 
 På figur \ref{blodtryk} ses det, at det er lykkedes implementere funktioner, som digitalt filter, alarmering og visning af systole, diastole og puls\\
-Efter foretegaet måling er det muligt at gemme data med tilhørende informationer i en lokal database, hvilket er afbilledet på figur \ref{databasegem}
+Efter foretegaet måling er det muligt at gemme data med tilhørende informationer i en lokal database, hvilket er afbilledet på figur \ref{databasegem}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.1\textwidth]{Figurer/SoftwareImplementering/databasegem}
+	\caption{Målinger i databasen}
+	\label{databasegem}
+\end{figure}
+
 Signalet fra transduceren bliver igennem hardwaren henholdsvis forstærket og filtreret. Igennem forstærkeren har et krav været at den skulle forstærkes 400 gange. Igennem test kan det ses at der tilnærmelsesvis opnås en forstærkning på 400, med forbehold for måleusikkerheder. Et problem har været, at Analog Discovery’s måle scopes på indgangene ikke har kunnet opfange den størelse signaler der arbejdes med grundet Analog Discovery’s offset. Når der tages højde for offset nærmede den målte forstærkning sig 400. \\Et krav til det analoge filter var at den skal have en knækfrekvens på 50 Hz. Ved modultesten kunne det ses, at knækfrekvensen minimalt oversteg de 50 Hz, hvilket skyldtes at der ikke arbejdes med ideelle komponenter. Dog stemte målte amplitudekarakteristik overens med den teoretiske. \\Da forsygningsspændingen var +/- 5V kunne forstærkerens udgangssignal ikke være højere end ca. 4,2V og filterets udgangssignal kunne ikke være højere end ca. 3V. Dette medførte at signalet endte med en spædning på +/- 3V. Herefter, for at kunne udnytte DAQ’ens dynamikområde bedst, blev signalet sat maksimalt +/- 2,5V, svarende til en indgang på DAQ’en. Ved valg af en større forsyningsspænding ville signalet være blevet forstærket yderligere, således at signalet kunne sendes ind på én af de højere indgange med +/- 5V. Dette kunne føre til en bedre udnyttelse af DAQ'ens dynamikområde.\\
 \\
-Yderligere forbedringer til systemet kan læses i afsnit \ref{fremtid}.
+Gennemgang af alle krav til læses i dokumentationen afsnit ???, samt yderligere forbedringer til systemet kan læses i afsnit \ref{fremtid}.
 \section{Opnåede erfaringer}
 I løbet af projektet, er der generelt opnåede erfaringer omkring, hvordan man indgår i et professionelt projektsamarbejde og projektstyring. Vi har især opnåede værdifulde erfaringer omkring, hvad man gør, når man essentielt har to grupper, som arbejder på forskellige produkter, og som til sidst skal fungere samlet. I projektet blev der arbejdet med en software del og en hardware del.  Vi erfarede, at vi havde forskellige forventninger til, hvad der reelt skulle ske, når et software system, skal arbejde sammen med et hardware system. \\
 Projektet har givet indsigt i arkitektur og udviklingsfasen omkring hardware. Hardware udviklingen har desuden givet forståelse for eventuelle problemer, der kan opstå, når der arbejdes med reelle komponenter. Vi fik mange erfaringer med elektrisk måleudstyr, især når der bliver arbejdet med små spænding. Dette er meget relevant for os, siden vi, som sundhedteknologer, vil komme til at arbejde med tilsvarende spændinger, når vi er færdige med uddannelsen. Vi fik meget hands-on erfaring med kalibrering, hvor vi indtil videre kun har arbejdet med teorien omkring det. \\
