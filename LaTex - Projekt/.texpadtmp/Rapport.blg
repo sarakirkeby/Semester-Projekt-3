@@ -16,10 +16,17 @@ A level-1 auxiliary file: Rfiler/Rprojektbeskrivelse.aux
 A level-1 auxiliary file: Rfiler/Rkonklusion.aux
 A level-1 auxiliary file: Rfiler/Rreferencer.aux
 I found no \bibdata command---while reading file /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Rapport.aux
+Warning--I didn't find a database entry for "Hjertet"
+Warning--I didn't find a database entry for "cyklus"
+Warning--I didn't find a database entry for "haemo"
+Warning--I didn't find a database entry for "tryk"
+Warning--I didn't find a database entry for "Hypertension"
+Warning--I didn't find a database entry for "Hypotension"
 Warning--I didn't find a database entry for "Projektledelse"
+Warning--I didn't find a database entry for "overforing"
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            511 strings with 4535 characters,
+            521 strings with 4620 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
