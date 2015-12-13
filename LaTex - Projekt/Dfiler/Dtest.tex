@@ -159,7 +159,7 @@ I dette afsnit beskrives hvordan software systemet testes sammen med hardware sy
 Denne integrationstest ligger på til accepttesten som udøfres med kunden. Det er derfor vigtigt at få de to systemer testet sammen inden den endelige accepttest foretages. 
 \\
 Transduceren kobles til vandsøjlen hvor højden fyldes til 9 cm dvs. et tryk på 6,61 mmHg. Transduceren kobles til hardwaren og der måles på udgangene fra filtret vha. Analog Discovery. Udgangssignalet fra filtret sendes igennem DAQ’en og ind i computeren. Der sættes breakpoints i programmet ved værdien for nulpunktsjustering og værdien af signalet. 
-Transduceren sættes til at måle atmosfærisk tryk og der foretages en nulpunktsjustering i programmet. Værdien på Analog Discovery sammenlignes med værdien der ses i koden. Her ses at der kun er en forskel på 2,1 mV hvilket kan skyldes at signalet svinger lidt da trykket ikke er helt jævnt. 
+Transduceren sættes til at måle atmosfærisk tryk og der foretages en nulpunktsjustering i programmet. Værdien på Analog Discovery sammenlignes med værdien der ses i koden. Af figur \ref{fig:Atmosfaerisktryk} ses at der kun er en forskel på 2,1 mV hvilket kan skyldes at signalet svinger lidt da trykket ikke er helt jævnt.
 
 \begin{figure}[H]
 	\centering
@@ -168,7 +168,7 @@ Transduceren sættes til at måle atmosfærisk tryk og der foretages en nulpunkt
 	\label{fig:Atmosfaerisktryk}
 \end{figure}
 
-Transduceren sættes til at måle trykket fra vandsøjlen. Dernæst foretages en måling i programmet. I selve koden findes værdien der måles og denne sammenlignes med målingen i Analog Discovery. Her ses at signalet programmet opfanger svinger omkring værdien vi måler med Analog Discovery. Dette kan skyldes at vandsøjlens overflade står og vibrere med rystelserne i bordet, hvorved der skabes svingninger i signalet.
+Transduceren sættes til at måle trykket fra vandsøjlen. Dernæst foretages en måling i programmet. I selve koden findes værdien der måles og denne sammenlignes med målingen i Analog Discovery. Af figur \ref{fig:Vaesketryk2} ses at signalet programmet opfanger svinger omkring værdien vi måler med Analog Discovery. Dette kan skyldes at vandsøjlens overflade står og vibrere med rystelserne i bordet, hvorved der skabes svingninger i signalet.
 
 \begin{figure}[H]
 	\centering
@@ -177,7 +177,7 @@ Transduceren sættes til at måle trykket fra vandsøjlen. Dernæst foretages en
 	\label{fig:Vaesketryk2}
 \end{figure}
 
-Dernæst sammenlignes det kendte tryk med værdien der vises i programmet. Her ses at værdien af mmHg i programmet ligger lidt under det tryk vi forventer der er i vandsøjlen. Dette kan skyldes måleusikkerheder fra målingen af vandsøjlens højde og ændringen af signalet undervejs i hardwaren og DAQ’en. Svingningerne af værdien i signalet skyldes stadig at vandsøjlens overflade vibrere når der er små vibrationer i bordet vandsøjlen står på.  
+Dernæst sammenlignes det kendte tryk med værdien der vises i programmet. Her ses af figur \ref{fig:mmHgtryk} at værdien af mmHg i programmet ligger lidt under det tryk vi forventer der er i vandsøjlen. Dette kan skyldes måleusikkerheder fra målingen af vandsøjlens højde og ændringen af signalet undervejs i hardwaren og DAQ’en. Svingningerne af værdien i signalet skyldes stadig at vandsøjlens overflade vibrere når der er små vibrationer i bordet vandsøjlen står på.  
 
 \begin{figure}[H]
 	\centering

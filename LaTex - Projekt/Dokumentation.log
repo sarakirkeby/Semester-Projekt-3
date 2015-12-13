@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.8)  13 DEC 2015 17:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.9.8)  13 DEC 2015 17:33
 entering extended mode
 **Dokumentation.tex
 (Dokumentation.tex
@@ -3272,7 +3272,7 @@ Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 163.
 
 [45 <./Figurer/Hardware/VaesketrykUdgangsspaending.jpg>]
-<Figurer/Test/Nulpunkt.jpg, id=773, 901.86937pt x 344.78813pt>
+<Figurer/Test/Nulpunkt.jpg, id=774, 901.86937pt x 344.78813pt>
 File: Figurer/Test/Nulpunkt.jpg Graphic file (type jpg)
 
 <use Figurer/Test/Nulpunkt.jpg>
@@ -3283,7 +3283,7 @@ Overfull \hbox (85.1987pt too wide) in paragraph at lines 166--167
  [][] 
  []
 
-<Figurer/Test/Vandsoejle.jpg, id=774, 941.76843pt x 377.15906pt>
+<Figurer/Test/Vandsoejle.jpg, id=776, 941.76843pt x 377.15906pt>
 File: Figurer/Test/Vandsoejle.jpg Graphic file (type jpg)
 
 <use Figurer/Test/Vandsoejle.jpg>
@@ -3303,7 +3303,7 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 179.
 [46 <./Figurer/Test/Nulpunkt.jpg>]
-<Figurer/Test/mmHg.jpg, id=780, 417.81094pt x 356.0803pt>
+<Figurer/Test/mmHg.jpg, id=784, 417.81094pt x 356.0803pt>
 File: Figurer/Test/mmHg.jpg Graphic file (type jpg)
 
 <use Figurer/Test/mmHg.jpg>
@@ -4164,7 +4164,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 26.
 Here is how much of TeX's memory you used:
  30611 strings out of 493673
  552085 string characters out of 3141531
- 904556 words of memory out of 3000000
+ 903556 words of memory out of 3000000
  33205 multiletter control sequences out of 15000+200000
  41003 words of font info for 120 fonts, out of 3000000 for 9000
  1027 hyphenation exceptions out of 8191
@@ -4201,9 +4201,9 @@ ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program
  Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Prog
 ram Files (x86)/MiKTeX 2.9/fonts/type1/urw/bookman/ubkd8a.pfb><C:/Program Files
  (x86)/MiKTeX 2.9/fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on Dokumentation.pdf (65 pages, 11207419 bytes).
+Output written on Dokumentation.pdf (65 pages, 11207957 bytes).
 PDF statistics:
- 1526 PDF objects out of 1728 (max. 8388607)
+ 1529 PDF objects out of 1728 (max. 8388607)
  231 named destinations out of 1000 (max. 500000)
  735 words of extra memory for PDF output out of 10000 (max. 10000000)
 
