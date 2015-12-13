@@ -15,7 +15,7 @@ Da tryktransduceren forventes at have output spændinger i området 0 til 6,25 m
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Figurer/Hardware/ForstaerkerTest}
+	\includegraphics[width=0.7\textwidth]{Figurer/Hardware/ForstaerkerTest}
 	\caption{Måleopstilling ved modul test af forstærkeren.}
 	\label{fig:ForstaerkerTest}
 \end{figure}
@@ -24,24 +24,39 @@ Ud af målingerne blev der foretaget lineærregression over de 10 målepunkter. 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Figurer/Hardware/Sinusforstaerker}
+	\includegraphics[width=0.7\textwidth]{Figurer/Hardware/Sinusforstaerker}
 	\caption{Målpunkter samt tendenslinje for målingerne ved modultest af forstærkeren med 1 Hz sinus-signal.}
 	\label{fig:SinusModul}
 \end{figure}
 
 
-I \ref{fig:SinusModul} kan Y beskrives som værende forstærkningen ved en given frekvens. Konstanten 415,8 er den reelle forstærkning som er målt for forstærkeren. Skæringen med y-aksen burde være 0, men grundet måleusikkerheder er den blevet -0,09, hvilket også er acceptabelt. Den høje R$^2$ værdi indikerer, at der er en tydelig lineær sammenhænge mellem den påtrykte spænding og spændingen af output, dvs. forstærkningen er lineær.\\
-Senere påtryktes samme målopstilling et DC-signal med amplituder startende fra 3mV op til 10 mV. Igen blev amplituden øget med 1 mV for hvert måling således, at der blev 7 målepunkter. Ved målinger foretaget på signaler med både 1 mV og 2 mV er offsettet i Analog Discovery så stort, at målingerne er umulige
+I \ref{fig:SinusModul} kan Y beskrives som værende forstærkningen ved en given frekvens. Konstanten 415,8 er den reelle forstærkning som er målt for forstærkeren. Skæringen med y-aksen burde være 0, men grundet måleusikkerheder er den blevet -0,09, hvilket også er acceptabelt. Den høje R$^2$ værdi indikerer, at der er en tydelig lineær sammenhænge mellem den påtrykte spænding og spændingen af output, dvs. forstærkningen er lineær.\\[1ex]
+Senere påtryktes samme målopstilling et DC-signal med amplituder startende fra 3mV op til 10 mV. Igen blev amplituden øget med 1 mV for hvert måling således, at der blev 7 målepunkter. Ved målinger foretaget på signaler med både 1 mV og 2 mV er offsettet i Analog Discovery så stort, at målingerne er umulige at fortage.
+
+Forstærkning som blev beregnet på baggrund af de målte output og input viste sig at være meget varierende. Der blev beregnet forstærkninger fra et sted mellem 784 gange og 455 ganges forstærkning. Dets lavere offset jo større forstærkning. Ud fra denne iagttagelse blev det antaget at denne meget store afvigelse måtte skyldes et negativt offset inde i Analog Discovery. 
+\\For at finde frem til dette offset blev output spændingen dividerert med 400 som var den ventede forstærkning. Det målte input og resultatet fra den forrrige udregning blev trukket fra hinanden. Heraf sås det at offsettet for Analog Discovery måtte være 12 mV.\\
+Dette blev eftertestet med et digitalt multimeter, der rigtig nok målte 12mV højere på indgangen af forstærkeren end det som Analog Discovery målte. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Figurer/Hardware/DigitalMultimeter}
+	\caption{Måling på indgangen af forstærkeren med det digitale multimeter.}
+	\label{fig:DigitalMulti}
+\end{figure}
+
 Efter at have foretaget lineærregression på de 7 målepunkter så tendenslinjen ud som følger:
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\textwidth]{Figurer/Hardware/DCforstaerkning}
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/DCforstaerkning}
 	\caption{Målpunkter samt tendenslinje for målingerne ved modultest af forstærkeren med DC-signal.}
 	\label{fig:DCModul}
 \end{figure}
 
 Ud af \ref{fig:DCModul} ses at forstærkningen givet ud fra de 7 måle punkter er på 386 hvilket er en del under den målte forstærkning når systemet påtrykkes et sinussignal i stedet for et DC-signal. Dette kan skyldes at der i målingen af DC-signalet er færre målepunkter, og at det dermed bliver en mere usikker måling, da selv en mindre måleusikkerhed har en større indflydelse på den målte forstærkning.
+
+
+
 
 \subsection{Modul test af det analoge filter}
 I modultesten af det analoge filter blev Analog Discovery brugt som spændingsforsyning, signal generator og som oscilloskop til at måle amplituderne for input signalet og output signalet for filteret.
@@ -81,7 +96,7 @@ Der blev udført to målinger for hver udvalgte målefrekvens, hvor amplituden a
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Hardware/samletopstilling}
+	\includegraphics[width=0.7\textwidth]{Figurer/Hardware/samletopstilling}
 	\caption{Opstillingen der blev brugt til test af forstærker og analogt filter}
 	\label{fig:ForstaerkerFilterOpstiling}
 \end{figure}
@@ -90,7 +105,7 @@ Da projektet tager udgangspunkt i, at et maksimalt blodtryk vil have en amplitud
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Hardware/IntegrationstestForstaerkerFilter2}
+	\includegraphics[width=0.7\textwidth]{Figurer/Hardware/IntegrationstestForstaerkerFilter2}
 	\caption{Opstillingen der blev brugt til test af forstærker og analogt filter}
 	\label{fig:ForstaerkerFilterGraf}
 \end{figure}
@@ -109,7 +124,7 @@ Ved aflæsning på grafen kan man ud for ca. 5 mV se, at grafen på x-aksen kan 
 Ud af grafen og det dertilhørende dataset kan det også læses at forstærkningen falder med næsten 40dB/dekade efter knækfrekvensen, med en afvigelse på 3,4 dB.\\
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\textwidth]{Figurer/Hardware/FaseForstaerkerFilter}
+	\includegraphics[width=0.7\textwidth]{Figurer/Hardware/FaseForstaerkerFilter}
 	\caption{Fasedrej for signalet ved integrationstest af forstærker og analogt filter. Fasedrejet af signalet er målt i grader i forhold til frekvens i Hz.}
 	\label{fig:FaseForstaerkerFilter}
 \end{figure}
