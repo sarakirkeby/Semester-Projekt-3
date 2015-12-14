@@ -555,7 +555,40 @@ Der er anvendt push-metode, hvilket vil sige, at subject sender sin data med som
 Observer-mønstret har vist sig nyttigt, da vi dermed undgår, at observers hele tiden skal tjekke, om der er kommet ny data. Dette sparer computerkræfter, hvilket er en nødvendighed, da mange af de opståede problemer er opstået på baggrund af, at computeren ikke har kunnet arbejde hurtigt nok.
 
 \subsection{UML klassediagram}\label{UML klassediagram}
-I dette afsnit ses et samlet og opdateret UML klassediagram over koden. 
+I dette afsnit er der udarbejdet et klassediagram, der viser opbygningen af koden. Diagrammet er blevet ind delt i 3.\\
+Først er der blevet lavet et klassediagram for klasserne i præsentationslaget. Dette ses på figur \ref{klassediagrampres}
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{Figurer/Softwareimplementering/UML-klassediagrampresentation}
+	\caption{Klassediagram}
+	\label{klassediagrampres}
+\end{figure}
+Det ses her, at præsentationslaget består af 3 klasser. Klasserne for præsentationslaget er her vist sammen med tilhørende attributter, parametre, typer og metoder. \\
+
+Herefter Blev der udarbejdet et klassediagram for logiklaget. Dette ses på figur \ref{klassediagramlogik}
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{Figurer/Softwareimplementering/UML-klassediagramlogik}
+	\caption{Klassediagram logiklaget}
+	\label{klassediagramlogik}
+\end{figure}
+Det ses her, at logiklaget er mere komplekst og består af flere klasser end præsentationslaget. \\
+
+Som den sidste del af klassediagrammet blev der udarbejdet et klassediagram for datalaget. Dette ses på figur \ref{klassediagramdata}
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{Figurer/Softwareimplementering/UML-klassediagramdata}
+	\caption{Klassediagram datalag}
+	\label{klassediagramdata}
+\end{figure}
+
+
+På ovenstående diagrammer er klasserne og dets metoder og attributter vist. Disse diagrammer viser dog ikke hvordan klasserne spiller sammen med hinanden. Sammenspillet mellem klasserne er beskrevet i et klassediagram uden attributter og metoder, men forholdet mellem klasserne. Det ses i figur \ref{komposition}
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{Figurer/SOftwareimplementering/komposition}
+	\caption{Forholdet mellem software klasser}
+	\label{komposition}
+\end{figure}
+Ud fra dette ses det at nogle af klasserne har en komposition i mellem sig og andre har en association. Kompositionen mellem to klasser fortæller om de to klasser starter samtidig. Association fortæller at klasserne har kendskab til hinanden, men de starter ikke samtidig.  
+
+
 
 
 \subsection{Kode udsnit}

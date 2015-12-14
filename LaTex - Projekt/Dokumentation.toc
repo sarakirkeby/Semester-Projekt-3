@@ -42,40 +42,40 @@
 \contentsline {subsection}{\numberline {4.2.2}Tr\IeC {\r a}de}{35}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Observer-pattern}{37}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}UML klassediagram}{38}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Kode udsnit}{38}{subsection.4.2.5}
-\contentsline {subsection}{\numberline {4.2.6}Diagrammer}{39}{subsection.4.2.6}
-\contentsline {chapter}{\chapternumberline {5}Test}{40}{chapter.5}
-\contentsline {section}{\numberline {5.1}Indledning}{40}{section.5.1}
-\contentsline {section}{\numberline {5.2}Modultest hardware}{40}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Modul test af forst\IeC {\ae }rkeren}{40}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Modul test af det analoge filter}{43}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Integrationstest hardware}{46}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Integrationstest for forst\IeC {\ae }rker og analogt filter}{46}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Integrationstest med vands\IeC {\o }jle}{48}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Modultest software}{50}{section.5.4}
-\contentsline {section}{\numberline {5.5}Integrationstest software}{50}{section.5.5}
-\contentsline {section}{\numberline {5.6}Integrationstest system}{51}{section.5.6}
-\contentsline {chapter}{\chapternumberline {6}Accepttest}{54}{chapter.6}
-\contentsline {section}{\numberline {6.1}Indledning}{54}{section.6.1}
-\contentsline {section}{\numberline {6.2}Accepttest af Use Cases}{54}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Use Case 1}{54}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Use Case 2}{55}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Use Case 3}{57}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Use Case 4}{57}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Use Case 5}{57}{subsection.6.2.5}
-\contentsline {subsection}{\numberline {6.2.6}Use Case 6}{58}{subsection.6.2.6}
-\contentsline {section}{\numberline {6.3}Accepttest af ikke-funktionelle krav}{59}{section.6.3}
-\contentsline {chapter}{Bilagsliste}{62}{chapter*.69}
-\contentsline {section}{Bilag 1 - Modul og integrationstest af hardware}{62}{section*.70}
-\contentsline {section}{Bilag 2 - Logbog}{62}{section*.71}
-\contentsline {section}{Bilag 3 - M\IeC {\o }dereferart}{62}{section*.72}
-\contentsline {section}{Bilag 4 - Kode}{62}{section*.73}
-\contentsline {section}{Bilag 5 - Samarbejdsaftale}{62}{section*.74}
-\contentsline {section}{Bilag 6 - Blodtrykssignal}{62}{section*.75}
-\contentsline {section}{Bilag 7 - Hjemmesider}{62}{section*.76}
-\contentsline {section}{Bilag 8 - Scrum Pivotal Tracker}{62}{section*.77}
-\contentsline {section}{Bilag 9 - Tidsplan}{62}{section*.78}
-\contentsline {section}{Bilag 10 - Udviklingsv\IeC {\ae }rkt\IeC {\o }jer}{63}{section*.79}
-\contentsline {section}{Bilag 11 - H\IeC {\ae }modynamik og hjertekarsygdomme}{63}{section*.80}
-\contentsline {section}{Bilag 12 - Vejledning til dokumentation af semesterprojekter}{63}{section*.81}
-\contentsline {chapter}{Litteratur}{64}{section*.83}
+\contentsline {subsection}{\numberline {4.2.5}Kode udsnit}{41}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Diagrammer}{41}{subsection.4.2.6}
+\contentsline {chapter}{\chapternumberline {5}Test}{42}{chapter.5}
+\contentsline {section}{\numberline {5.1}Indledning}{42}{section.5.1}
+\contentsline {section}{\numberline {5.2}Modultest hardware}{42}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Modul test af forst\IeC {\ae }rkeren}{42}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Modul test af det analoge filter}{45}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Integrationstest hardware}{48}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Integrationstest for forst\IeC {\ae }rker og analogt filter}{48}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Integrationstest med vands\IeC {\o }jle}{50}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Modultest software}{52}{section.5.4}
+\contentsline {section}{\numberline {5.5}Integrationstest software}{52}{section.5.5}
+\contentsline {section}{\numberline {5.6}Integrationstest system}{53}{section.5.6}
+\contentsline {chapter}{\chapternumberline {6}Accepttest}{56}{chapter.6}
+\contentsline {section}{\numberline {6.1}Indledning}{56}{section.6.1}
+\contentsline {section}{\numberline {6.2}Accepttest af Use Cases}{56}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Use Case 1}{56}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Use Case 2}{57}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Use Case 3}{59}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Use Case 4}{59}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Use Case 5}{59}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}Use Case 6}{60}{subsection.6.2.6}
+\contentsline {section}{\numberline {6.3}Accepttest af ikke-funktionelle krav}{61}{section.6.3}
+\contentsline {chapter}{Bilagsliste}{64}{chapter*.73}
+\contentsline {section}{Bilag 1 - Modul og integrationstest af hardware}{64}{section*.74}
+\contentsline {section}{Bilag 2 - Logbog}{64}{section*.75}
+\contentsline {section}{Bilag 3 - M\IeC {\o }dereferart}{64}{section*.76}
+\contentsline {section}{Bilag 4 - Kode}{64}{section*.77}
+\contentsline {section}{Bilag 5 - Samarbejdsaftale}{64}{section*.78}
+\contentsline {section}{Bilag 6 - Blodtrykssignal}{64}{section*.79}
+\contentsline {section}{Bilag 7 - Hjemmesider}{64}{section*.80}
+\contentsline {section}{Bilag 8 - Scrum Pivotal Tracker}{64}{section*.81}
+\contentsline {section}{Bilag 9 - Tidsplan}{64}{section*.82}
+\contentsline {section}{Bilag 10 - Udviklingsv\IeC {\ae }rkt\IeC {\o }jer}{65}{section*.83}
+\contentsline {section}{Bilag 11 - H\IeC {\ae }modynamik og hjertekarsygdomme}{65}{section*.84}
+\contentsline {section}{Bilag 12 - Vejledning til dokumentation af semesterprojekter}{65}{section*.85}
+\contentsline {chapter}{Litteratur}{66}{section*.87}
