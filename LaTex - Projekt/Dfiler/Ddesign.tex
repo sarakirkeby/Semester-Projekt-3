@@ -1,47 +1,59 @@
 \chapter{Design}
 
+\begin{longtabu} to \linewidth{@{}l l l X[j]@{}}
+    Version &    Dato &    Ansvarlig &    Beskrivelse\\[-1ex]
+    \midrule
+    0.1 &	8/09 2015	&	Alle		& Oprettelse  af dokument\\
+    0.2 &	27/10 2015 & SSK, NHL, FRM & Påbegyndelse af hardware design \\
+    0.3 &	04/11 2015 & TSN, JTH, MFJ & Påbegyndelse af software design \\
+    0.2 &	06/11 2015 & Alle & Første udkast til færdigt design afsnit \\
+    0.3 & 	16/11 2015 & Alle & Review rettelser af design afsnittet \\
+\label{version design}
+\end{longtabu}
+
+
 \section{Indledning}
-Formålet med design afsnittet er at beskrive hardwaren og softwaren for blodtryksmålersystemet. Systemet beskrives ved hjælp af udregninger, diagrammer, figurer og skitser som tydeligører, hvordan de forskellige delelementers funktionalitet er, samt hvilke tanker der ligger til grund for den endelige implementering (se afsnit \ref{Hardware implementering} for hardware og afsnit \ref{implementering} for software).
+Formålet med designafsnittet er at beskrive hardwaren og softwaren for blodtryksmålingssystemet. Systemet beskrives ved hjælp af udregninger, diagrammer, figurer og skitser som tydeliggør, hvordan de forskellige delelementers funktionalitet er, samt hvilke tanker der ligger til grund for den endelige implementering (se afsnit \ref{Hardware implementering} for hardware og afsnit \ref{implementering} for software).
 
 \section{Hardware arkitektur}
-I følgende afsnit beskrives hvordan blodtryksmåler systemet og dets delkomponenters opbygning.
+I følgende afsnit beskrives blodtryksmålingssystemet og dets delkomponenters opbygning.
 \\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Hardware/BDD1}
-	\caption{Blokdiagram for blodtryksmåler systemet.}
+	\caption{Blokdiagram for blodtryksmålingssystemet.}
 	\label{BDD blodtryksmaaler}
 \end{figure}
 
-Ud af blokdiagrammet, figur \ref{BDD blodtryksmaaler}, kan man se at blodtryksmåler systemet består af en transducer, en forstærker, et analogt filter, en DAQ og en computer.\\
+Ud af blokdiagrammet, figur \ref{BDD blodtryksmaaler}, kan man se, at blodtryksmålingssystemet består af en transducer, en forstærker, et analogt filter, en DAQ og en computer.\\
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/Hardware/IBD}
-	\caption{Internt blok diagram for blodtryksmåler systemet.}
+	\caption{Internt blokdiagram for blodtryksmålingssystemet.}
 	\label{IBD blodtryksmaaler}
 \end{figure}
 
-Ud af det interne blok diagram, figur \ref{IBD blodtryksmaaler}, kan ses det at blodtrykket i form af det målte tryk kommer ind i transduceren. Transduceren som omformer det målte tryk til et spændingssignal, sender signalet vidre til forstærkeren. Fra forstærkeren sendes signalet over i det analoge filter og derfra ind i DAQ'en. Endeligt sendes det digitale signal fra DAQ'en over i en computer, der fortolker signalet som et billede, der vises til omverdenen.
+Ud af det interne blokdiagram, figur \ref{IBD blodtryksmaaler}, kan det ses, at blodtrykket i form af det målte tryk kommer ind i transduceren. Transduceren, som omformer det målte tryk til et spændingssignal, sender signalet videre til forstærkeren. Fra forstærkeren sendes signalet over i det analoge filter og derfra ind i DAQ'en. Endeligt sendes det digitale signal fra DAQ'en over i en computer, der fortolker signalet som et billede, der vises til omverdenen.
 
 \subsection{Design af forstærker}
-Forstærkeren er designet med tanke på, at det er meget små spændinger der arbejdes med. Grundet dette, er en almindelig operationsforstærker fravalgt, da dens reelle indgangsimpedans ikke er for lav. En Instrumentationsforstærkers indgangsimpedans i den virkelige verden, er højere, og den kan dermed opfange meget små signaler, som f.eks. blodtryk, der opererer i millivolt..\\
-Vejleder rådede herefter til at der skulle bruges instrumentationsforstærkeren INA114. Forstærkerens design er valgt ud fra instrumenteringsforstærkerens datasheet’s forslag, og kan ses på figur \ref{labelpic}.\\ 
+Forstærkeren er designet med tanke på, at det er meget små spændinger, der arbejdes med. Grundet dette, er en almindelig operationsforstærker fravalgt, da dens reelle indgangsimpedans er for lav. En instrumentationsforstærkers indgangsimpedans i den virkelige verden er højere, og den kan dermed opfange meget små signaler som f.eks. blodtryk, der opererer i mV.\\
+Vejleder rådede herefter til, at der skulle bruges instrumentationsforstærkeren INA114. Forstærkerens design er valgt ud fra instrumentationsforstærkerens datablads anbefalinger og kan ses på figur \ref{instrumentation}.\\ 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{Figurer/Hardware/Forstaerker}
-	\caption{Der overordnede design af forstærkeren.}\label{labelpic}
+	\caption{Det overordnede design af forstærkeren.}\label{instrumentation}
 \end{figure}
 
 
 
-$R_{gain}$ er modstanden, som bestemmer, hvor meget forstærkning, instrumentationsforstærkeren skal give og $R_{load}$ er den belastning, der kommer efter kredsløbet. I dette tilfælde, er det, det analoge filter. For at finde $R_{gain}$’s størrelse, kræver det, at der vides, hvor meget forstærkning der er brug for. Dette findes, ved at bestemme den maksimale spænding, som transduceren kan give, i en blodtrykssituation. Dette regnestykke kan ses realiseret i ligning \ref{ligning1}:
+$R_{gain}$ er modstanden, som bestemmer hvor meget forstærkning instrumentationsforstærkeren skal give og $R_{load}$ er den belastning, der kommer efter kredsløbet. I dette tilfælde er belastningen det analoge filter. For at finde $R_{gain}$’s størrelse, kræves viden om, hvor meget forstærkning, der er brug for. Dette findes ved at bestemme den maksimale spænding, som transduceren kan give i en blodtrykssituation. Dette regnestykke kan ses realiseret i ligning \ref{ligning1}:
 
 \begin{align}
-	VT_{max}=T_{max}\cdot V_{max}\cdot HG_{max}=\frac{\mu V}{V/mmHG}\cdot 5V\cdot 250mmHg=6,25mV
+	VT_{max}=T_{max}\cdot V_{max}\cdot Hg_{max}=5\frac{\mu V}{V/mmHg}\cdot 5V\cdot 250mmHg=6,25mV
 	\label{ligning1}
 \end{align}
 
-Spændingen ønskes at skaleres op til DAQ’ens dynamikområde, som ligger omkring 2,5V. Forstærkningsfaktoren udregnes ved simpel brøkregning, som ses på ligning \ref{ligning2}:
+Spændingen ønskes skaleret op til DAQ’ens dynamikområde, som ligger omkring +/- 2,5V. Forstærkningsfaktoren udregnes ved simpel brøkregning, som ses på ligning \ref{ligning2}:
 
 \begin{center}
 	\begin{align}
@@ -50,11 +62,11 @@ Spændingen ønskes at skaleres op til DAQ’ens dynamikområde, som ligger omkr
 	\end{align}
 \end{center}
 
-INA114’s datasheet giver en ligning for udregning af forstærkning. Da forstærkningen er kendt, omskrives ligning \ref{ligning3} , så modstanden $R_{gain}$’s værdi i stedet bestemmes:\\
+INA114’s datablad giver en ligning for udregning af forstærkning. Da forstærkningen er kendt, omskrives ligning \ref{ligning3}, så modstanden $R_{gain}$’s værdi i stedet bestemmes:\\
 
 
 \begin{align}
-	Gain=1+\frac{50k\Omega}{R_{gain}}\to G-1=\frac{50k\Omega}{R_{gain}}\to \frac{50kOhm}{G-1}=R_{gain}
+	Gain=1+\frac{50k\Omega}{R_{gain}}\to G-1=\frac{50k\Omega}{R_{gain}}\to \frac{50k\Omega}{G-1}=R_{gain}
 	\label{ligning3}
 \end{align}
 
@@ -66,7 +78,7 @@ Herefter kan den ohmske værdi af $R_{gain}$ bestemmes, hvilket sker i ligning \
 \end{align}
 
 \subsection{Design af analogfilter}
-Filteret, som ses på figur \ref{fig:Filter}, skulle realiseres som et aktivt 2. ordens lavpasfilter af typen Sallen-Key med unity gain, med båndbredde på 50 Hz (se \ref{fig:Filter}). Desuden skulle filteret yderligere designes som et Butterworth filter med cut off frekvens på 50 Hz. C2 skulle vælges til at være 680 nF og gruppen fik desuden at vide, at R1 skulle være lig med R2. Operationsforstærkeren blev opgivet til at være af typen OP27.  
+Filteret, som ses på figur \ref{fig:Filter}, skulle realiseres som et aktivt 2. ordens lavpasfilter af typen Sallen-Key med unity gain, hvor båndbredden er på 50 Hz (se \ref{fig:Filter}). Desuden skulle filteret yderligere designes som et Butterworth-filter med cutoff-frekvens på 50 Hz. C2 skulle vælges til at være 680 nF, det blev oplyst, at R1 skulle være lig med R2. Operationsforstærkeren blev opgivet til at være af typen OP27.  
 
 \begin{figure}[H]
 	\centering
@@ -75,7 +87,7 @@ Filteret, som ses på figur \ref{fig:Filter}, skulle realiseres som et aktivt 2.
 	\label{fig:Filter}
 \end{figure}
 
-Et Sallen-Keyfilter har en dæmpningsfaktor på 0,7, fordi at der, i et Sallen-Key filter, er blevet prioriteret et fladt frkvensområde, frem for hurtig dæmpning. Der blev brugt en hjemmeside\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm} som hjælpemiddel til at finde overføringsfunktionen for Sallen-Key lavpasfilteret. Denne ligning kan ses i ligning \ref{ligning5}:
+Et Sallen-Key-filter har en dæmpningsfaktor på 0,7, fordi der, i et Sallen-Key-filter, er blevet prioriteret et fladt frekvensområde, frem for hurtig dæmpning. Der blev brugt en hjemmeside\footnote{\url{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm}} som hjælpemiddel til at finde overføringsfunktionen for Sallen-Key-lavpasfilteret. Denne ligning kan ses i ligning \ref{ligning5}:
 
 
 \begin{align}
@@ -83,34 +95,35 @@ Et Sallen-Keyfilter har en dæmpningsfaktor på 0,7, fordi at der, i et Sallen-K
 	\label{ligning5}
 \end{align}
 
-Da det er blevet opgivet at $R1=R2$, kan overføringsfunktionen forkortes, som set på ligning \ref{ligning6}.
+Da det er blevet opgivet, at $R1=R2$ kan overføringsfunktionen forkortes, som set på ligning \ref{ligning6}.
 
 \begin{align}
 \frac{V_{out}(s)}{V_{in}(s)}=\frac{\frac{1}{R^2C_{1}C_{2}}}{s^2+s(\frac{2}{RC_{2}})+\frac{1}{R^2C_{1}C_{2}}}
 \label{ligning6}
 \end{align}
 
-Dernæst sammenlignes med standardformlen for overføringsfunktionen for et andet ordens filter på figur \ref{ligning7};
+Dernæst sammenlignes med standardformlen for overføringsfunktionen for et andet ordens filter på figur \ref{ligning7}:
 
 \begin{align}
 \frac{V_{out}(s)}{V_{in}(s)} = \frac{\frac{1}{R^{2}C_{1} C_{2}}}{s^2+s(\frac{2}{RC_{2}})+\frac{1}{R^{2}C_{1}C_{2}}} = \frac{\omega_{0}^{2}}{s{2}+s(2\zeta\omega_{0})+\omega_{0}^{2}}
 \label{ligning7}
 \end{align}
 
-Ud fra dette kan regnes komponentværdierne for R, idet vi har en opgivet værdi for $\frac{2}{RC_{2}}$, som vist på figur \ref{ligning8}
+Ud fra dette kan komponentværdierne regnes for R, idet vi har en opgivet værdi for $\frac{2}{RC_{2}}$, som vist på figur \ref{ligning8}:
 
 \begin{align}
 \frac{2}{RC_{2}}=2\zeta\omega_{0}
 \label{ligning8}
 \end{align}
 
-Der blev herefter brugt MathCad til at isolere R, og herefter udregne værdien af denne. Dette kan ses på figur \ref{ligning9}
+Der blev herefter brugt Mathcad til at isolere R, og udregne værdien af denne. Dette kan ses på figur \ref{ligning9}:
+
 \begin{align}
 \frac{2}{R\cdot680\cdot10^{-9}}=2\cdot0.7\cdot(50\cdot2\cdot\pi) solve, R \to \frac{250000}{17\cdot\pi}=6.687\times 10^3
 \label{ligning9}
 \end{align}
 
-Dernæst kan komponentværdien for C1 udregnes, da gruppen nu havde en formel, men en ubekendt.
+Dernæst kan komponentværdien for C1 udregnes:
 
 
 \begin{align*}
@@ -118,13 +131,13 @@ Dernæst kan komponentværdien for C1 udregnes, da gruppen nu havde en formel, m
 \label{ligning10}
 \end{align*}	
 
-Ved hjælp af MathCAD isoleres C1. 
+Ved hjælp af Mathcad isoleres C1. 
 
 \begin{align}
 	\frac{1}{(6.687\times 10^{3})^{2}\cdot(680\cdot10^{-9})\cdot C_1}=(50\cdot 2\pi)^{2} solve, R \to 333,2\times 10^{-9}
 \end{align}
 
-Derved er komponentværdierne for kredsløbet fundet og de ses indskrevet på \ref{fig:Filter}. 
+Derved er komponentværdierne for kredsløbet fundet og kan ses indskrevet på \ref{fig:Filter}. 
 
 \begin{figure}[H]
 	\centering
@@ -133,7 +146,7 @@ Derved er komponentværdierne for kredsløbet fundet og de ses indskrevet på \r
 	\label{fig:Filter_K}
 \end{figure}
 
-For at underbygge teorien omkring filteret, blev der ved hjælp af toolet ”Sallen-Key Low-pass Filter Design Tool”\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm} udarbejdet et bodeplot. Dette kan ses nedefor på figur \ref{fig:Bodeplot}. 
+For at underbygge teorien omkring filteret, blev der ved hjælp af værktøjet ”Sallen-Key Low-pass Filter Design Tool”\footnote{http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm} udarbejdet et bodeplot. Dette kan ses nedefor på figur \ref{fig:Bodeplot}. 
 
 \begin{figure}[H]
 	\centering
@@ -145,6 +158,7 @@ For at underbygge teorien omkring filteret, blev der ved hjælp af toolet ”Sal
 
 
 \subsection{Grænseflader}
+Grænsefladerne for hardwareblokkene er beskrevet i tabel \ref{graenseflader}:
 
 \begin{table}[H]
 \centering
@@ -154,9 +168,9 @@ For at underbygge teorien omkring filteret, blev der ved hjælp af toolet ”Sal
 \textbf{Navn} & \textbf{Input}  & \textbf{Output} & \textbf{Interval}                                                                   & \textbf{Beskrivelse}                                                                                                                                                                          \\ \hline
 Transducer    & Tryk            & Spænding        & \begin{tabular}[c]{@{}l@{}}Ind; -50 mmHg\\ \\ Ud; 0 til 6,25 mV\end{tabular}        & \begin{tabular}[c]{@{}l@{}}Transduceren, i form af en \\ straingauge, reagerer i forhold\\  til trykændringer, og udsender\\  en spænding, som ændrer sig \\ i forhold til tryk.\end{tabular} \\ \hline
 Forstærker    & Spænding        & Spænding        & \begin{tabular}[c]{@{}l@{}}Ind; 0 til 6,25 mV\\ \\ Ud; -2,5V til 2,5V\end{tabular}  & \begin{tabular}[c]{@{}l@{}}Forstærkeren modtager det svage\\  signal fra transduceren, og \\ forstærker signalet op, så det\\ matcher DAQ’ens dynamikområde.\end{tabular}                     \\ \hline
-Filter        & Spænding        & Analogt Signal  & \begin{tabular}[c]{@{}l@{}}Ind; -2,5V til 2,5V\\ \\ Ud; -2,5V til 2,5V\end{tabular} & \begin{tabular}[c]{@{}l@{}}Filteret modtager det forstærkede\\  signal fra forstærkeren, og \\ filtrerer signalet.\end{tabular}                                                               \\ \hline
-DAQ           & Analogt Signal  & Digitalt Signal & \begin{tabular}[c]{@{}l@{}}Ind; -2,5V til 2,5V\\ \\ Ud; -2,5V til 2,5V\end{tabular} & \begin{tabular}[c]{@{}l@{}}DAQ’en konverterer det analoge\\  signal fra filteret, om til et \\ digitalt signal, som computeren\\  modtager\end{tabular}                                       \\ \hline
-Computer      & Digitalt Signal & Grafisk Billede &                                                                                     & \begin{tabular}[c]{@{}l@{}}Computeren modtager et digitalt\\  signal fra DAQ’en, som bliver \\ behandlet i koden.\end{tabular}                                                                \\ \hline
+Filter        & Spænding        & Analogt signal  & \begin{tabular}[c]{@{}l@{}}Ind; -2,5V til 2,5V\\ \\ Ud; -2,5V til 2,5V\end{tabular} & \begin{tabular}[c]{@{}l@{}}Filteret modtager det forstærkede\\  signal fra forstærkeren og \\ filtrerer signalet.\end{tabular}                                                               \\ \hline
+DAQ           & Analogt signal  & Digitalt signal & \begin{tabular}[c]{@{}l@{}}Ind; -2,5V til 2,5V\\ \\ Ud; -2,5V til 2,5V\end{tabular} & \begin{tabular}[c]{@{}l@{}}DAQ’en konverterer det analoge\\  signal fra filteret til et \\ digitalt signal, som computeren\\  modtager\end{tabular}                                       \\ \hline
+Computer      & Digitalt signal & Grafisk billede &                                                                                     & \begin{tabular}[c]{@{}l@{}}Computeren modtager et digitalt\\  signal fra DAQ’en, som bliver \\ behandlet i koden.\end{tabular}                                                                \\ \hline
 \end{tabular}
 \caption{Grænsefladetabel}
 \label{graenseflader}
@@ -164,9 +178,9 @@ Computer      & Digitalt Signal & Grafisk Billede &                             
 
 \section{Software arkitektur}
 \subsection{GUI}\label{GUI}
-Dette afsnit beskriver hvilke tanker og overvejelser der er gjort i forbindelse med designet af diverse brugergrænseflader. Nedenfor ses udkast til disse brugergrænseflader. Den endelige udgave af brugergrænseflader kan ses i afsnit \ref{implementering}.\\
-Til designet af brugergrænsefladen er blevet udført ud fra de 16 principper \footnote{\url{https://en.wikibooks.org/wiki/Usability_for_Nerds}} for gode brugergrænseflader. Der er ligeledes i form1 hentet inspiration fra allerede eksisterende blodtryk monitor. I designet af brugergrænsefladen bestræbes, der efter at gøre det så virkelighedsnært som muligt ud fra de redskaber og oplysninger der er til rådighed.\\ \\
-Brugergrænsefladen er inddelt i 3 forskellige interfaces. De 3 interfaces er henholdvis Log ind, Form1 og Gem. De personer, der interagerer med brugergrænsefladen er sundhedsfagligt personale som typisk vil være en læge eller sygeplejerske. Dette er der også taget højde for i designet da, der aldrig vil være andre end det sundhedsfaglige personale der interagerer med brugergrænsefladen og derfor er den en skærpet målgruppe.\\
+Dette afsnit beskriver, hvilke tanker og overvejelser der er gjort i forbindelse med designet af diverse brugergrænseflader. Nedenfor ses udkast til disse brugergrænseflader. Den endelige udgave af brugergrænseflader kan ses i afsnit \ref{implementering}.\\
+Designet af brugergrænsefladen er blevet udført ud fra de 16 principper \footnote{\url{https://en.wikibooks.org/wiki/Usability_for_Nerds}} for gode brugergrænseflader. Der er ligeledes i "Form1"\ hentet inspiration fra allerede eksisterende blodtryksmonitor. I designet af brugergrænsefladen bestræbes der efter at gøre det så virkelighedsnært som muligt ud fra de redskaber og oplysninger, der er til rådighed.\\ \\
+Brugergrænsefladen er inddelt i tre forskellige vinduer. De tre vinduer er henholdvis "Log ind"\,, "Form1"\ og "Gem"\.. De personer, der interagerer med brugergrænsefladen er sundhedsfagligt personale som typisk vil være en læge eller sygeplejerske. Dette er der også taget højde for i designet, da der aldrig vil være andre end det sundhedsfaglige personale, altså en skærpet målgruppe, der interagerer med brugergrænsefladen.\\
 Nedenfor kommer der en uddybende beskrivelse af brugergrænsefladen. 
 
 \begin{figure}[H]
@@ -176,9 +190,9 @@ Nedenfor kommer der en uddybende beskrivelse af brugergrænsefladen.
 	\label{Login vindue}
 \end{figure}
 
-I figur \ref{Login vindue} er der tage udgangspunkt i, at brugergrænsefalden skal være enkel og overskuelig opbygget. Der skal ikke være nogle overflødige ting og de knapper der er vigtige som bruger skal benytte skal stå tydeligt frem. Opbygningen skal afspejle brugerens logik.\\ \\ 
-Tankerne omkring den enkle opbygning er, at hvis der opstår en akut situation hvor systemet skal i gang hurtigt skal det være nemt og hurtigt at logge ind i systemet. Det er vigtigt at knapperne er selvforklarende og giver brugeren det der forventes af knappen når den benyttes. \\ \\
-Der er taget højde for feedback til bruger ved forkert log ind får brugeren en besked om at log ind er indtastet forkert og der skal prøves forfra. \\
+I figur \ref{Login vindue} er der taget udgangspunkt i, at brugergrænsefladen skal være enkel og overskuelig opbygget. Der skal ikke være nogle overflødige ting og de knapper, der er vigtige som bruger skal benytte, skal stå tydeligt frem. Opbygningen skal afspejle brugerens logik.\\ \\ 
+Tankerne omkring den enkle opbygning er, at hvis der opstår en akut situation, hvor systemet skal i gang hurtigt, skal det være nemt og hurtigt at logge ind i systemet. Det er vigtigt, at knapperne er selvforklarende og giver brugeren det, der forventes af knappen, når den benyttes. \\ \\
+Der er taget højde for feedback til bruger. Ved forkert login får brugeren en besked om, at login er indtastet forkert, og der skal prøves forfra. \\
 
 
 \begin{figure}[H]
@@ -188,28 +202,28 @@ Der er taget højde for feedback til bruger ved forkert log ind får brugeren en
 	\label{Kaliber vindue}
 \end{figure}
 
-Vist på figur \ref{Kaliber vindue}, hvor der her er lagt vægt på det funktionelle, med et enkelt og simpelt design. Der er vejledende tekst, som gør det nemt for aktøren at finde ud af systemet.
+Vist på figur \ref{Kaliber vindue}, hvor der her er lagt vægt på det funktionelle med et enkelt og simpelt design. Der er vejledende tekst, som gør det nemt for aktøren at finde ud af systemet.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\textwidth]{Figurer/GUI/GUI_form1}
-	\caption{Blodtryk vindue}
+	\caption{Blodtryksvindue}
 	\label{Blodtryk vindue}
 \end{figure}
 
-I blodtryksvinduet, vist på figur \ref{Blodtryk vindue}, er opbygningen mere kompliceret og med flere knapper end ved Log ind og Gem. Der er taget højde for at knapperne er selvforklarende og deres navne afspejler de bagvedliggende handlinger. Dette medfører at brugeren stadig har et overblik over brugergrænsefalden og stadig selv kan kontrollerer hvad der skal ske. Denne brugergrænseflade er ikke tiltænkt nye brugere, men derimod brugere der har et kendskab til den og til hvilke sundhedfaglige værdier og udtryk, der vises på den.  Derfor benyttes brugerens sprog på brugergrænsefalden og ikke et sprog med termer, der er forståelig for alle. 
+I blodtryksvinduet, vist på figur \ref{Blodtryk vindue}, er opbygningen mere kompliceret og med flere knapper end ved "Login"\ og "Gem”\.. Der er taget højde for, at knapperne er selvforklarende og deres navne afspejler de bagvedliggende handlinger. Dette medfører, at brugeren stadig har et overblik over brugergrænsefalden og stadig selv kan kontrollere hvad der skal ske. Denne brugergrænseflade er ikke tiltænkt nye brugere, men derimod brugere, der har et kendskab til den og til hvilke sundhedfaglige værdier og udtryk, der vises i vinduet.  Derfor benyttes brugerens sprog på brugergrænsefalden, altså med fagtermer. 
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{Figurer/GUI/Gem_GUI}
-	\caption{Gem vindue}
+	\caption{"Gem"\ -vindue}
 	\label{Gem vindue}
 \end{figure}
 
-På figur \ref{Gem vindue}, gemme-vinduet, er der igen taget udgangspunkt i en enkel opbygning og at knapperne, der skal bruges er tydelige og selvforklarende. Det er her også brugerens logik, der afspejles og ingen unødvendige ting er inddraget i brugergrænsefalden. Det er her muligt at afbryde situationen ved at der er en alternativ udvej, som kan bruges hvis den op startet handling fortrydes. Der er taget højde for feedback til brugeren hvis der indtastes forkert CPR nummer får brugeren det af vide i et pop-up vindue. 
+På figur \ref{Gem vindue}, "Gem"\--vinduet, er der igen taget udgangspunkt i en enkel opbygning og at knapperne, der skal bruges er tydelige og selvforklarende. Det er her også brugerens logik, der afspejles og ingen unødvendige ting er inddraget i brugergrænsefladen. Det er her muligt at afbryde situationen ved, at der er en alternativ udvej, som kan bruges, hvis den opstartede handling fortrydes. Der er taget højde for feedback til brugeren, hvis der indtastes forkert CPR-nummer, får brugeren det at vide i et pop op-vindue. 
 
 \subsection{Domænemodel}
-Diagrammet viser en domæne model for blodtryks systemet. Dette diagram giver et godt overblik over systemet som helhed og hvilke elementer, der indgår i systemet. Diagrammet viser hvordan brugeren interagerer med systemet og hvordan systemet forløber efter det igangsættes af bruger. 
+Diagrammet viser en domænemodel for blodtryksmålingssystemet. Dette diagram giver et godt overblik over systemet som helhed og hvilke elementer, der indgår i systemet. Diagrammet viser, hvordan brugeren interagerer med systemet, og hvordan systemet forløber, efter det igangsættes af bruger. 
 
 \begin{figure}[H]
 	\centering
@@ -219,12 +233,12 @@ Diagrammet viser en domæne model for blodtryks systemet. Dette diagram giver et
 \end{figure}
 
 \subsection{Appliktationsmodel}
-Applikationsmodellen er en model der på baggrund af domænemodel og Use cases udarbejdes software relaterede klasse applikationsmodeller, sekvensdiagrammer og opdaterede klasse applikationsmodeller.\\
-Her er det ikke-opdateret klassediagram udeladt, hvorfor sekvensdiagram og opdaterede  klasse applikationsmodel er udarbejdet på baggrund af fiktive metoder. De faktiske metoder kan ses i afsnit \ref{UML klassediagram}.
+Applikationsmodellen er en model der på baggrund af domænemodel og use cases udarbejdes software-relaterede klasse-applikationsmodeller, sekvensdiagrammer og opdaterede klasse-applikationsmodeller.\\
+Her er det ikke-opdateret klassediagram udeladt, hvorfor sekvensdiagram og opdaterede klasse-applikationsmodel er udarbejdet på baggrund af fiktive metoder. De faktiske metoder kan ses i afsnit \ref{UML klassediagram}.
 
 \subsubsection{Sekvensdiagram}
-Sekvensdiagrammet er et interaktions diagram, der viser hvordan processer i systemet forløber. Use casene ligger til baggrund for udarbejdelsen af sekvensdiagrammerne.\\ \\
-Der er blevet lavet et sekvensdiagram for hver use case for at give det bedste overblik over hver handling i forhold til systemet. I sekvensdiagrammet har vi brugt virtuelle metode kald til at beskrive forløbet. I use case 2-7 er det brugeren, der interagerer med systemet og er initiator for a handlingerne bliver udført.
+Sekvensdiagrammet er et interaktionsdiagram, der viser, hvordan processer i systemet forløber. Use casene ligger til baggrund for udarbejdelsen af sekvensdiagrammerne.\\ \\
+Der er blevet lavet et sekvensdiagram for hver use case for at give det bedste overblik over hver handling i forhold til systemet. I sekvensdiagrammet har vi brugt virtuelle metodekald til at beskrive forløbet. I use case 2-7 er det brugeren, der interagerer med systemet og er initiator for, at handlingerne bliver udført.
 
 \begin{figure}[H]
 	\centering
@@ -233,7 +247,7 @@ Der er blevet lavet et sekvensdiagram for hver use case for at give det bedste o
 	\label{sd UC2}
 \end{figure}
 
-På figur \ref{sd UC2} ses det hvordan brugeren logger ind i systemet og hvordan brugeren for systemet nulpunktsjusteret. Det er brugeren, der interagerer med systemet og er initiator for at handlingerne bliver udført. 
+På figur \ref{sd UC2} ses det, hvordan brugeren logger ind i systemet, og hvordan brugeren får systemet nulpunktsjusteret. Det er brugeren, der interagerer med systemet og er initiator for, at handlingerne bliver udført. 
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC3}
@@ -241,7 +255,7 @@ På figur \ref{sd UC2} ses det hvordan brugeren logger ind i systemet og hvordan
 	\label{sd UC3}
 \end{figure}
 
-Figur \ref{sd UC3} viser hvordan brugeren starter målingen og hvordan graferne vises på brugergrænsefalden.
+Figur \ref{sd UC3} viser, hvordan brugeren starter målingen, og hvordan graferne vises på brugergrænsefladen.
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC4}
@@ -249,7 +263,7 @@ Figur \ref{sd UC3} viser hvordan brugeren starter målingen og hvordan graferne 
 	\label{sd UC4}
 \end{figure}
 
-I sekvensdiagrammet figur \ref{sd UC4} ses hvordan brugeren kan vælge om blodtrykssignalet skal filtreres eller ej.
+I sekvensdiagrammet figur \ref{sd UC4} ses, hvordan brugeren kan vælge om blodtrykssignalet skal filtreres eller ej.
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC5}
@@ -257,7 +271,7 @@ I sekvensdiagrammet figur \ref{sd UC4} ses hvordan brugeren kan vælge om blodtr
 	\label{sd UC5}
 \end{figure}
 
-Det ses på figur \ref{sd UC5} hvordan brugeren justerer grænseværdierne for patientens blodtryk. Denne justering sker ud fra patientens målte blodtryk. De justerede grænseværdi ligger til grundlag for alarmen. Desuden viser figuren, at brugeren har mulighed for at udskyde alarmen.
+Det ses på figur \ref{sd UC5}, hvordan brugeren justerer grænseværdierne for patientens blodtryk. Denne justering sker ud fra patientens målte blodtryk. De justerede grænseværdier ligger til grundlag for alarmen. Desuden viser figuren, at brugeren har mulighed for at udskyde alarmen.
 
 \begin{figure}[H]
 	\includegraphics[width=1\textwidth]{Figurer/ISE/sdAppModelUC6}
@@ -265,10 +279,10 @@ Det ses på figur \ref{sd UC5} hvordan brugeren justerer grænseværdierne for p
 	\label{sd UC6}
 \end{figure}
 
-Figur \ref{sd UC6} viser hvordan systemet gemmer og afslutter en måling. 
+Figur \ref{sd UC6} viser, hvordan systemet gemmer og afslutter en måling. 
 
 \subsubsection{Opdateret applikationsmodel}
-Klasse applikationsmodellerne er udarbejdet ud fra use casene, sekvensdiagrammer og domænemodellen. Der er ligesom ved sekvensdiagrammerne lavet et klassediagram for hver use case. Der er her også brugt virtuelle metoder. 
+Klasse-applikationsmodellerne er udarbejdet ud fra use casene, sekvensdiagrammer og domænemodellen. Der er ligesom ved sekvensdiagrammerne lavet et klassediagram for hver use case. Der er også her brugt virtuelle metoder. 
 
 \begin{figure}[H]
 	\centering
@@ -305,11 +319,20 @@ Klasse applikationsmodellerne er udarbejdet ud fra use casene, sekvensdiagrammer
 	\label{classApp UC7}
 \end{figure}
 
-\chapter{Implementering}
+\chapter{Implementering}\label{Implementering}
+
+\begin{longtabu} to \linewidth{@{}l l l X[j]@{}}
+    Version &    Dato &    Ansvarlig &    Beskrivelse\\[-1ex]
+    \midrule
+    0.1 &	8/09 2015	&	Alle		& Oprettelse  af dokument\\
+    0.2 &	07/12 2015 	& SSK, NHL, FRM & Påbegyndelse af hardware implementeringsafsnit\\
+    0.3 &	10/12 2015 	& TSN, JTH, MFJ & Påbegyndelse af software implementeringsafsnit \\
+\label{version implementering}
+\end{longtabu}
 
 \section{Hardware implementering}\label{Hardware implementering}
 
-Efter teorifasen var ovre, blev de to blokke bygget op. Der blev valgt at bygge forstærkeren og filteret på hver sit fumlebræt, dels på grund af pladsmangel og dels på grund af større sammenhæng mellem arkitekturen, og det endelige produkt.\\
+Efter teorifasen blev de to blokke bygget op. Forstærkeren og filteret blev bygget på hver sit fumlebræt, dels på grund af pladsmangel og dels på grund af større sammenhæng mellem arkitekturen og det endelige produkt.\\
 
 \begin{figure}[H]
 	\centering
@@ -318,25 +341,23 @@ Efter teorifasen var ovre, blev de to blokke bygget op. Der blev valgt at bygge 
 	\label{Dsamletopbygning}
 \end{figure}
 
-Grundet mangel på præcise modstande, blev der bedømt at det var bedst at bygge modstandende i forholdsvist filteret og forstærkeren, op i to, så der var mulighed for at kunne komme så tæt på den ønskede modstandsværdi som muligt. \\
-
 \subsubsection{Hardware overvejelser}
 
-I udviklingen af hardwaren, blev der stødt på problematikker, som blev gjorde, at der var nogen komponenter, der blev nødt til at blive taget op til genovervejelse.\\
+I udviklingen af hardwaren, opstod der problemstillinger, som  gjorde, at der var nogle komponentvalg, som var nødvendige at genoverveje.\\
 \\
-Et af de største problemer der blev stødt ind i, i forhold til hardware, var brugen af en operationsforstærker i forstærkerblokken. En reel operationsforstærker har ikke en uendelig indgangs modstand, som i den ideelle verden, og der er derfor en risiko for at den lave spænding fra transduceren simpelthen ikke ville kunne passere forstærkeren. Der blev derfor valgt at bruge en instrumenteringsforstærker i stedet, da den reelle komponents egenskaber ligger langt tættere på dens ideelle modpart, og derfor var bedre egnet i gruppens kredsløb. En anden fordel ved instrumenteringsforstærkeren er, at den er meget let at justere gain på.\\
+Et af de største problemer var brugen af  operationsforstærker i forstærkerblokken. En reel operationsforstærker har ikke en uendelig indgangsmodstand, som i den ideelle verden, og der er derfor en risiko for, at den lave spænding fra transduceren simpelthen ikke ville kunne passere forstærkeren. Det blev derfor valgt at bruge en instrumentationsforstærker i stedet, da den reelle komponents egenskaber ligger langt tættere på dens ideelle modpart, og derfor var bedre egnet i kredsløbet. En anden fordel ved instrumentationsforstærkeren er, at den er meget let at justere forstærkning på.\\
 \\
-En anden stor fordel ved instrumenteringsforstærkeren er, at common mode rejection er meget god. Common mode noise er støj, fra det omkringliggende miljø. Da en instrumenteringsforstærkers forstærkning kommer fra forskellen mellem dens to indgange, så kan støj påvirke forstærkningen, især når der arbejdes med så lave forstærkninger, som dem, der kommer fra transduceren. Ofte er der dog støj på begge indgange, og i den ideelle verden ville dette ikke påvirke forstærkningen. I den reelle verden kan støjen dog også ende med at blive forstærket. Common mode rejection beskriver hvor god en komponent er, til at sortere dette støj fra. Den brugte instrumenteringsforstærker har en common mode rejection på 120 dB, hvilket vurderes til en rimelig værdi. \\
+En anden stor fordel ved instrumentationsforstærkeren er, at common mode rejection ratio er meget høj. Common mode noise er støj, fra det omkringliggende miljø. Da en instrumentationsforstærkers forstærkning kommer fra forskellen mellem dens to indgange, kan støj påvirke forstærkningen, især når der arbejdes med så lave forstærkninger, som dem, der kommer fra transduceren. Ofte er der dog støj på begge indgange, og i den ideelle verden ville dette ikke påvirke forstærkningen. I den reelle verden kan støjen dog også ende med at blive forstærket. Common mode rejection ratio beskriver hvor god en komponent er til at sortere støj fra. Den brugte instrumentationsforstærker har en common mode rejection ratio på 120 dB, hvilket vurderes til en fornuftig værdi. \\
 \\
-En anden ting ved forstærkeren, som blev nødt til at blive ændret, var det dynamik område, som skulle udnyttes. Oprindeligt havde gruppen bestemt, at det filtrerede signal skulle ligge imellem -5V til +5V. Grundet en forstærkers manglende evne til at forstærke et signal op til dens forsyningsspænding, så blev der vurderet, at det var nødvendigt at nedsætte signalområdet til -2,5V til +2,5V. Det var muligt at forstærke signalet ydereligere, men grænsen blev sat til denne værdi, fordi signalområdet matcher et dynamikområde på AD konverteren.\\ 
+En anden ting ved forstærkeren, som blev nødt til at blive ændret, var det dynamik område, som skulle udnyttes. Oprindeligt havde gruppen bestemt, at det filtrerede signal skulle ligge imellem -5V og +5V. Grundet en forstærkers manglende evne til at forstærke et signal op til dens forsyningsspænding, så blev det vurderet, at det var nødvendigt at nedsætte signalområdet fra -2,5V til +2,5V. Det var muligt at forstærke signalet yderligere, men grænsen blev sat til denne værdi, fordi signalområdet matcher et dynamikområde på DAQ'en.\\ 
 \\
-Designet af filteret, lå fast på forhånd, og der var derfor ikke meget der kunne ændres i dette. Operationsforstærkeren var oplyst til at skulle være af typen OP27G, da denne ligeledes har en god common mode rejection. Grundet mangel på præcise komponenter, blev der sat to modstande i serie, for at komme så tæt på den udregnede værdi, som muligt. \\
+Designet af filteret, lå fast på forhånd, og der var derfor ikke meget der kunne ændres i dette. Operationsforstærkeren var oplyst til at skulle være af typen OP27, da denne ligeledes har en god common mode rejection. Grundet mangel på præcise komponenter, blev der sat to modstande i serie, for at komme så tæt på den udregnede værdi, som muligt. \\
 \\
-Der blev desuden valgt at systemet skulle forsynes af Analog Discovery, frem for et batteri. Dette skyldes at Analog Discovery giver en stabil strøm, som ikke har brug for at blive afbalanceret af en spændingsudligner. Der blev vurderet at usikkerhederne ville udligne hinanden, og så flere fordele ved at bruge Analog Discovery.\\
+Det blev desuden valgt at systemet skulle forsynes af Analog Discovery, frem for et batteri. Dette skyldes at Analog Discovery giver en stabil strøm, som ikke har brug for at blive afbalanceret af en spændingsudligner. Det blev vurderet at usikkerhederne ville udligne hinanden, og der var flere fordele ved at bruge Analog Discovery.\\
 
 
 \subsubsection{Implementering af forstærkeren}
-Den samlede stykliste for forstærkeren blev vist som på tabel \ref{DForsttabel}.
+Den samlede stykliste for forstærkeren er vist i tabel \ref{DForsttabel}:
 
 \begin{table}[H]
 \centering
@@ -352,10 +373,10 @@ Instrumentationsforstærker &    1   & INA114		     &  &  \\ \cline{1-3}
 \label{DForsttabel}
 \end{table}
 
-For forstærkeren gælder det at den beregnede R$_{gain}$ er 125,31$\Omega$ som det kan ses ud af komponentlisten består R$_{gain}$ i praksis af to modstande på henholdsvis 4,8$\Omega$ og 120$\Omega$ som er sat i serie. R$_{gain}$ modstanden er i praksis 124,8$\Omega$. I praksis er R$_{gain}$ 0,51$\Omega$ mindre end den i teorien skulle have været.
+For forstærkeren gælder det, at den beregnede R$_{gain}$ er 125,31$\Omega$ som det kan ses ud af komponentlisten består R$_{gain}$ i praksis af to modstande på henholdsvis 4,8$\Omega$ og 120$\Omega$, som er sat i serie. R$_{gain}$ modstanden er i praksis 124,8$\Omega$. I praksis er R$_{gain}$ 0,51$\Omega$ mindre end den i teorien skulle have været.
 
 \subsubsection{Implementering af filteret}
-Den samlede stykliste for filteret blev som vist på tabel \ref{DFiltertabel}.
+Den samlede stykliste for filteret er som vist på tabel \ref{DFiltertabel}:
 
 \begin{table}[H]
 \centering
@@ -372,9 +393,9 @@ Operationsforstærker &    1         & OP27G          &  &  \\ \cline{1-3}
 \label{DFiltertabel}
 \end{table}
 
-Det analoge filter består blandt andet af en 330 nF kondensator, C$_1$, som i teorien er beregnet til at skulle have været 333,2 nF. I praksis er kondensatoren C$_1$ 3,2 nF mindre end den i teorien er beregnet til at skulle have været. Filteret består desuden af to modstande R$_1$ og R$_2$ som er identiske. I det realiserede analoge filter består hver modstand af to modstande på henholdsvis 6200$\Omega$ og 470$\Omega$ som er sat i serie. Dermed er både R$_1$ og R$_2$ 6670$\Omega$ i praksis. I teorien var R$_1$ og R$_2$ udregnet til at skulle være 6687$\Omega$. I praksis er der derfor 17$\Omega$ mindre end teorien foreskriver.\\
+Det analoge filter består blandt andet af en 330 nF kondensator, C$_1$, som i teorien er beregnet til at skulle have været 333,2 nF. I praksis er kondensatoren C$_1$ 3,2 nF mindre, end den i teorien er beregnet til at skulle have været. Filteret består desuden af to modstande R$_1$ og R$_2$, som er identiske. I det realiserede analoge filter består hver modstand af to modstande på henholdsvis 6200$\Omega$ og 470$\Omega$, som er sat i serieforbindelse. Dermed er både R$_1$ og R$_2$ 6670$\Omega$ i praksis. I teorien var R$_1$ og R$_2$ udregnet til at skulle være 6687$\Omega$. I praksis er modstanden derfor 17$\Omega$ mindre end teorien foreskriver.\\
 
-Generelt er der valgt at se bort fra de afvigelser, der er for komponentværdierne i praksis sammenlignet med de i teorien beregnet. Det er valgt da afvigelserne er relativt små i forhold til det pågældende komponent. For modstandende er der desuden 1 procents usikkerhed, hvilket betyder man alligevel ikke kan være helt sikker på komponentværdien.\\
+Generelt er der valgt at se bort fra de afvigelser, der er for komponentværdierne i praksis sammenlignet med de i teorien beregnet. Det er valgt da afvigelserne er relativt små i forhold til det pågældende komponent. For modstandende er der desuden 1\% usikkerhed, hvilket betyder, at man alligevel ikke kan være helt sikker på komponentværdien.\\
 
 På baggrund af de i praksis anvendte komponenter er den reelle knækfrekvens for det analoge filter beregnet. Til det formål er formlen som set på figur \ref{dcutoff]} anvendt.\\
 
@@ -383,17 +404,17 @@ f_{c} = \frac{1}{2\pi \sqrt{R_{1}C_{1}R_{2}C_{2}}} = \frac{1}{2\pi \sqrt{6687 \c
 	\label{dcutoff}
 \end{align}
 
-Desuden er den reelle $\zeta$ for dette filter, ifølge Okawadenshi, 0,697.
+Desuden er den reelle $\zeta$ for dette filter, ifølge Okawa-Denshi, 0,697.
 
 
 \section{Software implementering}\label{implementering}
-Implementerings afsnittet beskriver hvilke faktiske handlinger der er foretaget ud fra arkitektur og design afsnittet. Yderligere beskriver afsnittet hvilke software orienterede metoder der er benyttet for at løse problemstillingen.
+Implementeringsafsnittet beskriver, hvilke faktiske handlinger der er foretaget ud fra arkitektur- og designafsnittet. Yderligere beskriver afsnittet, hvilke softwareorienterede metoder, der er benyttet, for at løse problemstillingen.
 
 \subsection{3-lagsmodellen}
-Softwaren er implementeret først og fremmest ud fra 3-lagsmodellen
+Softwaren er først og fremmest implementeret ud fra 3-lagsmodellen.\\
 3-lagsmodellen er bestående af lagene præsentationslag, logiklag og datalag.
-Denne opdeling af lagene gør det langt lettere at vedligeholde systemet fordi der kan ændres i et enkelt lag uden det har indflydelse på resten af programmet. \\
-Det er desuden en god software arkitektur at bruge ved et system udarbejdet af en gruppe, da der kan arbejdes på to forskellige lag af to personer samtidigt, hvis bare grænsefladerne bliver overholdt. 3-lagsmodellen er bygget op som vist på figur \ref{3lag}:
+Denne opdeling af lagene gør det langt lettere at vedligeholde systemet, fordi der kan ændres i et enkelt lag, uden det har indflydelse på resten af programmet. \\
+3-lagsmodellen er desuden en god softwarearkitektur at bruge til  systemudarbejdelse, når der arbejdes i grupper. Dette skyldes, at der kan arbejdes på to forskellige lag af to personer samtidigt, hvis bare grænsefladerne bliver overholdt. 3-lagsmodellen er bygget op som vist på figur \ref{3lag}:
 
 \begin{figure}[H]
 	\centering
@@ -404,8 +425,8 @@ Det er desuden en god software arkitektur at bruge ved et system udarbejdet af e
 
 \subsubsection{Præsentationslag}\label{praesentationslag}
 
-Som vist på figur \ref{3lag}, er blodtrykssystemet bygget op med først et præsentationslag bestående af tre brugergrænseflader, som brugeren kan interagere med.\\
-Login brugergrænseflade, bestående af tekstbokse til brugernavn og kodeord, samt paneler til både kalibrering og nulpunktsjusteringen, som vist på figur \ref{LoginGUI}:
+Som vist på figur \ref{3lag}, er blodtrykssystemet bygget op med først et præsentationslag bestående af tre vinduer, som brugeren kan interagere med.\\
+"Login"\--vinduet, bestående af tekstbokse til brugernavn og kodeord, samt paneler til både kalibrering og nulpunktsjusteringen, som vist på figur \ref{LoginGUI}:
 
 \begin{figure}[H]
 	\centering
@@ -413,16 +434,16 @@ Login brugergrænseflade, bestående af tekstbokse til brugernavn og kodeord, sa
 	\caption{Login GUI}
 	\label{LoginGUI}
 \end{figure}
-Dernæst åbnes hoved brugergrænsefladen, hvor blodtrykssignalet vises grafisk, samt brugeren har mulighed for at benytte en række funktioner i form af knapper og trackbars, som set på figur \ref{form1}
+Dernæst åbnes hovedvinduet, hvor blodtrykssignalet vises grafisk, samt brugeren har mulighed for at benytte en række funktioner i form af knapper og trackbars, som set på figur \ref{form1}
 
-%\begin{figure}[H]
-%	\centering
-%	\includegraphics[width=1\textwidth]{Figurer/SoftwareImplementering/form1}
-%	\caption{Blodtrykssystem hoved brugergrænseflade}
-%	\label{form1}
-%\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/SoftwareImplementering/blodtryk}
+	\caption{Blodtrykssystem hoved brugergrænseflade}
+	\label{form1}
+\end{figure}
 
-Til sidst vises en brugergrænseflade for gemmefunktionen, hvor brugeren skal indtaste et CPR-nummer, samt bekræfte afslutning af målingen, se figur \ref{Gem}:
+Til sidst vises et vindue for gemmefunktionen, hvor brugeren skal indtaste et CPR-nummer, samt bekræfte afslutning af målingen, se figur \ref{Gem}:
 
 \begin{figure}[H]
 	\centering
@@ -432,57 +453,105 @@ Til sidst vises en brugergrænseflade for gemmefunktionen, hvor brugeren skal in
 \end{figure}
 
 \subsubsection{Logiklag}\label{Logiklag}
-Logik laget er det lag der spiller sammen med både data- og præsentationslag. Sammenspillet med præsentationslaget fungerer ved alt brugerens interaktion med systemet bearbejdes i logiklaget. Et eksempel herpå er det digitale filter, hvor brugeren gennem brugergrænsefladen tilslutter filteret. Dette igangsætter en metode i logik laget, som sørger for at signalet filtreres. Metoden er vist i figur \ref{filtrer} og figur \ref{Filtrer}:
+Logiklaget er det lag, der spiller sammen med både data- og præsentationslag. Sammenspillet med præsentationslaget fungerer ved brugerens interaktion med systemet bearbejdes i logiklaget. Et eksempel herpå er det digitale filter, hvor brugeren gennem brugergrænsefladen tilslutter filteret. Dette igangsætter en metode i logiklaget, som sørger for, at signalet filtreres. Metoden er vist i figur \ref{filtrer} og figur \ref{Filtrer}:
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.15\textwidth]{Figurer/SoftwareImplementering/Filtrer1}
-	\caption{Filtrer i filter klassen}
+	\caption{Dataudvælgelse funktionen i logik-klassen}
 	\label{Filtrer}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Figurer/SoftwareImplementering/filtrer}
-	\caption{Filtrer i filter klassen}
+	\caption{Filtrer() i filter-klassen}
 	\label{filtrer}
 \end{figure}
 
-Figur \ref{Filtrer} viser hvordan der i logikklassen oprettes en liste med .... \textbf{JEPPE!!!!}\\
-Herefter bliver der i figur \ref{filtrer} taget gennemsnit af listen hvorefter den sidste værdi returneres, og derefter udskrives. Filteret er deraf et FIR filter af typen moving average.
+Figur \ref{Filtrer} tager fem værdier og sender videre til filtrer(), som tager gennemsnittet på disse værdier, hvorefter gennemsnittet sendes tilbage til logik-klassen.
+Dette kaldes for moving average, som er en form for FIR-filter.
 
 \subsubsection{Datalag}\label{Datalag}
-Datalaget er det lag som spiller sammen med databasen og logiklaget. Dvs. at datalaget modtager bruger inputs fra brugergrænsefladen gennem logiklaget. Herefter sender og validerer datalaget informationerne i en database. Eksempelvis er bliver login oplysninger tjekket i databasen via datalaget, dette er vist i figur \ref{Datalogin}:
+Datalaget er det lag, som spiller sammen med databasen og logiklaget. Det vil sige, at datalaget modtager brugerinputs fra brugergrænsefladen gennem logiklaget. Herefter henter datalaget informationer i en database, som efterfølgende sendes retur til logiklaget. Eksempelvis bliver login-oplysninger tjekket i databasen via datalaget, hvilket er vist i figur \ref{Datalogin}:
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1.4\textwidth]{Figurer/SoftwareImplementering/CheckLogind}
-	\caption{Login tjekker metode}
+	\caption{checkLogin()}
 	\label{Datalogin}
 \end{figure}
 
-Figur \ref{Datalogin} viser hvordan login tjekker metoden opretter forbindelse til en lokal database, hvorefter de indtastede værdier tjekkes i databasen. Til slut lukkes forbindelsen igen. Værdierne der tjekkes efter med kan ses i personale tabellen i databasen, som vist i figur \ref{personaletabel}
+Figur \ref{Datalogin} viser, hvordan checkLogin() opretter forbindelse til en privat database, hvorefter de indtastede værdier tjekkes i databasen. Til slut lukkes forbindelsen igen. Værdierne, der tjekkes med, kan ses i personale-tabellen i databasen, som vist i figur \ref{personaletabel}:
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.6\textwidth]{Figurer/SoftwareImplementering/database}
-	\caption{Personale tabel}
+	\caption{Personale-tabel}
 	\label{personaletabel}
 \end{figure}
 
-Herudover er det også i datalaget at data bliver indlæst fra DAQen. Dette gøres ved at udnytte, at DAQen har et asynkront kald i sig. Dette asynkrone kald gør, at der bliver leveret data fra DAQ til datalag løbende istedet for i intervaller, som ville være tilfældet ved synkrone kald. Det asynkrone kald tillader altså at portioner af koden bliver udført løbende. Hvis ikke det asynkrone kald blev benyttet her ville der gå data tabt. 
+Herudover er det også i datalaget, at data bliver indlæst fra DAQ'en. Dette gøres ved at udnytte, at DAQ'en har et asynkront kald i sig. Dette asynkrone kald gør, at der bliver leveret data fra DAQ til datalag løbende istedet for i intervaller, som ville være tilfældet ved synkrone kald. Det asynkrone kald tillader altså, at portioner af koden bliver udført løbende. 
 
 \subsection{Tråde}
-Tråd programmering benyttes, når man som her ønsker flere opgaver i programmet udført løbende. Dette kan gør sig gældende eksempelvis ved at programmet ønsker at indlæse data og vise det i en graf, samtidig med at brugeren har adgang til alle interfacets funktioner. Det er disse delprocesser, som udgøre trådene. Hvis en enkelt tråd skulle gå i stå, skal de andre tråde stadig køre, således at programmet stadig kører videre. 
-\subsection{Observer}
-\subsection{Push pull}
+Blodtrykmålingssystemet skal simultant opfange målinger og vise disse på brugergrænsefladen. Dette stiller nogle krav til softwareopbygningen, da kodestykker skal køre på samme tid. For at løse denne problemstilling, er der anvendt trådprogrammering. Trådprogrammering er et integreret værktøj i C\#, som giver mulighed for at køre flere ting samtidigt på flere kerner i computerens CPU.\\Softwaren er opbygget efter 3-lagsmodellen, og der findes en tråd i hvert lag, som har forskellige opgaver. \\I datalaget laver DAQ-klassen asynkrone kald, når der skal opsamles målinger fra hardwareenheden. Ved at lave asynkrone kald vil opsamlingsprocessen køre i en tråd for sig selv, hvilket forhindrer at programmet låser, mens der måles. Et eksempel herpå ses på figur \ref{Traad}:
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Figurer/SoftwareImplementering/Traad}
+	\caption{Kodestykke fra startMåling() i klassen "DAQklasse". Her ses det, der er anvendt et asynkront kald}
+	\label{Traad}
+\end{figure}
+
+I logiklaget er der også en tråd, og denne tråd sørger for at opsamle og behandle data fra datalaget. Ved at anvende en tråd her, er der mulighed for at udføre logiske operationer på datamængden, såsom filtrering, og sende denne videre til grafen i præsentationslaget.\\Når man arbejder med Windows Forms i C\#, vil disse pr. automatik ligge i sin egen tråd, hvilket deraf også er tilfældet her.\\For at opdatere form-elementer fra en anden tråd, skal disse opdateres gennem en invoke-metode. Dette betyder, at tråden tjekker, om den kan komme til, og hvis det er tilfældet, opdateres elementet, som vist i figur \ref{callback}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{Figurer/SoftwareImplementering/callback}
+	\caption{Eksempel på en UpdateUICallback. Metoden kalder sig selv ind til den har fået udført kodestykkerne, der efterfølger "else"\ }
+	\label{callback}
+\end{figure}
+
+Der er også andre ting, man skal være opmærksom på, når man arbejder med tråde. Der har i programmeringsarbejdet været problemer med, at der opstår en konflikt, når to tråde prøver at skrive til det samme objekt på samme tid.\\For at imødekomme dette problem, er der anvendt en lås i form af en "mutex"\.. På denne måde forhindre man, at datalagets dataopsamler skriver til den samme liste, som logiklaget er i gang med at udføre logiske operationer på, vist på figur \ref{mutex}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1.1\textwidth]{Figurer/SoftwareImplementering/mutex}
+	\caption{Eksempel på en UpdateUICallback. Metoden kalder sig selv ind til den har fået udført kodestykkerne, der efterfølger "else"\ }
+	\label{mutex}
+\end{figure}
+
+
+\subsection{Observer-pattern}
+Observermønstret er et mønster, hvor et objekt, kaldet et subject, informerer en liste af observers, når noget er ændret eller gennemført ved at kalde en af deres metoder. Dette mønster har været nødvendigt at anvende, da grafen i præsentationslaget skal informeres om, hvornår der er nye data af hhv. logiklaget og datalaget. Det vil sige, at Logik-klassen og DAQ-klassen begge fungerer som subjects, mens GUI-laget og Logik-klassen fungerer som observers. Logik-klassen er subject for GUI, og Data-klassen er subject for Logik.\\Mønstret er sat op ved at lave to interfaces, ISubject og IObserver, som de respektive klasser arver fra og tvinges dermed til at implementere metoderne, som er beskrevet i interfaces. Dette ses i de tre efterfølgende figurer, figur \ref{observer1},\ref{observer2}, \ref{observer3}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.6\textwidth]{Figurer/SoftwareImplementering/observer1}
+	\caption{Interface ISubject, som giver observers mulighed for at abonnere på subjects}
+	\label{observer1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Figurer/SoftwareImplementering/observer2}
+	\caption{Interface IObserver. Subject sørger for at kalde metoden "Opdater()"\ for alle dens abonnenter}
+	\label{observer2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\textwidth]{Figurer/SoftwareImplementering/observer3}
+	\caption{Implementeringen af subject-metoderne i Logik-klassen}
+	\label{observer3}
+\end{figure}
+Der er anvendt push-metode, hvilket vil sige, at subject sender sin data med som parameter i Notify().\\Observer-mønstret har vist sig nyttigt, da vi dermed undgår, at observers hele tiden skal tjekke, om der er kommet ny data. Dette sparer computerkræfter, hvilket er en nødvendighed, da mange af de opståede problemer er opstået på baggrund af, at computeren ikke har kunnet arbejde hurtigt nok.
 
 \subsection{UML klassediagram}\label{UML klassediagram}
 I dette afsnit ses et samlet og opdateret UML klassediagram over koden. 
 
 \subsection{Kode udsnit}
-I dette afsnit vil der være udsnit af det vigtigste og mest interessante kode. Der vil ligeledes være en beskrivelse af hvilken funktion koden har.
+I dette afsnit vil der være udsnit af det vigtigste og mest interessante kode. Der vil ligeledes være en beskrivelse af, hvilken funktion koden har.
 
 \subsection{Diagrammer}
 I dette afsnit vil udvalgte metoder i koden beskrives ud fra skevensdiagrammer og aktivitetsdiagrammer. Dette vil danne et systemisk overblik over hvordan metoderne i koden fungerer. 

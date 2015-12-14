@@ -1,10 +1,23 @@
-\chapter{Acceptest}\label{Accepttest}
+\chapter{Accepttest}\label{Accepttest}
+
+\begin{longtabu} to \linewidth{@{}l l l X[j]@{}}
+    Version &    Dato &    Ansvarlig &    Beskrivelse\\[-1ex]
+    \midrule
+    0.1 &	8/09 2015	&	Alle		& Oprettelse  af dokument\\
+    0.2 &	30/09 2015 	& 	Alle		& Første udkast til accepttest \\
+    0.3 &	07/10 2015 	&	Alle		& Review rettelser \\
+    1.0 &	04/11 2015 	&	Alle		& Nyt udkast til accepttest, som følge af ændrede use cases\\
+    1.1 &	10/12 2015	& 	Alle 	& Specificering af accepttest som følge af produktet\\
+    1.2 & 	11/12 2015 & Alle+vejleder & Godkendelse af accepttest\\
+    
+\label{version accepttest}
+\end{longtabu}
 
 \section{Indledning}
-I accepttesten testes de krav, der er opstillet i kravspecifikationen. Det fremgår af accepttesten om hvilke scenarier og krav, der er blevet opfyldt og implementeret i systemet og hvilke, der enten ikke er testbare eller ikke er blevet implementeret. \\
-Først vil der være accepttest af use casene altså de funktionelle krav efterfulgt af accepttest af de ikke funktionelle krav. \\
+I accepttesten testes de krav, der er opstillet i kravspecifikationen. Det fremgår af accepttesten, hvilke scenarier og krav, der er blevet opfyldt og implementeret i systemet, og hvilke, der enten ikke er testbare eller ikke er blevet implementeret. \\
+Først vil der være accepttest af use casene, altså de funktionelle krav, efterfulgt af accepttest af de ikke-funktionelle krav. \\
 \\
-Til test af use case 2-6 er der benyttet et signal fra PhysioNet. Signalet er et blodtrykssignal, som er vedlagt i bilag, se bilag XX.
+Til test af use case 2-6 er der benyttet et signal fra PhysioNet. Signalet er et blodtrykssignal, som er vedlagt i bilag, se bilag \ref{blodtrykssignal}.
 
 \section{Accepttest af Use Cases}
 
@@ -54,13 +67,15 @@ Til test af use case 2-6 er der benyttet et signal fra PhysioNet. Signalet er et
 	\\
 	4. & Tryk på "Godkend"\--knap & Panelet lukkes & Panelet lukkes & {\Huge \checkmark}
 	\\
-	5. & Indtast personale-ID i brugenavnsfeltet; "1234" og indtast personlig kode i kodeordsfeltet; "fido" & Loginoplysninger bliver udfyldt & De rigtige oplysninger vises & {\Huge \checkmark}
+	5. & Indstil transducer til at måle blodtryk & Transducer er indstillet & Blodtryk måles & {\Huge \checkmark}
 	\\
-	6. & Tryk på "Log ind"\--knappen & Log ind oplysninger er gyldige og stemmer overens med hinanden. "Blodtryks"\-vinduet vises  & Login vinduet lukkes og blodtryk vinduet vises & {\Huge \checkmark}
+	6. & Indtast personale-ID i brugenavnsfeltet; "1234" og indtast personlig kode i kodeordsfeltet; "fido" & Loginoplysninger bliver udfyldt & De rigtige oplysninger vises & {\Huge \checkmark}
+	\\
+	7. & Tryk på "Log ind"\--knappen & Log ind oplysninger er gyldige og stemmer overens med hinanden. "Blodtryks"\-vinduet vises  & Login vinduet lukkes og blodtryk vinduet vises & {\Huge \checkmark}
 	\\
 	\\ \midrule
 	& \textit{Undtagelser} & & &\\ \midrule
-	6.a & 1. Indtast personale-ID i brugenavnsfeltet; "fido" og indtast personlig kode i kodeordsfeltet; "1234" & Nye log ind oplysninger vises & Nye log ind oplysninger vises &{\Huge \checkmark}
+	7.a & 1. Indtast personale-ID i brugenavnsfeltet; "fido" og indtast personlig kode i kodeordsfeltet; "1234" & Nye log ind oplysninger vises & Nye log ind oplysninger vises &{\Huge \checkmark}
 	\\ 
 	 & 2. Tryk "Log ind" & Besked om at de ikke findes vises & Besked vises & {\Huge \checkmark}
 	\\
@@ -180,11 +195,12 @@ Til test af use case 2-6 er der benyttet et signal fra PhysioNet. Signalet er et
 	1. & Brugeren skal kunne starte en ny måling indenfor 30 sekunder efter opstart & Start programmet, hvorefter der vha. stopur måles opstartstiden & At programmet er opstartet og ny måling er igang efter 30 sekunder & 15 sekunder & {\Huge \checkmark}
 	\\ \midrule
 	2. & Systemet skal kunne forstærke signalet fra transduceren 400 gange & Start systemet & At signalet er forstærket & Egentlige test ligger i integrationstest, se afsnit \ref{ModulHard}  & {\Huge (\checkmark)}\\ \midrule 
-	2. & Systemet skal kunne forstærke signalet med det indbyggede analoge antialiaserings filter med en båndbredde på 50 Hz & Start systemet & At signalet er forstærket & Egentlige test ligger i integrationstest, se afsnit \ref{ModulHard}  & {\Huge (\checkmark)}\\ \midrule
+	2. & Systemet skal kunne forstærke signalet med det indbyggede analoge filter med en båndbredde på 50 Hz & Start systemet & At signalet er forstærket & Egentlige test ligger i integrationstest, se afsnit \ref{ModulHard}  & {\Huge (\checkmark)}\\ \midrule
 	3. & Programmet skal kunne vise blodtrykssignalet kontiunert & Tryk på "Start måling"\--knap & At blodtrykssignalet er vist kontinuert på brugergrænsefladen & Blodtrykssignalet er vist kontinuert på brugergrænsefladen & {\Huge \checkmark}\\ \midrule
 	4. & Programmet skal programmeres i C\# & Start programmet & At koden er i C\# & Programmet er i C\# & {\Huge \checkmark} \\ \midrule
+	5. & Programmet skal kalibreres en gang årligt & Systemet kalibreres & Systemet er kalibreret inden for seneste år & {\Huge \checkmark} \\ \midrule
 
-	5. & Programmet bør kunne måle og afbillede puls & Tryk på "Start måling" & At pulsen er afbilledet på brugergrænseflade & Pulsen af afbilledet & {\Huge \checkmark} \\ \midrule
+	6. & Programmet bør kunne måle og afbillede puls & Tryk på "Start måling" & At pulsen er afbilledet på brugergrænseflade & Pulsen af afbilledet & {\Huge \checkmark} \\ \midrule
 	
 	& \textit{Usability} &  &  & & \\ \midrule
 	1. & Blodtrykstallene der udskrives på brugergrænseflade er røde & Tryk "Start måling"\--knap & At blodtrykstallene er røde & Blodtrykstallene er røde & {\Huge \checkmark} \\ \midrule
