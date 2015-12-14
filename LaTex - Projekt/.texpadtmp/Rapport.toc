@@ -38,7 +38,7 @@
 \contentsline {subsection}{\numberline {7.4.5}Software diagrammer}{31}{subsection.7.4.5}
 \contentsline {section}{\numberline {7.5}Test}{31}{section.7.5}
 \contentsline {section}{\numberline {7.6}Resultater og diskussion}{31}{section.7.6}
-\contentsline {section}{\numberline {7.7}Opn\IeC {\r a}ede erfaringer}{32}{section.7.7}
+\contentsline {section}{\numberline {7.7}Opn\IeC {\r a}ede erfaringer}{33}{section.7.7}
 \contentsline {section}{\numberline {7.8}Fremtidigt arbejde}{33}{section.7.8}
 \contentsline {chapter}{\chapternumberline {8}Konklusion}{35}{chapter.8}
 \contentsline {chapter}{Litteratur}{37}{section*.26}
