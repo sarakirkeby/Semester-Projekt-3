@@ -11,11 +11,13 @@ A level-1 auxiliary file: Dfiler/Ddesign.aux
 A level-1 auxiliary file: Dfiler/Dtest.aux
 A level-1 auxiliary file: Dfiler/Daccepttest.aux
 A level-1 auxiliary file: Dfiler/Dbilag.aux
-I found no \citation commands---while reading file /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dokumentation.aux
+A level-1 auxiliary file: Dfiler/Dreferencer.aux
 I found no \bibdata command---while reading file /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dokumentation.aux
+Warning--I didn't find a database entry for "Overforing"
+Warning--I didn't find a database entry for "Usability"
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            505 strings with 4403 characters,
+            510 strings with 4463 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
@@ -54,4 +56,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There were 2 error messages)
+(There was 1 error message)
