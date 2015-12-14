@@ -85,7 +85,29 @@ I modultesten af det analoge filter ændres frekvensen for det påtrykte sinussi
 	\label{fig:FilterAmplitude}
 \end{figure}
 
-Herefter blev tidsforskydningen aflæst, således at fasedrejet kunne udregnes. Tidsforskydningen er vist på figur \ref{fig:FilterTidsforskydning}:
+Ved brug af 3 dB frekvensen er det muligt at vurdere om knækfrekvensen for filteret er som den skal være. Denne kan udregnes ved følgende ligning \ref{ligning3db}:
+
+\begin{align}
+3dB_{frekvens}=\frac{V_{max}}{\sqrt{2}}
+\label{ligning3db}
+\end{align}
+I dette tilfælde bliver udregningen som vist i ligning \ref{ligning3db4}:\\
+\begin{align}
+	3dB_{frekvens}=\frac{2,5V}{\sqrt{2}}=1,76V
+	\label{ligning3db4}
+\end{align}
+Ved omregning af de 1,76 V til dB fås 4,9 dB. Hvis filteret virker efter hensigten skal frekvensen ved 4,9 dB være 50 Hz. Denne kan aflæses i figur \ref{fig:AmplitudedBFilter}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/AmpdBFilter}
+	\caption{Forstærkningen i dB set i forhold til den frekevens som det påtrykte signal har.}
+	\label{fig:AmplitudedBFilter}
+\end{figure}
+
+Som det kan ses ud af figur \ref{fig:AmplitudedBFilter} er forstærkningen ved 3 dB frekvensen et sted imellem de to målepunkter på 50 Hz og 53 Hz. Derfor må filterets knækfrekvens ligge mellem 50 Hz og 53 Hz.
+
+Herefter blev tidsforskydningen aflæst, således at fasedrejet kunne udregnes. Faseforskydningen ved de forskellige frekvenser er vist på figur \ref{fig:FilterTidsforskydning}:
 
 \begin{figure}[H]
 	\centering
@@ -94,7 +116,15 @@ Herefter blev tidsforskydningen aflæst, således at fasedrejet kunne udregnes. 
 	\label{fig:FilterTidsforskydning}
 \end{figure}
 
-Det gælder generelt for et 2.ordens filter af standarttypen som der er arbejdet med igennem projektet, at fasen er 0$^{\circ}$ en dekade før filterets knækfrekvens og falder med 90$^{\circ}$/dekade frem til dekaden efter knækfrekvensen. Derfor skal filteret i praksis have et fasedrej på -90$^{\circ}$ ved knækfrekvensen 50 Hz. Som det ses ud af graf (figur \textbf{\huge{REFFFF}}) er fasedrejet ved frekvensen 5 Hz på -5,2$^{\circ}$, denne skulle reelt set have været 0$^{\circ}$. \\
+Det gælder generelt for et 2.ordens filter af standarttypen som der er arbejdet med igennem projektet, at fasen er 0$^{\circ}$ en dekade før filterets knækfrekvens og falder med 90$^{\circ}$/dekade frem til dekaden efter knækfrekvensen. Derfor skal filteret i praksis have et fasedrej på -90$^{\circ}$ ved knækfrekvensen 50 Hz.\\ 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Hardware/FaseforskydningFilter}
+	\caption{Faseforskysningen målt ved forskellige frekvenser for det analoge filter.}
+	\label{fig:FilterFaseforskydning}
+\end{figure}
+
+Som det ses ud af figur \ref{fig:FilterFaseforskydning} er fasedrejet ved frekvensen 5 Hz på -5,2$^{\circ}$, denne skulle reelt set have været 0$^{\circ}$. \\
 Ved knækfrekvensen som er sat til 50 Hz er fasedrejet -86,4$^{\circ}$, hvor fasedrejet skulle have været -90$^{\circ}$. Ved målingen for 53 Hz er fasedrejet -95,4$^{\circ}$. Dermed kan der argumenteres for, at filterets reelle knækfrekvens må ligge et sted imellem 50 Hz og 53 Hz. 
 For målingen på 500 Hz er fasedrejet -180$^{\circ}$, hvilket stemmer overens med teorien for 2.ordens filterets fasekarakteristik.
 
@@ -121,12 +151,7 @@ Da projektet tager udgangspunkt i, at et maksimalt blodtryk vil have en amplitud
 \end{figure}
 
 Som det kan ses ud af \ref{fig:ForstaerkerFilterGraf} viser amplitudekarakteristikken for signaler ved hver af de to forskellige amplituder bliver forstærket relativt lige meget dvs. de to amplitudekarakteristikker følges ad.
-Knækfrekvensen som med de pågældende komponentværdier er udregnet til værende 50,37 Hz, se afsnit \ref{Implementering}. Knækfrekvensen kan findes på grafen ved at aflæse 3 dB frekvensen. Denne kan udregnes ved følgende ligning \ref{ligning3db}:
-
-\begin{align}
-3dB_{frekvens}=\frac{V_{max}}{\sqrt{2}}
-\label{ligning3db}
-\end{align}
+Knækfrekvensen som med de pågældende komponentværdier er udregnet til værende 50,37 Hz, se afsnit \ref{Implementering}. Knækfrekvensen kan findes på grafen ved at aflæse 3 dB frekvensen.
 
 For signalet med amplitudekarakteristikken for 7 mV bliver 3 dB frekvensen dermed som følger i ligning \ref{ligning3db2}:\\
 \begin{align}

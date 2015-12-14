@@ -87,7 +87,7 @@ Filteret, som ses på figur \ref{fig:Filter}, skulle realiseres som et aktivt 2.
 	\label{fig:Filter}
 \end{figure}
 
-Et Sallen-Key-filter har en dæmpningsfaktor på 0,7, fordi der, i et Sallen-Key-filter, er blevet prioriteret et fladt frekvensområde, frem for hurtig dæmpning. Der blev brugt en hjemmeside som hjælpemiddel til at finde overføringsfunktionen for Sallen-Key-lavpasfilteret.\cite{Overforing} Denne ligning kan ses i ligning \ref{ligning5}:
+Et Butterworth-filter har en dæmpningsfaktor på 0,7, fordi der, i et Butterworth-filter, er blevet prioriteret et fladt frekvensområde, frem for hurtig dæmpning. Der blev brugt en hjemmeside som hjælpemiddel til at finde overføringsfunktionen for Butterworth-lavpasfilteret.\cite{Overforing} Denne ligning kan ses i ligning \ref{ligning5}:
 
 
 \begin{align}
@@ -494,7 +494,9 @@ Figur \ref{Datalogin} viser, hvordan checkLogin() opretter forbindelse til en pr
 Herudover er det også i datalaget, at data bliver indlæst fra DAQ'en. Dette gøres ved at udnytte, at DAQ'en har et asynkront kald i sig. Dette asynkrone kald gør, at der bliver leveret data fra DAQ til datalag løbende istedet for i intervaller, som ville være tilfældet ved synkrone kald. Det asynkrone kald tillader altså, at portioner af koden bliver udført løbende. 
 
 \subsection{Tråde}
-Blodtrykmålingssystemet skal simultant opfange målinger og vise disse på brugergrænsefladen. Dette stiller nogle krav til softwareopbygningen, da kodestykker skal køre på samme tid. For at løse denne problemstilling, er der anvendt trådprogrammering. Trådprogrammering er et integreret værktøj i C\#, som giver mulighed for at køre flere ting samtidigt på flere kerner i computerens CPU.\\Softwaren er opbygget efter 3-lagsmodellen, og der findes en tråd i hvert lag, som har forskellige opgaver. \\I datalaget laver DAQ-klassen asynkrone kald, når der skal opsamles målinger fra hardwareenheden. Ved at lave asynkrone kald vil opsamlingsprocessen køre i en tråd for sig selv, hvilket forhindrer at programmet låser, mens der måles. Et eksempel herpå ses på figur \ref{Traad}:
+Blodtrykmålingssystemet skal simultant opfange målinger og vise disse på brugergrænsefladen. Dette stiller nogle krav til softwareopbygningen, da kodestykker skal køre på samme tid. For at løse denne problemstilling, er der anvendt trådprogrammering. Trådprogrammering er et integreret værktøj i C\#, som giver mulighed for at køre flere ting samtidigt på flere kerner i computerens CPU.\\
+Softwaren er opbygget efter 3-lagsmodellen, og der findes en tråd i hvert lag, som har forskellige opgaver. \\
+I datalaget laver DAQ-klassen asynkrone kald, når der skal opsamles målinger fra hardwareenheden. Ved at lave asynkrone kald vil opsamlingsprocessen køre i en tråd for sig selv, hvilket forhindrer at programmet låser, mens der måles. Et eksempel herpå ses på figur \ref{Traad}:
 
 \begin{figure}[H]
 	\centering
@@ -503,7 +505,9 @@ Blodtrykmålingssystemet skal simultant opfange målinger og vise disse på brug
 	\label{Traad}
 \end{figure}
 
-I logiklaget er der også en tråd, og denne tråd sørger for at opsamle og behandle data fra datalaget. Ved at anvende en tråd her, er der mulighed for at udføre logiske operationer på datamængden, såsom filtrering, og sende denne videre til grafen i præsentationslaget.\\Når man arbejder med Windows Forms i C\#, vil disse pr. automatik ligge i sin egen tråd, hvilket deraf også er tilfældet her.\\For at opdatere form-elementer fra en anden tråd, skal disse opdateres gennem en invoke-metode. Dette betyder, at tråden tjekker, om den kan komme til, og hvis det er tilfældet, opdateres elementet, som vist i figur \ref{callback}:
+I logiklaget er der også en tråd, og denne tråd sørger for at opsamle og behandle data fra datalaget. Ved at anvende en tråd her, er der mulighed for at udføre logiske operationer på datamængden, såsom filtrering, og sende denne videre til grafen i præsentationslaget.\\
+Når man arbejder med Windows Forms i C\#, vil disse pr. automatik ligge i sin egen tråd, hvilket deraf også er tilfældet her.\\
+For at opdatere form-elementer fra en anden tråd, skal disse opdateres gennem en invoke-metode. Dette betyder, at tråden tjekker, om den kan komme til, og hvis det er tilfældet, opdateres elementet, som vist i figur \ref{callback}:
 
 \begin{figure}[H]
 	\centering
@@ -512,7 +516,8 @@ I logiklaget er der også en tråd, og denne tråd sørger for at opsamle og beh
 	\label{callback}
 \end{figure}
 
-Der er også andre ting, man skal være opmærksom på, når man arbejder med tråde. Der har i programmeringsarbejdet været problemer med, at der opstår en konflikt, når to tråde prøver at skrive til det samme objekt på samme tid.\\For at imødekomme dette problem, er der anvendt en lås i form af en "mutex"\.. På denne måde forhindre man, at datalagets dataopsamler skriver til den samme liste, som logiklaget er i gang med at udføre logiske operationer på, vist på figur \ref{mutex}:
+Der er også andre ting, man skal være opmærksom på, når man arbejder med tråde. Der har i programmeringsarbejdet været problemer med, at der opstår en konflikt, når to tråde prøver at skrive til det samme objekt på samme tid.\\
+For at imødekomme dette problem, er der anvendt en lås i form af en "mutex"\.. På denne måde forhindre man, at datalagets dataopsamler skriver til den samme liste, som logiklaget er i gang med at udføre logiske operationer på, vist på figur \ref{mutex}:
 
 \begin{figure}[H]
 	\centering
@@ -523,7 +528,8 @@ Der er også andre ting, man skal være opmærksom på, når man arbejder med tr
 
 
 \subsection{Observer-pattern}
-Observermønstret er et mønster, hvor et objekt, kaldet et subject, informerer en liste af observers, når noget er ændret eller gennemført ved at kalde en af deres metoder. Dette mønster har været nødvendigt at anvende, da grafen i præsentationslaget skal informeres om, hvornår der er nye data af hhv. logiklaget og datalaget. Det vil sige, at Logik-klassen og DAQ-klassen begge fungerer som subjects, mens GUI-laget og Logik-klassen fungerer som observers. Logik-klassen er subject for GUI, og Data-klassen er subject for Logik.\\Mønstret er sat op ved at lave to interfaces, ISubject og IObserver, som de respektive klasser arver fra og tvinges dermed til at implementere metoderne, som er beskrevet i interfaces. Dette ses i de tre efterfølgende figurer, figur \ref{observer1},\ref{observer2}, \ref{observer3}:
+Observermønstret er et mønster, hvor et objekt, kaldet et subject, informerer en liste af observers, når noget er ændret eller gennemført ved at kalde en af deres metoder. Dette mønster har været nødvendigt at anvende, da grafen i præsentationslaget skal informeres om, hvornår der er nye data af hhv. logiklaget og datalaget. Det vil sige, at Logik-klassen og DAQ-klassen begge fungerer som subjects, mens GUI-laget og Logik-klassen fungerer som observers. Logik-klassen er subject for GUI, og Data-klassen er subject for Logik.\\
+Mønstret er sat op ved at lave to interfaces, ISubject og IObserver, som de respektive klasser arver fra og tvinges dermed til at implementere metoderne, som er beskrevet i interfaces. Dette ses i de tre efterfølgende figurer, figur \ref{observer1},\ref{observer2}, \ref{observer3}:
 
 \begin{figure}[H]
 	\centering
@@ -545,7 +551,8 @@ Observermønstret er et mønster, hvor et objekt, kaldet et subject, informerer 
 	\caption{Implementeringen af subject-metoderne i Logik-klassen}
 	\label{observer3}
 \end{figure}
-Der er anvendt push-metode, hvilket vil sige, at subject sender sin data med som parameter i Notify().\\Observer-mønstret har vist sig nyttigt, da vi dermed undgår, at observers hele tiden skal tjekke, om der er kommet ny data. Dette sparer computerkræfter, hvilket er en nødvendighed, da mange af de opståede problemer er opstået på baggrund af, at computeren ikke har kunnet arbejde hurtigt nok.
+Der er anvendt push-metode, hvilket vil sige, at subject sender sin data med som parameter i Notify().\\
+Observer-mønstret har vist sig nyttigt, da vi dermed undgår, at observers hele tiden skal tjekke, om der er kommet ny data. Dette sparer computerkræfter, hvilket er en nødvendighed, da mange af de opståede problemer er opstået på baggrund af, at computeren ikke har kunnet arbejde hurtigt nok.
 
 \subsection{UML klassediagram}\label{UML klassediagram}
 I dette afsnit ses et samlet og opdateret UML klassediagram over koden. 
