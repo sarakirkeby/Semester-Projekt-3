@@ -1,14 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2014.11.19)  14 DEC 2015 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.12)  14 DEC 2015 18:16
 entering extended mode
 **Dokumentation.tex
-
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dokumentation.te
-x"
+(Dokumentation.tex
 LaTeX2e <2014/05/01>
 Babel <3.9l> and hyphenation patterns for 68 languages loaded.
-
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dokumentklassen.
-tex" ("C:\Program Files\MiKTeX 2.9\tex\latex\memoir\memoir.cls"
+(Dokumentklassen.tex
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\memoir\memoir.cls"
 Document Class: memoir 2013/05/30 v3.7b configurable book, report, article docu
 ment class
 \onelineskip=\skip41
@@ -17,18 +14,18 @@ ment class
 \@memcnta=\count79
 \c@@memmarkcntra=\count80
 \l@nohyphenation=\language69
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\ifetex\ifetex.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ifetex\ifetex.sty"
 Package: ifetex 2011/12/15 v1.2 ifetex
 
-("C:\Program Files\MiKTeX 2.9\tex\plain\ifetex\ifetex.tex"))
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\plain\ifetex\ifetex.tex"))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -37,15 +34,15 @@ Package ifluatex Info: LuaTeX not detected.
 \trimtop=\skip46
 \trimedge=\skip47
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fleqn.clo"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fleqn.clo"
 File: fleqn.clo 1998/08/17 v1.1c Standard LaTeX option (flush left equations)
 \mathindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\misc\etex.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\misc\etex.sty"
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \et@xins=\count81
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\memoir\mem11.clo"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\memoir\mem11.clo"
 File: mem11.clo 2008/01/30 v0.3 memoir class 11pt size option
 )
 \binding=\skip48
@@ -344,22 +341,22 @@ Package tocvsec2 [2008/07/23] emulated by memoir.
 Package verbatim [2008/07/23] emulated by memoir.
 Package verse [2008/07/23] emulated by memoir.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\memoir\mempatch.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\memoir\mempatch.sty"
 Package: mempatch 2009/07/24 v6.0f Patches for memoir class v1.6180339
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
 Package: inputenc 2014/04/30 v1.2b Input encoding file
 \inpenc@prehook=\toks22
 \inpenc@posthook=\toks23
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
 File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -509,7 +506,7 @@ File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
 File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -540,7 +537,7 @@ File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
 File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
@@ -564,36 +561,36 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel\babel.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel\babel.sty"
 Package: babel 2014/09/25 3.9l The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
 *
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel-danish\danish.ldf"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel-danish\danish.ldf"
 Language: danish 2009/09/19 v1.3r Danish support from the babel system
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel\babel.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\babel\babel.def"
 File: babel.def 2014/09/25 3.9l Babel common definitions
 \babel@savecnt=\count138
 \U@D=\dimen148
 )
 Package babel Info: Making " an active character on input line 82.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\ragged2e.sty"
 Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ms\everysel.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ms\everysel.sty"
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
 \CenteringLeftskip=\skip185
@@ -611,42 +608,42 @@ Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 \RaggedRightParindent=\skip197
 \JustifyingParindent=\skip198
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\anyfontsize\anyfontsize.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\anyfontsize\anyfontsize.sty"
 Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fixltx2e.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fixltx2e.sty"
 Package: fixltx2e 2014/09/29 v1.1s fixes to LaTeX
 LaTeX Info: Redefining \em on input line 430.
 LaTeX Info: Redefining \textsubscript on input line 434.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
 Package: lastpage 2013/01/28 v1.2l Refers to last page's name (HMM; JPG)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks24
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
 File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count139
@@ -654,8 +651,8 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen149
 \Gin@req@width=\dimen150
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
-Package: multicol 2014/08/24 v1.8g multicolumn formatting (FMi)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\multicol.sty"
+Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
 \c@tracingmulticols=\count140
 \mult@box=\box29
 \multicol@leftmargin=\dimen151
@@ -703,10 +700,10 @@ Package: multicol 2014/08/24 v1.8g multicolumn formatting (FMi)
 \colbreak@box=\box54
 \mc@col@check@num=\count148
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\rotating\rotating.sty"
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count149
@@ -715,10 +712,10 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box55
 \rot@mess@toks=\toks25
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -732,13 +729,13 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
-File: dvipsnam.def 2014/04/23 v3.0j Driver-dependant file (DPC,SPQR)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\dvipsnam.def"
+File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\flafter.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\flafter.sty"
 Package: flafter 2014/04/24 v1.2n Standard LaTeX floats after reference (FMi)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count150
 \float@exts=\toks26
@@ -746,24 +743,24 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks27
 \@floatcapt=\box57
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip203
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks28
 \ex@=\dimen160
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen161
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count151
@@ -804,27 +801,27 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\stmaryrd\stmaryrd.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\stmaryrd\stmaryrd.sty"
 Package: stmaryrd 1994/03/03 St Mary's Road symbol package
 \symstmry=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
 (Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mathtools\mathtools.sty"
 Package: mathtools 2014/07/16 v1.15 mathematical typesetting tools
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
-Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count163
 \calc@Bcount=\count164
 \calc@Adimen=\dimen169
@@ -836,7 +833,7 @@ LaTeX Info: Redefining \addtolength on input line 76.
 \calc@Ccount=\count165
 \calc@Cskip=\skip208
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mathtools\mhsetup.sty"
 Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
@@ -853,7 +850,7 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_above_shortintertext_sep=\dimen176
 \l_MT_below_shortintertext_sep=\dimen177
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\textcomp.sty"
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -868,12 +865,12 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
 File: ts1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -1008,33 +1005,22 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\mhchem\rsphrase.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mhchem\rsphrase.sty"
 Package: rsphrase 2011/06/03 v3.11 Risk and Safety Phrases (mhchem bundle)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\mhchem\mhchem.sty"
-Package: mhchem 2014/03/27 v3.17 for typesetting chemical formulae
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\mhchem\mhchem.sty"
+Package: mhchem 2015/01/05 v3.18 for typesetting chemical formulae
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\twoopt.sty"
-Package: twoopt 2008/08/11 v1.5 Definitions with two optional arguments (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
-Package: expl3 2014/09/15 v5423 L3 programming layer (loader) 
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\expl3.sty"
+Package: expl3 2014/11/25 v5471 L3 programming layer (loader) 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex"
-Package: expl3 2014/09/15 v5423 L3 programming layer (code) 
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\expl3-code.tex"
+Package: expl3 2014/11/25 v5471 L3 programming layer (code) 
 L3 Module: l3bootstrap 2014/08/23 v5354 L3 Bootstrap code
 L3 Module: l3names 2014/08/22 v5343 L3 Namespace for primitives
 L3 Module: l3basics 2014/08/24 v5364 L3 Basic definitions
 L3 Module: l3expan 2014/08/22 v5349 L3 Argument expansion
-L3 Module: l3tl 2014/08/24 v5359 L3 Token lists
+L3 Module: l3tl 2014/11/19 v5460 L3 Token lists
 L3 Module: l3str 2014/08/24 v5368 L3 Strings
 L3 Module: l3seq 2014/08/23 v5354 L3 Sequences and stacks
 L3 Module: l3int 2014/09/14 v5421 L3 Integers
@@ -1116,7 +1102,7 @@ L3 Module: l3coffins 2014/08/23 v5354 L3 Coffin code layer
 \l__coffin_display_x_dim=\dimen192
 \l__coffin_display_y_dim=\dimen193
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
-L3 Module: l3candidates 2014/08/24 v5366 L3 Experimental additions to l3kernel
+L3 Module: l3candidates 2014/11/23 v5466 L3 Experimental additions to l3kernel
 \l__box_top_dim=\dimen194
 \l__box_bottom_dim=\dimen195
 \l__box_left_dim=\dimen196
@@ -1135,24 +1121,22 @@ Normal \dimen register pool exhausted, switching to extended pool.
 \l__coffin_scaled_total_height_dim=\dimen266
 \l__coffin_scaled_width_dim=\dimen267
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3unicode-data.def"
-File: l3unicode-data.def 2014/08/12 v5276 L3 Unicode data
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3unicode-data.def"
+File: l3unicode-data.def 2014/11/23 v5465 L3 Unicode data
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode.def"
-File: l3pdfmode.def 2014/08/24 v5366 L3 Experimental driver: PDF mode
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3kernel\l3pdfmode.def"
+File: l3pdfmode.def 2014/11/23 v5466 L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count189
 ))
-\mhchem@ce@result=\toks33
-\mhchem@ce@part=\toks34
-\mhchem@arrow@deployType=\toks35
-\mhchem@arrow@params=\toks36
+\__mhchem_option_version_int=\count190
+Variant \str_if_eq:VnTF already defined; not changing it on line 94
+\mhchem@arrow@params=\toks33
 \mhchem@arrowlength@pgf=\skip262
 \mhchem@bondwidth=\skip263
 \mhchem@bondheight=\skip264
 \mhchem@smallbondwidth@tmpA=\skip265
 \mhchem@smallbondwidth@tmpB=\skip266
 \mhchem@smallbondwidth=\skip267
-\__mhchem_option_version_int=\count190
 \mhchem@prepostscript@tmp@i=\skip268
 \mhchem@prepostscript@tmp@ii=\skip269
 \mhchem@mathbox@tmp@i=\skip270
@@ -1161,27 +1145,27 @@ File: l3pdfmode.def 2014/08/24 v5366 L3 Experimental driver: PDF mode
 \mhchem@option@minussidebearingleft=\skip273
 \mhchem@option@minussidebearingright=\skip274
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx.sty"
-("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty"
-Package: xparse 2014/09/15 v5423 L3 Experimental document command parser
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\siunitx\siunitx.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3packages\xparse\xparse.sty"
+Package: xparse 2014/11/25 v5471 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count191
 \l__xparse_m_args_int=\count192
 \l__xparse_mandatory_args_int=\count193
 \l__xparse_processor_int=\count194
 \l__xparse_v_nesting_int=\count195
 )
-Package: siunitx 2014/10/01 v2.6c A comprehensive (SI) units package
+Package: siunitx 2015/01/21 v2.6e A comprehensive (SI) units package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\l3packages\l3keys2e\l3keys2e.sty"
-Package: l3keys2e 2014/09/15 v5423 LaTeX2e option processing using LaTeX3 keys
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\l3packages\l3keys2e\l3keys2e.sty"
+Package: l3keys2e 2014/11/25 v5471 LaTeX2e option processing using LaTeX3 keys
 )
 Variant \tl_if_blank:VTF already defined; not changing it on line 50
 \l__siunitx_tmp_box=\box75
 \l__siunitx_tmp_dim=\dimen268
 \l__siunitx_tmp_int=\count196
-Variant \prop_get:NVNT already defined; not changing it on line 372
-Variant \prop_get:NVNF already defined; not changing it on line 373
-Variant \prop_get:NVNTF already defined; not changing it on line 374
+Variant \prop_get:NVNT already defined; not changing it on line 380
+Variant \prop_get:NVNF already defined; not changing it on line 381
+Variant \prop_get:NVNTF already defined; not changing it on line 382
 Normal \count register pool exhausted, switching to extended pool.
 \l__siunitx_number_mantissa_length_int=\count277
 \l__siunitx_number_uncert_length_int=\count278
@@ -1223,144 +1207,146 @@ Normal \count register pool exhausted, switching to extended pool.
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7168.
+. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7176.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIPostPower with sig. 'mm' on line 7171.
+. Defining command \DeclareSIPostPower with sig. 'mm' on line 7179.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7174.
+. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7182.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIPrePower with sig. 'mm' on line 7177.
+. Defining command \DeclareSIPrePower with sig. 'mm' on line 7185.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIQualifier with sig. 'mm' on line 7180.
+. Defining command \DeclareSIQualifier with sig. 'mm' on line 7188.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7183.
+. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7191.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7186.
+. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7194.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7201.
+. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7209.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \num with sig. 'om' on line 7209.
+. Defining command \num with sig. 'om' on line 7217.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7217.
+. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7225.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \numrange with sig. 'omm' on line 7225.
+. Defining command \numrange with sig. 'omm' on line 7233.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7236.
+. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7244.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \SIrange with sig. 'ommm' on line 7247.
+. Defining command \SIrange with sig. 'ommm' on line 7255.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \SI with sig. 'omom' on line 7258.
+. Defining command \SI with sig. 'omom' on line 7266.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \sisetup with sig. 'm' on line 7261.
+. Defining command \sisetup with sig. 'm' on line 7269.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \tablenum with sig. 'om' on line 7273.
+. Defining command \tablenum with sig. 'om' on line 7281.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \si with sig. 'om' on line 7284.
+. Defining command \si with sig. 'om' on line 7292.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__siunitx_bookmark_num:w with sig. 'om' on line 7331.
+. Defining command \__siunitx_bookmark_num:w with sig. 'om' on line 7339.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining command \__siunitx_bookmark_numrange:w with sig. 'omm' on line
-. 7333.
+. 7341.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__siunitx_bookmark_SI:w with sig. 'omom' on line 7335.
+. Defining command \__siunitx_bookmark_SI:w with sig. 'omom' on line 7343.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__siunitx_bookmark_SIlist:w with sig. 'omm' on line 7337.
+. Defining command \__siunitx_bookmark_SIlist:w with sig. 'omm' on line 7345.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
 . Defining command \__siunitx_bookmark_SIrange:w with sig. 'ommm' on line
-. 7339.
+. 7347.
 .................................................
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
-. Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7340.
+. Defining command \__siunitx_bookmark_si:w with sig. 'om' on line 7348.
 .................................................
 \g__file_internal_ior=\read2
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\translator.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\base\translator\translator
+.sty"
 Package: translator 2010/06/12 ver 1.10
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\translator-langu
-age-mappings.tex"))) ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\varioref.sty
-"
-Package: varioref 2014/07/03 v1.5a package for extended references (FMi)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\base\translator\translator
+-language-mappings.tex")))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\varioref.sty"
+Package: varioref 2014/10/28 v1.5a package for extended references (FMi)
 \c@vrcnt=\count293
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip279
 \bibsep=\skip280
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count294
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\xr.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xr.sty"
 Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
 \lst@mode=\count295
 \lst@gtempboxa=\box82
-\lst@token=\toks37
+\lst@token=\toks34
 \lst@length=\count296
 \lst@currlwidth=\dimen280
 \lst@column=\count297
@@ -1371,43 +1357,43 @@ Package: xr 1994/05/28 v5.02 eXternal References (DPC)
 \lst@lineno=\count300
 \lst@maxwidth=\dimen283
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 \c@lstnumber=\count301
 \lst@skipnumbers=\count302
 \lst@framebox=\box83
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
 File: listings.cfg 2014/09/06 1.5e listings configuration
 ))
 Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lipsum\lipsum.sty"
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count303
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\enumitem\enumitem.sty"
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip281
 \enit@outerparindent=\dimen284
-\enit@toks=\toks38
+\enit@toks=\toks35
 \enit@inbox=\box84
 \enitdp@description=\count304
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pdfpages.sty"
 Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eso-pic\eso-pic.sty"
 Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\atbegshi.sty"
 Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdfpages\pppdftex.def"
 File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box85
-\AM@toc@title=\toks39
+\AM@toc@title=\toks36
 \c@AM@survey=\count305
 \AM@templatesizebox=\box86
 )
@@ -1416,13 +1402,13 @@ File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
 Stock height and width: 845.04684pt by 597.50787pt
 Top and edge trims: 0pt and 0pt
 Page height and width: 845.04684pt by 597.50787pt
-Text height and width: 691.0003pt by 426pt
-Spine and edge margins: 99.58464pt and 71.13188pt
-Upper and lower margins: 71.13188pt and 82.91466pt
+Text height and width: 677.4003pt by 426pt
+Spine and edge margins: 85.35826pt and 85.35826pt
+Upper and lower margins: 85.35826pt and 82.28828pt
 Headheight and headsep: 13.6pt and 19.8738pt
 Footskip: 27.46295pt
 Columnsep and columnseprule: 10pt and 0pt
-Marginparsep and marginparwidth: 7pt and 57.13188pt
+Marginparsep and marginparwidth: 7pt and 71.35826pt
 Sidecapsep and sidecapwidth: 7pt and 101pt
 Sidebarhsep and sidebarwidth: 7pt and 101pt
 Sidebarvsep and sidebartopsep: 13.6pt and 0pt
@@ -1431,7 +1417,7 @@ Sidefoothsep and sidefootwidth: 7pt and 101pt
 Sidefootvsep and sidefootheight: 13.6pt and 594.32022pt
 ******************************************************
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 
@@ -1440,10 +1426,10 @@ To prepare we will now reset all captioning macros and configurations to kernel
  defaults, and then let the caption package take over. Please remember to use t
 he caption package interfaces in order to configure your captions. .
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption.sty"
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\caption3.sty"
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen285
@@ -1459,14 +1445,14 @@ Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: rotating package is loaded.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
 Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
 Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -1483,7 +1469,12 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
@@ -1500,24 +1491,24 @@ Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen292
 \Hy@linkcounter=\count307
 \Hy@pagecounter=\count308
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count309
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -1529,7 +1520,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count310
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -1551,7 +1542,7 @@ LaTeX Info: Redefining \pageref on input line 6369.
 \c@Item=\count313
 \c@Hfootnote=\count314
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\memoir\memhfixc.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\memoir\memhfixc.sty"
 Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
 ass
 \c@memhycontfloat=\count315
@@ -1560,12 +1551,12 @@ ass
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count317
 \c@bookmark@seq@number=\count318
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -1574,7 +1565,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `false' on input line 189.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\cleveref\cleveref.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\cleveref\cleveref.sty"
 Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
 LaTeX Info: Redefining \Cref on input line 955.
 Package cleveref Info: `hyperref' support loaded on input line 2230.
@@ -1597,19 +1588,19 @@ LaTeX Info: Redefining \vrefrange on input line 2453.
 LaTeX Info: Redefining \fullref on input line 2453.
 Package cleveref Info: `listings' support loaded on input line 2950.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\units\units.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\units\units.sty"
 Package: units 1998/08/04 v0.9b Typesetting units
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\units\nicefrac.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\units\nicefrac.sty"
 Package: nicefrac 1998/08/04 v0.9b Nice fractions
 \L@UnitsRaiseDisplaystyle=\skip283
 \L@UnitsRaiseTextstyle=\skip284
 \L@UnitsRaiseScriptstyle=\skip285
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\tabu\tabu.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tabu\tabu.sty"
 Package: tabu 2011/02/26 v2.8 - flexible LaTeX tabulars (FC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\varwidth.sty"
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box87
 \sift@deathcycles=\count319
@@ -1631,16 +1622,16 @@ Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \abovetabulinesep=\dimen304
 \belowtabulinesep=\dimen305
 \tabustrutrule=\dimen306
-\tabu@thebody=\toks40
-\tabu@footnotes=\toks41
+\tabu@thebody=\toks37
+\tabu@footnotes=\toks38
 \tabu@box=\box88
 \tabu@arstrutbox=\box89
 \tabu@hleads=\box90
 \tabu@vleads=\box91
 \tabu@cellskip=\skip286
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\longtable.sty"
-Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip287
 \LTright=\skip288
 \LTpre=\skip289
@@ -1655,25 +1646,25 @@ Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LT@rows=\count328
 \c@LT@tables=\count329
 \c@LT@chunks=\count330
-\LT@p@ftn=\toks42
+\LT@p@ftn=\toks39
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tabto\tabto.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tabto\tabto.sty"
 Package: tabto 2013/03/25  v 1.3  Another tabbing mechanism
 \CurrentLineWidth=\dimen308
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\breakurl\breakurl.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\breakurl\breakurl.sty"
 Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
-Package: xkeyval 2014/05/25 v2.7 package option processing (HA)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
-\XKV@toks=\toks43
-\XKV@tempa@toks=\toks44
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+\XKV@toks=\toks40
+\XKV@tempa@toks=\toks41
 )
 \XKV@depth=\count331
-File: xkeyval.tex 2014/05/25 v2.7 key=value parser (HA)
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 
 Package breakurl Warning: You are using breakurl while processing via pdflatex.
@@ -1681,20 +1672,22 @@ Package breakurl Warning: You are using breakurl while processing via pdflatex.
 (breakurl)                \burl will be just a synonym of \url.
 (breakurl)                 on input line 48.
 
-)) ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
+)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\pifont.sty"
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\upzd.fd"
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\upsy.fd"
 File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dokumentation.au
-x")
+(Dokumentation.aux (Dfiler/Dforside.aux) (Dfiler/Dunderskrifter.aux)
+(Dfiler/Dordliste.aux) (Dfiler/Dindledning.aux) (Dfiler/Dkravspecifikation.aux)
+(Dfiler/Ddesign.aux) (Dfiler/Dtest.aux) (Dfiler/Daccepttest.aux)
+(Dfiler/Dbilag.aux) (Dfiler/Dreferencer.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
@@ -1709,7 +1702,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
 LaTeX Font Info:    ... okay on input line 6.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 6.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 6.
@@ -1726,43 +1720,43 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             install/macros/latex/contrib/pageslts.tds.zip
 (lastpage)             ! on input line 6.
 
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count332
 \scratchdimen=\dimen309
 \scratchbox=\box96
 \nofMPsegments=\count333
 \nofMParguments=\count334
-\everyMPshowfont=\toks45
+\everyMPshowfont=\toks42
 \MPscratchCnt=\count335
 \MPscratchDim=\dimen310
 \MPnumerator=\count336
 \makeMPintoPDFobject=\count337
-\everyMPtoPDFconversion=\toks46
+\everyMPtoPDFconversion=\toks43
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\translator
--basic-dictionary\translator-basic-dictionary-English.dict"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\beamer\base\translator\dicts\tran
+slator-basic-dictionary\translator-basic-dictionary-English.dict"
 Dictionary: translator-basic-dictionary, Language: English 
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\siunitx\siunitx-abbreviations.cfg"
-File: siunitx-abbreviations.cfg 2014/10/01 v2.6c siunitx: Abbreviated units
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\siunitx\siunitx-abbreviations.cfg
+"
+File: siunitx-abbreviations.cfg 2015/01/21 v2.6e siunitx: Abbreviated units
 )
 \c@lstlisting=\count338
 \AtBeginShipoutBox=\box97
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
 Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 6.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count339
@@ -1774,32 +1768,29 @@ LaTeX Info: Redefining \nameref on input line 6.
 LaTeX Info: Redefining \ref on input line 6.
 LaTeX Info: Redefining \pageref on input line 6.
 LaTeX Info: Redefining \nameref on input line 6.
-
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dokumentation.ou
-t")
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dokumentation.ou
-t")
+(Dokumentation.out) (Dokumentation.out)
 \@outlinefile=\write4
 LaTeX Info: Redefining \Ref on input line 6.
 \c__siunitx_mathsf_int=\count340
 LaTeX Font Info:    Try loading font information for U+msa on input line 6.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 6.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for U+stmry on input line 6.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\stmaryrd\ustmry.fd")
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\stmaryrd\ustmry.fd")
 \c__siunitx_mathtt_int=\count341
 
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dforside.
-tex" <figurer/ASE.png, id=255, 439.6425pt x 136.25906pt>
+(Dfiler/Dforside.tex <figurer/ASE.png, id=287, 439.6425pt x 136.25906pt>
 File: figurer/ASE.png Graphic file (type png)
- <use figurer/ASE.png>
+
+<use figurer/ASE.png>
 Package pdftex.def Info: figurer/ASE.png used on input line 6.
 (pdftex.def)             Requested size: 255.6026pt x 79.21742pt.
 
@@ -1819,8 +1810,7 @@ Package babel Info: Redefining danish shorthand "~
 
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Nicoline/Desktop
-/Semester-Projekt-3/LaTex - Projekt/figurer/ASE.png>]
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./figurer/ASE.png>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining danish shorthand "~
@@ -1829,11 +1819,10 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 42.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 42.
- [2
 
-])
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dunderskr
-ifter.tex"
+[2
+
+]) (Dfiler/Dunderskrifter.tex
 Underfull \hbox (badness 10000) in paragraph at lines 2--5
 
  []
@@ -1870,28 +1859,8 @@ l.9 \include{Dfiler/Dunderskrifter}
                                     [1
 
 
-]
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dordliste
-.tex"
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
-pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
- been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Ordliste} [2
-
-
-
-]
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pbk.fd")
+] (Dfiler/Dordliste.tex
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1pbk.fd")
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -1905,44 +1874,38 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 10.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 10.
- [3]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 13.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 13.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 13.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 13.
- [4
+pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.10 \include{Dfiler/Dordliste}
+                                [2
 
 
-]
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+] (Dokumentation.toc
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 48.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 48.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 48.
+ [3
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 17.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 17.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 17.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 17.
-[5]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 17.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 17.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 17.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 17.
- [6
 
-]
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dindledni
-ng.tex"
+])
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 17.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 17.
+ [4]
+(Dfiler/Dindledning.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -1973,22 +1936,8 @@ Package babel Info: Redefining danish shorthand "~
 [1
 
 
-]
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dkravspec
-ifikation.tex"
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
- [2
 
-
-
-]
+] (Dfiler/Dkravspecifikation.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -2006,7 +1955,11 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 21.
-<Figurer/ISE/aktdiagram2.jpg, id=311, 253.06544pt x 253.06544pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 22.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 22.
+<Figurer/ISE/aktdiagram2.jpg, id=402, 253.06544pt x 253.06544pt>
 File: Figurer/ISE/aktdiagram2.jpg Graphic file (type jpg)
 
 <use Figurer/ISE/aktdiagram2.jpg>
@@ -2020,7 +1973,16 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 30.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 30.
- [3]
+ [2
+
+
+
+]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 32.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 32.
+
 Underfull \hbox (badness 1152) in paragraph at lines 43--43
 []\T1/cmr/m/n/10.95 Tekniker er den aktør, der foretager den årlige
  []
@@ -2029,7 +1991,11 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 45.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 45.
-<Figurer/ISE/UcDiagram2.png, id=318, 385.44pt x 467.7475pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 46.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 46.
+<Figurer/ISE/UcDiagram2.png, id=409, 385.44pt x 467.7475pt>
 File: Figurer/ISE/UcDiagram2.png Graphic file (type png)
 
 <use Figurer/ISE/UcDiagram2.png>
@@ -2043,8 +2009,11 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 53.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 53.
- [4 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/ISE/a
-ktdiagram2.jpg>]
+ [3 <./Figurer/ISE/aktdiagram2.jpg>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 54.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 54.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 75.
 Package babel Info: Redefining danish shorthand "~
@@ -2053,8 +2022,11 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 75.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 75.
- [5 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/ISE/U
-cDiagram2.png>]
+ [4 <./Figurer/ISE/UcDiagram2.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 77.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 77.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 100.
 Package babel Info: Redefining danish shorthand "~
@@ -2063,13 +2035,22 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 100.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 100.
- [6]
+ [5]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 102.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 102.
+
 Underfull \hbox (badness 1067) in paragraph at lines 121--121
 []\T1/cmr/m/n/10.95 Blodtrykket vises kontinuerligt i en graf. Puls, systoliske
  og
  []
 
 Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 123.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 123.
+Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 141.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 141.
@@ -2077,20 +2058,32 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 141.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 141.
-[7]
+[6]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 143.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 143.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 187.
+(babel)             in language  on input line 164.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 187.
- [8]
+(babel)             in language  on input line 164.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 164.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 164.
+ [7]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 166.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 166.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 189.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 189.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 190.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 190.
 
 Underfull \hbox (badness 10000) in paragraph at lines 191--192
 
@@ -2106,20 +2099,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
-
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 197.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 197.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 197.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 197.
+[8]
 Underfull \hbox (badness 10000) in paragraph at lines 197--198
 
  []
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 198.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 198.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 198.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 198.
-[9]
+
 Underfull \hbox (badness 10000) in paragraph at lines 198--199
 
  []
@@ -2165,9 +2158,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 209--210
  []
 
 
-LaTeX Warning: Reference `GUI' on page 10 undefined on input line 210.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
@@ -2192,7 +2182,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 219--220
 
  []
 
-
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 220.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 220.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 220.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 220.
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 222--224
 
  []
@@ -2202,15 +2200,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 224--225
 
  []
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 225.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 225.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 225.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 225.
-[10]
+
 Underfull \hbox (badness 10000) in paragraph at lines 227--229
 
  []
@@ -2229,22 +2219,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 18.
- [11]
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Ddesign.t
-ex"
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
- [12
-
-
-
-]
+ [10] (Dfiler/Ddesign.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -2253,20 +2228,12 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 15.
-
-
-LaTeX Warning: Reference `Hardware implementering' on page 13 undefined on inpu
-t line 16.
-
-
-LaTeX Warning: Reference `implementering' on page 13 undefined on input line 16
-.
-
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 18.
-<Figurer/Hardware/BDD1.jpg, id=387, 551.1792pt x 131.17004pt>
+
+<Figurer/Hardware/BDD1.jpg, id=476, 551.1792pt x 131.17004pt>
 File: Figurer/Hardware/BDD1.jpg Graphic file (type jpg)
 
 <use Figurer/Hardware/BDD1.jpg>
@@ -2277,11 +2244,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--26
 
  []
 
-
-LaTeX Warning: Reference `BDD blodtryksmaaler' on page 13 undefined on input li
-ne 28.
-
-<Figurer/Hardware/IBD.jpg, id=388, 506.01045pt x 203.44005pt>
+<Figurer/Hardware/IBD.jpg, id=478, 506.01045pt x 203.44005pt>
 File: Figurer/Hardware/IBD.jpg Graphic file (type jpg)
 
 <use Figurer/Hardware/IBD.jpg>
@@ -2300,17 +2263,17 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 34.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 34.
-[13 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hardw
-are/BDD1.jpg>]
-
-LaTeX Warning: Reference `IBD blodtryksmaaler' on page 14 undefined on input li
-ne 36.
+[11
 
 
-LaTeX Warning: Reference `instrumentation' on page 14 undefined on input line 4
-0.
 
-<Figurer/Hardware/Forstaerker.jpg, id=395, 292.09125pt x 198.7425pt>
+ <./Figurer/Hardware/BDD1.jpg>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 38.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 38.
+
+<Figurer/Hardware/Forstaerker.jpg, id=487, 292.09125pt x 198.7425pt>
 File: Figurer/Hardware/Forstaerker.jpg Graphic file (type jpg)
 
 <use Figurer/Hardware/Forstaerker.jpg>
@@ -2322,41 +2285,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--45
 
  []
 
-
-LaTeX Warning: Reference `ligning1' on page 14 undefined on input line 49.
-
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 50.
+(babel)             in language  on input line 46.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 50.
-[14 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hardw
-are/IBD.jpg> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figu
-rer/Hardware/Forstaerker.jpg>]
-
-LaTeX Warning: Reference `ligning2' on page 15 undefined on input line 56.
-
-
-LaTeX Warning: Reference `ligning3' on page 15 undefined on input line 65.
-
-
+(babel)             in language  on input line 46.
+[12 <./Figurer/Hardware/IBD.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
-
-LaTeX Warning: Reference `ligning4' on page 15 undefined on input line 73.
-
-
-LaTeX Warning: Reference `fig:Filter' on page 15 undefined on input line 81.
-
-
-LaTeX Warning: Reference `fig:Filter' on page 15 undefined on input line 81.
-
-<Figurer/Hardware/FilterDesign.jpg, id=402, 421.575pt x 201.75375pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 80.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 80.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 82.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 82.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 82.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 82.
+[13 <./Figurer/Hardware/Forstaerker.jpg>]
+<Figurer/Hardware/FilterDesign.jpg, id=513, 421.575pt x 201.75375pt>
 File: Figurer/Hardware/FilterDesign.jpg Graphic file (type jpg)
 
 <use Figurer/Hardware/FilterDesign.jpg>
@@ -2364,48 +2319,15 @@ Package pdftex.def Info: Figurer/Hardware/FilterDesign.jpg used on input line 8
 5.
 (pdftex.def)             Requested size: 426.0pt x 203.87433pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 89.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 89.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 89.
+(babel)             in language  on input line 113.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 89.
- [15]
-
-Package natbib Warning: Citation `Overforing' on page 16 undefined on input lin
-e 90.
-
-
-LaTeX Warning: Reference `ligning5' on page 16 undefined on input line 90.
-
-
-LaTeX Warning: Reference `ligning6' on page 16 undefined on input line 98.
-
-
-LaTeX Warning: Reference `ligning7' on page 16 undefined on input line 105.
-
-
-LaTeX Warning: Reference `ligning8' on page 16 undefined on input line 112.
-
-
-LaTeX Warning: Reference `ligning9' on page 16 undefined on input line 119.
-
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 121.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 121.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 121.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 121.
-[16 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hardw
-are/FilterDesign.jpg>]
-
-LaTeX Warning: Reference `fig:Filter' on page 17 undefined on input line 140.
-
-
-<Figurer/Hardware/FilterDesignMedKomponentvaerdier.jpg, id=425, 411.03563pt x 1
+(babel)             in language  on input line 113.
+ [14 <./Figurer/Hardware/FilterDesign.jpg>]
+<Figurer/Hardware/FilterDesignMedKomponentvaerdier.jpg, id=531, 411.03563pt x 1
 91.9672pt>
 File: Figurer/Hardware/FilterDesignMedKomponentvaerdier.jpg Graphic file (type 
 jpg)
@@ -2414,15 +2336,7 @@ Package pdftex.def Info: Figurer/Hardware/FilterDesignMedKomponentvaerdier.jpg
 used on input line 144.
 (pdftex.def)             Requested size: 426.0pt x 198.95573pt.
 
-
-Package natbib Warning: Citation `Overforing' on page 17 undefined on input lin
-e 149.
-
-
-LaTeX Warning: Reference `fig:Bodeplot' on page 17 undefined on input line 149.
-
-
-<Figurer/Hardware/Bodeplot.png, id=426, 331.99031pt x 220.57407pt>
+<Figurer/Hardware/Bodeplot.png, id=534, 331.99031pt x 220.57407pt>
 File: Figurer/Hardware/Bodeplot.png Graphic file (type png)
 
 <use Figurer/Hardware/Bodeplot.png>
@@ -2436,12 +2350,11 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 157.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 157.
- [17 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hard
-ware/FilterDesignMedKomponentvaerdier.jpg>]
-
-LaTeX Warning: Reference `graenseflader' on page 18 undefined on input line 161
-.
-
+ [15 <./Figurer/Hardware/FilterDesignMedKomponentvaerdier.jpg>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 160.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 160.
 
 Overfull \hbox (45.75844pt too wide) in paragraph at lines 166--175
  [][] 
@@ -2451,14 +2364,10 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 179.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 179.
-
-LaTeX Warning: Reference `implementering' on page 18 undefined on input line 18
-1.
-
-
-Package natbib Warning: Citation `Usability' on page 18 undefined on input line
- 182.
-
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 180.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 180.
 
 Underfull \hbox (badness 10000) in paragraph at lines 181--185
 
@@ -2472,20 +2381,14 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 185.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 185.
-[18 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hardw
-are/Bodeplot.png>]
-<Figurer/GUI/Logind_GUI.png, id=443, 280.04625pt x 227.34938pt>
+[16 <./Figurer/Hardware/Bodeplot.png>]
+<Figurer/GUI/Logind_GUI.png, id=554, 280.04625pt x 227.34938pt>
 File: Figurer/GUI/Logind_GUI.png Graphic file (type png)
 
 <use Figurer/GUI/Logind_GUI.png>
 Package pdftex.def Info: Figurer/GUI/Logind_GUI.png used on input line 188.
 (pdftex.def)             Requested size: 298.1987pt x 242.09581pt.
 
-
-LaTeX Warning: Reference `Login vindue' on page 19 undefined on input line 193.
-
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 193--196
 
  []
@@ -2508,29 +2411,20 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 196.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 196.
-[19 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/GUI/L
-ogind_GUI.png>] <Figurer/GUI/kalibrerGUI.png, id=450, 228.855pt x 215.80624pt>
+[17 <./Figurer/GUI/Logind_GUI.png>]
+<Figurer/GUI/kalibrerGUI.png, id=563, 228.855pt x 215.80624pt>
 File: Figurer/GUI/kalibrerGUI.png Graphic file (type png)
 
 <use Figurer/GUI/kalibrerGUI.png>
 Package pdftex.def Info: Figurer/GUI/kalibrerGUI.png used on input line 200.
 (pdftex.def)             Requested size: 213.0pt x 200.86237pt.
 
-
-LaTeX Warning: Reference `Kaliber vindue' on page 20 undefined on input line 20
-5.
-
-<Figurer/GUI/GUI_form1.jpg, id=451, 963.6pt x 521.95pt>
+<Figurer/GUI/GUI_form1.jpg, id=565, 963.6pt x 521.95pt>
 File: Figurer/GUI/GUI_form1.jpg Graphic file (type jpg)
 
 <use Figurer/GUI/GUI_form1.jpg>
 Package pdftex.def Info: Figurer/GUI/GUI_form1.jpg used on input line 209.
 (pdftex.def)             Requested size: 426.0pt x 230.74982pt.
-
-
-LaTeX Warning: Reference `Blodtryk vindue' on page 20 undefined on input line 2
-14.
-
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 215.
 Package babel Info: Redefining danish shorthand "~
@@ -2539,20 +2433,19 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 215.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 215.
-[20 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/GUI/k
-alibrerGUI.png> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/F
-igurer/GUI/GUI_form1.jpg>]
-<Figurer/GUI/Gem_GUI.png, id=459, 225.84375pt x 223.58531pt>
+ [18 <./Figurer/GUI/kalibrerGUI.png> <./Figurer/GUI/GUI_form1.jpg>]
+<Figurer/GUI/Gem_GUI.png, id=574, 225.84375pt x 223.58531pt>
 File: Figurer/GUI/Gem_GUI.png Graphic file (type png)
 
 <use Figurer/GUI/Gem_GUI.png>
 Package pdftex.def Info: Figurer/GUI/Gem_GUI.png used on input line 218.
 (pdftex.def)             Requested size: 298.1987pt x 295.25632pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 225.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 225.
 
-
-LaTeX Warning: Reference `Gem vindue' on page 21 undefined on input line 223.
-
-<Figurer/ISE/Domaenemodel.jpg, id=460, 775.57755pt x 434.46315pt>
+<Figurer/ISE/Domaenemodel.jpg, id=576, 775.57755pt x 434.46315pt>
 File: Figurer/ISE/Domaenemodel.jpg Graphic file (type jpg)
 
 <use Figurer/ISE/Domaenemodel.jpg>
@@ -2566,18 +2459,17 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 234.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 234.
- [21 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/GUI/
-Gem_GUI.png>]
-
-LaTeX Warning: Reference `UML klassediagram' on page 22 undefined on input line
- 237.
-
+ [19 <./Figurer/GUI/Gem_GUI.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 235.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 235.
 
 Underfull \hbox (badness 10000) in paragraph at lines 240--242
 
  []
 
-<Figurer/ISE/sdAppModelUC2.jpg, id=467, 514.3215pt x 465.4188pt>
+<Figurer/ISE/sdAppModelUC2.jpg, id=585, 514.3215pt x 465.4188pt>
 File: Figurer/ISE/sdAppModelUC2.jpg Graphic file (type jpg)
 
 <use Figurer/ISE/sdAppModelUC2.jpg>
@@ -2591,12 +2483,8 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 249.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 249.
- [22 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/ISE/
-Domaenemodel.jpg>]
-
-LaTeX Warning: Reference `sd UC2' on page 23 undefined on input line 250.
-
-<Figurer/ISE/sdAppModelUC3.jpg, id=474, 343.40295pt x 229.69815pt>
+ [20 <./Figurer/ISE/Domaenemodel.jpg>]
+<Figurer/ISE/sdAppModelUC3.jpg, id=593, 343.40295pt x 229.69815pt>
 File: Figurer/ISE/sdAppModelUC3.jpg Graphic file (type jpg)
 
 <use Figurer/ISE/sdAppModelUC3.jpg>
@@ -2610,28 +2498,15 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 257.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 257.
- [23 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/ISE/
-sdAppModelUC2.jpg>]
-
-LaTeX Warning: Reference `sd UC3' on page 24 undefined on input line 258.
-
-
-Underfull \hbox (badness 1082) in paragraph at lines 258--259
-[]\T1/cmr/m/n/10.95 Figur [] viser, hvordan brugeren starter målingen, og hvord
-an graferne vises på
- []
-
-<Figurer/ISE/sdAppModelUC4.jpg, id=481, 234.99796pt x 178.5069pt>
+ [21 <./Figurer/ISE/sdAppModelUC2.jpg>]
+<Figurer/ISE/sdAppModelUC4.jpg, id=600, 234.99796pt x 178.5069pt>
 File: Figurer/ISE/sdAppModelUC4.jpg Graphic file (type jpg)
 
 <use Figurer/ISE/sdAppModelUC4.jpg>
 Package pdftex.def Info: Figurer/ISE/sdAppModelUC4.jpg used on input line 261.
 (pdftex.def)             Requested size: 298.1987pt x 226.54051pt.
 
-
-LaTeX Warning: Reference `sd UC4' on page 24 undefined on input line 266.
-
-<Figurer/ISE/sdAppModelUC5.jpg, id=482, 349.305pt x 307.1475pt>
+<Figurer/ISE/sdAppModelUC5.jpg, id=602, 349.305pt x 307.1475pt>
 File: Figurer/ISE/sdAppModelUC5.jpg Graphic file (type jpg)
 
 <use Figurer/ISE/sdAppModelUC5.jpg>
@@ -2645,13 +2520,8 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 273.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 273.
- [24 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/ISE/
-sdAppModelUC3.jpg> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projek
-t/Figurer/ISE/sdAppModelUC4.jpg>]
-
-LaTeX Warning: Reference `sd UC5' on page 25 undefined on input line 274.
-
-<Figurer/ISE/sdAppModelUC6.jpg, id=489, 738.5994pt x 527.8119pt>
+ [22 <./Figurer/ISE/sdAppModelUC3.jpg> <./Figurer/ISE/sdAppModelUC4.jpg>]
+<Figurer/ISE/sdAppModelUC6.jpg, id=610, 738.5994pt x 527.8119pt>
 File: Figurer/ISE/sdAppModelUC6.jpg Graphic file (type jpg)
 
 <use Figurer/ISE/sdAppModelUC6.jpg>
@@ -2665,38 +2535,32 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 281.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 281.
- [25 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/ISE/
-sdAppModelUC5.jpg>]
-
-LaTeX Warning: Reference `sd UC6' on page 26 undefined on input line 282.
-
-<Figurer/ISE/classAppModelUC2.jpg, id=495, 519.44063pt x 248.42813pt>
+ [23 <./Figurer/ISE/sdAppModelUC5.jpg>]
+<Figurer/ISE/classAppModelUC2.jpg, id=617, 519.44063pt x 248.42813pt>
 File: Figurer/ISE/classAppModelUC2.jpg Graphic file (type jpg)
 
 <use Figurer/ISE/classAppModelUC2.jpg>
 Package pdftex.def Info: Figurer/ISE/classAppModelUC2.jpg used on input line 28
 9.
 (pdftex.def)             Requested size: 426.0pt x 203.7389pt.
-
-<Figurer/ISE/classAppModelUC3.jpg, id=496, 491.58656pt x 121.95563pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 293.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 293.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 293.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 293.
+ [24 <./Figurer/ISE/sdAppModelUC6.jpg>]
+<Figurer/ISE/classAppModelUC3.jpg, id=624, 491.58656pt x 121.95563pt>
 File: Figurer/ISE/classAppModelUC3.jpg Graphic file (type jpg)
 
 <use Figurer/ISE/classAppModelUC3.jpg>
 Package pdftex.def Info: Figurer/ISE/classAppModelUC3.jpg used on input line 29
 6.
 (pdftex.def)             Requested size: 426.0pt x 105.68925pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 300.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 300.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 300.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 300.
- [26 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/ISE/
-sdAppModelUC6.jpg> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projek
-t/Figurer/ISE/classAppModelUC2.jpg>]
-<Figurer/ISE/classAppModelUC4.jpg, id=504, 321.45094pt x 126.4725pt>
+
+<Figurer/ISE/classAppModelUC4.jpg, id=625, 321.45094pt x 126.4725pt>
 File: Figurer/ISE/classAppModelUC4.jpg Graphic file (type jpg)
 
 <use Figurer/ISE/classAppModelUC4.jpg>
@@ -2704,15 +2568,24 @@ Package pdftex.def Info: Figurer/ISE/classAppModelUC4.jpg used on input line 30
 3.
 (pdftex.def)             Requested size: 426.0pt x 167.61192pt.
 
-<Figurer/ISE/classAppModelUC5.jpg, id=505, 328.97906pt x 140.02313pt>
+<Figurer/ISE/classAppModelUC5.jpg, id=626, 328.97906pt x 140.02313pt>
 File: Figurer/ISE/classAppModelUC5.jpg Graphic file (type jpg)
 
 <use Figurer/ISE/classAppModelUC5.jpg>
 Package pdftex.def Info: Figurer/ISE/classAppModelUC5.jpg used on input line 31
 0.
 (pdftex.def)             Requested size: 426.0pt x 181.32283pt.
-
-<Figurer/ISE/classAppModelUC7.jpg, id=506, 390.70969pt x 265.74281pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 314.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 314.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 314.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 314.
+ [25 <./Figurer/ISE/classAppModelUC2.jpg> <./Figurer/ISE/classAppModelUC3.jpg> 
+<./Figurer/ISE/classAppModelUC4.jpg>]
+<Figurer/ISE/classAppModelUC7.jpg, id=635, 390.70969pt x 265.74281pt>
 File: Figurer/ISE/classAppModelUC7.jpg Graphic file (type jpg)
 
 <use Figurer/ISE/classAppModelUC7.jpg>
@@ -2720,18 +2593,6 @@ Package pdftex.def Info: Figurer/ISE/classAppModelUC7.jpg used on input line 31
 7.
 (pdftex.def)             Requested size: 426.0pt x 289.75934pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 321.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 321.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 321.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 321.
- [27 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/ISE/
-classAppModelUC3.jpg> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Pro
-jekt/Figurer/ISE/classAppModelUC4.jpg> <C:/Users/Nicoline/Desktop/Semester-Proj
-ekt-3/LaTex - Projekt/Figurer/ISE/classAppModelUC5.jpg>]
-Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 322.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 322.
@@ -2739,8 +2600,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 322.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 322.
- [28 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/ISE/
-classAppModelUC7.jpg>]
+ [26 <./Figurer/ISE/classAppModelUC5.jpg> <./Figurer/ISE/classAppModelUC7.jpg>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 322.
 Package babel Info: Redefining danish shorthand "~
@@ -2754,7 +2614,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 335--336
 
  []
 
-<Figurer/Hardware/samletopstilling.png, id=519, 527.72156pt x 369.63094pt>
+<Figurer/Hardware/samletopstilling.png, id=642, 527.72156pt x 369.63094pt>
 File: Figurer/Hardware/samletopstilling.png Graphic file (type png)
 
 <use Figurer/Hardware/samletopstilling.png>
@@ -2769,7 +2629,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 343.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 343.
- [29
+ [27
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 346--357
@@ -2809,35 +2669,27 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 357.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 357.
-[30 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hardw
-are/samletopstilling.png>]
-
-LaTeX Warning: Reference `DForsttabel' on page 31 undefined on input line 360.
-
-
-LaTeX Warning: Reference `DFiltertabel' on page 31 undefined on input line 379.
-
-
-
+[28 <./Figurer/Hardware/samletopstilling.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 395.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 395.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 395.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 395.
+ [29]
 Underfull \hbox (badness 10000) in paragraph at lines 396--397
 
  []
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 397.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 397.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 397.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 397.
-[31]
+
 Underfull \hbox (badness 10000) in paragraph at lines 398--399
 
  []
 
 
-LaTeX Warning: Reference `dcutoff]' on page 32 undefined on input line 400.
+LaTeX Warning: Reference `dcutoff]' on page 30 undefined on input line 400.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 400--401
@@ -2848,55 +2700,44 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 410.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 410.
-
-LaTeX Warning: Reference `3lag' on page 32 undefined on input line 417.
-
-<Figurer/SoftwareImplementering/3lag.png, id=540, 301.125pt x 273.27094pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 413.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 413.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 418.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 418.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 418.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 418.
+[30]
+<Figurer/SoftwareImplementering/3lag.png, id=671, 301.125pt x 273.27094pt>
 File: Figurer/SoftwareImplementering/3lag.png Graphic file (type png)
 
 <use Figurer/SoftwareImplementering/3lag.png>
 Package pdftex.def Info: Figurer/SoftwareImplementering/3lag.png used on input 
 line 421.
 (pdftex.def)             Requested size: 340.8013pt x 309.30542pt.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 425.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 425.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 425.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 425.
- [32]
 
-LaTeX Warning: Reference `3lag' on page 33 undefined on input line 428.
-
-
-LaTeX Warning: Reference `LoginGUI' on page 33 undefined on input line 429.
-
-
-<Figurer/SoftwareImplementering/Logind.png, id=547, 507.39563pt x 225.84375pt>
+<Figurer/SoftwareImplementering/Logind.png, id=674, 507.39563pt x 225.84375pt>
 File: Figurer/SoftwareImplementering/Logind.png Graphic file (type png)
 
 <use Figurer/SoftwareImplementering/Logind.png>
 Package pdftex.def Info: Figurer/SoftwareImplementering/Logind.png used on inpu
 t line 433.
 (pdftex.def)             Requested size: 426.0pt x 189.62129pt.
-
-
-LaTeX Warning: Reference `form1' on page 33 undefined on input line 437.
-
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 438.
+(babel)             in language  on input line 437.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 438.
+(babel)             in language  on input line 437.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 438.
+(babel)             in language  on input line 437.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 438.
-[33 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Softw
-areImplementering/3lag.png> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex
- - Projekt/Figurer/SoftwareImplementering/Logind.png>]
-<Figurer/SoftwareImplementering/blodtryk.png, id=557, 766.36313pt x 416.30531pt
+(babel)             in language  on input line 437.
+ [31 <./Figurer/SoftwareImplementering/3lag.png>]
+<Figurer/SoftwareImplementering/blodtryk.png, id=685, 766.36313pt x 416.30531pt
 >
 File: Figurer/SoftwareImplementering/blodtryk.png Graphic file (type png)
  <use Figurer/SoftwareImplementering/blodtryk.png>
@@ -2904,41 +2745,30 @@ Package pdftex.def Info: Figurer/SoftwareImplementering/blodtryk.png used on in
 put line 441.
 (pdftex.def)             Requested size: 426.0pt x 231.41426pt.
 
-
-LaTeX Warning: Reference `Gem' on page 34 undefined on input line 446.
-
-<Figurer/SoftwareImplementering/Gem.png, id=558, 225.84375pt x 226.59656pt>
+<Figurer/SoftwareImplementering/Gem.png, id=687, 225.84375pt x 226.59656pt>
 File: Figurer/SoftwareImplementering/Gem.png Graphic file (type png)
 
 <use Figurer/SoftwareImplementering/Gem.png>
 Package pdftex.def Info: Figurer/SoftwareImplementering/Gem.png used on input l
 ine 450.
 (pdftex.def)             Requested size: 255.6026pt x 256.46948pt.
-
-
-LaTeX Warning: Reference `filtrer' on page 34 undefined on input line 456.
-
-
-LaTeX Warning: Reference `Filtrer' on page 34 undefined on input line 456.
-
-
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 454.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 454.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 454.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 454.
+ [32 <./Figurer/SoftwareImplementering/Logind.png> <./Figurer/SoftwareImplement
+ering/blodtryk.png>]
 Underfull \hbox (badness 1803) in paragraph at lines 456--457
 \T1/cmr/m/n/10.95 Logiklaget er det lag, der spiller sammen med både data- og p
 ræsentationslag.
  []
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 457.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 457.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 457.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 457.
-[34 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Softw
-areImplementering/blodtryk.png> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/L
-aTex - Projekt/Figurer/SoftwareImplementering/Gem.png>]
-<Figurer/SoftwareImplementering/Filtrer1.png, id=566, 456.95718pt x 108.405pt>
+
+<Figurer/SoftwareImplementering/Filtrer1.png, id=697, 456.95718pt x 108.405pt>
 File: Figurer/SoftwareImplementering/Filtrer1.png Graphic file (type png)
 
 <use Figurer/SoftwareImplementering/Filtrer1.png>
@@ -2951,21 +2781,23 @@ Overfull \hbox (63.8974pt too wide) in paragraph at lines 460--461
  []
 
 
-<Figurer/SoftwareImplementering/filtrer.png, id=567, 348.55219pt x 122.70844pt>
+<Figurer/SoftwareImplementering/filtrer.png, id=698, 348.55219pt x 122.70844pt>
 File: Figurer/SoftwareImplementering/filtrer.png Graphic file (type png)
 <use Figurer/SoftwareImplementering/filtrer.png>
 Package pdftex.def Info: Figurer/SoftwareImplementering/filtrer.png used on inp
 ut line 467.
 (pdftex.def)             Requested size: 362.1026pt x 127.48456pt.
-
-
-LaTeX Warning: Reference `Filtrer' on page 35 undefined on input line 472.
-
-
-LaTeX Warning: Reference `Datalogin' on page 35 undefined on input line 476.
-
-
-<Figurer/SoftwareImplementering/CheckLogind.png, id=568, 598.48593pt x 219.8212
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 471.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 471.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 471.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 471.
+ [33 <./Figurer/SoftwareImplementering/Gem.png> <./Figurer/SoftwareImplementeri
+ng/Filtrer1.png>]
+<Figurer/SoftwareImplementering/CheckLogind.png, id=710, 598.48593pt x 219.8212
 4pt>
 File: Figurer/SoftwareImplementering/CheckLogind.png Graphic file (type png)
  <use Figurer/SoftwareImplementering/CheckLogind.png>
@@ -2977,59 +2809,46 @@ Overfull \hbox (170.3974pt too wide) in paragraph at lines 480--481
  [][] 
  []
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 484.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 484.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 484.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 484.
-[35 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Softw
-areImplementering/Filtrer1.png> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/L
-aTex - Projekt/Figurer/SoftwareImplementering/filtrer.png>]
 
-LaTeX Warning: Reference `Datalogin' on page 36 undefined on input line 485.
-
-
-LaTeX Warning: Reference `personaletabel' on page 36 undefined on input line 48
-5.
-
-
-<Figurer/SoftwareImplementering/database.png, id=580, 183.68625pt x 88.07906pt>
+<Figurer/SoftwareImplementering/database.png, id=713, 183.68625pt x 88.07906pt>
 File: Figurer/SoftwareImplementering/database.png Graphic file (type png)
 <use Figurer/SoftwareImplementering/database.png>
 Package pdftex.def Info: Figurer/SoftwareImplementering/database.png used on in
 put line 489.
 (pdftex.def)             Requested size: 255.6026pt x 122.57198pt.
-
-
-LaTeX Warning: Reference `Traad' on page 36 undefined on input line 499.
-
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 500.
+(babel)             in language  on input line 493.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 500.
+(babel)             in language  on input line 493.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 500.
+(babel)             in language  on input line 493.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 500.
-[36 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Softw
-areImplementering/CheckLogind.png> <C:/Users/Nicoline/Desktop/Semester-Projekt-
-3/LaTex - Projekt/Figurer/SoftwareImplementering/database.png>]
-<Figurer/SoftwareImplementering/Traad.png, id=589, 323.2878pt x 90.5784pt>
+(babel)             in language  on input line 493.
+ [34 <./Figurer/SoftwareImplementering/filtrer.png> <./Figurer/SoftwareImplemen
+tering/CheckLogind.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 496.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 496.
+
+<Figurer/SoftwareImplementering/Traad.png, id=724, 323.2878pt x 90.5784pt>
 File: Figurer/SoftwareImplementering/Traad.png Graphic file (type png)
 
 <use Figurer/SoftwareImplementering/Traad.png>
 Package pdftex.def Info: Figurer/SoftwareImplementering/Traad.png used on input
  line 503.
 (pdftex.def)             Requested size: 340.8013pt x 95.48605pt.
-
-
-LaTeX Warning: Reference `callback' on page 37 undefined on input line 510.
-
-
-<Figurer/SoftwareImplementering/callback.png, id=590, 387.3672pt x 196.5744pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 511.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 511.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 511.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 511.
+ [35 <./Figurer/SoftwareImplementering/database.png> <./Figurer/SoftwareImpleme
+ntering/Traad.png>]
+<Figurer/SoftwareImplementering/callback.png, id=733, 387.3672pt x 196.5744pt>
 File: Figurer/SoftwareImplementering/callback.png Graphic file (type png)
 
 <use Figurer/SoftwareImplementering/callback.png>
@@ -3037,10 +2856,7 @@ Package pdftex.def Info: Figurer/SoftwareImplementering/callback.png used on in
 put line 514.
 (pdftex.def)             Requested size: 383.3974pt x 194.57025pt.
 
-
-LaTeX Warning: Reference `mutex' on page 37 undefined on input line 520.
-
-<Figurer/SoftwareImplementering/mutex.png, id=591, 472.164pt x 259.2084pt>
+<Figurer/SoftwareImplementering/mutex.png, id=735, 472.164pt x 259.2084pt>
 File: Figurer/SoftwareImplementering/mutex.png Graphic file (type png)
 
 <use Figurer/SoftwareImplementering/mutex.png>
@@ -3053,26 +2869,20 @@ Overfull \hbox (42.6026pt too wide) in paragraph at lines 524--525
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 527.
+(babel)             in language  on input line 528.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 527.
+(babel)             in language  on input line 528.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 527.
+(babel)             in language  on input line 528.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 527.
-[37 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Softw
-areImplementering/Traad.png> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTe
-x - Projekt/Figurer/SoftwareImplementering/callback.png>]
+(babel)             in language  on input line 528.
+[36 <./Figurer/SoftwareImplementering/callback.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 530.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 530.
 
-LaTeX Warning: Reference `observer1' on page 38 undefined on input line 532.
-
-
-LaTeX Warning: Reference `observer2' on page 38 undefined on input line 532.
-
-
-LaTeX Warning: Reference `observer3' on page 38 undefined on input line 532.
-
-<Figurer/SoftwareImplementering/observer1.png, id=600, 252.945pt x 103.587pt>
+<Figurer/SoftwareImplementering/observer1.png, id=746, 252.945pt x 103.587pt>
 File: Figurer/SoftwareImplementering/observer1.png Graphic file (type png)
 
 <use Figurer/SoftwareImplementering/observer1.png>
@@ -3080,7 +2890,7 @@ Package pdftex.def Info: Figurer/SoftwareImplementering/observer1.png used on i
 nput line 536.
 (pdftex.def)             Requested size: 255.6026pt x 104.67735pt.
 
-<Figurer/SoftwareImplementering/observer2.png, id=601, 225.9642pt x 67.452pt>
+<Figurer/SoftwareImplementering/observer2.png, id=747, 225.9642pt x 67.452pt>
 File: Figurer/SoftwareImplementering/observer2.png Graphic file (type png)
 
 <use Figurer/SoftwareImplementering/observer2.png>
@@ -3095,10 +2905,9 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 547.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 547.
- [38 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Soft
-wareImplementering/mutex.png> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaT
-ex - Projekt/Figurer/SoftwareImplementering/observer1.png>]
-<Figurer/SoftwareImplementering/observer3.png, id=610, 259.2084pt x 233.673pt>
+ [37 <./Figurer/SoftwareImplementering/mutex.png> <./Figurer/SoftwareImplemente
+ring/observer1.png>]
+<Figurer/SoftwareImplementering/observer3.png, id=758, 259.2084pt x 233.673pt>
 File: Figurer/SoftwareImplementering/observer3.png Graphic file (type png)
 
 <use Figurer/SoftwareImplementering/observer3.png>
@@ -3106,6 +2915,18 @@ Package pdftex.def Info: Figurer/SoftwareImplementering/observer3.png used on i
 nput line 550.
 (pdftex.def)             Requested size: 298.1987pt x 268.84308pt.
 Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 557.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 557.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 560.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 560.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 563.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 563.
+Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 565.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 565.
@@ -3113,9 +2934,8 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 565.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 565.
- [39 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Soft
-wareImplementering/observer2.png> <C:/Users/Nicoline/Desktop/Semester-Projekt-3
-/LaTex - Projekt/Figurer/SoftwareImplementering/observer3.png>])
+ [38 <./Figurer/SoftwareImplementering/observer2.png> <./Figurer/SoftwareImplem
+entering/observer3.png>])
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining danish shorthand "~
@@ -3124,9 +2944,8 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 19.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 19.
- [40]
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dtest.tex
-"
+
+[39] (Dfiler/Dtest.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -3139,15 +2958,10 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 18.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 18.
-
-
-LaTeX Warning: Reference `Modul og integration' on page 41 undefined on input l
-ine 19.
-
-
-LaTeX Warning: Reference `fig:ForstaerkerTest' on page 41 undefined on input li
-ne 25.
-
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 23.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 23.
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining danish shorthand "~
@@ -3156,11 +2970,12 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 26.
-[41
+ [40
 
 
 
-] <Figurer/Hardware/ForstaerkerTest.jpg, id=629, 2474.24374pt x 2035.605pt>
+]
+<Figurer/Hardware/ForstaerkerTest.jpg, id=776, 2474.24374pt x 2035.605pt>
 File: Figurer/Hardware/ForstaerkerTest.jpg Graphic file (type jpg)
 
 <use Figurer/Hardware/ForstaerkerTest.jpg>
@@ -3168,28 +2983,18 @@ Package pdftex.def Info: Figurer/Hardware/ForstaerkerTest.jpg used on input lin
 e 29.
 (pdftex.def)             Requested size: 298.1987pt x 245.31813pt.
 
-
-LaTeX Warning: Reference `fig:SinusModul' on page 42 undefined on input line 34
-.
-
-
 Underfull \hbox (badness 2027) in paragraph at lines 34--35
 []\T1/cmr/m/n/10.95 Ud af målingerne blev der foretaget lineær regression over 
 de 10 målepunkter.
  []
 
-<Figurer/Hardware/Sinusforstaerker.jpg, id=630, 482.55281pt x 277.035pt>
+<Figurer/Hardware/Sinusforstaerker.jpg, id=778, 482.55281pt x 277.035pt>
 File: Figurer/Hardware/Sinusforstaerker.jpg Graphic file (type jpg)
 
 <use Figurer/Hardware/Sinusforstaerker.jpg>
 Package pdftex.def Info: Figurer/Hardware/Sinusforstaerker.jpg used on input li
 ne 38.
 (pdftex.def)             Requested size: 298.1987pt x 171.20192pt.
-
-
-LaTeX Warning: Reference `fig:SinusModul' on page 42 undefined on input line 44
-.
-
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining danish shorthand "~
@@ -3198,14 +3003,9 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 46.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 46.
-[42 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hardw
-are/ForstaerkerTest.jpg> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - 
-Projekt/Figurer/Hardware/Sinusforstaerker.jpg>]
-
-LaTeX Warning: Reference `fig:DigitalMulti' on page 43 undefined on input line 
-49.
-
-<Figurer/Hardware/DigitalMultimeter.jpg, id=637, 4175.6pt x 2348.775pt>
+ [41 <./Figurer/Hardware/ForstaerkerTest.jpg> <./Figurer/Hardware/Sinusforstaer
+ker.jpg>]
+<Figurer/Hardware/DigitalMultimeter.jpg, id=787, 4175.6pt x 2348.775pt>
 File: Figurer/Hardware/DigitalMultimeter.jpg Graphic file (type jpg)
 
 <use Figurer/Hardware/DigitalMultimeter.jpg>
@@ -3213,10 +3013,7 @@ Package pdftex.def Info: Figurer/Hardware/DigitalMultimeter.jpg used on input l
 ine 53.
 (pdftex.def)             Requested size: 298.1987pt x 167.72827pt.
 
-
-LaTeX Warning: Reference `fig:DCModul' on page 43 undefined on input line 58.
-
-<Figurer/Hardware/DCforstaerkning.jpg, id=638, 485.56406pt x 278.54062pt>
+<Figurer/Hardware/DCforstaerkning.jpg, id=789, 485.56406pt x 278.54062pt>
 File: Figurer/Hardware/DCforstaerkning.jpg Graphic file (type jpg)
 
 <use Figurer/Hardware/DCforstaerkning.jpg>
@@ -3231,31 +3028,19 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 66.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 66.
- [43 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hard
-ware/DigitalMultimeter.jpg>]
+ [42 <./Figurer/Hardware/DigitalMultimeter.jpg>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 69.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 69.
 
-LaTeX Warning: Reference `fig:DCModul' on page 44 undefined on input line 67.
-
-
-LaTeX Warning: Reference `fig:FilterTest' on page 44 undefined on input line 70
-.
-
-<Figurer/Hardware/FilterTest.jpg, id=644, 2447.1425pt x 2058.69125pt>
+<Figurer/Hardware/FilterTest.jpg, id=798, 2447.1425pt x 2058.69125pt>
 File: Figurer/Hardware/FilterTest.jpg Graphic file (type jpg)
 
 <use Figurer/Hardware/FilterTest.jpg>
 Package pdftex.def Info: Figurer/Hardware/FilterTest.jpg used on input line 74.
 
 (pdftex.def)             Requested size: 213.0pt x 179.18008pt.
-
-
-LaTeX Warning: Reference `Modul og integration' on page 44 undefined on input l
-ine 79.
-
-
-LaTeX Warning: Reference `fig:FilterAmplitude' on page 44 undefined on input li
-ne 79.
-
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 80.
 Package babel Info: Redefining danish shorthand "~
@@ -3264,32 +3049,20 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 80.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 80.
-[44 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hardw
-are/DCforstaerkning.jpg> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - 
-Projekt/Figurer/Hardware/FilterTest.jpg>]
-<Figurer/Hardware/AnalogScreenFilterAmp.jpg, id=651, 955.31906pt x 470.50781pt>
+ [43 <./Figurer/Hardware/DCforstaerkning.jpg> <./Figurer/Hardware/FilterTest.jp
+g>]
+<Figurer/Hardware/AnalogScreenFilterAmp.jpg, id=807, 955.31906pt x 470.50781pt>
 File: Figurer/Hardware/AnalogScreenFilterAmp.jpg Graphic file (type jpg)
 <use Figurer/Hardware/AnalogScreenFilterAmp.jpg>
 Package pdftex.def Info: Figurer/Hardware/AnalogScreenFilterAmp.jpg used on inp
 ut line 83.
 (pdftex.def)             Requested size: 426.0pt x 209.80966pt.
 
-
-LaTeX Warning: Reference `ligning3db' on page 45 undefined on input line 88.
-
-
-LaTeX Warning: Reference `ligning3db4' on page 45 undefined on input line 94.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 93--95
 
  []
 
-
-LaTeX Warning: Reference `fig:AmplitudedBFilter' on page 45 undefined on input 
-line 99.
-
-<Figurer/Hardware/AmpdBFilter.jpg, id=652, 460.72125pt x 275.52937pt>
+<Figurer/Hardware/AmpdBFilter.jpg, id=811, 460.72125pt x 275.52937pt>
 File: Figurer/Hardware/AmpdBFilter.jpg Graphic file (type jpg)
 
 <use Figurer/Hardware/AmpdBFilter.jpg>
@@ -3304,17 +3077,8 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 107.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 107.
- [45 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hard
-ware/AnalogScreenFilterAmp.jpg>]
-
-LaTeX Warning: Reference `fig:AmplitudedBFilter' on page 46 undefined on input 
-line 108.
-
-
-LaTeX Warning: Reference `fig:FilterTidsforskydning' on page 46 undefined on in
-put line 110.
-
-<Figurer/Hardware/AnalogScreenFilter.jpg, id=660, 950.04938pt x 471.26062pt>
+ [44 <./Figurer/Hardware/AnalogScreenFilterAmp.jpg>]
+<Figurer/Hardware/AnalogScreenFilter.jpg, id=822, 950.04938pt x 471.26062pt>
 File: Figurer/Hardware/AnalogScreenFilter.jpg Graphic file (type jpg)
 
 <use Figurer/Hardware/AnalogScreenFilter.jpg>
@@ -3322,7 +3086,7 @@ Package pdftex.def Info: Figurer/Hardware/AnalogScreenFilter.jpg used on input
 line 114.
 (pdftex.def)             Requested size: 426.0pt x 211.31027pt.
 
-<Figurer/Hardware/FaseforskydningFilter.jpg, id=661, 460.72125pt x 276.28218pt>
+<Figurer/Hardware/FaseforskydningFilter.jpg, id=823, 460.72125pt x 276.28218pt>
 File: Figurer/Hardware/FaseforskydningFilter.jpg Graphic file (type jpg)
 <use Figurer/Hardware/FaseforskydningFilter.jpg>
 Package pdftex.def Info: Figurer/Hardware/FaseforskydningFilter.jpg used on inp
@@ -3341,25 +3105,16 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 125.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 125.
-[46 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hardw
-are/AmpdBFilter.jpg> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Proj
-ekt/Figurer/Hardware/AnalogScreenFilter.jpg>]
-
-LaTeX Warning: Reference `fig:FilterFaseforskydning' on page 47 undefined on in
-put line 127.
-
+[45 <./Figurer/Hardware/AmpdBFilter.jpg> <./Figurer/Hardware/AnalogScreenFilter
+.jpg>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 131.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 131.
-
-LaTeX Warning: Reference `Modul og integration' on page 47 undefined on input l
-ine 135.
-
-
-LaTeX Warning: Reference `fig:ForstaerkerFilterOpstiling' on page 47 undefined 
-on input line 135.
-
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 133.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 133.
 
 Underfull \hbox (badness 1365) in paragraph at lines 134--136
 \T1/cmr/m/n/10.95 Der blev udført to målinger for hver udvalgte målefrekvens, h
@@ -3372,21 +3127,15 @@ Package pdftex.def Info: Figurer/Hardware/samletopstilling.png used on input li
 ne 139.
 (pdftex.def)             Requested size: 298.1987pt x 208.86441pt.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 142.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 142.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 143.
+(babel)             in language  on input line 142.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 143.
- [47 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hard
-ware/FaseforskydningFilter.jpg>]
-
-LaTeX Warning: Reference `fig:ForstaerkerFilterGraf' on page 48 undefined on in
-put line 144.
-
-
-<Figurer/Hardware/IntegrationstestForstaerkerFilter2.jpg, id=675, 489.32813pt x
+(babel)             in language  on input line 142.
+ [46 <./Figurer/Hardware/FaseforskydningFilter.jpg>]
+<Figurer/Hardware/IntegrationstestForstaerkerFilter2.jpg, id=838, 489.32813pt x
  312.41719pt>
 File: Figurer/Hardware/IntegrationstestForstaerkerFilter2.jpg Graphic file (typ
 e jpg)
@@ -3394,54 +3143,33 @@ e jpg)
 Package pdftex.def Info: Figurer/Hardware/IntegrationstestForstaerkerFilter2.jp
 g used on input line 148.
 (pdftex.def)             Requested size: 298.1987pt x 190.39305pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 155.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 155.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 155.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 155.
 
-
-LaTeX Warning: Reference `fig:ForstaerkerFilterGraf' on page 48 undefined on in
-put line 153.
-
-
-LaTeX Warning: Reference `Implementering' on page 48 undefined on input line 15
-4.
-
-
-LaTeX Warning: Reference `ligning3db2' on page 48 undefined on input line 156.
-
-
+[47 <./Figurer/Hardware/IntegrationstestForstaerkerFilter2.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 157.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 157.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 157.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 157.
-[48 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hardw
-are/IntegrationstestForstaerkerFilter2.jpg>]
 
-LaTeX Warning: Reference `Modul og integration' on page 49 undefined on input l
-ine 163.
-
-
-<Figurer/Hardware/FaseForstaerkerFilter.jpg, id=682, 492.33937pt x 305.64188pt>
+<Figurer/Hardware/FaseForstaerkerFilter.jpg, id=849, 492.33937pt x 305.64188pt>
 File: Figurer/Hardware/FaseForstaerkerFilter.jpg Graphic file (type jpg)
 <use Figurer/Hardware/FaseForstaerkerFilter.jpg>
 Package pdftex.def Info: Figurer/Hardware/FaseForstaerkerFilter.jpg used on inp
 ut line 168.
 (pdftex.def)             Requested size: 298.1987pt x 185.12608pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 175.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 175.
 
-
-LaTeX Warning: Reference `fig:FaseForstaerkerFilter' on page 49 undefined on in
-put line 173.
-
-
-LaTeX Warning: Reference `fig:IntegrationVandsoejle' on page 49 undefined on in
-put line 176.
-
-<Figurer/Hardware/IntegrationVandsoejle.jpg, id=683, 4175.6pt x 2348.775pt>
+<Figurer/Hardware/IntegrationVandsoejle.jpg, id=852, 4175.6pt x 2348.775pt>
 File: Figurer/Hardware/IntegrationVandsoejle.jpg Graphic file (type jpg)
 
 <use Figurer/Hardware/IntegrationVandsoejle.jpg>
@@ -3456,25 +3184,14 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 184.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 184.
- [49 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hard
-ware/FaseForstaerkerFilter.jpg>]
-
-LaTeX Warning: Reference `Modul og integration' on page 50 undefined on input l
-ine 185.
-
-
-<Figurer/Hardware/VaesketrykUdgangsspaending.jpg, id=691, 464.4853pt x 252.945p
+ [48 <./Figurer/Hardware/FaseForstaerkerFilter.jpg>]
+<Figurer/Hardware/VaesketrykUdgangsspaending.jpg, id=861, 464.4853pt x 252.945p
 t>
 File: Figurer/Hardware/VaesketrykUdgangsspaending.jpg Graphic file (type jpg)
  <use Figurer/Hardware/VaesketrykUdgangsspaending.jpg>
 Package pdftex.def Info: Figurer/Hardware/VaesketrykUdgangsspaending.jpg used o
 n input line 189.
 (pdftex.def)             Requested size: 426.0pt x 231.99432pt.
-
-
-LaTeX Warning: Reference `fig:Vaesketryk' on page 50 undefined on input line 19
-4.
-
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 195.
 Package babel Info: Redefining danish shorthand "~
@@ -3483,76 +3200,79 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 195.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 195.
-[50 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Hardw
-are/IntegrationVandsoejle.jpg> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/La
-Tex - Projekt/Figurer/Hardware/VaesketrykUdgangsspaending.jpg>]
+ [49 <./Figurer/Hardware/IntegrationVandsoejle.jpg> <./Figurer/Hardware/Vaesket
+rykUdgangsspaending.jpg>]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 196.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 196.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 207.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 199.
+(babel)             in language  on input line 207.
 
+<Figurer/Softwareimplementering/Integrationstest.png, id=869, 640.64343pt x 310
+.15875pt>
+File: Figurer/Softwareimplementering/Integrationstest.png Graphic file (type pn
+g)
+ <use Figurer/Softwareimplementering/Integrationstest.png>
+Package pdftex.def Info: Figurer/Softwareimplementering/Integrationstest.png us
+ed on input line 213.
+(pdftex.def)             Requested size: 426.0pt x 206.24352pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 216.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 216.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 216.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 216.
+ [50]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 219.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 219.
 
-LaTeX Warning: Reference `Modul og integration' on page 51 undefined on input l
-ine 203.
-
-
-LaTeX Warning: Reference `fig:Atmosfaerisktryk' on page 51 undefined on input l
-ine 204.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--205
+Underfull \hbox (badness 10000) in paragraph at lines 220--225
 
  []
 
-<Figurer/Test/Nulpunkt.jpg, id=698, 901.86937pt x 344.78813pt>
+<Figurer/Test/Nulpunkt.jpg, id=877, 901.86937pt x 344.78813pt>
 File: Figurer/Test/Nulpunkt.jpg Graphic file (type jpg)
 
 <use Figurer/Test/Nulpunkt.jpg>
-Package pdftex.def Info: Figurer/Test/Nulpunkt.jpg used on input line 208.
+Package pdftex.def Info: Figurer/Test/Nulpunkt.jpg used on input line 228.
 (pdftex.def)             Requested size: 511.1987pt x 195.43697pt.
 
-Overfull \hbox (85.1987pt too wide) in paragraph at lines 208--209
+Overfull \hbox (85.1987pt too wide) in paragraph at lines 228--229
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:Vaesketryk2' on page 51 undefined on input line 2
-13.
-
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 214.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 214.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 214.
+(babel)             in language  on input line 232.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 214.
-[51 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Test/
-Nulpunkt.jpg>]
-<Figurer/Test/Vandsoejle.jpg, id=704, 941.76843pt x 377.15906pt>
+(babel)             in language  on input line 232.
+[51 <./Figurer/Softwareimplementering/Integrationstest.png>]
+<Figurer/Test/Vandsoejle.jpg, id=885, 941.76843pt x 377.15906pt>
 File: Figurer/Test/Vandsoejle.jpg Graphic file (type jpg)
 
 <use Figurer/Test/Vandsoejle.jpg>
-Package pdftex.def Info: Figurer/Test/Vandsoejle.jpg used on input line 217.
+Package pdftex.def Info: Figurer/Test/Vandsoejle.jpg used on input line 237.
 (pdftex.def)             Requested size: 468.6026pt x 187.66402pt.
 
-Overfull \hbox (42.6026pt too wide) in paragraph at lines 217--218
+Overfull \hbox (42.6026pt too wide) in paragraph at lines 237--238
  [][] 
  []
 
-
-LaTeX Warning: Reference `fig:mmHgtryk' on page 52 undefined on input line 222.
-
-
-<Figurer/Test/mmHg.jpg, id=705, 417.81094pt x 356.0803pt>
+<Figurer/Test/mmHg.jpg, id=887, 417.81094pt x 356.0803pt>
 File: Figurer/Test/mmHg.jpg Graphic file (type jpg)
 
 <use Figurer/Test/mmHg.jpg>
-Package pdftex.def Info: Figurer/Test/mmHg.jpg used on input line 226.
+Package pdftex.def Info: Figurer/Test/mmHg.jpg used on input line 246.
 (pdftex.def)             Requested size: 255.6026pt x 217.84436pt.
 )
 Package babel Info: Redefining danish shorthand "|
@@ -3563,11 +3283,16 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 20.
- [52 <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/Figurer/Test
-/Vandsoejle.jpg> <C:/Users/Nicoline/Desktop/Semester-Projekt-3/LaTex - Projekt/
-Figurer/Test/mmHg.jpg>]
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dacceptte
-st.tex"
+ [52 <./Figurer/Test/Nulpunkt.jpg> <./Figurer/Test/Vandsoejle.jpg>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 20.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 20.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 20.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 20.
+ [53 <./Figurer/Test/mmHg.jpg>] (Dfiler/Daccepttest.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -3576,11 +3301,6 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 16.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 16.
-
-
-LaTeX Warning: Reference `blodtrykssignal' on page 53 undefined on input line 2
-0.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 17--21
 
@@ -3590,6 +3310,10 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 22.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 22.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 26.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 26.
 
 Underfull \hbox (badness 6141) in paragraph at lines 51--51
 []\T1/cmr/m/n/10.95 Der er tre vær-di-er
@@ -3633,11 +3357,16 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 51.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 51.
-[53
+[54
 
 
 
 ]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 54.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 54.
+
 Underfull \hbox (badness 1742) in paragraph at lines 86--86
 \T1/cmr/m/n/10.95 at måle atmosfærisk
  []
@@ -3730,7 +3459,12 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 86.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 86.
-[54]
+[55]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 90.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 90.
+
 Underfull \hbox (badness 10000) in paragraph at lines 104--104
 []\T1/cmr/m/n/10.95 Tryk på "start"--
  []
@@ -3743,7 +3477,12 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 104.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 104.
-[55]
+[56]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 108.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 108.
+
 Underfull \hbox (badness 10000) in paragraph at lines 126--126
 []\T1/cmr/m/n/10.95 Tryk på "Til"-
  []
@@ -3753,6 +3492,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--126
 \T1/cmr/m/n/10.95 -knappen un-der
  []
 
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 130.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 130.
 
 Underfull \hbox (badness 10000) in paragraph at lines 156--156
 \T1/cmr/m/n/10.95 for di-a-sto-lisk øv-re
@@ -3786,7 +3529,12 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 156.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 156.
-[56]
+[57]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 160.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 160.
+
 Underfull \hbox (badness 10000) in paragraph at lines 186--186
 []\T1/cmr/m/n/10.95 Faktiske ob-ser-va-tio-
  []
@@ -3889,7 +3637,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 186.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 186.
-[57]
+[58]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 189.
 Package babel Info: Redefining danish shorthand "~
@@ -3975,9 +3723,6 @@ Underfull \hbox (badness 4441) in paragraph at lines 217--217
  []
 
 
-LaTeX Warning: Reference `ModulHard' on page 58 undefined on input line 217.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 217--217
 []\T1/cmr/m/n/10.95 Egentlige test
  []
@@ -4011,9 +3756,6 @@ Underfull \hbox (badness 6995) in paragraph at lines 217--217
 Underfull \hbox (badness 4441) in paragraph at lines 217--217
 []\T1/cmr/m/n/10.95 At sig-na-let er
  []
-
-
-LaTeX Warning: Reference `ModulHard' on page 58 undefined on input line 217.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 217--217
@@ -4166,9 +3908,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 217--217
  []
 
 
-LaTeX Warning: Reference `GUI' on page 58 undefined on input line 217.
-
-
 Overfull \hbox (9.9743pt too wide) in paragraph at lines 217--217
 []\T1/cmr/m/n/10.95 Brugergrænseflade
  []
@@ -4301,7 +4040,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 217.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 217.
-[58]
+[59]
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 217.
 Package babel Info: Redefining danish shorthand "~
@@ -4310,7 +4049,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 217.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 217.
- [59])
+ [60])
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
@@ -4319,9 +4058,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 21.
- [60]
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dbilag.te
-x"
+ [61] (Dfiler/Dbilag.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
@@ -4354,6 +4091,40 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 21.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 21.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 24.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 24.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 27.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 27.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 30.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 30.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 33.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 33.
+ [62
+
+
+
+
+]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 33.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 33.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 36.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 36.
 )
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 24.
@@ -4363,33 +4134,14 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 24.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 24.
- [61
-
-
-
-
-]
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dreferenc
-er.tex"
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 1.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 1.
- [62
-
-
-
-]
+ [63] (Dfiler/Dreferencer.tex
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 1.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 6.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
 Package babel Info: Redefining danish shorthand "|
@@ -4400,147 +4152,71 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 25.
- [63]
+ [64
 
-Package lastpage Warning: Rerun to get the references right on input line 27.
 
+
+]
 
 AED: lastpage setting LastPage
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 27.
-
-Package natbib Warning: There were undefined citations.
-
 \tf@toc=\write5
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
-
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dokumentation.au
-x"
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dforside.
-aux")
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dunderskr
-ifter.aux")
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dordliste
-.aux")
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dindledni
-ng.aux")
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dkravspec
-ifikation.aux")
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Ddesign.a
-ux")
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dtest.aux
-")
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dacceptte
-st.aux")
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dbilag.au
-x")
-("C:\Users\Nicoline\Desktop\Semester-Projekt-3\LaTex - Projekt\Dfiler/Dreferenc
-er.aux"
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-)
-
-! Package natbib Error: Bibliography not compatible with author-year citations.
-
-(natbib)                Press <return> to continue in numerical citation style.
-
-
-See the natbib package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.40 ...mand\NAT@force@numbers{}\NAT@force@numbers
-                                                  
-Check the bibliography entries for non-compliant syntax,
-or select author-year BibTeX style, e.g. plainnat
-
-)
+(Dokumentation.aux (Dfiler/Dforside.aux) (Dfiler/Dunderskrifter.aux)
+(Dfiler/Dordliste.aux) (Dfiler/Dindledning.aux) (Dfiler/Dkravspecifikation.aux)
+(Dfiler/Ddesign.aux) (Dfiler/Dtest.aux) (Dfiler/Daccepttest.aux)
+(Dfiler/Dbilag.aux) (Dfiler/Dreferencer.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
+Package rerunfilecheck Info: File `Dokumentation.out' has not changed.
+(rerunfilecheck)             Checksum: EC35D9577648DAE39D527744701A0260;4855.
 
-
-Package rerunfilecheck Warning: File `Dokumentation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Dokumentation.out':
-(rerunfilecheck)             Before: 6B8841603502C677A8DDD38D2CBE86BA;4127
-(rerunfilecheck)             After:  F11C937967BFB349C8E41193849E793D;2081.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 27.
  ) 
 Here is how much of TeX's memory you used:
- 28206 strings out of 493705
- 505480 string characters out of 3144560
- 840109 words of memory out of 3000000
- 30771 multiletter control sequences out of 15000+200000
+ 28166 strings out of 493698
+ 503106 string characters out of 3141980
+ 849524 words of memory out of 3000000
+ 30722 multiletter control sequences out of 15000+200000
  36017 words of font info for 108 fonts, out of 3000000 for 9000
  1027 hyphenation exceptions out of 8191
- 53i,14n,90p,10466b,1034s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section*.64} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.63} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.62} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.61} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section*.60} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.59} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.5.2.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.2.7} has been referenced but does not 
-exist, replaced by a fixed one
-
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}{C:/Progr
-am Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/M
-iKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/cm-super/sfbx1000.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/cm-super/sfbx1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/cm-super/sfbx1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/c
-m-super/sfbx1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/s
-fcc1440.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfcc1728.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1000.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1095.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/cm-super/sfrm2488.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/public/cm-super/sfti1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/cm-super/sfti1095.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-
-super/sfti1200.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/cm-super/sft
-t1000.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/bookman/ubkd8a.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on Dokumentation.pdf (71 pages, 17331890 bytes).
+ 53i,14n,90p,10466b,1033s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/cm-super/cm-super-t1.enc}{
+C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files (x
+86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/symbols/msam10.pfb><C:/Program Files (x86)/MiKTeX 2.
+9/fonts/type1/public/cm-super/sfbx1000.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/cm-super/sfbx1095.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/public/cm-super/sfbx1200.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/cm-super/sfbx1440.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
+1/public/cm-super/sfcc1440.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/p
+ublic/cm-super/sfcc1728.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/publ
+ic/cm-super/sfrm1000.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
+cm-super/sfrm1095.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-
+super/sfrm1200.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-sup
+er/sfrm2488.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/
+sfti1000.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sft
+i1095.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sfti12
+00.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/cm-super/sftt1000.
+pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/bookman/ubkd8a.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/urw/bookman/ubkl8a.pfb>
+Output written on Dokumentation.pdf (70 pages, 17353703 bytes).
 PDF statistics:
- 922 PDF objects out of 1000 (max. 8388607)
- 264 named destinations out of 1000 (max. 500000)
- 780 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1107 PDF objects out of 1200 (max. 8388607)
+ 261 named destinations out of 1000 (max. 500000)
+ 849 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -205,7 +205,16 @@ Gemmefunktionen er testet ved at sende et kendt blodtrykssignal igennem systemet
 
 
 \section{Integrationstest software}
-I dette afsnit vil der beskrives hvordan systemets dele er blevet testet sammen. Dettet fører videre fra unit testen, hvor de eneklte del elementer blev testes og nu vil disse del elementer blive testet sammen som et helt system. 
+I dette afsnit vil der beskrives hvordan systemets dele er blevet testet sammen. Dettet fører videre fra unit testen, hvor de eneklte del elementer blev testes og nu vil disse del elementer blive testet sammen som et helt system. \\
+For at teste det samlede softwaresystem er der blevet lavet en integrationstest. Ved udførslen af integrationstesten genereres, der en kendt spænding vha. Analog Discovery, der bliver sendt igennem systemet og herefter bruges debug funktionen i Visual Studio til at se om værdierne, der bliver indlæst af systemet stemmer overens med signalet der sendes ind.
+I denne test sendes der et signal igennem systemet på 4 V. Det vil hermed sige at værdierne, der indlæses burde, hvis systemet virker efter hensigten, ligge tæt på 4.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/Softwareimplementering/Integrationstest}
+	\caption{Integrationstest software}
+	\label{fig:integrationstestsoftware}
+\end{figure}
+På figur \ref{fig:integrationstestsoftware} ses det, at de indlæste værdier ligger lige omkring 4. Det vil sige, at systemet indlæser værdierne efter hensigten.   
 
 \section{Integrationstest system}
 I dette afsnit beskrives hvordan software-systemet testes sammen med hardware-systemet. Denne test forudsætter, at der er lavet integrationstest for både hardware og software hver for sig. \\
