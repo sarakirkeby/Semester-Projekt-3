@@ -3,31 +3,69 @@
 \BOOKMARK [0][-]{chapter.2}{Kravspecifikation}{}% 3
 \BOOKMARK [1][-]{section.2.1}{Indledning}{chapter.2}% 4
 \BOOKMARK [1][-]{section.2.2}{Funktionelle krav}{chapter.2}% 5
-\BOOKMARK [1][-]{section.2.3}{Use cases}{chapter.2}% 6
-\BOOKMARK [1][-]{section.2.4}{Ikke-funktionelle krav}{chapter.2}% 7
-\BOOKMARK [0][-]{chapter.3}{Design}{}% 8
-\BOOKMARK [1][-]{section.3.1}{Indledning}{chapter.3}% 9
-\BOOKMARK [1][-]{section.3.2}{Hardware arkitektur}{chapter.3}% 10
-\BOOKMARK [1][-]{section.3.3}{Software arkitektur}{chapter.3}% 11
-\BOOKMARK [0][-]{chapter.4}{Implementering}{}% 12
-\BOOKMARK [1][-]{section.4.1}{Hardware implementering}{chapter.4}% 13
-\BOOKMARK [1][-]{section.4.2}{Software implementering}{chapter.4}% 14
-\BOOKMARK [0][-]{chapter.5}{Test}{}% 15
-\BOOKMARK [1][-]{section.5.1}{Indledning}{chapter.5}% 16
-\BOOKMARK [1][-]{section.5.2}{Modultest hardware}{chapter.5}% 17
-\BOOKMARK [1][-]{section.5.3}{Integrationstest hardware}{chapter.5}% 18
-\BOOKMARK [1][-]{section.5.4}{Integrationstest software}{chapter.5}% 19
-\BOOKMARK [1][-]{section.5.5}{Integrationstest system}{chapter.5}% 20
-\BOOKMARK [0][-]{chapter.6}{Accepttest}{}% 21
-\BOOKMARK [1][-]{section.6.1}{Indledning}{chapter.6}% 22
-\BOOKMARK [1][-]{section.6.2}{Accepttest af Use Cases}{chapter.6}% 23
-\BOOKMARK [1][-]{section.6.3}{Accepttest af ikke-funktionelle krav}{chapter.6}% 24
-\BOOKMARK [0][-]{chapter*.68}{Bilagsliste}{}% 25
-\BOOKMARK [1][-]{section*.69}{Bilag 1 - Modul og integrationstest af hardware}{chapter*.68}% 26
-\BOOKMARK [1][-]{section*.70}{Bilag 2 - Logbog}{chapter*.68}% 27
-\BOOKMARK [1][-]{section*.71}{Bilag 3 - M\370dereferart}{chapter*.68}% 28
-\BOOKMARK [1][-]{section*.72}{Bilag 4 - Kode}{chapter*.68}% 29
-\BOOKMARK [1][-]{section*.73}{Bilag 5 - Samarbejdsaftale}{chapter*.68}% 30
-\BOOKMARK [1][-]{section*.74}{Bilag 6 - Blodtrykssignal}{chapter*.68}% 31
-\BOOKMARK [1][-]{section*.75}{Bilag 7 - Hjemmesider}{chapter*.68}% 32
-\BOOKMARK [0][-]{section*.77}{Litteratur}{}% 33
+\BOOKMARK [2][-]{subsection.2.2.1}{Akt\370r-kontekst diagram}{section.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.2}{Akt\370rbeskrivelse}{section.2.2}% 7
+\BOOKMARK [1][-]{section.2.3}{Use cases}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.3.1}{Use case diagram}{section.2.3}% 9
+\BOOKMARK [2][-]{subsection.2.3.2}{Use case 1}{section.2.3}% 10
+\BOOKMARK [2][-]{subsection.2.3.3}{Use case 2}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.4}{Use case 3}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.5}{Use case 4}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.6}{Use case 5}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.7}{Use case 6}{section.2.3}% 15
+\BOOKMARK [1][-]{section.2.4}{Ikke-funktionelle krav}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.4.1}{\(F\)URPS+}{section.2.4}% 17
+\BOOKMARK [0][-]{chapter.3}{Design}{}% 18
+\BOOKMARK [1][-]{section.3.1}{Indledning}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.2}{Hardware arkitektur}{chapter.3}% 20
+\BOOKMARK [2][-]{subsection.3.2.1}{Design af forst\346rker}{section.3.2}% 21
+\BOOKMARK [2][-]{subsection.3.2.2}{Design af analogfilter}{section.3.2}% 22
+\BOOKMARK [2][-]{subsection.3.2.3}{Gr\346nseflader}{section.3.2}% 23
+\BOOKMARK [1][-]{section.3.3}{Software arkitektur}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.3.1}{GUI}{section.3.3}% 25
+\BOOKMARK [2][-]{subsection.3.3.2}{Dom\346nemodel}{section.3.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.3}{Appliktationsmodel}{section.3.3}% 27
+\BOOKMARK [0][-]{chapter.4}{Implementering}{}% 28
+\BOOKMARK [1][-]{section.4.1}{Hardware implementering}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.2}{Software implementering}{chapter.4}% 30
+\BOOKMARK [2][-]{subsection.4.2.1}{3-lagsmodellen}{section.4.2}% 31
+\BOOKMARK [2][-]{subsection.4.2.2}{Tr\345de}{section.4.2}% 32
+\BOOKMARK [2][-]{subsection.4.2.3}{Observer-pattern}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.4}{UML klassediagram}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.5}{Kode udsnit}{section.4.2}% 35
+\BOOKMARK [2][-]{subsection.4.2.6}{Diagrammer}{section.4.2}% 36
+\BOOKMARK [0][-]{chapter.5}{Test}{}% 37
+\BOOKMARK [1][-]{section.5.1}{Indledning}{chapter.5}% 38
+\BOOKMARK [1][-]{section.5.2}{Modultest hardware}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.2.1}{Modul test af forst\346rkeren}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.2}{Modul test af det analoge filter}{section.5.2}% 41
+\BOOKMARK [1][-]{section.5.3}{Integrationstest hardware}{chapter.5}% 42
+\BOOKMARK [2][-]{subsection.5.3.1}{Integrationstest for forst\346rker og analogt filter}{section.5.3}% 43
+\BOOKMARK [2][-]{subsection.5.3.2}{Integrationstest med vands\370jle}{section.5.3}% 44
+\BOOKMARK [1][-]{section.5.4}{Modultest software}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.5}{Integrationstest software}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.6}{Integrationstest system}{chapter.5}% 47
+\BOOKMARK [0][-]{chapter.6}{Accepttest}{}% 48
+\BOOKMARK [1][-]{section.6.1}{Indledning}{chapter.6}% 49
+\BOOKMARK [1][-]{section.6.2}{Accepttest af Use Cases}{chapter.6}% 50
+\BOOKMARK [2][-]{subsection.6.2.1}{Use Case 1}{section.6.2}% 51
+\BOOKMARK [2][-]{subsection.6.2.2}{Use Case 2}{section.6.2}% 52
+\BOOKMARK [2][-]{subsection.6.2.3}{Use Case 3}{section.6.2}% 53
+\BOOKMARK [2][-]{subsection.6.2.4}{Use Case 4}{section.6.2}% 54
+\BOOKMARK [2][-]{subsection.6.2.5}{Use Case 5}{section.6.2}% 55
+\BOOKMARK [2][-]{subsection.6.2.6}{Use Case 6}{section.6.2}% 56
+\BOOKMARK [1][-]{section.6.3}{Accepttest af ikke-funktionelle krav}{chapter.6}% 57
+\BOOKMARK [0][-]{chapter*.69}{Bilagsliste}{}% 58
+\BOOKMARK [1][-]{section*.70}{Bilag 1 - Modul og integrationstest af hardware}{chapter*.69}% 59
+\BOOKMARK [1][-]{section*.71}{Bilag 2 - Logbog}{chapter*.69}% 60
+\BOOKMARK [1][-]{section*.72}{Bilag 3 - M\370dereferart}{chapter*.69}% 61
+\BOOKMARK [1][-]{section*.73}{Bilag 4 - Kode}{chapter*.69}% 62
+\BOOKMARK [1][-]{section*.74}{Bilag 5 - Samarbejdsaftale}{chapter*.69}% 63
+\BOOKMARK [1][-]{section*.75}{Bilag 6 - Blodtrykssignal}{chapter*.69}% 64
+\BOOKMARK [1][-]{section*.76}{Bilag 7 - Hjemmesider}{chapter*.69}% 65
+\BOOKMARK [1][-]{section*.77}{Bilag 8 - Scrum Pivotal Tracker}{chapter*.69}% 66
+\BOOKMARK [1][-]{section*.78}{Bilag 9 - Tidsplan}{chapter*.69}% 67
+\BOOKMARK [1][-]{section*.79}{Bilag 10 - Udviklingsv\346rkt\370jer}{chapter*.69}% 68
+\BOOKMARK [1][-]{section*.80}{Bilag 11 - H\346modynamik og hjertekarsygdomme}{chapter*.69}% 69
+\BOOKMARK [1][-]{section*.81}{Bilag 12 - Vejledning til dokumentation af semesterprojekter}{chapter*.69}% 70
+\BOOKMARK [0][-]{section*.83}{Litteratur}{}% 71
