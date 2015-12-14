@@ -8,11 +8,13 @@ Systemet, der er blevet udviklet er en blodtryksmåler. Blodtryksmåleren er til
 	\label{opstilling}
 \end{figure} 
 For at kunne lave et sådan system er der blevet udviklet en hardware del og en software del. 
-Hardware delen er bestående af en forstærker, og et filter. Forstærkeren forstærker signalet til et håndterbart område, som arbejder sammen med en AD-konverter. Desuden består systemet også af et analogt lavpas filter, som filtrerer 50 Hz støj fra signalet. Hele systemet er koblet til en transducer, som dernæst er koblet intravenøst til borgeren. Transduceren giver systemet trykændrings feedback i enheden milivolt.  \\ [1ex]
+Hardwaredelen modtager det fysiske tryk fra måleobjektet gennem en transducer, hvis funktion er at omdanne trykket til et elektrisk signal med enheden mV.\\
+Hardwaren er bestående af en forstærker, og et filter, hvor signalet først forstærkes håndterbart område, der er anvendeligt i DAQ'en. Desuden består systemet også af et analogt lavpas filter, som filtrerer og frasorterer frekvenser på 50Hz og opefter.\\
+Efter endt filtrering konverteres det analoge signal i DAQ'en til et digitalt signal, der er håndterbart i softwaren\\[1ex]
 
-Software delen bestående af en brugergrænseflade samt program med tilhørende database. Brugergrænsefladen viser et digitalt signal via programmet samt giver mulighed for forskellige funktioner og oplysninger. Yderligere består programmet af en mulighed for en digital filtrering af blodtrykssignalet samt algortimer til detektering af systole, diastole og puls. Systemet kan desuden lagre data fra signalet i en privat database.\\[1ex]
+Softwaren er det program, som skal monitorere der digitale signal grafisk. Programmet er bestående af en brugergrænseflade, program og adgang til en privat database. Brugergrænsefladen viser et digitalt signal via programmet og giver brugeren mulighed for at benytte forskellige funktioner og indhente oplysninger. Gennem programmets funktioner har brugeren mulighed for at foretage en digital filtrering af blodtrykssignalet aflæse systolen, diastolen og aflæse pulsen.\\
+ Før brugeren får adgang til blodtryksmålingen skal der foretages en nulpunktjustering, samt en tekniker har mulighed for at foretage en årlig kalibrering, gennem et login-vindue. Systemet kan desuden efter endt måling lagre data fra blodtryksmålingen i en privat database.\\[1ex]
 
-Hardwaren indhenter som nævnt signalet via en elektrisk konnnektor fra en transducer, som via en sensor henter et blodtryk intravenøst fra en eventuel patient. Yderligere, som figur \ref{opstilling} viser, er filteret/forstærkeren forbundet med en DAQ, som modtager det nu forstærkede og filtrerede signal. Til slut sendes signalet fra DAQ via USB til en computer, hvor signalet vises.\\[1ex]
-Projektets endelig produkt er en prototype af et blodtryksmålings system som kan benyttes til invasiv blodtryksmåling.
+Projektets endelige produkt er en prototype af et blodtryksmålings system, som kan benyttes til invasiv blodtryksmåling.
 
 

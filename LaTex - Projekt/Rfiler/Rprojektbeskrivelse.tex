@@ -1,10 +1,13 @@
 \chapter{Projektbeskrivelse}
 
 \section{Projektgennemførelse}\label{Projektgennemfoerlse}
-Projektet startede med, at der blev lavet en tidsplan, som var mulig at ændre undervejs, dog med faste deadlines, som skulle overholdes. De forskellige deadlines lagde op til, at der kunne arbejdes efter udviklingsmodeller, som er beskrevet nærmere i metodeafsnittet \ref{Metode}.\\ \\
+Projektet startede med, at der blev lavet en tidsplan, som var mulig at ændre undervejs, dog med faste deadlines, som skulle overholdes. De forskellige deadlines lagde op til, at der kunne arbejdes efter udviklingsmodeller, som er beskrevet nærmere i metodeafsnittet \ref{Metode}.\\ 
+\\
 Tidsplanen blev sidenhen ført mere detaljeret ind i projektstryringsværktøjet Scrum. Scrum blev benyttet til at holde overblikket over manglende opgaver, igangværende opgaver og afsluttede opgaver. Ligeledes blev værktøjet brugt som en kontakt mellem hardware gruppen og software gruppen så begge grupper kunne holde sig opdateret på hinandens opgaver. For at prioriterer arbejdsopgaverne er der blevet benyttet sprints af en uges variehed. Hver arbejdsopgave er blevet prioriteret med et antal point, alt efter hvor tidskrævende opgaven var, hvilket har været bestemmende for hvor mange opgaver, der var mulighed for at lave i hvert sprint.\\
-Gruppens seks medlemmer blev fra start delt op i to undergrupper, én med hovedfokus på hardware udvikling, og én med hovedfokus på software udvikling. Dog blev de basic delene til projektet, som kravspecifikation og case udvalgt samlet. Scrum er her også et godt værktøj til at bevare overblikket over de to gruppers individuelle opgaver.\\ \\
-Fra start blev der aftalt et ugentlig møde, med vejleder og de to grupper som medvirkende parter. På denne måde blev alle parter holdt opdateres på udviklingsprocessen, især grupperne imellem, men også vejleder. Sidst i forløbet, under test af diverse dele af systemet, blev grupperne samlet og testene blev udarbejdet i fællesskab.\\ \\
+Gruppens seks medlemmer blev fra start delt op i to undergrupper, én med hovedfokus på hardware udvikling, og én med hovedfokus på software udvikling. Dog blev de basic delene til projektet, som kravspecifikation og case udvalgt samlet. Scrum er her også et godt værktøj til at bevare overblikket over de to gruppers individuelle opgaver.\\ 
+\\
+Fra start blev der aftalt et ugentlig møde, med vejleder og de to grupper som medvirkende parter. På denne måde blev alle parter holdt opdateres på udviklingsprocessen, især grupperne imellem, men også vejleder. Sidst i forløbet, under test af diverse dele af systemet, blev grupperne samlet og testene blev udarbejdet i fællesskab.\\ 
+\\
 Projektet er gennemført ved udarbejdelse af en samarbejdsaftale, herunder udvælgelse af en projektleder, som i tilfælde af uoverensstemmelse havde den afgørende stemme. 
 
 \section{Metode} \label{Metode}
@@ -242,7 +245,12 @@ Signalet fra transduceren bliver igennem hardwaren henholdsvis forstærket og fi
 Et krav til det analoge filter var at den skal have en knækfrekvens på 50 Hz. Ved modultesten kunne det ses, at knækfrekvensen minimalt oversteg de 50 Hz, hvilket skyldtes at der ikke arbejdes med ideelle komponenter. Dog stemte målte amplitudekarakteristik overens med den teoretiske. \\
 Da forsygningsspændingen var +/- 5V kunne forstærkerens udgangssignal ikke være højere end ca. 4,2V og filterets udgangssignal kunne ikke være højere end ca. 3V. Dette medførte at signalet endte med en spædning på +/- 3V. Herefter, for at kunne udnytte DAQ’ens dynamikområde bedst, blev signalet sat maksimalt +/- 2,5V, svarende til en indgang på DAQ’en. Ved valg af en større forsyningsspænding ville signalet være blevet forstærket yderligere, således at signalet kunne sendes ind på én af de højere indgange med +/- 5V. Dette kunne føre til en bedre udnyttelse af DAQ'ens dynamikområde.\\
 \\
-Gennemgang af alle krav til læses i dokumentationen afsnit ???, samt yderligere forbedringer til systemet kan læses i afsnit \ref{fremtid}.
+Gennemgang af alle krav til læses i dokumentationen afsnit ???, samt yderligere forbedringer til systemet kan læses i afsnit \ref{fremtid}.\\
+\\
+\textbf{Mads' sene aften tanker:}\\
+Skriv om test og test resultater fra cave lab - lyv lyv lyv
+
+
 \section{Opnåede erfaringer}
 I løbet af projektet, er der generelt opnåede erfaringer omkring, hvordan man indgår i et professionelt projektsamarbejde og projektstyring. Vi har især opnåede værdifulde erfaringer omkring, hvad man gør, når man essentielt har to grupper, som arbejder på forskellige produkter, og som til sidst skal fungere samlet. I projektet blev der arbejdet med en software del og en hardware del.  Vi erfarede, at vi havde forskellige forventninger til, hvad der reelt skulle ske, når et software system, skal arbejde sammen med et hardware system. \\
 Projektet har givet indsigt i arkitektur og udviklingsfasen omkring hardware. Hardware udviklingen har desuden givet forståelse for eventuelle problemer, der kan opstå, når der arbejdes med reelle komponenter. Vi fik mange erfaringer med elektrisk måleudstyr, især når der bliver arbejdet med små spænding. Dette er meget relevant for os, siden vi, som sundhedteknologer, vil komme til at arbejde med tilsvarende spændinger, når vi er færdige med uddannelsen. Vi fik meget hands-on erfaring med kalibrering, hvor vi indtil videre kun har arbejdet med teorien omkring det. \\
@@ -255,4 +263,6 @@ På længere sigt vil man med fordel kunne sætte DAQ’en, analogt filter, fors
 Fremadrettet skal systemet udvikles med to skærme og kobles op til EPJ. Således at EPJ for den patient, der bliver målt på kan stå åben på en skærm samtidig med at målingerne foretages of vises på den anden skærm. På den måde vil den sundhedsfaglige kunne se informationer om patientens medicin, tidligere boldtryks målinger og andre relevante informationer, der kan være vigtige for blodtryks målinger på patienter under en operation. Desuden er det en mulighed, at de målte data efterfølgende også gemmes i EPJ.\\[1ex]
 Som systemet er nu skal kalibreringsfaktoren indtastes, hver gang systemet startet. I videreudviklingen af systemet er det meningen af kalibreringsfaktoren skal gemmes i programmet, således at denne gemmes fra gang til gang, hvorved kalibrerings faktoren kun skal indtastes i forbindelse med kalibrering af systemet der foretages en gang årligt. \\ [1ex]
 Når der i den nuværende software for systemet indsendes et signal, der burde have en varighed af 10 sekunder tager det programmet 16 sekunder at løbe igennem signalet. I fremtiden er det selvfølgelig meningen at denne tidsforskel mellem input signal og det viste signal skal elimineres. Således at disse to stemmer overens.\\[1ex]
-For fremtiden er det meningen at systemet skal afspille en ”bip” lyd for hvert pulsslag som systemet måler på patienten. \\
+For fremtiden er det meningen at systemet skal afspille en ”bip” lyd for hvert pulsslag som systemet måler på patienten. I forbindelse med dette kunne alarmen også videreudvikles til at afspille højere pulslyde ved eksempelvis stigende puls. \\[1ex]
+Selve brugergrænsefladen kunne udvides, således at blodtryksmålersystemet bliver mere omfangende, med eksempelvis visning af et EKG signal samtidigt.\\
+

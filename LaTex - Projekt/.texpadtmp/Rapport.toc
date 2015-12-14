@@ -6,39 +6,39 @@
 \contentsline {subsubsection}{Versionhistorik}{1}{section*.4}
 \contentsline {chapter}{\chapternumberline {1}Indledning}{2}{chapter.1}
 \contentsline {chapter}{\chapternumberline {2}Projektformulering}{3}{chapter.2}
-\contentsline {chapter}{\chapternumberline {3}Baggrund}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}Hjertet \& Kredsl\IeC {\o }b}{5}{section.3.1}
-\contentsline {section}{\numberline {3.2}H\IeC {\ae }modynamik}{6}{section.3.2}
-\contentsline {section}{\numberline {3.3}Hypertension}{8}{section.3.3}
-\contentsline {section}{\numberline {3.4}Hypotension}{8}{section.3.4}
-\contentsline {section}{\numberline {3.5}Blodtryksm\IeC {\r a}ling}{8}{section.3.5}
-\contentsline {section}{\numberline {3.6}Sensorer}{8}{section.3.6}
-\contentsline {chapter}{\chapternumberline {4}Systembeskrivelse}{10}{chapter.4}
-\contentsline {chapter}{\chapternumberline {5}Krav}{11}{chapter.5}
-\contentsline {section}{\numberline {5.1}IHA krav}{11}{section.5.1}
-\contentsline {section}{\numberline {5.2}Funktionelle krav}{11}{section.5.2}
-\contentsline {section}{\numberline {5.3}Ikke-funktionelle krav}{13}{section.5.3}
-\contentsline {chapter}{\chapternumberline {6}Projektbeskrivelse}{14}{chapter.6}
-\contentsline {section}{\numberline {6.1}Projektgennemf\IeC {\o }relse}{14}{section.6.1}
-\contentsline {section}{\numberline {6.2}Metode}{14}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Ase-modellen}{14}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Vandfald}{15}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}V-model}{16}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}SysML}{17}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Specifikation og analyse}{17}{section.6.3}
-\contentsline {chapter}{\chapternumberline {7}Design, implementering og test}{19}{chapter.7}
-\contentsline {section}{\numberline {7.1}Hardware design}{19}{section.7.1}
-\contentsline {section}{\numberline {7.2}Software design}{21}{section.7.2}
-\contentsline {section}{\numberline {7.3}Hardware implementering}{22}{section.7.3}
-\contentsline {section}{\numberline {7.4}Software implementering}{24}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}3 lags modellen}{24}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Tr\IeC {\r a}de}{25}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Observer}{25}{subsection.7.4.3}
-\contentsline {subsection}{\numberline {7.4.4}Kode elementer}{25}{subsection.7.4.4}
-\contentsline {subsection}{\numberline {7.4.5}Software diagrammer}{25}{subsection.7.4.5}
-\contentsline {section}{\numberline {7.5}Test}{25}{section.7.5}
-\contentsline {section}{\numberline {7.6}Resultater og diskussion}{25}{section.7.6}
-\contentsline {section}{\numberline {7.7}Opn\IeC {\r a}ede erfaringer}{27}{section.7.7}
-\contentsline {section}{\numberline {7.8}Fremtidigt arbejde}{27}{section.7.8}
-\contentsline {chapter}{\chapternumberline {8}Konklusion}{29}{chapter.8}
-\contentsline {chapter}{Litteratur}{30}{section*.26}
+\contentsline {chapter}{\chapternumberline {3}Baggrund}{6}{chapter.3}
+\contentsline {section}{\numberline {3.1}Hjertet \& Kredsl\IeC {\o }b}{6}{section.3.1}
+\contentsline {section}{\numberline {3.2}H\IeC {\ae }modynamik}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}Hypertension}{9}{section.3.3}
+\contentsline {section}{\numberline {3.4}Hypotension}{9}{section.3.4}
+\contentsline {section}{\numberline {3.5}Blodtryksm\IeC {\r a}ling}{9}{section.3.5}
+\contentsline {section}{\numberline {3.6}Sensorer}{10}{section.3.6}
+\contentsline {chapter}{\chapternumberline {4}Systembeskrivelse}{12}{chapter.4}
+\contentsline {chapter}{\chapternumberline {5}Krav}{13}{chapter.5}
+\contentsline {section}{\numberline {5.1}IHA krav}{13}{section.5.1}
+\contentsline {section}{\numberline {5.2}Funktionelle krav}{13}{section.5.2}
+\contentsline {section}{\numberline {5.3}Ikke-funktionelle krav}{15}{section.5.3}
+\contentsline {chapter}{\chapternumberline {6}Projektbeskrivelse}{16}{chapter.6}
+\contentsline {section}{\numberline {6.1}Projektgennemf\IeC {\o }relse}{16}{section.6.1}
+\contentsline {section}{\numberline {6.2}Metode}{16}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Ase-modellen}{16}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Vandfald}{17}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}V-model}{18}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}SysML}{19}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Specifikation og analyse}{19}{section.6.3}
+\contentsline {chapter}{\chapternumberline {7}Design, implementering og test}{21}{chapter.7}
+\contentsline {section}{\numberline {7.1}Hardware design}{21}{section.7.1}
+\contentsline {section}{\numberline {7.2}Software design}{23}{section.7.2}
+\contentsline {section}{\numberline {7.3}Hardware implementering}{24}{section.7.3}
+\contentsline {section}{\numberline {7.4}Software implementering}{26}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}3 lags modellen}{26}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Tr\IeC {\r a}de}{27}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Observer}{27}{subsection.7.4.3}
+\contentsline {subsection}{\numberline {7.4.4}Kode elementer}{27}{subsection.7.4.4}
+\contentsline {subsection}{\numberline {7.4.5}Software diagrammer}{27}{subsection.7.4.5}
+\contentsline {section}{\numberline {7.5}Test}{27}{section.7.5}
+\contentsline {section}{\numberline {7.6}Resultater og diskussion}{27}{section.7.6}
+\contentsline {section}{\numberline {7.7}Opn\IeC {\r a}ede erfaringer}{29}{section.7.7}
+\contentsline {section}{\numberline {7.8}Fremtidigt arbejde}{29}{section.7.8}
+\contentsline {chapter}{\chapternumberline {8}Konklusion}{31}{chapter.8}
+\contentsline {chapter}{Litteratur}{32}{section*.26}

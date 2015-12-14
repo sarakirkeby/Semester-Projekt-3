@@ -23,11 +23,12 @@ Warning--I didn't find a database entry for "haemo"
 Warning--I didn't find a database entry for "tryk"
 Warning--I didn't find a database entry for "Hypertension"
 Warning--I didn't find a database entry for "Hypotension"
+Warning--I didn't find a database entry for "blodtryk"
 Warning--I didn't find a database entry for "Projektledelse"
 Warning--I didn't find a database entry for "overforing"
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            523 strings with 4638 characters,
+            524 strings with 4646 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
