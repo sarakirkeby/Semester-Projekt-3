@@ -31,14 +31,14 @@
 \contentsline {subsubsection}{Opdateret applikationsmodel}{24}{section*.22}
 \contentsline {chapter}{\chapternumberline {4}Implementering}{27}{chapter.4}
 \contentsline {section}{\numberline {4.1}Hardware implementering}{27}{section.4.1}
-\contentsline {subsubsection}{Hardware overvejelser}{28}{section*.29}
-\contentsline {subsubsection}{Implementering af forst\IeC {\ae }rkeren}{29}{section*.30}
-\contentsline {subsubsection}{Implementering af filteret}{29}{section*.32}
+\contentsline {subsection}{\numberline {4.1.1}Hardware overvejelser}{28}{subsection.4.1.1}
+\contentsline {subsubsection}{Implementering af forst\IeC {\ae }rkeren}{29}{section*.29}
+\contentsline {subsubsection}{Implementering af filteret}{29}{section*.31}
 \contentsline {section}{\numberline {4.2}Software implementering}{30}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}3-lagsmodellen}{30}{subsection.4.2.1}
-\contentsline {subsubsection}{Pr\IeC {\ae }sentationslag}{31}{section*.35}
-\contentsline {subsubsection}{Logiklag}{33}{section*.39}
-\contentsline {subsubsection}{Datalag}{34}{section*.42}
+\contentsline {subsubsection}{Pr\IeC {\ae }sentationslag}{31}{section*.34}
+\contentsline {subsubsection}{Logiklag}{33}{section*.38}
+\contentsline {subsubsection}{Datalag}{34}{section*.41}
 \contentsline {subsection}{\numberline {4.2.2}Tr\IeC {\r a}de}{35}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Observer-pattern}{37}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}UML klassediagram}{38}{subsection.4.2.4}
@@ -65,17 +65,17 @@
 \contentsline {subsection}{\numberline {6.2.5}Use Case 5}{59}{subsection.6.2.5}
 \contentsline {subsection}{\numberline {6.2.6}Use Case 6}{60}{subsection.6.2.6}
 \contentsline {section}{\numberline {6.3}Accepttest af ikke-funktionelle krav}{61}{section.6.3}
-\contentsline {chapter}{Bilagsliste}{64}{chapter*.73}
-\contentsline {section}{Bilag 1 - Modul og integrationstest af hardware}{64}{section*.74}
-\contentsline {section}{Bilag 2 - Logbog}{64}{section*.75}
-\contentsline {section}{Bilag 3 - M\IeC {\o }dereferart}{64}{section*.76}
-\contentsline {section}{Bilag 4 - Kode}{64}{section*.77}
-\contentsline {section}{Bilag 5 - Samarbejdsaftale}{64}{section*.78}
-\contentsline {section}{Bilag 6 - Blodtrykssignal}{64}{section*.79}
-\contentsline {section}{Bilag 7 - Hjemmesider}{64}{section*.80}
-\contentsline {section}{Bilag 8 - Scrum Pivotal Tracker}{64}{section*.81}
-\contentsline {section}{Bilag 9 - Tidsplan}{64}{section*.82}
-\contentsline {section}{Bilag 10 - Udviklingsv\IeC {\ae }rkt\IeC {\o }jer}{65}{section*.83}
-\contentsline {section}{Bilag 11 - H\IeC {\ae }modynamik og hjertekarsygdomme}{65}{section*.84}
-\contentsline {section}{Bilag 12 - Vejledning til dokumentation af semesterprojekter}{65}{section*.85}
-\contentsline {chapter}{Litteratur}{66}{section*.87}
+\contentsline {chapter}{Bilagsliste}{64}{chapter*.72}
+\contentsline {section}{Bilag 1 - Modul og integrationstest af hardware}{64}{section*.73}
+\contentsline {section}{Bilag 2 - Logbog}{64}{section*.74}
+\contentsline {section}{Bilag 3 - M\IeC {\o }dereferart}{64}{section*.75}
+\contentsline {section}{Bilag 4 - Kode}{64}{section*.76}
+\contentsline {section}{Bilag 5 - Samarbejdsaftale}{64}{section*.77}
+\contentsline {section}{Bilag 6 - Blodtrykssignal}{64}{section*.78}
+\contentsline {section}{Bilag 7 - Hjemmesider}{64}{section*.79}
+\contentsline {section}{Bilag 8 - Scrum Pivotal Tracker}{64}{section*.80}
+\contentsline {section}{Bilag 9 - Tidsplan}{64}{section*.81}
+\contentsline {section}{Bilag 10 - Udviklingsv\IeC {\ae }rkt\IeC {\o }jer}{65}{section*.82}
+\contentsline {section}{Bilag 11 - H\IeC {\ae }modynamik og hjertekarsygdomme}{65}{section*.83}
+\contentsline {section}{Bilag 12 - Vejledning til dokumentation af semesterprojekter}{65}{section*.84}
+\contentsline {chapter}{Litteratur}{66}{section*.86}
