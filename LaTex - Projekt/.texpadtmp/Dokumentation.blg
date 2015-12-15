@@ -8,6 +8,10 @@ A level-1 auxiliary file: Dfiler/Dordliste.aux
 A level-1 auxiliary file: Dfiler/Dindledning.aux
 A level-1 auxiliary file: Dfiler/Dkravspecifikation.aux
 A level-1 auxiliary file: Dfiler/Ddesign.aux
+White space in argument---line 226 of file Dfiler/Ddesign.aux
+ : \citation{NI
+ :              kode}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: Dfiler/Dtest.aux
 A level-1 auxiliary file: Dfiler/Daccepttest.aux
 A level-1 auxiliary file: Dfiler/Dbilag.aux
@@ -56,4 +60,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There was 1 error message)
+(There were 2 error messages)

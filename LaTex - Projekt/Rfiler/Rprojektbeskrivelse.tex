@@ -191,28 +191,62 @@ f_{c} = \frac{1}{2\pi \sqrt{R_{1}C_{1}R_{2}C_{2}}} = \frac{1}{2\pi \sqrt{6687 \c
 \section{Software implementering}
 I software implementeringen er der blevet beskrevet hvordan systemet er blevet implementeret i form af teoretiske metoder og kode udsnit samt diagrammer over den implementerede kode.
 \subsection{3 lags modellen}
-Softwaren er implementeret først og fremmest ud fra 3-lagsmodellen 3-lagsmodellen er
-bestående af lagene præsentationslag, logiklag og datalag. Denne opdeling af lagene gør
-det langt lettere at vedligeholde systemet fordi der kan ændres i et enkelt lag uden det har
-indflydelse på resten af programmet.
-Det er desuden en god software arkitektur at bruge ved et system udarbejdet af en gruppe,
-da der kan arbejdes på to forskellige lag af to personer samtidigt, hvis bare grænsefladerne
-bliver overholdt.\\
+Softwaren er implementeret først og fremmest ud fra 3-lagsmodellen 3-lagsmodellen er bestående af lagene præsentationslag, logiklag og datalag. Denne opdeling af lagene gør det langt lettere at vedligeholde systemet fordi der kan ændres i et enkelt lag uden det har indflydelse på resten af programmet.\\ 
+Det er desuden en god software arkitektur at bruge ved et system udarbejdet af en gruppe, da der kan arbejdes på to forskellige lag af to personer samtidigt, hvis bare grænsefladerne bliver overholdt.\\
 Herudover har vi implementeret koden så den har lav kobling og høj samhørighed så der har været mulighed for at teste kode elementer undervejs i processen. 
 
 \subsection{Tråde}
+Blodtrykmålingssystemet skal simultant opfange målinger og vise disse på brugergrænsefladen. Dette stiller nogle krav til softwareopbygningen, da kodestykker skal køre på samme tid. For at løse denne problemstilling, er der anvendt trådprogrammering. Trådprogrammering er et integreret værktøj i C\#, som giver mulighed for at køre flere ting samtidigt på flere kerner i computerens CPU.\\
 
 \subsection{Observer}
+Observermønstret er et mønster, hvor et objekt, kaldet et subject, informerer en liste af observers, når noget er ændret eller gennemført ved at kalde en af deres metoder. Dette mønster har været nødvendigt at anvende, da grafen i præsentationslaget skal informeres om, hvornår der er nye data af hhv. logiklaget og datalaget. Det vil sige, at Logik-klassen og DAQ-klassen begge fungerer som subjects, mens GUI-laget og Logik-klassen fungerer som observers. Logik-klassen er subject for GUI, og Data-klassen er subject for Logik. Et eksempel på hvordan dette er bygget op ses i klassediagrammet på figur \ref{observerklasse}. Her kan man se at logik arver fra IObserver og DAQklassen fra ISubject.
 
-\subsection{Kode elementer}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Figurer/SoftwareImplementering/observer}
+	\caption{Klassediagram over observer mønsteret}
+	\label{observerklasse}
+\end{figure}
 
-\subsection{Software diagrammer}
+\subsection{Kode elementer \& diagrammer}
+Nedenfor på figur \ref{kode3} og \ref{kode4} ses hvordan metoden getGrafData() kører i sin egen tråd og sørger løbende for, at logiske operationer udføres på listen sideløbende med, at data hentes. Det er altså denne metode, der klargøre listen til at blive vist på GUI’en. Det er også her, kalibreringsfaktoren ganges og offsettet trækkes fra på samtlige tal i listen.\\ 
+Det bemærkes desuden, at de 20 målinger, der modtages fra DAQklassen er skåret ned til en ved at tage gennemsnittet af de tyve. På denne måde overbelastes systemet ikke ved at skulle vise 1000 målinger pr. sekund i en graf, men samtidig er alle målinger repræsenteret ligevægtigt.
+\begin{figure}[H]
+	\includegraphics[width=0.6\textwidth]{Figurer/Jeppe/3}
+	\caption{DAQ-klassens constructor}
+	\label{kode3}
+\end{figure}
+
+\begin{figure}[H]
+	\includegraphics[width=1.3\textwidth]{Figurer/Jeppe/4}
+	\caption{Metoden dataToDataTable(), der sørger for at putte målinger over i en liste af typen double}
+	\label{kode4}
+\end{figure}
+
+Denne kode er også beskrevet gennem et sekvensdiagram som ses i figur \ref{UC3sekvens}:
+
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{Figurer/Softwareimplementering/UC3_sekvens}
+	\caption{Sekvensdiagram for UC3}
+	\label{UC3sekvens}
+\end{figure}
+Sekvensdiagrammet viser samspillet mellem de nævnte tre klasser, når en måling foretages.\\[2ex]
+
+Sammenspillet mellem klasserne i hele systemet er beskrevet i et klassediagrammet på figur\ref{komposition}  uden attributter og metoder, men forholdet mellem klasserne
+\begin{figure}[H]
+	\includegraphics[width=1\textwidth]{Figurer/Softwareimplementering/komposition}
+	\caption{Forholdet mellem software klasser}
+	\label{komposition}
+\end{figure}
+Ud fra figur \ref{komposition} ses det at nogle af klasserne har en komposition i mellem sig og andre har en association. Kompositionen mellem to klasser fortæller om de to klasser starter samtidig. Association fortæller at klasserne har kendskab til hinanden, men de starter ikke samtidig. 
+
 
 \section{Test}
-Der er løbende blevet lavet test på systemet i form af unittest, modultest, integrationstest og slutteligt accepttesten, som blev udført under observation af vejleder.\\ 
-I de indledende modultest af hardware blev det eftervist at forstærkeren har en forstærkning på tilnærmelsesvis 400 gange forstærkningen. Ligeledes opfyldte det analoge filter tilnærmelsesvis kravet om, at have en knækfrekvens på 50 Hz, idet modultesten af filteret viste, at den reelle knækfrekvens ligger lidt over 50 Hz. Ved de senere integrationstests af hardwaren blev det eftervist at forstærkeren og det analoge filter virker efter hensigten når disse er koblet sammen. I den sidste integrationstest af hardwaren blev det vist, at systemet med stor nøjagtighed i forhold til teorien kan levere et spændings output svarende til det tryk input som transduceren leverer.\\
-SOFTWARE!!!
-Ved integrationstesten af systemet kunne det ses, at værdierne der blev opfanget i programmet, passede nogenlunde overens med de værdier som kunne ses vha. oscillopet i Analog Discovery. Dette galdt både værdierne for det atmosfæriske tryk og væsketrykket i søjlen. Desuden kunne det ses at programmet viste et blodtryk i mmHg som tilnærmelsesvist var lig det teoretiske tryk udregnet i væskesøjlen. \\
+Der er løbende blevet lavet test på systemet i form af  modultest, integrationstest og slutteligt accepttesten, som blev udført under observation af vejleder.\\ 
+I de indledende modultest af hardware blev det eftervist at forstærkeren har en forstærkning på tilnærmelsesvis 400 gange forstærkningen. Ligeledes opfyldte det analoge filter tilnærmelsesvis kravet om, at have en knækfrekvens på 50 Hz, idet modultesten af filteret viste, at den reelle knækfrekvens ligger lidt over 50 Hz. Ved de senere integrationstests af hardwaren blev det eftervist at forstærkeren og det analoge filter virker efter hensigten når disse er koblet sammen. I den sidste integrationstest af hardwaren blev det vist, at systemet med stor nøjagtighed i forhold til teorien kan levere et spændings output svarende til det tryk input som transduceren leverer.\\[2ex]
+Modultesten af softwaren har vist hvordan de enkelte dele, i form af metoder og klasser, fungerer efter hensigten. Testen har vist at der er overenstemmelse med det forventede resultat og det faktiske resultat, ved test med et kendt signal. \\
+Integrationstesten af softwaren viste, at der var overenstemmelse med det indsendte signal, og den graf og de værdier der blev indlæst og vist programmet.\\[1ex]
+Ved integrationstesten af systemet kunne det ses, at værdierne der blev opfanget i programmet, passede nogenlunde overens med de værdier som kunne ses vha. oscillopet i Analog Discovery. Dette gjaldt både værdierne for det atmosfæriske tryk og væsketrykket i søjlen. Desuden kunne det ses at programmet viste et blodtryk i mmHg som tilnærmelsesvist var lig det teoretiske tryk udregnet i væskesøjlen. \\
 Ved accepttesten blev samtlige krav fra kravspecifikationen testet. Analog Discovery's signalgenerator blev sluttet til forstærkeren som var forbundet til det analoge filter. Fra det analoge filters udgang var der forbindelse til DAQ'en som havde forbindelse til en computer, hvor programmet var kørende.\\
 Fra Analog Discovery blev systemet påtrykt et blodtrykssignal fra en rotte. På baggrund af denne opstilling blev use case 4, 5 og 6 testet og godkendt.\\
 Til test af use case 1, 2 og 3 blev Analog Discovery udelukkende brugt som spændingskilde. En vandsøjle med kendt tryk blev koblet til en transducer der blev koblet til systemet. Disse tre use cases blev lige ledes gennemført og godkendt. For dybere beskrivelse af test se test afsnit (afsnit 5) og accepttest afsnit (afsnit 6) i dokumentationen.

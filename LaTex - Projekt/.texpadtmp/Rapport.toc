@@ -32,13 +32,12 @@
 \contentsline {section}{\numberline {7.3}Hardware implementering}{24}{section.7.3}
 \contentsline {section}{\numberline {7.4}Software implementering}{26}{section.7.4}
 \contentsline {subsection}{\numberline {7.4.1}3 lags modellen}{26}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Tr\IeC {\r a}de}{27}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.2}Tr\IeC {\r a}de}{26}{subsection.7.4.2}
 \contentsline {subsection}{\numberline {7.4.3}Observer}{27}{subsection.7.4.3}
-\contentsline {subsection}{\numberline {7.4.4}Kode elementer}{27}{subsection.7.4.4}
-\contentsline {subsection}{\numberline {7.4.5}Software diagrammer}{27}{subsection.7.4.5}
-\contentsline {section}{\numberline {7.5}Test}{27}{section.7.5}
-\contentsline {section}{\numberline {7.6}Resultater og diskussion}{27}{section.7.6}
-\contentsline {section}{\numberline {7.7}Opn\IeC {\r a}ede erfaringer}{29}{section.7.7}
-\contentsline {section}{\numberline {7.8}Fremtidigt arbejde}{29}{section.7.8}
-\contentsline {chapter}{\chapternumberline {8}Konklusion}{31}{chapter.8}
-\contentsline {chapter}{Litteratur}{32}{section*.26}
+\contentsline {subsection}{\numberline {7.4.4}Kode elementer \& diagrammer}{27}{subsection.7.4.4}
+\contentsline {section}{\numberline {7.5}Test}{30}{section.7.5}
+\contentsline {section}{\numberline {7.6}Resultater og diskussion}{31}{section.7.6}
+\contentsline {section}{\numberline {7.7}Opn\IeC {\r a}ede erfaringer}{33}{section.7.7}
+\contentsline {section}{\numberline {7.8}Fremtidigt arbejde}{33}{section.7.8}
+\contentsline {chapter}{\chapternumberline {8}Konklusion}{35}{chapter.8}
+\contentsline {chapter}{Litteratur}{36}{section*.31}

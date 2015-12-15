@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.11)  14 DEC 2015 23:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.2.11)  15 DEC 2015 10:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1687,7 +1687,7 @@ LaTeX Font Info:    Try loading font information for U+stmry on input line 6.
 \c__siunitx_mathtt_int=\count342
 \openout2 = `Rfiler/Rforside.aux'.
 
- (./Rfiler/Rforside.tex <figurer/ASE.png, id=168, 439.6425pt x 136.25906pt>
+ (./Rfiler/Rforside.tex <figurer/ASE.png, id=164, 439.6425pt x 136.25906pt>
 File: figurer/ASE.png Graphic file (type png)
  <use figurer/ASE.png>
 Package pdftex.def Info: figurer/ASE.png used on input line 6.
@@ -1729,15 +1729,6 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 1.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 2--9
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--9
-
- []
-
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 9.
 Package babel Info: Redefining danish shorthand "~
@@ -1920,7 +1911,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--28
 
  []
 
-<Figurer/Indledning/Opstilling.png, id=280, 483.7272pt x 244.2726pt>
+<Figurer/Indledning/Opstilling.png, id=275, 483.7272pt x 244.2726pt>
 File: Figurer/Indledning/Opstilling.png Graphic file (type png)
  <use Figurer/Indledning/Opstilling.png>
 Package pdftex.def Info: Figurer/Indledning/Opstilling.png used on input line 35.
@@ -1991,7 +1982,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-<Figurer/Fysio/Hjertet.png, id=304, 487.8225pt x 268.00125pt>
+<Figurer/Fysio/Hjertet.png, id=299, 487.8225pt x 268.00125pt>
 File: Figurer/Fysio/Hjertet.png Graphic file (type png)
  <use Figurer/Fysio/Hjertet.png>
 Package pdftex.def Info: Figurer/Fysio/Hjertet.png used on input line 7.
@@ -2001,7 +1992,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--15
 
  []
 
-<Figurer/Fysio/Cyklus.png, id=307, 636.3775pt x 477.785pt>
+<Figurer/Fysio/Cyklus.png, id=302, 636.3775pt x 477.785pt>
 File: Figurer/Fysio/Cyklus.png Graphic file (type png)
  <use Figurer/Fysio/Cyklus.png>
 Package pdftex.def Info: Figurer/Fysio/Cyklus.png used on input line 18.
@@ -2030,7 +2021,7 @@ Package babel Info: Redefining danish shorthand "~
 
 LaTeX Warning: Reference `tryk og volumen' on page 7 undefined on input line 27.
 
-<Figurer/Fysio/TrykOgVolumen.png, id=320, 492.84125pt x 624.3325pt>
+<Figurer/Fysio/TrykOgVolumen.png, id=315, 492.84125pt x 624.3325pt>
 File: Figurer/Fysio/TrykOgVolumen.png Graphic file (type png)
  <use Figurer/Fysio/TrykOgVolumen.png>
 Package pdftex.def Info: Figurer/Fysio/TrykOgVolumen.png used on input line 30.
@@ -2086,7 +2077,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 56.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 56.
- <Figurer/Hardware/straingauge.jpg, id=351, 396.7322pt x 368.1253pt>
+ <Figurer/Hardware/straingauge.jpg, id=346, 396.7322pt x 368.1253pt>
 File: Figurer/Hardware/straingauge.jpg Graphic file (type jpg)
  <use Figurer/Hardware/straingauge.jpg>
 Package pdftex.def Info: Figurer/Hardware/straingauge.jpg used on input line 61.
@@ -2126,7 +2117,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--3
 
  []
 
-<Figurer/Systembeskrivelse.png, id=371, 553.31718pt x 73.02281pt>
+<Figurer/Systembeskrivelse.png, id=366, 553.31718pt x 73.02281pt>
 File: Figurer/Systembeskrivelse.png Graphic file (type png)
  <use Figurer/Systembeskrivelse.png>
 Package pdftex.def Info: Figurer/Systembeskrivelse.png used on input line 6.
@@ -2175,7 +2166,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 20.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 20.
-<Figurer/ISE/UcDiagram2.png, id=379, 385.44pt x 467.7475pt>
+<Figurer/ISE/UcDiagram2.png, id=374, 385.44pt x 467.7475pt>
 File: Figurer/ISE/UcDiagram2.png Graphic file (type png)
  <use Figurer/ISE/UcDiagram2.png>
 Package pdftex.def Info: Figurer/ISE/UcDiagram2.png used on input line 25.
@@ -2255,7 +2246,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 15.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 15.
-<Figurer/Metode/ASEmodellen.jpg, id=403, 614.295pt x 359.3425pt>
+<Figurer/Metode/ASEmodellen.jpg, id=398, 614.295pt x 359.3425pt>
 File: Figurer/Metode/ASEmodellen.jpg Graphic file (type jpg)
  <use Figurer/Metode/ASEmodellen.jpg>
 Package pdftex.def Info: Figurer/Metode/ASEmodellen.jpg used on input line 19.
@@ -2286,7 +2277,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
 
  []
 
-<Figurer/Metode/Vandfald.png, id=414, 416.30531pt x 364.36125pt>
+<Figurer/Metode/Vandfald.png, id=409, 416.30531pt x 364.36125pt>
 File: Figurer/Metode/Vandfald.png Graphic file (type png)
  <use Figurer/Metode/Vandfald.png>
 Package pdftex.def Info: Figurer/Metode/Vandfald.png used on input line 32.
@@ -2304,7 +2295,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 39.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 39.
- <Figurer/Metode/Vmodel.png, id=429, 689.57625pt x 389.20406pt>
+ <Figurer/Metode/Vmodel.png, id=424, 689.57625pt x 389.20406pt>
 File: Figurer/Metode/Vmodel.png Graphic file (type png)
  <use Figurer/Metode/Vmodel.png>
 Package pdftex.def Info: Figurer/Metode/Vmodel.png used on input line 43.
@@ -2356,7 +2347,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 68.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 68.
- <Figurer/Hardware/BDD1.jpg, id=448, 551.1792pt x 131.17004pt>
+ <Figurer/Hardware/BDD1.jpg, id=443, 551.1792pt x 131.17004pt>
 File: Figurer/Hardware/BDD1.jpg Graphic file (type jpg)
  <use Figurer/Hardware/BDD1.jpg>
 Package pdftex.def Info: Figurer/Hardware/BDD1.jpg used on input line 75.
@@ -2379,7 +2370,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-<Figurer/Hardware/Forstaerker.jpg, id=450, 292.09125pt x 198.7425pt>
+<Figurer/Hardware/Forstaerker.jpg, id=445, 292.09125pt x 198.7425pt>
 File: Figurer/Hardware/Forstaerker.jpg Graphic file (type jpg)
  <use Figurer/Hardware/Forstaerker.jpg>
 Package pdftex.def Info: Figurer/Hardware/Forstaerker.jpg used on input line 86.
@@ -2398,7 +2389,7 @@ Package babel Info: Redefining danish shorthand "~
 
 LaTeX Warning: Reference `fig:Filter' on page 22 undefined on input line 95.
 
-<Figurer/Hardware/FilterDesign.jpg, id=462, 421.575pt x 201.75375pt>
+<Figurer/Hardware/FilterDesign.jpg, id=457, 421.575pt x 201.75375pt>
 File: Figurer/Hardware/FilterDesign.jpg Graphic file (type jpg)
  <use Figurer/Hardware/FilterDesign.jpg>
 Package pdftex.def Info: Figurer/Hardware/FilterDesign.jpg used on input line 99.
@@ -2420,12 +2411,12 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 107.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 107.
- <Figurer/ISE/Domaenemodel.jpg, id=471, 775.57755pt x 434.46315pt>
+ <Figurer/ISE/Domaenemodel.jpg, id=466, 775.57755pt x 434.46315pt>
 File: Figurer/ISE/Domaenemodel.jpg Graphic file (type jpg)
  <use Figurer/ISE/Domaenemodel.jpg>
 Package pdftex.def Info: Figurer/ISE/Domaenemodel.jpg used on input line 112.
 (pdftex.def)             Requested size: 426.0pt x 238.63725pt.
- <Figurer/ISE/sdAppModelUC3.jpg, id=473, 343.40295pt x 229.69815pt>
+ <Figurer/ISE/sdAppModelUC3.jpg, id=468, 343.40295pt x 229.69815pt>
 File: Figurer/ISE/sdAppModelUC3.jpg Graphic file (type jpg)
  <use Figurer/ISE/sdAppModelUC3.jpg>
 Package pdftex.def Info: Figurer/ISE/sdAppModelUC3.jpg used on input line 123.
@@ -2448,7 +2439,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 135--136
 
  []
 
-<Figurer/Hardware/samletopstilling.png, id=483, 527.72156pt x 369.63094pt>
+<Figurer/Hardware/samletopstilling.png, id=478, 527.72156pt x 369.63094pt>
 File: Figurer/Hardware/samletopstilling.png Graphic file (type png)
  <use Figurer/Hardware/samletopstilling.png>
 Package pdftex.def Info: Figurer/Hardware/samletopstilling.png used on input line 139.
@@ -2493,122 +2484,197 @@ Package babel Info: Redefining danish shorthand "|
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 193.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 203.
+(babel)             in language  on input line 198.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 203.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 205.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 205.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 207.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 207.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 209.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 209.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 211.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 211.
+(babel)             in language  on input line 198.
 
-Underfull \hbox (badness 1052) in paragraph at lines 212--219
+Underfull \hbox (badness 10000) in paragraph at lines 199--200
+
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 201.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 201.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 201.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 201.
+[26]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 201.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 201.
+ <Figurer/SoftwareImplementering/observer.png, id=505, 432.86719pt x 241.65282pt>
+File: Figurer/SoftwareImplementering/observer.png Graphic file (type png)
+ <use Figurer/SoftwareImplementering/observer.png>
+Package pdftex.def Info: Figurer/SoftwareImplementering/observer.png used on input line 206.
+(pdftex.def)             Requested size: 426.0pt x 237.82846pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 211.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 211.
+ <Figurer/Jeppe/3.png, id=508, 208.6194pt x 141.1674pt>
+File: Figurer/Jeppe/3.png Graphic file (type png)
+ <use Figurer/Jeppe/3.png>
+Package pdftex.def Info: Figurer/Jeppe/3.png used on input line 215.
+(pdftex.def)             Requested size: 255.6026pt x 172.96709pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 219.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 219.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 219.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 219.
+ [27 <./Figurer/SoftwareImplementering/observer.png>] <Figurer/Jeppe/4.png, id=517, 483.7272pt x 265.4718pt>
+File: Figurer/Jeppe/4.png Graphic file (type png)
+ <use Figurer/Jeppe/4.png>
+Package pdftex.def Info: Figurer/Jeppe/4.png used on input line 221.
+(pdftex.def)             Requested size: 553.8013pt x 303.94939pt.
+
+Overfull \hbox (127.8013pt too wide) in paragraph at lines 221--222
+[][] 
+ []
+
+<Figurer/Softwareimplementering/UC3_sekvens.png, id=519, 657.2053pt x 557.83406pt>
+File: Figurer/Softwareimplementering/UC3_sekvens.png Graphic file (type png)
+ <use Figurer/Softwareimplementering/UC3_sekvens.png>
+Package pdftex.def Info: Figurer/Softwareimplementering/UC3_sekvens.png used on input line 229.
+(pdftex.def)             Requested size: 426.0pt x 361.59195pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 233.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 233.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 233.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 233.
+ [28 <./Figurer/Jeppe/3.png> <./Figurer/Jeppe/4.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 233--234
+
+ []
+
+<Figurer/Softwareimplementering/komposition.png, id=529, 845.40843pt x 597.73312pt>
+File: Figurer/Softwareimplementering/komposition.png Graphic file (type png)
+ <use Figurer/Softwareimplementering/komposition.png>
+Package pdftex.def Info: Figurer/Softwareimplementering/komposition.png used on input line 237.
+(pdftex.def)             Requested size: 426.0pt x 301.19159pt.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 241.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 241.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 241.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 241.
+ [29 <./Figurer/Softwareimplementering/UC3_sekvens.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 244.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 244.
+
+Underfull \hbox (badness 1052) in paragraph at lines 245--253
 \T1/cmr/m/n/10.95 I de indledende modultest af hardware blev det eftervist at forstærkeren har en
  []
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 219.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 219.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 219.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 219.
-[26]
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 220.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 220.
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
+Underfull \hbox (badness 1199) in paragraph at lines 245--253
+\T1/cmr/m/n/10.95 i søjlen. Desuden kunne det ses at programmet viste et blodtryk i mmHg som
+ []
+
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 253.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 253.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 253.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 253.
+[30 <./Figurer/Softwareimplementering/komposition.png>]
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 254.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 254.
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
 
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 223--225
+Underfull \hbox (badness 1348) in paragraph at lines 257--259
 \T1/cmr/m/n/10.95 hvorefter det er muligt at starte en blodtryksmåling. Der kunne til fordel være
  []
 
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 225.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 225.
-Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 225.
-Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 225.
-[27] <Figurer/SoftwareImplementering/blodtryk.png, id=516, 766.36313pt x 416.30531pt>
+<Figurer/SoftwareImplementering/blodtryk.png, id=545, 766.36313pt x 416.30531pt>
 File: Figurer/SoftwareImplementering/blodtryk.png Graphic file (type png)
  <use Figurer/SoftwareImplementering/blodtryk.png>
-Package pdftex.def Info: Figurer/SoftwareImplementering/blodtryk.png used on input line 228.
+Package pdftex.def Info: Figurer/SoftwareImplementering/blodtryk.png used on input line 262.
 (pdftex.def)             Requested size: 426.0pt x 231.41426pt.
- <Figurer/SoftwareImplementering/databasegem.png, id=519, 950.04938pt x 103.13531pt>
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 266.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 266.
+Package babel Info: Redefining danish shorthand "|
+(babel)             in language  on input line 266.
+Package babel Info: Redefining danish shorthand "~
+(babel)             in language  on input line 266.
+ [31] <Figurer/SoftwareImplementering/databasegem.png, id=554, 950.04938pt x 103.13531pt>
 File: Figurer/SoftwareImplementering/databasegem.png Graphic file (type png)
  <use Figurer/SoftwareImplementering/databasegem.png>
-Package pdftex.def Info: Figurer/SoftwareImplementering/databasegem.png used on input line 239.
+Package pdftex.def Info: Figurer/SoftwareImplementering/databasegem.png used on input line 273.
 (pdftex.def)             Requested size: 468.6026pt x 50.87036pt.
 
-Overfull \hbox (42.6026pt too wide) in paragraph at lines 239--240
+Overfull \hbox (42.6026pt too wide) in paragraph at lines 273--274
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--252
+Underfull \hbox (badness 10000) in paragraph at lines 278--286
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--252
+Underfull \hbox (badness 10000) in paragraph at lines 278--286
 
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 252.
+(babel)             in language  on input line 286.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 252.
+(babel)             in language  on input line 286.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 252.
+(babel)             in language  on input line 286.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 252.
-[28 <./Figurer/SoftwareImplementering/blodtryk.png> <./Figurer/SoftwareImplementering/databasegem.png>]
+(babel)             in language  on input line 286.
+[32 <./Figurer/SoftwareImplementering/blodtryk.png> <./Figurer/SoftwareImplementering/databasegem.png>]
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 254.
+(babel)             in language  on input line 288.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 254.
+(babel)             in language  on input line 288.
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--259
+Underfull \hbox (badness 10000) in paragraph at lines 289--293
 
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 260.
+(babel)             in language  on input line 294.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 260.
+(babel)             in language  on input line 294.
 
-Underfull \hbox (badness 10000) in paragraph at lines 261--268
+Underfull \hbox (badness 10000) in paragraph at lines 295--302
 
  []
 
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 268.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 268.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining danish shorthand "|
-(babel)             in language  on input line 268.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining danish shorthand "~
-(babel)             in language  on input line 268.
-[29])
+(babel)             in language  on input line 302.
+[33])
 Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining danish shorthand "~
@@ -2617,7 +2683,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 25.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 25.
- [30]
+ [34]
 \openout2 = `Rfiler/Rkonklusion.aux'.
 
  (./Rfiler/Rkonklusion.tex
@@ -2639,7 +2705,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 26.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 26.
- [31
+ [35
 
 
 
@@ -2688,7 +2754,7 @@ Package babel Info: Redefining danish shorthand "|
 (babel)             in language  on input line 27.
 Package babel Info: Redefining danish shorthand "~
 (babel)             in language  on input line 27.
- [32
+ [36
 
 
 
@@ -2718,19 +2784,19 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 34.
  ) 
 Here is how much of TeX's memory you used:
- 27467 strings out of 493117
- 495103 string characters out of 6135433
- 805601 words of memory out of 5000000
- 30292 multiletter control sequences out of 15000+600000
+ 27511 strings out of 493117
+ 496201 string characters out of 6135433
+ 805371 words of memory out of 5000000
+ 30321 multiletter control sequences out of 15000+600000
  35270 words of font info for 95 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  53i,13n,90p,10460b,912s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti0900.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
 cm-super/sfti1095.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sfti1728.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkd8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/bookman/ubkl8a.pfb>
-Output written on "/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Rapport.pdf" (40 pages, 4746087 bytes).
+Output written on "/Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Rapport.pdf" (44 pages, 4927763 bytes).
 PDF statistics:
- 693 PDF objects out of 1000 (max. 8388607)
- 585 compressed objects within 6 object streams
- 126 named destinations out of 1000 (max. 500000)
- 424 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 730 PDF objects out of 1000 (max. 8388607)
+ 610 compressed objects within 7 object streams
+ 134 named destinations out of 1000 (max. 500000)
+ 441 words of extra memory for PDF output out of 10000 (max. 10000000)
 
