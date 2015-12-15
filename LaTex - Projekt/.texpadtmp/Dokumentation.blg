@@ -3,7 +3,6 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Dokumentation.aux
 The style file: plain.bst
 A level-1 auxiliary file: Dfiler/Dforside.aux
-A level-1 auxiliary file: Dfiler/Dunderskrifter.aux
 A level-1 auxiliary file: Dfiler/Dordliste.aux
 A level-1 auxiliary file: Dfiler/Dindledning.aux
 A level-1 auxiliary file: Dfiler/Dkravspecifikation.aux
@@ -21,7 +20,7 @@ Warning--I didn't find a database entry for "Overforing"
 Warning--I didn't find a database entry for "Usability"
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            510 strings with 4463 characters,
+            509 strings with 4438 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0

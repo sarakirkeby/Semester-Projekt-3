@@ -1,6 +1,6 @@
 \changetocdepth {2}
 \select@language {danish}
-\contentsline {chapter}{Ordliste}{ii}{chapter*.1}
+\contentsline {chapter}{Ordliste}{i}{chapter*.1}
 \contentsline {chapter}{\chapternumberline {1}Indledning}{1}{chapter.1}
 \contentsline {chapter}{\chapternumberline {2}Kravspecifikation}{2}{chapter.2}
 \contentsline {section}{\numberline {2.1}Indledning}{2}{section.2.1}
@@ -26,7 +26,7 @@
 \contentsline {section}{\numberline {3.3}Software arkitektur}{17}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}GUI}{17}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Dom\IeC {\ae }nemodel}{19}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Appliktationsmodel}{20}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.3}Applikationsmodel}{20}{subsection.3.3.3}
 \contentsline {subsubsection}{Sekvensdiagram}{20}{section*.16}
 \contentsline {subsubsection}{Opdateret applikationsmodel}{24}{section*.22}
 \contentsline {chapter}{\chapternumberline {4}Implementering}{27}{chapter.4}
@@ -42,40 +42,40 @@
 \contentsline {subsection}{\numberline {4.2.2}Tr\IeC {\r a}de}{35}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Observer}{37}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}UML klassediagram}{40}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Kode udsnit \& diagrammer}{43}{subsection.4.2.5}
-\contentsline {chapter}{\chapternumberline {5}Test}{52}{chapter.5}
-\contentsline {section}{\numberline {5.1}Indledning}{52}{section.5.1}
-\contentsline {section}{\numberline {5.2}Modultest hardware}{52}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Modul test af forst\IeC {\ae }rkeren}{52}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Modul test af det analoge filter}{55}{subsection.5.2.2}
-\contentsline {section}{\numberline {5.3}Integrationstest hardware}{58}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Integrationstest for forst\IeC {\ae }rker og analogt filter}{58}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Integrationstest med vands\IeC {\o }jle}{60}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Modultest software}{62}{section.5.4}
-\contentsline {section}{\numberline {5.5}Integrationstest software}{62}{section.5.5}
-\contentsline {section}{\numberline {5.6}Integrationstest system}{63}{section.5.6}
-\contentsline {chapter}{\chapternumberline {6}Accepttest}{66}{chapter.6}
-\contentsline {section}{\numberline {6.1}Indledning}{66}{section.6.1}
-\contentsline {section}{\numberline {6.2}Accepttest af Use Cases}{66}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Use Case 1}{66}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Use Case 2}{67}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Use Case 3}{69}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Use Case 4}{69}{subsection.6.2.4}
-\contentsline {subsection}{\numberline {6.2.5}Use Case 5}{69}{subsection.6.2.5}
-\contentsline {subsection}{\numberline {6.2.6}Use Case 6}{70}{subsection.6.2.6}
-\contentsline {section}{\numberline {6.3}Accepttest af ikke-funktionelle krav}{71}{section.6.3}
-\contentsline {chapter}{Bilagsliste}{74}{chapter*.84}
-\contentsline {section}{Bilag 1 - Modul og integrationstest af hardware}{74}{section*.85}
-\contentsline {section}{Bilag 2 - Logbog}{74}{section*.86}
-\contentsline {section}{Bilag 3 - M\IeC {\o }dereferart}{74}{section*.87}
-\contentsline {section}{Bilag 4 - Kode}{74}{section*.88}
-\contentsline {section}{Bilag 5 - Samarbejdsaftale}{74}{section*.89}
-\contentsline {section}{Bilag 6 - Blodtrykssignal}{74}{section*.90}
-\contentsline {section}{Bilag 7 - Hjemmesider}{74}{section*.91}
-\contentsline {section}{Bilag 8 - Scrum Pivotal Tracker}{74}{section*.92}
-\contentsline {section}{Bilag 9 - Tidsplan}{74}{section*.93}
-\contentsline {section}{Bilag 10 - Udviklingsv\IeC {\ae }rkt\IeC {\o }jer}{75}{section*.94}
-\contentsline {section}{Bilag 11 - H\IeC {\ae }modynamik og hjertekarsygdomme}{75}{section*.95}
-\contentsline {section}{Bilag 12 - Vejledning til dokumentation af semesterprojekter}{75}{section*.96}
-\contentsline {section}{Bilag 13 - National Instruments kodeudsnit}{75}{section*.97}
-\contentsline {chapter}{Litteratur}{76}{section*.99}
+\contentsline {subsection}{\numberline {4.2.5}Kodeudsnit \& diagrammer}{43}{subsection.4.2.5}
+\contentsline {chapter}{\chapternumberline {5}Test}{53}{chapter.5}
+\contentsline {section}{\numberline {5.1}Indledning}{53}{section.5.1}
+\contentsline {section}{\numberline {5.2}Modultest hardware}{53}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Modul test af forst\IeC {\ae }rkeren}{53}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Modul test af det analoge filter}{56}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Integrationstest hardware}{59}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Integrationstest for forst\IeC {\ae }rker og analogt filter}{59}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Integrationstest med vands\IeC {\o }jle}{61}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Modultest software}{63}{section.5.4}
+\contentsline {section}{\numberline {5.5}Integrationstest software}{63}{section.5.5}
+\contentsline {section}{\numberline {5.6}Integrationstest system}{64}{section.5.6}
+\contentsline {chapter}{\chapternumberline {6}Accepttest}{67}{chapter.6}
+\contentsline {section}{\numberline {6.1}Indledning}{67}{section.6.1}
+\contentsline {section}{\numberline {6.2}Accepttest af Use Cases}{67}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Use Case 1}{67}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Use Case 2}{68}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Use Case 3}{70}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Use Case 4}{70}{subsection.6.2.4}
+\contentsline {subsection}{\numberline {6.2.5}Use Case 5}{70}{subsection.6.2.5}
+\contentsline {subsection}{\numberline {6.2.6}Use Case 6}{71}{subsection.6.2.6}
+\contentsline {section}{\numberline {6.3}Accepttest af ikke-funktionelle krav}{72}{section.6.3}
+\contentsline {chapter}{Bilagsliste}{75}{chapter*.84}
+\contentsline {section}{Bilag 1 - Modul og integrationstest af hardware}{75}{section*.85}
+\contentsline {section}{Bilag 2 - Logbog}{75}{section*.86}
+\contentsline {section}{Bilag 3 - M\IeC {\o }dereferart}{75}{section*.87}
+\contentsline {section}{Bilag 4 - Kode}{75}{section*.88}
+\contentsline {section}{Bilag 5 - Samarbejdsaftale}{75}{section*.89}
+\contentsline {section}{Bilag 6 - Blodtrykssignal}{75}{section*.90}
+\contentsline {section}{Bilag 7 - Hjemmesider}{75}{section*.91}
+\contentsline {section}{Bilag 8 - Scrum Pivotal Tracker}{75}{section*.92}
+\contentsline {section}{Bilag 9 - Tidsplan}{75}{section*.93}
+\contentsline {section}{Bilag 10 - Udviklingsv\IeC {\ae }rkt\IeC {\o }jer}{76}{section*.94}
+\contentsline {section}{Bilag 11 - H\IeC {\ae }modynamik og hjertekarsygdomme}{76}{section*.95}
+\contentsline {section}{Bilag 12 - Vejledning til dokumentation af semesterprojekter}{76}{section*.96}
+\contentsline {section}{Bilag 13 - National Instruments kodeudsnit}{76}{section*.97}
+\contentsline {chapter}{Litteratur}{77}{section*.99}

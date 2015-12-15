@@ -24,7 +24,7 @@
 \BOOKMARK [1][-]{section.3.3}{Software arkitektur}{chapter.3}% 24
 \BOOKMARK [2][-]{subsection.3.3.1}{GUI}{section.3.3}% 25
 \BOOKMARK [2][-]{subsection.3.3.2}{Dom\346nemodel}{section.3.3}% 26
-\BOOKMARK [2][-]{subsection.3.3.3}{Appliktationsmodel}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.3}{Applikationsmodel}{section.3.3}% 27
 \BOOKMARK [0][-]{chapter.4}{Implementering}{}% 28
 \BOOKMARK [1][-]{section.4.1}{Hardware implementering}{chapter.4}% 29
 \BOOKMARK [2][-]{subsection.4.1.1}{Hardware overvejelser}{section.4.1}% 30
@@ -33,7 +33,7 @@
 \BOOKMARK [2][-]{subsection.4.2.2}{Tr\345de}{section.4.2}% 33
 \BOOKMARK [2][-]{subsection.4.2.3}{Observer}{section.4.2}% 34
 \BOOKMARK [2][-]{subsection.4.2.4}{UML klassediagram}{section.4.2}% 35
-\BOOKMARK [2][-]{subsection.4.2.5}{Kode udsnit \046 diagrammer}{section.4.2}% 36
+\BOOKMARK [2][-]{subsection.4.2.5}{Kodeudsnit \046 diagrammer}{section.4.2}% 36
 \BOOKMARK [0][-]{chapter.5}{Test}{}% 37
 \BOOKMARK [1][-]{section.5.1}{Indledning}{chapter.5}% 38
 \BOOKMARK [1][-]{section.5.2}{Modultest hardware}{chapter.5}% 39
