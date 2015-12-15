@@ -232,7 +232,7 @@ Diagrammet viser en domænemodel for blodtryksmålingssystemet. Dette diagram gi
 	\label{domaenemodel}
 \end{figure}
 
-\subsection{Appliktationsmodel}
+\subsection{Applikationsmodel}
 Applikationsmodellen er en model der på baggrund af domænemodel og use cases udarbejdes software-relaterede klasse-applikationsmodeller, sekvensdiagrammer og opdaterede klasse-applikationsmodeller.\\
 Her er det ikke-opdateret klassediagram udeladt, hvorfor sekvensdiagram og opdaterede klasse-applikationsmodel er udarbejdet på baggrund af fiktive metoder. De faktiske metoder kan ses i afsnit \ref{UML klassediagram}.
 
@@ -616,14 +616,20 @@ De pågældende metoder ligger i klassen "Blodtryksberegning"\ og modtager alle 
 	\label{kode1}
 \end{figure}
 
-Som det ses på figur \ref{kode1}, modtager metoden en liste blodtryksværdier af typen double. Hernæst bliver de anvendte variable initieret. Algoritmen tager udgangspunkt i en baseline, som beregnes til at være 80\% af den maksimale værdi på listen. Hernæst tjekkes der løbende om en baseline og foregående værdi overskrides, og hvis dette pludselig ikke er tilfældet mere, vil punktet blive anset for værende punktet efter en systoleværdi, og denne tilføjes til en liste. Metoden er forbedret ved at tjekke 2 målinger ud i fremtiden, hvilket forhindrer, at evt. støj bliver sat til systolen. Når toppunkter er fundet, findes gennemsnittet af disse. Man kunne have valgt en simplere løsning ved blot at kalde den højeste værdi på listen for systolen, men den metode er fravalgt, da DAQ'en kan give nogle peaks, der uhensigtsmæssigt ville igangsætte alarmen. Ved at tage gennemsnittet formindsker man altså risikoen for, at systolen bliver en unormal høj værdi. En ulempe ved den valgte algoritme er, at baseline findes ud fra den maksimale værdi. Hvis den maksimale værdi er unaturlig høj, vil baselinen blive sat for højt til, at toppunkterne kan detekteres.\\Hvis et toppunkt ikke detekteres af en eller anden årsag, er det ikke katastrofalt, da gennemsnittet blot bliver beregnet ud fra de andre toppunkter.\\Algoritmen for diastole er implementeret efter samme princip, blot hvor der tjekker for de laveste værdier, som det ses på figur \ref{kode2}:
+Som det ses på figur \ref{kode1}, modtager metoden en liste blodtryksværdier af typen double. Hernæst bliver de anvendte variable initieret. Algoritmen tager udgangspunkt i en baseline, som beregnes til at være 80\% af den maksimale værdi på listen. Hernæst tjekkes der løbende om en baseline og foregående værdi overskrides, og hvis dette pludselig ikke er tilfældet mere, vil punktet blive anset for værende punktet efter en systoleværdi, og denne tilføjes til en liste. Metoden er forbedret ved at tjekke 2 målinger ud i fremtiden, hvilket forhindrer, at evt. støj bliver sat til systolen. Når toppunkter er fundet, findes gennemsnittet af disse. Man kunne have valgt en simplere løsning ved blot at kalde den højeste værdi på listen for systolen, men den metode er fravalgt, da DAQ'en kan give nogle peaks, der uhensigtsmæssigt ville igangsætte alarmen. Ved at tage gennemsnittet formindsker man altså risikoen for, at systolen bliver en unormal høj værdi. En ulempe ved den valgte algoritme er, at baseline findes ud fra den maksimale værdi. Hvis den maksimale værdi er unaturlig høj, vil baselinen blive sat for højt til, at toppunkterne kan detekteres.\\
+Hvis et toppunkt ikke detekteres af en eller anden årsag, er det ikke katastrofalt, da gennemsnittet blot bliver beregnet ud fra de andre toppunkter.\\
+Algoritmen for diastole er implementeret efter samme princip, blot hvor der tjekker for de laveste værdier, som det ses på figur \ref{kode2}:
 \begin{figure}[H]
 	\includegraphics[width=1.3\textwidth]{Figurer/Jeppe/2}
 	\caption{Algoritme til detektering af puls}
 	\label{kode2}
 \end{figure}
-Algoritmen til detektering af puls foregår også efter dette princip. Her skal man blot kende perioden eller frekvensen på samplingen og medsende denne som parameter.I denne algoritme er det mere uhensigtsmæssigt, hvis et toppunkt ikke detekteres, da det kan give en for lav puls.\\
-\textbf{Dataopsamling}\\Følgende afsnit beskriver dybdegående, hvordan data fra DAQ’en bliver sendt fra DAQklassen til visning på brugergrænseflade. Samspillet mellem klasserne er uddybet i afsnittet med tråde og observer-mønstret.\\\textbf{DAQ-klassen}\\I denne klasse forgår kontakten med DAQ’en, som indstilles og dernæst anvendes til dataopsamling. DAQ’en fungerer som en A/D-converter, og det er det digitale signal, vi får indlæst i programmet. DAQ-klassen er bygget med et i forvejen fungerende program fra National Instruments som skabelon\cite{NI kode}.
+Algoritmen til detektering af puls foregår også efter dette princip. Her skal man blot kende perioden eller frekvensen på samplingen og medsende denne som parameter.
+I denne algoritme er det mere uhensigtsmæssigt, hvis et toppunkt ikke detekteres, da det kan give en for lav puls.\\
+\textbf{Dataopsamling}\\
+Følgende afsnit beskriver dybdegående, hvordan data fra DAQ’en bliver sendt fra DAQklassen til visning på brugergrænseflade. Samspillet mellem klasserne er uddybet i afsnittet med tråde og observer-mønstret.\\
+\textbf{DAQ-klassen}\\
+I denne klasse forgår kontakten med DAQ’en, som indstilles og dernæst anvendes til dataopsamling. DAQ’en fungerer som en A/D-converter, og det er det digitale signal, vi får indlæst i programmet. DAQ-klassen er bygget med et i forvejen fungerende program fra National Instruments som skabelon\cite{NI kode}.
 
 \begin{figure}[H]
 	\includegraphics[width=0.6\textwidth]{Figurer/Jeppe/3}
@@ -631,7 +637,8 @@ Algoritmen til detektering af puls foregår også efter dette princip. Her skal 
 	\label{kode3}
 \end{figure}
 
-I DAQ-klassens constructor sættes DAQ'en op, og de nødvendige lister, låse og attributter oprettes.Det er et krav fra IHA's side, at samplingen skal foretages med 1000Hz. Det valgt, at der skal indlæses 20 samples adgangen, hvilken vil sige, at programmet modtager målinger hvert 1/50 sekund, vist i figur \ref{kode4}.
+I DAQ-klassens constructor sættes DAQ'en op, og de nødvendige lister, låse og attributter oprettes.
+Det er et krav fra IHA's side, at samplingen skal foretages med 1000Hz. Det valgt, at der skal indlæses 20 samples adgangen, hvilken vil sige, at programmet modtager målinger hvert 1/50 sekund, vist i figur \ref{kode4}.
 
 \begin{figure}[H]
 	\includegraphics[width=1.3\textwidth]{Figurer/Jeppe/4}
@@ -639,7 +646,9 @@ I DAQ-klassens constructor sættes DAQ'en op, og de nødvendige lister, låse og
 	\label{kode4}
 \end{figure}
 
-Metoden dataToDataTable() sørger for at putte målinger over i listen "målinger", som tømmes før metoden køres, hvilket sikrer, at der kun ligger 20 målinger i listen.\\Efter endt dataopsamling, informeres logiklaget med metoden "Nofify()", hvilket jf. observermønstret kalder metoden ”Opdater()” med listen som parameter, hvilet ses på figur \ref{kode5}.
+Metoden dataToDataTable() sørger for at putte målinger over i listen "målinger", som tømmes før metoden køres, hvilket sikrer, at der kun ligger 20 målinger i listen.\\
+Efter endt dataopsamling, informeres logiklaget med metoden "Nofify()", hvilket jf. observermønstret kalder metoden ”Opdater()” med listen som parameter, hvilet ses på figur \ref{kode5}.
+
 \begin{figure}[H]
 	\includegraphics[width=0.5\textwidth]{Figurer/Jeppe/5}
 	\caption{Metoden Opdater() som ligger i laget "Logik"}
@@ -654,7 +663,9 @@ I figur \ref{kode5} bliver listen fra DAQklassen kopieret over i logikklassen ti
 	\label{kode6}
 \end{figure}
 
-Metoden getGrafData(), som ses i figur \ref{kode6}, kører i sin egen tråd og sørger løbende for, at logiske operationer udføres på listen sideløbende med, at data hentes. Det er altså denne metode, der klargøre listen til at blive vist på GUI’en. Det er også her, kalibreringsfaktoren ganges og offsettet trækkes fra på samtlige tal i listen. Det bemærkes desuden, at de 20 målinger, der modtages fra DAQklassen er skåret ned til en ved at tage gennemsnittet af de tyve. På denne måde overbelastes systemet ikke ved at skulle vise 1000 målinger pr. sekund i en graf, men samtidig er alle målinger repræsenteret ligevægtigt.Hvis brugeren har slået filteret til, vil der blive skåret fem målinger ud af listen som sendes til filtret før listen med grafens x-værdier opdateres. Når listen med x-værdier er fyldt ud, beregnes systole, diastole og puls. Denne klasse er altså på mange måder en controller-klasse, der sørger for, at tingene sker efter hensigten.\\Der er til sidst implementeret samme observermønster, hvilket sender målingerne til GUI-laget efter endt behandling. Dette vises \ref{kode7}:
+Metoden getGrafData(), som ses i figur \ref{kode6}, kører i sin egen tråd og sørger løbende for, at logiske operationer udføres på listen sideløbende med, at data hentes. Det er altså denne metode, der klargøre listen til at blive vist på GUI’en. Det er også her, kalibreringsfaktoren ganges og offsettet trækkes fra på samtlige tal i listen. Det bemærkes desuden, at de 20 målinger, der modtages fra DAQklassen er skåret ned til en ved at tage gennemsnittet af de tyve. På denne måde overbelastes systemet ikke ved at skulle vise 1000 målinger pr. sekund i en graf, men samtidig er alle målinger repræsenteret ligevægtigt.
+Hvis brugeren har slået filteret til, vil der blive skåret fem målinger ud af listen som sendes til filtret før listen med grafens x-værdier opdateres. Når listen med x-værdier er fyldt ud, beregnes systole, diastole og puls. Denne klasse er altså på mange måder en controller-klasse, der sørger for, at tingene sker efter hensigten.\\
+Der er til sidst implementeret samme observermønster, hvilket sender målingerne til GUI-laget efter endt behandling. Dette vises \ref{kode7}:
 
 \begin{figure}[H]
 	\includegraphics[width=1.4\textwidth]{Figurer/Jeppe/7}
@@ -669,7 +680,9 @@ Metoden er også beskrevet ved et sekvensdiagram i figur \ref{UC3sekvens}:
 	\caption{Sekvensdiagram for UC3}
 	\label{UC3sekvens}
 \end{figure}
-Sekvensdiagrammet viser samspillet mellem de nævnte tre klasser, når en måling foretages.\\Nulpunktsjusteringen foregår efter samme princip, hvor der dog kun hentes en enkelt måling ind. Nulpunktsjusteringen ligger i login-vinduet, som er det første, der starter. Nulpunktjusteringen foretages før der logges ind.\\Login-oplysningerne tjekkes i en ekstern SQL-database, som er opbygget i forbindelse med projektet, hvilet ses i figur \ref{kode8}:
+Sekvensdiagrammet viser samspillet mellem de nævnte tre klasser, når en måling foretages.\\
+Nulpunktsjusteringen foregår efter samme princip, hvor der dog kun hentes en enkelt måling ind. Nulpunktsjusteringen ligger i login-vinduet, som er det første, der starter. Nulpunktjusteringen foretages før der logges ind.\\
+Login-oplysningerne tjekkes i en ekstern SQL-database, som er opbygget i forbindelse med projektet, hvilet ses i figur \ref{kode8}:
 
 \begin{figure}[H]
 	\includegraphics[width=1.2\textwidth]{Figurer/Jeppe/8}
