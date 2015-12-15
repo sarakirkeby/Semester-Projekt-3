@@ -8,6 +8,10 @@ A level-1 auxiliary file: Rfiler/Runderskrifter.aux
 A level-1 auxiliary file: Rfiler/Rgodkendelsesformular.aux
 A level-1 auxiliary file: Rfiler/Rordliste.aux
 A level-1 auxiliary file: Rfiler/Rindledning.aux
+White space in argument---line 12 of file Rfiler/Rindledning.aux
+ : \citation{normalt
+ :                   blodtryk}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: Rfiler/Rproblemformulering.aux
 A level-1 auxiliary file: Rfiler/Rbaggrund.aux
 A level-1 auxiliary file: Rfiler/Rsystembeskrivelse.aux
@@ -23,12 +27,13 @@ Warning--I didn't find a database entry for "haemo"
 Warning--I didn't find a database entry for "tryk"
 Warning--I didn't find a database entry for "Hypertension"
 Warning--I didn't find a database entry for "Hypotension"
-Warning--I didn't find a database entry for "blodtryk"
+Warning--I didn't find a database entry for "intramaaling"
+Warning--I didn't find a database entry for "intramaalinggraf"
 Warning--I didn't find a database entry for "Projektledelse"
 Warning--I didn't find a database entry for "overforing"
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            524 strings with 4646 characters,
+            525 strings with 4666 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
@@ -67,4 +72,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There was 1 error message)
+(There were 2 error messages)
