@@ -4,11 +4,9 @@ The top-level auxiliary file: /Users/madsjorgensen/Documents/ST/3. semester/Seme
 The style file: plain.bst
 A level-1 auxiliary file: Rfiler/Rforside.aux
 A level-1 auxiliary file: Rfiler/Resume.aux
-A level-1 auxiliary file: Rfiler/Runderskrifter.aux
-A level-1 auxiliary file: Rfiler/Rgodkendelsesformular.aux
 A level-1 auxiliary file: Rfiler/Rordliste.aux
 A level-1 auxiliary file: Rfiler/Rindledning.aux
-White space in argument---line 12 of file Rfiler/Rindledning.aux
+White space in argument---line 4 of file Rfiler/Rindledning.aux
  : \citation{normalt
  :                   blodtryk}
 I'm skipping whatever remains of this command
@@ -17,6 +15,14 @@ A level-1 auxiliary file: Rfiler/Rbaggrund.aux
 A level-1 auxiliary file: Rfiler/Rsystembeskrivelse.aux
 A level-1 auxiliary file: Rfiler/Rkrav.aux
 A level-1 auxiliary file: Rfiler/Rprojektbeskrivelse.aux
+White space in argument---line 3 of file Rfiler/Rprojektbeskrivelse.aux
+ : \citation{IHA
+ :               modellen}
+I'm skipping whatever remains of this command
+White space in argument---line 4 of file Rfiler/Rprojektbeskrivelse.aux
+ : \citation{IHA
+ :               modellen}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: Rfiler/Rkonklusion.aux
 A level-1 auxiliary file: Rfiler/Rreferencer.aux
 I found no \bibdata command---while reading file /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Rapport.aux
@@ -30,10 +36,11 @@ Warning--I didn't find a database entry for "Hypotension"
 Warning--I didn't find a database entry for "intramaaling"
 Warning--I didn't find a database entry for "intramaalinggraf"
 Warning--I didn't find a database entry for "Projektledelse"
-Warning--I didn't find a database entry for "overforing"
+Warning--I didn't find a database entry for "Usability"
+Warning--I didn't find a database entry for "Overforing"
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            525 strings with 4666 characters,
+            526 strings with 4637 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0
@@ -72,4 +79,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 2
-(There were 2 error messages)
+(There were 4 error messages)
