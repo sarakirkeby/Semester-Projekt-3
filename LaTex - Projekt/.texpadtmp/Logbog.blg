@@ -34,11 +34,14 @@ A level-1 auxiliary file: Lfiler/2015-12-09hard.aux
 A level-1 auxiliary file: Lfiler/2015-12-09prog.aux
 A level-1 auxiliary file: Lfiler/2015-12-10prog.aux
 A level-1 auxiliary file: Lfiler/2015-12-11.aux
+A level-1 auxiliary file: Lfiler/2015-12-13.aux
+A level-1 auxiliary file: Lfiler/2015-12-14.aux
+A level-1 auxiliary file: Lfiler/2015-12-15.aux
 I found no \citation commands---while reading file /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Logbog.aux
 I found no \bibdata command---while reading file /Users/madsjorgensen/Documents/ST/3. semester/Semesterprojekt/Semester-Projekt-3/LaTex - Projekt/.texpadtmp/Logbog.aux
 You've used 0 entries,
             2118 wiz_defined-function locations,
-            528 strings with 4953 characters,
+            531 strings with 5016 characters,
 and the built_in function-call counts, 18 in all, are:
 = -- 0
 > -- 0

@@ -67,7 +67,7 @@
 \contentsline {chapter}{Bilagsliste}{75}{chapter*.84}
 \contentsline {section}{Bilag 1 - Modul og integrationstest af hardware}{75}{section*.85}
 \contentsline {section}{Bilag 2 - Logbog}{75}{section*.86}
-\contentsline {section}{Bilag 3 - M\IeC {\o }dereferart}{75}{section*.87}
+\contentsline {section}{Bilag 3 - M\IeC {\o }dereferat}{75}{section*.87}
 \contentsline {section}{Bilag 4 - Kode}{75}{section*.88}
 \contentsline {section}{Bilag 5 - Samarbejdsaftale}{75}{section*.89}
 \contentsline {section}{Bilag 6 - Blodtrykssignal}{75}{section*.90}
@@ -77,5 +77,4 @@
 \contentsline {section}{Bilag 10 - Udviklingsv\IeC {\ae }rkt\IeC {\o }jer}{76}{section*.94}
 \contentsline {section}{Bilag 11 - H\IeC {\ae }modynamik og hjertekarsygdomme}{76}{section*.95}
 \contentsline {section}{Bilag 12 - Vejledning til dokumentation af semesterprojekter}{76}{section*.96}
-\contentsline {section}{Bilag 13 - National Instruments kodeudsnit}{76}{section*.97}
-\contentsline {chapter}{Litteratur}{77}{section*.99}
+\contentsline {chapter}{Litteratur}{77}{section*.98}
